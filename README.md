@@ -1,10 +1,19 @@
-# movertone
+# Ragavardhini
 
-A Clojure library designed to ... well, that part is up to you.
+Not sure what this is meant to do yet.
 
 ## Usage
 
-FIXME
+```clojure
+(play-swaram :g3)
+
+(play-swarams [:s :r2 :m1 :p :n3 :s2])
+
+(with-ragam (:kamavardani melakarthas)
+		  [:s :r :m :p :n :s2])
+
+(play-ragam :ragavardhini)
+```
 
 ## License
 
