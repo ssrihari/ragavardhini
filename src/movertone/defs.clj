@@ -47,7 +47,7 @@
    :n2 "Kaisika Nishaadham"
    :n3 "Kaakali Nishaadham"})
 
-(def swarams->notes
+(def madhya-sthayi
   {:s 0
    :r1 1
    :r2 2
@@ -63,8 +63,38 @@
    :d3 10
    :n1 9
    :n2 10
-   :n3 11
-   :s. 12})
+   :n3 11})
+
+(defn swaram->sthayi [position dots difference [swaram sthanam]]
+  (let [new-name (if (= :prefix position)
+                   (str dots (name swaram))
+                   (str (name swaram) dots))
+        new-sthanam (+ difference sthanam)]
+    {(keyword new-name) new-sthanam}))
+
+(defn ->sthayi [position dots difference]
+  (->> madhya-sthayi
+       (map (partial swaram->sthayi position dots difference))
+       (into {})))
+
+(def anumandra-sthayi
+  (->sthayi :prefix ".." -24))
+
+(def mandra-sthayi
+  (->sthayi :prefix "." -12))
+
+(def thara-sthayi
+  (->sthayi :suffix "." 12))
+
+(def athithara-sthayi
+  (->sthayi :suffix ".." 24))
+
+(def swarams->notes
+  (merge anumandra-sthayi
+         mandra-sthayi
+         madhya-sthayi
+         thara-sthayi
+         athithara-sthayi))
 
 (defn raga [{:keys [arohanam avarohanam] :as scale}]
   (zipmap arohanam scale))
