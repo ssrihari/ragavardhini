@@ -1,0 +1,44 @@
+:sphuritam [:ex1 "dual note; as in janta swaras"
+            :ex2 "mohanam varnam; gg r, ss rr gg rr"
+            :ex3 "sri ragam: r, gr rgrr"
+            :ex4 "reeti gowla: janani ninnuvina. janta."
+            :ex5 "where the second time a swaram is sung, it starts from the note before it."]
+
+:nokku [:ex1 "stress to the swara where the next swara is heard just a bit"
+        :ex2 "dhanyasi"
+        :ex2 "mayamalavagowla gandharam"]
+
+:ravai [:ex1 "pm, where m starts from p"]
+
+:kandippu [:ex1 "g,s where s has a faint but definte touch of r"
+           :ex2 "sollapadamal padappadum"
+           :ex2 "like the t in often, it's not present when noting it. but we sing it."
+           :ex3 "s,,rn,d in bhairavi varnam. n actualy starts from s. like sn,"
+           :ex2 "rama ninnu nammina"
+           :ex3 "dhanyasi"]
+
+:ullasitam [:etra-jaru :iraka-jaru]
+
+:etra-jaru [:ex1 "upwards slide"
+            :ex2 "abhogi varnam last chittai"
+            :ex3 "ananda bhairavi, sahana"]
+
+:iraka-jaru [:ex1 "downwards slide"]
+
+:odukkal [:ex1 "pulling"
+          :ex2 "pulled from the lower fret. like the r in saveri. it starts from s"]
+
+:orikai [:ex1 "kalyani -> n d m g r. -> n sd nm dg mr"
+         :ex2 "downwards slide with a twist from the upper note"]
+
+:vali [:ex1 "note with a prayogam."
+       :ex2 "note could actually be 2 or 3 swaras"
+       :ex2 "like ananda bhairavi where gm,p,m,g,r,s -> r,s -> rgrs"]
+
+:kampitam [:ex1 "oscillating. extensive."
+           :ex2 "shaking the gandharam cannot happen in shankarabharanam."
+           :ex3 "one can tell the diff bw shankarabharanam and kalyani by this note alone."]
+
+rules
+thodi -> r1, g1, m1 -> r won't oscillate because g does.
+mayam -> r1, g3, m1 -> g will oscillate.
