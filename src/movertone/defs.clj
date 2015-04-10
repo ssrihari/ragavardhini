@@ -66,19 +66,13 @@
    :n3 11
    :s. 12})
 
-(def arohanam
-  [:s :r :g :m :p :d :n :s.])
-
-(def avarohanam
-  (reverse arohanam))
-
-(def arohanam+avarohanam
-  (concat arohanam avarohanam))
-
-(defn scale->ragam [scale]
+(defn raga [{:keys [arohanam avarohanam] :as scale}]
   (zipmap arohanam scale))
+
+(defn melakartha-notes->ragam [notes]
+  {:arohanam notes :avarohanam (reverse notes)})
 
 (def melakarthas
   (->> (read-file "ragas.edn")
        :melakarthas
-       (m/map-vals scale->ragam)))
+       (m/map-vals melakartha-notes->ragam)))

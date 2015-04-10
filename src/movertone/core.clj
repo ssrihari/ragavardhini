@@ -19,9 +19,5 @@
       (at (nome beat) (play-swaram (first swarams)))
       (apply-by (nome (inc beat)) play-swarams (rest swarams) []))))
 
-(defn with-ragam [ragam swarams]
-  (play-swarams (map ragam swarams)))
-
-(defn play-ragam [ragam]
-  (with-ragam (melakarthas ragam)
-    arohanam+avarohanam))
+(defn play-arohanam-and-avarohanam [{:keys [arohanam avarohanam] :as ragam}]
+  (play-swarams (concat arohanam avarohanam)))
