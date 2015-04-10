@@ -846,18 +846,12 @@
   {:aruayirani {:arohanam '(:s :g2 :m1 :p :d2 :n3 :s) :avarohanam '(:s :n3 :d2 :p :m1 :g2 :r1 :s)}}
   {:arunamani {:arohanam '(:s :g2 :m1 :p :n3 :s) :avarohanam '(:s :d2 :p :m1 :r1 :s)}}
   {:arunambari {:arohanam '(:s :g2 :p :s) :avarohanam '(:s :n3 :p :m1 :g2 :r1 :s)}}
-  {
-   :avarohanamlokita {:arohanam '(:s :r1 :m1 :d2 :s) :avarohanam '(:s :n3 :d2 :m1 :g2 :s)}}
-  {
-   :avarohanamnan {:arohanam '(:s :g2 :m1 :p :d2 :s) :avarohanam '(:s :n3 :p :m1 :s)}}
-  {
-   :avarohanamnibharaka {:arohanam '(:s :g2 :m1 :d2 :s) :avarohanam '(:s :n3 :m1 :r1 :s)}}
-  {
-   :avarohanamnikelva {:arohanam '(:s :r1 :m1 :d2 :s) :avarohanam '(:s :n3 :m1 :g2 :s)}}
-  {
-   :avarohanamrodha {:arohanam '(:s :r1 :m1 :p :n3 :s) :avarohanam '(:s :d2 :m1 :g2 :s)}}
-  {
-   :avarohanamsha {:arohanam '(:s :r1 :m1 :p :d2 :s) :avarohanam '(:s :n3 :p :m1 :s)}}
+  {:avalokita {:arohanam '(:s :r1 :m1 :d2 :s) :avarohanam '(:s :n3 :d2 :m1 :g2 :s)}}
+  {:avanan {:arohanam '(:s :g2 :m1 :p :d2 :s) :avarohanam '(:s :n3 :p :m1 :s)}}
+  {:avanibharaka {:arohanam '(:s :g2 :m1 :d2 :s) :avarohanam '(:s :n3 :m1 :r1 :s)}}
+  {:avanikelva {:arohanam '(:s :r1 :m1 :d2 :s) :avarohanam '(:s :n3 :m1 :g2 :s)}}
+  {:avamodha {:arohanam '(:s :r1 :m1 :p :n3 :s) :avarohanam '(:s :d2 :m1 :g2 :s)}}
+  {:avasha {:arohanam '(:s :r1 :m1 :p :d2 :s) :avarohanam '(:s :n3 :p :m1 :s)}}
   {:avikarai {:arohanam '(:s :g2 :p :d2 :s) :avarohanam '(:s :n3 :p :m1 :s)}}
   {:avikari {:arohanam '(:s :g2 :p :d2 :s) :avarohanam '(:s :n3 :m1 :r1 :s)}}
   {:bhayasvini {:arohanam '(:s :g2 :m1 :p :d2 :n3 :s) :avarohanam '(:s :n3 :d2 :p :m1 :g2 :s)}}
