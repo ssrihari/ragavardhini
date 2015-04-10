@@ -1,23 +1,41 @@
 (ns movertone.core
-  (:use [overtone.live]
-        [overtone.inst.piano]
-        [movertone.violin]
-        [movertone.defs]))
+  (:require [overtone.live :as olive]
+            [overtone.inst.piano :as piano]
+            [movertone.violin :as violin]
+            [movertone.beep :as beep]
+            [leipzig.live :as llive]
+            [leipzig.scale :as scale]
+            [leipzig.melody :as melody]
+            [movertone.defs :as d]))
 
-(def nome (metronome 110))
+(def shruthi :c)
+(def tempo 90)
+(def jathi 4)
 
-(def shruthi :.b)
+(defn default-durations [num-swarams]
+  (take num-swarams (repeatedly (constantly jathi))))
 
-(defn play-swaram [swaram]
-  (let [tonic (shruthi shruthis)
-        n (swarams->notes swaram)]
-    (piano :note (+ tonic n) :decay 0.01)))
+(defn phrase [swarams durations]
+  (let [durations (or durations
+                      (default-durations (count swarams)))]
+    (melody/phrase (map #(/ % jathi) durations)
+                   swarams)))
 
-(defn play-swarams [swarams]
-  (when (seq swarams)
-    (let [beat (nome)]
-      (at (nome beat) (play-swaram (first swarams)))
-      (apply-by (nome (inc beat)) play-swarams (rest swarams) []))))
+(defn swaram->midi [swaram]
+  (let [shadjam (shruthi d/shruthis)
+        swara-sthanam (d/swarams->notes swaram)]
+    (+ shadjam swara-sthanam)))
+
+(defmethod llive/play-note :default [{midi :pitch seconds :duration}]
+  (let [freq (olive/midi->hz midi)]
+    (beep/beep freq seconds)))
+
+(defn play-phrase [phrase]
+  (->> phrase
+       (melody/where :time (melody/bpm tempo))
+       (melody/where :duration (melody/bpm tempo))
+       (melody/where :pitch swaram->midi)
+       llive/play))
 
 (defn play-arohanam-and-avarohanam [{:keys [arohanam avarohanam] :as ragam}]
-  (play-swarams (concat arohanam avarohanam)))
+  (play-phrase (phrase (concat arohanam avarohanam) nil)))
