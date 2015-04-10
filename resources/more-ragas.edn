@@ -739,9 +739,9 @@
   {:kannadasaurastra {:arohanam '(:s :r1 :m1 :g2 :m1 :d2 :p :d2 :n2 :s) :avarohanam '(:s :n2 :d2 :p :m1 :g2 :s)}}
   {:kannadasaurastra {:arohanam '(:s :r1 :m1 :g2 :m1 :p :d2 :n2 :s) :avarohanam '(:s :n2 :d2 :p :m1 :g2 :s)}}
   {:kinnareshapriya {:arohanam '(:s :r1 :g2 :p :d2 :n2 :s) :avarohanam '(:s :n2 :d2 :p :g2 :r1 :s)}}
-  {:ma {:arohanam '() :avarohanam '(:amala :s :r1 :m1 :p :d2 :s-s :n2 :p :g2 :s)}}
-  {:ma {:arohanam '() :avarohanam '(:anaka :s :g2 :m1 :d2 :n2 :s-s :n2 :d2 :m1 :r1 :s)}}
-  {:ma {:arohanam '() :avarohanam '(:andhari :s :r1 :g2 :m1 :d2 :n2 :s-s :n2 :p :g2 :s)}}
+  {:ma-amala {:arohanam '(:s :r1 :m1 :p :d2 :s-s :n2 :p :g2 :s) :avarohanam '(:s :n2 :p :g2 :s)}}
+  {:ma-anaka {:arohanam '(:s :g2 :m1 :d2 :n2 :s) :avarohanam '(:s :n2 :d2 :m1 :r1 :s)}}
+  {:ma-andhari {:arohanam '(:s :r1 :g2 :m1 :d2 :n2 :s) :avarohanam '(:s :n2 :p :g2 :s)}}
   {:madhavakalyani {:arohanam '(:s :r1 :g2 :m1 :p :d2 :s) :avarohanam '(:s :n2 :d2 :p :m1 :g2 :r1 :s)}}
   {:madhavakalyani {:arohanam '(:s :r1 :g2 :p :d2 :s) :avarohanam '(:s :n2 :d2 :p :m1 :g2 :r1 :s)}}
   {:magadashri {:arohanam '(:s :g2 :r1 :g2 :m1 :p :n2 :d2 :n2 :s) :avarohanam '(:s :n2 :d2 :p :m1 :g2 :r1 :s)}}
@@ -879,7 +879,7 @@
   {:kokilaravam {:arohanam '(:s :r1 :g2 :r1 :m1 :p :d2 :n3 :s) :avarohanam '(:s :n3 :d2 :p :m1 :g2 :r1 :s)}}
   {:kokilaravam {:arohanam '(:s :r1 :m1 :m1 :p :m1 :p :d2 :n3 :s) :avarohanam '(:s :n3 :d2 :d2 :p :m1 :g2 :r1 :s)}}
   {:kokilaravam {:arohanam '(:s :r1 :m1 :p :d2 :s) :avarohanam '(:s :n3 :d2 :p :m1 :g2 :r1 :s)}}
-  {:ma {:arohanam '() :avarohanam '(:aravon :s :g2 :m1 :p :d2 :n3 :s-s :d2 :p :m1 :r1 :s)}}
+  {:ma-avaron {:arohanam '(:s :g2 :m1 :p :d2 :n3 :s) :avarohanam '(:s :d2 :p :m1 :r1 :s)}}
   {:manmagan {:arohanam '(:s :g2 :m1 :p :d2 :n3 :s) :avarohanam '(:s :n3 :d2 :p :m1 :g2 :s)}}
   {:maruvadeshika {:arohanam '(:s :g2 :m1 :p :d2 :p :n3 :s) :avarohanam '(:s :n3 :d2 :p :m1 :g2 :r1 :s)}}
   {:maruvadeshika {:arohanam '(:s :g2 :m1 :p :d2 :p :n3 :s) :avarohanam '(:s :n3 :d2 :p :m1 :p :g2 :r1 :s)}}
@@ -1363,7 +1363,7 @@
   {:latarlatika {:arohanam '(:s :r1 :g3 :m1 :p :d1 :s) :avarohanam '(:s :d1 :p :m1 :r1 :s)}}
   {:latatanvi {:arohanam '(:s :g3 :m1 :g3 :p :d1 :n3 :s) :avarohanam '(:s :n3 :m1 :g3 :r1 :s)}}
   {:liptali {:arohanam '(:s :r1 :g3 :m1 :p :d1 :s) :avarohanam '(:s :n3 :d1 :p :m1 :g3 :r1 :s)}}
-  {:ma {:arohanam '() :avarohanam '(:anamaya :s :r1 :g3 :m1 :d1 :n3 :s)}}
+  {:ma-anamaya {:arohanam '(:s :r1 :g3 :m1 :d1 :n3 :s) :avarohanam '(:s :n3 :d1 :m1 :g3 :r1 :s)}}
   {:makarankapriya {:arohanam '(:s :r1 :g3 :d1 :n3 :s) :avarohanam '(:s :n3 :d1 :g3 :r1 :s)}}
   {:malahari {:arohanam '(:s :r1 :m1 :p :d1 :s) :avarohanam '(:s :d1 :p :m1 :g3 :r1 :s)}}
   {:malavagaula {:arohanam '(:s :r1 :g3 :m1 :p :d1 :n3 :s) :avarohanam '(:s :n3 :d1 :p :m1 :g3 :r1 :s)}}
@@ -2824,7 +2824,7 @@
  {:layamadhya {:arohanam '(:s :r2 :m1 :p :d2 :n2 :s) :avarohanam '(:s :d2 :p :m1 :r2 :s)}}
  {:lokendrini {:arohanam '(:s :r2 :m1 :p :d2 :s) :avarohanam '(:s :d2 :p :m1 :g2 :r2 :s)}}
  {:lokottaramani {:arohanam '(:s :r2 :m1 :p :d2 :s) :avarohanam '(:s :d2 :p :m1 :g2 :r2 :s)}}
- {:ma {:arohanam '() :avarohanam '(:candikai :s :g2 :m1 :d2 :s)}}
+ {:ma-candikai {:arohanam '(:s :g2 :m1 :d2 :s) :avarohanam '(:s :n2 :p :g2 :r2 :s)}}
  {:madana {:arohanam '(:s :r2 :g2 :m1 :n2 :d2 :n2 :p :d2 :s) :avarohanam '(:s :n2 :d2 :n2 :p :m1 :g2 :r2 :s)}}
  {:madanamarutam {:arohanam '(:s :r2 :g2 :m1 :d2 :n2 :s) :avarohanam '(:s :n2 :d2 :n2 :p :m1 :g2 :m1 :g2 :s)}}
  {:maddhimaravali {:arohanam '(:s :r2 :g2 :p :d2 :n2 :s) :avarohanam '(:s :n2 :d2 :p :g2 :r2 :s)}}
@@ -7136,7 +7136,7 @@
  {:latamati {:arohanam '(:s :r2 :g3 :m2 :p :d1 :n3 :s) :avarohanam '(:s :n3 :d1 :m2 :g3 :r2 :s)}}
  {:latangi {:arohanam '(:s :r2 :g3 :m2 :p :d1 :n3 :s) :avarohanam '(:s :n3 :d1 :p :m2 :g3 :r2 :s)}}
  {:lilavinodini {:arohanam '(:s :r2 :g3 :m2 :p :d1 :n3 :d1 :s) :avarohanam '(:s :n3 :d1 :p :m2 :g3 :r2 :s)}}
- {:ma {:arohanam '() :avarohanam '(:bharati :s :r2 :m2 :p :n3 :s)}}
+ {:ma-bharati {:arohanam '(:s :r2 :m2 :p :n3 :s) :avarohanam '(:s :d1 :p :g3 :s)}}
  {:maduraivasan {:arohanam '(:s :r2 :g3 :p :n3 :s) :avarohanam '(:s :n3 :p :m2 :g3 :r2 :s)}}
  {:maduraivasani {:arohanam '(:s :g3 :m2 :p :d1 :s) :avarohanam '(:s :n3 :p :m2 :g3 :r2 :s)}}
  {:mahatma {:arohanam '(:s :r2 :m2 :p :n3 :s) :avarohanam '(:s :d1 :m2 :g3 :s)}}
@@ -7431,7 +7431,7 @@
  {:kusumagrani {:arohanam '(:s :g3 :r2 :g3 :m2 :n3 :d2 :p :d2 :n3 :s) :avarohanam '(:s :n3 :d2 :p :m2 :r2 :g3 :r2 :s)}}
  {:kuvalayapriya {:arohanam '(:s :r2 :m2 :p :n3 :s) :avarohanam '(:s :d2 :p :m2 :g3 :s)}}
  {:laksmanakuntali {:arohanam '(:s :r2 :g3 :m2 :d2 :n3 :s) :avarohanam '(:s :n3 :d2 :m2 :g3 :r2 :s)}}
- {:ma {:arohanam '() :avarohanam '(:bhogakusumavali :s :r2 :g3 :p :d2 :s)}}
+ {:ma-bhogakusumavali {:arohanam '(:s :r2 :g3 :p :d2 :s) :avarohanam '(:s :n3 :p :m2 :g3 :s)}}
  {:madarmani {:arohanam '(:s :g3 :p :n3 :s) :avarohanam '(:s :n3 :p :m2 :r2 :s)}}
  {:madhavakalyani {:arohanam '(:s :r2 :g3 :m2 :p :d2 :s) :avarohanam '(:s :n3 :d2 :p :m2 :g3 :r2 :s)}}
  {:madhavalangi {:arohanam '(:s :r2 :g3 :p :s) :avarohanam '(:s :n3 :d2 :m2 :r2 :s)}}
