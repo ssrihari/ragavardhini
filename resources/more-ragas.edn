@@ -304,7 +304,7 @@
   {:viphani {:arohanam '(:s :g1 :m1 :d3 :n3 :s) :avarohanam '(:s :n3 :d3 :m1 :g1 :s)}}
   ]
 
- {:num 7 :name :sEnaavati}
+ {:num 7 :name :senaavati}
  [
   {:senaagrani {:arohanam '(:s :r1 :g2 :r1 :m1 :g2 :m1 :p :n1 :d1 :s) :avarohanam '(:s :n1 :d1 :p :m1 :g2 :m1 :g2 :r1 :s)}}
   {:anguru {:arohanam '(:s :g2 :m1 :d1 :n1 :s) :avarohanam '(:s :n1 :d1 :m1 :g2 :s)}}
@@ -359,7 +359,7 @@
   {:vitika {:arohanam '(:s :g2 :m1 :p :n1 :s) :avarohanam '(:s :n1 :p :m1 :g2 :s)}}
   ]
 
- {:num 8 :name :hanumatODi}
+ {:num 8 :name :hanumatodi}
  [
   {:janatodi {:arohanam '(:s :r1 :g2 :m :p :d1 :n2 :s) :avarohanam '(:s :n2 :d1 :p :m :g2 :r1 :s)}}
   {:adbhodam {:arohanam '(:s :g2 :m1 :d1 :n2 :s) :avarohanam '(:s :n2 :d1 :m1 :g2 :s)}}
@@ -560,7 +560,7 @@
   {:viravarali {:arohanam '(:s :r1 :m1 :d1 :s) :avarohanam '(:s :n2 :d1 :p :m1 :g2 :r1 :s)}}
   ]
 
- {:num 9 :name :dhEnukaa}
+ {:num 9 :name :dhenukaa}
  [
   {:dhunibhinnashadjam {:arohanam '(:s :r1 :g2 :r1 :p :m1 :p :n3 :s) :avarohanam '(:s :d1 :p :m1 :g2 :r1 :s)}}
   {:adirainayaka {:arohanam '(:s :r1 :g2 :m1 :p :d1 :n3 :s) :avarohanam '(:s :n3 :d1 :m1 :g2 :s)}}
@@ -668,7 +668,7 @@
   {:yogini {:arohanam '(:s :r1 :g2 :p :d1 :s) :avarohanam '(:s :n3 :d1 :p :m1 :g2 :r1 :s)}}
   ]
 
- {:num 10 :name :naaTakapriyaa}
+ {:num 10 :name :naatakapriyaa}
  [
   {:natabharanam {:arohanam '(:s :r1 :g2 :m1 :p :d2 :n2 :s) :avarohanam '(:s :n2 :d2 :p :m1 :g2 :r1 :s)}}
   {:accan {:arohanam '(:s :r1 :m1 :p :d2 :n2 :s) :avarohanam '(:s :n2 :d2 :p :m1 :g2 :s)}}
@@ -814,7 +814,7 @@
   {:yogavati {:arohanam '(:s :r1 :g2 :m1 :p :d2 :n2 :s) :avarohanam '(:s :d2 :p :m1 :r1 :g2 :r1 :s)}}
   ]
 
- {:num 11 :name :kOkilapriyaa}
+ {:num 11 :name :kokilapriyaa}
  [
   {:kokilaaravam {:arohanam '(:s :r1 :m1 :p :d2 :n3 :s) :avarohanam '(:s :n3 :d2 :p :m1 :g2 :r2 :s)}}
   {:aimmukhan {:arohanam '(:s :r1 :g2 :p :d2 :s) :avarohanam '(:s :n3 :d2 :p :m1 :g2 :r1 :s)}}
@@ -1015,7 +1015,7 @@
   {:tridashiranjani {:arohanam '(:s :r1 :g3 :d1 :n1 :s) :avarohanam '(:s :n1 :d1 :g3 :r1 :s)}}
   ]
 
- {:num 14 :name :vakulaabharaNam}
+ {:num 14 :name :vakulaabharanam}
  [
   {:vaatee {:arohanam '(:vasantabhairavi :s :r1 :g3 :m1 :d1 :n2 :s) :avarohanam '(:s :n2 :d1 :m1 :g3 :r1 :s)}}
   {:adavai {:arohanam '(:s :r1 :g3 :m1 :p :d1 :n2 :s) :avarohanam '(:s :d1 :m1 :g3 :s)}}
@@ -1149,7 +1149,7 @@
   {:vitashokan {:arohanam '(:s :r1 :m1 :d1 :n2 :s) :avarohanam '(:s :n2 :d1 :m1 :r1 :s)}}
   ]
 
- {:num 15 :name :maayamaaLava}
+ {:num 15 :name :maayamaalava}
  [
   {:anamayan {:arohanam '(:s :r1 :g3 :m1 :d1 :n3 :s) :avarohanam '(:s :n3 :d1 :m1 :g3 :r1 :s)}}
   {:anandai {:arohanam '(:s :r1 :g3 :m1 :p :d1 :n3 :s) :avarohanam '(:s :n3 :p :m1 :g3 :r1 :s)}}
@@ -1938,7 +1938,7 @@
   {:vyazhakurinji {:arohanam '(:s :r1 :g3 :m1 :p :m1 :d2 :n3 :s) :avarohanam '(:s :n3 :d2 :n3 :d2 :p :m1 :g3 :r1 :s)}}
   ]
 
-{:num 18 :name :haTakaambari}
+{:num 18 :name :hatakaambari}
 [
  {:jayashuddhamaalavi {:arohanam '(:s :r1 :g3 :m1 :p :n3 :s) :avarohanam '(:s :n3 :d3 :p :m1 :g3 :r1 :s)}}
  {:bhanucudamani {:arohanam '(:s :r1 :g3 :m1 :p :s) :avarohanam '(:s :n3 :d3 :n3 :p :m1 :g3 :r1 :s)}}
@@ -2040,7 +2040,7 @@
  {:tripadaka {:arohanam '(:s :r2 :m1 :d1 :n1 :s) :avarohanam '(:s :n1 :d1 :m1 :r2 :s)}}
  ]
 
-{:num 20 :name :naTabhairavi}
+{:num 20 :name :natabhairavi}
 [
  {:naareereetigowla {:arohanam '(:s :r1 :g2 :m1 :p :d1 :n2 :s) :avarohanam '(:s :r2 :d1 :p :m1 :g2 :r2 :s)}}
  {:abheri {:arohanam '(:s :g2 :m1 :p :n2 :s) :avarohanam '(:s :n2 :d1 :m1 :g2 :s)}}
@@ -2453,7 +2453,7 @@
  {:yogabhairavi {:arohanam '(:s :r2 :g2 :m1 :p :d1 :s) :avarohanam '(:s :n2 :d1 :p :r2 :s)}}
  ]
 
-{:num 21 :name :keeravaaNi}
+{:num 21 :name :keeravaani}
 [
  {:keeranaavali {:arohanam '(:s :r2 :g2 :m1 :p :d1 :n3 :s) :avarohanam '(:s :d1 :p :m1 :g2 :r2 :s)}}
  {:abherini {:arohanam '(:s :r2 :g2 :m1 :p :n3 :s) :avarohanam '(:s :n3 :p :m1 :r2 :s)}}
@@ -3200,7 +3200,7 @@
  {:visayanarayani {:arohanam '(:s :r2 :g2 :m1 :p :d2 :n3 :s) :avarohanam '(:s :d2 :p :m1 :g2 :r2 :s)}}
  ]
 
-{:num 24 :name :varuNapriyaa}
+{:num 24 :name :varunapriyaa}
 [
  {:veeravasantam {:arohanam '(:s :r2 :g2 :m1 :p :s) :avarohanam '(:s :n3 :d3 :p :m1 :g2 :r2 :s)}}
  {:asti {:arohanam '(:s :g2 :m1 :d3 :n3 :s) :avarohanam '(:s :n3 :d3 :m1 :g2 :s)}}
@@ -3316,7 +3316,7 @@
  {:vrajinaharini {:arohanam '(:s :g3 :m1 :p :n1 :s) :avarohanam '(:s :n1 :p :m1 :g3 :s)}}
  ]
 
-{:num 26 :name :caarukEshi}
+{:num 26 :name :caarukeshi}
 [
  {:tarangini {:arohanam '(:s :r2 :g3 :p :d1 :n2 :d1 :s) :avarohanam '(:s :d1 :p :m1 :g3 :r2 :s)}}
  {:s {:arohanam '(:r2 :g3 :p :d1 :n2 :d1 :p :d1 :s) :avarohanam '(:s :d1 :p :g3 :r2 :s :g3 :m1 :r2 :g3 :s)}}
@@ -3570,7 +3570,7 @@
  {:vidambamati {:arohanam '(:s :r2 :g3 :m1 :p :d1 :p :n3 :s) :avarohanam '(:s :n3 :p :m1 :g3 :r2 :s)}}
  ]
 
-{:num 28 :name :harikaambhOji}
+{:num 28 :name :harikaambhoji}
 [
  {:harikedaaragowla {:arohanam '(:s :r2 :g3 :m1 :p :d2 :n2 :s) :avarohanam '(:s :n2 :d2 :p :m1 :g3 :r2 :s)}}
  {:alakavarvali {:arohanam '(:s :r2 :m1 :p :d2 :s) :avarohanam '(:s :n2 :d2 :p :m1 :g3 :r2 :s)}}
@@ -4883,7 +4883,7 @@
  {:trishulini {:arohanam '(:s :g3 :m1 :p :n3 :s) :avarohanam '(:s :n3 :d2 :p :m1 :r3 :s)}}
  ]
 
-{:num 36 :name :calanaaTTai}
+{:num 36 :name :calanaattai}
 [
  {:acalanata {:arohanam '(:s :r3 :g3 :m1 :d3 :n3 :s) :avarohanam '(:s :n3 :d3 :m1 :g3 :r3 :s)}}
  {:arunacandrika {:arohanam '(:s :g3 :m1 :p :n3 :s) :avarohanam '(:s :n3 :p :m1 :g3 :s)}}
@@ -5059,7 +5059,7 @@
  {:vanajamukhi {:arohanam '(:s :r1 :g1 :m2 :n2 :s) :avarohanam '(:s :n2 :m2 :g1 :r1 :s)}}
  ]
 
-{:num 39 :name :jhaalavaraaLi}
+{:num 39 :name :jhaalavaraali}
 [
  {:dhaalivaraali {:arohanam '(:s :r1 :g1 :m2 :p :d1 :n3 :s) :avarohanam '(:s :n3 :d1 :p :m2 :g1 :r1 :s)}}
  {:adideshya {:arohanam '(:s :r1 :g1 :m2 :p :n3 :s) :avarohanam '(:s :n3 :d1 :p :m2 :g1 :r1 :s)}}
@@ -5462,7 +5462,7 @@
  {:vedika {:arohanam '(:s :r1 :g2 :m2 :n2 :s) :avarohanam '(:s :n2 :m2 :g2 :r1 :s)}}
  ]
 
-{:num 45 :name :shubhapantuvaraaLi}
+{:num 45 :name :shubhapantuvaraali}
 [
  {:shivapantuvaraali {:arohanam '(:s :r1 :g2 :m2 :p :d1 :n3 :s) :avarohanam '(:s :n3 :d1 :p :m2 :g2 :r1 :s)}}
  {:agamapriya {:arohanam '(:s :r1 :g2 :m2 :p :m2 :d1 :n3 :s) :avarohanam '(:s :n3 :p :d1 :n3 :p :m2 :g2 :r1 :g2 :s)}}
@@ -5776,7 +5776,7 @@
  {:vyaghramanjari {:arohanam '(:s :r1 :m2 :p :n3 :s) :avarohanam '(:s :n3 :d2 :p :m2 :g2 :r1 :s)}}
  ]
 
-{:num 48 :name :divyamaNi}
+{:num 48 :name :divyamani}
 [
  {:jeevantikaa {:arohanam '(:s :m2 :p :d3 :n3 :s) :avarohanam '(:s :n3 :p :m2 :g2 :s)}}
  {:adipancamam {:arohanam '(:s :g2 :r1 :n3 :n3 :s :g2 :r1 :n3 :s) :avarohanam '(:s :d3 :p :m2 :p :m2 :g2 :s)}}
@@ -5888,7 +5888,7 @@
  {:vantika {:arohanam '(:s :m2 :p :d1 :n1 :s) :avarohanam '(:s :n1 :d1 :p :m2 :s)}}
  ]
 
-{:num 50 :name :naamanaaraayaNi}
+{:num 50 :name :naamanaaraayani}
 [
  {:naamadeshi {:arohanam '(:s :r1 :g3 :m2 :p :d1 :n2 :s) :avarohanam '(:s :n2 :d1 :p :m2 :g3 :r1 :s)}}
  {:balagambhirya {:arohanam '(:s :g3 :r1 :g3 :m2 :d1 :p :n2 :d1 :s) :avarohanam '(:s :n2 :d1 :p :m2 :g3 :r1 :s)}}
@@ -5971,7 +5971,7 @@
  {:vilambini {:arohanam '(:s :m2 :g3 :m2 :p :n2 :d1 :n2 :s) :avarohanam '(:s :n2 :d1 :n2 :p :m2 :g3 :r1 :s)}}
  ]
 
-{:num 51 :name :pantuvaraaLi}
+{:num 51 :name :pantuvaraali}
 [
  {:kaashiraamakriyaa {:arohanam '(:s :g3 :r1 :g3 :m2 :p :d1 :n3 :s) :avarohanam '(:s :n3 :d1 :p :m1 :g3 :r1 :s)}}
  {:adipancamam {:arohanam '(:s :r1 :p :d1 :n3 :s) :avarohanam '(:s :n3 :d1 :n3 :p :m2 :g3 :r1 :s)}}
@@ -6419,7 +6419,7 @@
  {:vishvambari {:arohanam '(:s :r1 :g3 :m2 :p :d3 :n3 :s) :avarohanam '(:s :d3 :p :m2 :g3 :r1 :s)}}
  ]
 
-{:num 55 :name :shyaamaLaangi}
+{:num 55 :name :shyaamalaangi}
 [
  {:shyaamalam {:arohanam '(:s :r2 :g2 :m2 :p :d1 :n1 :s) :avarohanam '(:s :n1 :d1 :p :m2 :g2 :r2 :s)}}
  {:bangalagaula {:arohanam '(:s :r2 :m2 :p :m2 :d1 :n1 :s) :avarohanam '(:s :d1 :p :m2 :g2 :r2 :s)}}
@@ -6565,7 +6565,7 @@
  {:virahan {:arohanam '(:s :r2 :g2 :m2 :d1 :s) :avarohanam '(:s :d1 :m2 :g2 :r2 :s)}}
  ]
 
-{:num 57 :name :simhEndra}
+{:num 57 :name :simhendra}
 [
  {:sumadyuti {:arohanam '(:s :r2 :g2 :m2 :p :d1 :n3 :s) :avarohanam '(:s :n3 :d1 :p :m2 :g2 :r2 :s)}}
  {:adivarali {:arohanam '(:s :r2 :m2 :p :d1 :s) :avarohanam '(:s :n3 :d1 :p :m2 :r2 :m2 :g2 :s)}}
@@ -6677,7 +6677,7 @@
  {:yautakam {:arohanam '(:s :r2 :g2 :m2 :p :d1 :s) :avarohanam '(:s :n3 :p :g2 :r2 :s)}}
  ]
 
-{:num 58 :name :hEmaavati}
+{:num 58 :name :hemaavati}
 [
  {:deshisimhaaravam {:arohanam '(:s :r2 :g2 :m2 :p :d2 :n2 :s) :avarohanam '(:s :n2 :d2 :p :m2 :g2 :r2 :s)}}
  {:anakan {:arohanam '(:s :r2 :g2 :m2 :n2 :s) :avarohanam '(:s :n2 :d2 :p :m2 :g2 :r2 :s)}}
@@ -6935,7 +6935,7 @@
  {:vijayaratnakari {:arohanam '(:s :r2 :m2 :p :d3 :n3 :s) :avarohanam '(:s :n3 :d3 :p :m2 :g2 :s)}}
  ]
 
-{:num 61 :name :kaantaamaNi}
+{:num 61 :name :kaantaamani}
 [
  {:kuntalam {:arohanam '(:s :r2 :g3 :m2 :p :d1 :s) :avarohanam '(:s :n1 :d1 :p :m2 :g3 :r2 :s)}}
  {:bhamamani {:arohanam '(:s :r2 :m2 :g3 :d1 :n1 :s) :avarohanam '(:s :n1 :d1 :m2 :g3 :r2 :s)}}
@@ -7325,7 +7325,7 @@
  {:vilambhuri {:arohanam '(:s :r2 :g3 :p :d2 :s) :avarohanam '(:s :n2 :d2 :n2 :p :m2 :p :g3 :r2 :s)}}
  ]
 
-{:num 65 :name :mEcakalyaaNi}
+{:num 65 :name :mecakalyaani}
 [
  {:shaantakalyaani {:arohanam '(:s :r2 :g3 :m2 :p :d2 :n3 :s) :avarohanam '(:s :n3 :d2 :p :m2 :g3 :r2 :s)}}
  {:adikavimpiriyan {:arohanam '(:s :r2 :g3 :m2 :p :d2 :n3 :s) :avarohanam '(:s :n3 :p :m2 :g3 :r2 :s)}}
@@ -7618,7 +7618,7 @@
  {:vishvadhatri {:arohanam '(:s :g3 :r3 :m2 :d1 :n1 :s) :avarohanam '(:s :n1 :d1 :m2 :g3 :s)}}
  ]
 
-{:num 68 :name :jyOtiswaroopini}
+{:num 68 :name :jyotiswaroopini}
 [
  {:jyoti {:arohanam '(:s :r3 :g3 :m2 :p :d1 :n2 :s) :avarohanam '(:s :n2 :d1 :p :m2 :g3 :s)}}
  {:bhadravahini {:arohanam '(:s :r3 :m2 :p :d1 :n2 :s) :avarohanam '(:s :p :m2 :g3 :r3 :s)}}
@@ -7704,7 +7704,7 @@
  {:vardhini {:arohanam '(:s :r3 :g3 :m2 :p :m2 :n3 :d1 :s) :avarohanam '(:s :n3 :d1 :p :m2 :s :r3 :s)}}
  ]
 
-{:num 70 :name :naasikabhooshhaNi}
+{:num 70 :name :naasikabhooshhani}
 [
  {:naasaamani {:arohanam '(:s :r3 :g3 :m2 :p :d2 :n2 :s) :avarohanam '(:s :n3 :d2 :p :m2 :g3 :r3 :s)}}
  {:gaurisimanti {:arohanam '(:s :r3 :g3 :m2 :p :d2 :n2 :s) :avarohanam '(:s :n2 :d2 :p :m2 :g3 :s)}}
