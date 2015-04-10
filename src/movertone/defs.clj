@@ -6,6 +6,29 @@
 (defn read-file [filename]
   (-> filename io/resource slurp edn/read-string))
 
+(def shruthis
+  {:.a  57
+   :.a# 58
+   :.b  59
+   :c   60
+   :c#  61
+   :db  61
+   :d   62
+   :d#  63
+   :eb  63
+   :e   64
+   :f   65
+   :f#  66
+   :gb  66
+   :g   67
+   :g#  68
+   :ab  68
+   :a   69
+   :a#  70
+   :bb  70
+   :b   71
+   :c.  72})
+
 (def swarams->names
   {:s "Shadjamam"
    :r1 "Sudhdha Rishabam"

@@ -4,11 +4,14 @@
         [movertone.violin]
         [movertone.defs]))
 
-(def nome (metronome 180))
+(def nome (metronome 110))
+
+(def shruthi :.b)
 
 (defn play-swaram [swaram]
-  (let [n (swarams->notes swaram)]
-    (piano :note (+ 60 n) :decay 0.01)))
+  (let [tonic (shruthi shruthis)
+        n (swarams->notes swaram)]
+    (piano :note (+ tonic n) :decay 0.01)))
 
 (defn play-swarams [swarams]
   (when (seq swarams)
