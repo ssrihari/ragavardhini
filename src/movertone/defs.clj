@@ -41,10 +41,10 @@
    :n1 9
    :n2 10
    :n3 11
-   :s2 12})
+   :s. 12})
 
 (def arohanam
-  [:s :r :g :m :p :d :n :s2])
+  [:s :r :g :m :p :d :n :s.])
 
 (def avarohanam
   (reverse arohanam))
@@ -59,24 +59,3 @@
   (->> (read-file "ragas.edn")
        :melakarthas
        (m/map-vals scale->ragam)))
-
-;; get these ragas from a file
-(def shankarabharanam
-  {:s :s
-   :r :r2
-   :g :g3
-   :m :m1
-   :p :p
-   :d :d2
-   :n :n3
-   :s2 :s2})
-
-(def mayamalavagowlai
-  {:s :s
-   :r :r1
-   :g :g3
-   :m :m1
-   :p :p
-   :d :d1
-   :n :n3
-   :s2 :s2})
