@@ -9,17 +9,24 @@
             [movertone.defs :as d]))
 
 (def shruthi :c)
-(def tempo 90)
+(def tempo 120)
 (def jathi 4)
 
 (defn default-durations [num-swarams]
   (take num-swarams (repeatedly (constantly jathi))))
 
-(defn phrase [swarams durations]
-  (let [durations (or durations
-                      (default-durations (count swarams)))]
-    (melody/phrase (map #(/ % jathi) durations)
-                   swarams)))
+(defn simple-swarams->actual-swarams [ragam swarams]
+  (let [simples (d/simples->ragam ragam)]
+    (map simples swarams)))
+
+(defn phrase
+  ([ragam swarams durations speed]
+     (phrase (simple-phrase->actual-phrase ragam swarams) durations speed))
+  ([swarams durations speed]
+     (let [durations (or durations
+                         (default-durations (count swarams)))]
+       (melody/phrase (map #(/ % (* speed jathi)) durations)
+                      swarams))))
 
 (defn swaram->midi [swaram]
   (let [shadjam (shruthi d/shruthis)
@@ -39,3 +46,10 @@
 
 (defn play-arohanam-and-avarohanam [{:keys [arohanam avarohanam] :as ragam}]
   (play-phrase (phrase (concat arohanam avarohanam) nil)))
+
+(play-phrase
+ (concat
+  (phrase (:vasanta d/janyas)
+          [:s :g :m :d :n :s. :n :d :n :s.]
+          [ 2  4  2  4  2  6   2  2  2  2]
+          2)))

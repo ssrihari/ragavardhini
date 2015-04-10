@@ -112,3 +112,18 @@
        vals
        (apply concat)
        (into {})))
+
+(def simple-swaras
+  [:r :g :m :p :d :n])
+
+
+(defn find-matching-swara-in-ragam [sw unique-swarams-in-ragam]
+  (let [sw-name (name sw)]
+    [sw (first (filter #(.contains (name %) sw-name)
+                       unique-swarams-in-ragam))]))
+
+(defn simples->ragam [{:keys [arohanam avarohanam] :as ragam}]
+  (let [unique-swarams (set (concat arohanam avarohanam))]
+    (merge {:s :s :s. :s.}
+           (into {} (keep #(find-matching-swara-in-ragam % unique-swarams)
+                          simple-swaras)))))
