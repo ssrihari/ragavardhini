@@ -76,3 +76,9 @@
   (->> (read-file "ragas.edn")
        :melakarthas
        (m/map-vals melakartha-notes->ragam)))
+
+(def janyas
+  (->> (read-file "more-ragas.edn")
+       vals
+       (apply concat)
+       (into {})))
