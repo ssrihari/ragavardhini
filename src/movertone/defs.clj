@@ -30,7 +30,7 @@
    :c.  72})
 
 (def swarams->names
-  {:s "Shadjamam"
+  {:s  "Shadjamam"
    :r1 "Sudhdha Rishabam"
    :r2 "Chatusruthi Rishabam"
    :r3 "Shatsruthi Rishabam"
@@ -39,7 +39,7 @@
    :g3 "Anthara Gaandhaaram"
    :m1 "Sudhdha Madhyamam"
    :m2 "Prathi Madhyamam"
-   :p "Panchamam"
+   :p  "Panchamam"
    :d1 "Sudhdha Dhaivatham"
    :d2 "Chatusruthi Dhaivatham"
    :d3 "Shatsruthi Dhaivatham"

@@ -9,7 +9,7 @@
             [movertone.defs :as d]))
 
 (def shruthi :c)
-(def tempo 120)
+(def tempo 80)
 (def jathi 4)
 
 (defn default-durations [num-swarams]
