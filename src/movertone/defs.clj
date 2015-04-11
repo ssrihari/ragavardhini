@@ -65,47 +65,47 @@
    :n2 10
    :n3 11})
 
-(defn swaram->sthayi [position dots difference [swaram sthanam]]
-  (let [new-name (if (= :prefix position)
-                   (str dots (name swaram))
-                   (str (name swaram) dots))
-        new-sthanam (+ difference sthanam)]
-    {(keyword new-name) new-sthanam}))
+(def sthayis
+  {:anumandra {:position :before :dots ".." :difference -24}
+   :mandra    {:position :before :dots "."  :difference -12}
+   :madhya    {:position :none   :dots ""   :difference 0}
+   :thara     {:position :after  :dots "."  :difference 12}
+   :athithara {:position :after  :dots ".." :difference 24}})
 
-(defn ->sthayi [position dots difference]
+(defn swara-rep->sthayi [swaram {:keys [position dots]}]
+  (condp = position
+    :before
+    (->> swaram name (str dots) keyword)
+
+    :after
+    (-> swaram name (str dots) keyword)
+
+    :none
+    swaram))
+
+(defn swaram->sthayi [{:keys [position dots difference] :as sthayi} [swaram sthanam]]
+  (let [new-rep (swara-rep->sthayi swaram sthayi)
+        new-sthanam (+ difference sthanam)]
+    {new-rep new-sthanam}))
+
+(defn ->sthayi [sthayi]
   (->> madhya-sthayi
-       (map (partial swaram->sthayi position dots difference))
+       (map (partial swaram->sthayi sthayi))
        (into {})))
 
-(def anumandra-sthayi
-  (->sthayi :prefix ".." -24))
-
-(def mandra-sthayi
-  (->sthayi :prefix "." -12))
-
-(def thara-sthayi
-  (->sthayi :suffix "." 12))
-
-(def athithara-sthayi
-  (->sthayi :suffix ".." 24))
-
 (def swarams->notes
-  (merge anumandra-sthayi
-         mandra-sthayi
-         madhya-sthayi
-         thara-sthayi
-         athithara-sthayi))
+  (apply merge (map #(->sthayi %) (vals sthayis))))
 
 (defn raga [{:keys [arohanam avarohanam] :as scale}]
   (zipmap arohanam scale))
 
-(defn melakartha-notes->ragam [notes]
-  {:arohanam notes :avarohanam (reverse notes)})
+(defn melakartha-swarams->ragam [swarams]
+  {:arohanam swarams :avarohanam (reverse swarams)})
 
 (def melakarthas
   (->> (read-file "ragas.edn")
        :melakarthas
-       (m/map-vals melakartha-notes->ragam)))
+       (m/map-vals melakartha-swarams->ragam)))
 
 (def janyas
   (->> (read-file "more-ragas.edn")
@@ -113,17 +113,32 @@
        (apply concat)
        (into {})))
 
-(def simple-swaras
-  [:r :g :m :p :d :n])
+(def simple-swarams
+  [:s :r :g :m :p :d :n])
 
+(defn madhya-swarams-in-ragam [{:keys [arohanam avarohanam]}]
+  (let [swarams (concat arohanam avarohanam)]
+    (->> swarams
+         (remove #(.contains (name %) "."))
+         set)))
 
-(defn find-matching-swara-in-ragam [sw unique-swarams-in-ragam]
-  (let [sw-name (name sw)]
-    [sw (first (filter #(.contains (name %) sw-name)
-                       unique-swarams-in-ragam))]))
+(defn simple-swaram->actual-swaram [simple-swaram madhya-swarams]
+  (first
+   (filter #(.contains (name %) (name simple-swaram))
+           madhya-swarams)))
 
-(defn simples->ragam [{:keys [arohanam avarohanam] :as ragam}]
-  (let [unique-swarams (set (concat arohanam avarohanam))]
-    (merge {:s :s :s. :s.}
-           (into {} (keep #(find-matching-swara-in-ragam % unique-swarams)
-                          simple-swaras)))))
+(defn simple-swarams->actual-swarams [{:keys [arohanam avarohanam] :as ragam}]
+  (let [madhya-swarams (madhya-swarams-in-ragam ragam)]
+    (into {}
+          (keep (fn [simple-swaram]
+                  (when-let [actual-swaram
+                             (simple-swaram->actual-swaram simple-swaram madhya-swarams)]
+                    [simple-swaram actual-swaram]))
+                simple-swarams))))
+
+(defn get-simple-swaram-mappings [ragam]
+  (into {}
+        (for [[sim act] (simple-swarams->actual-swarams ragam)
+              sthayi (vals sthayis)]
+          [(swara-rep->sthayi sim sthayi)
+           (swara-rep->sthayi act sthayi)])))

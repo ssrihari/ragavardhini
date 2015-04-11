@@ -15,8 +15,8 @@
 (defn default-durations [num-swarams]
   (take num-swarams (repeatedly (constantly jathi))))
 
-(defn simple-swarams->actual-swarams [ragam swarams]
-  (let [simples (d/simples->ragam ragam)]
+(defn simple-phrase->actual-phrase [ragam swarams]
+  (let [simples (d/get-simple-swaram-mappings ragam)]
     (map simples swarams)))
 
 (defn phrase
@@ -47,9 +47,25 @@
 (defn play-arohanam-and-avarohanam [{:keys [arohanam avarohanam] :as ragam}]
   (play-phrase (phrase (concat arohanam avarohanam) nil)))
 
-(play-phrase
- (concat
-  (phrase (:vasanta d/janyas)
-          [:s :g :m :d :n :s. :n :d :n :s.]
-          [ 2  4  2  4  2  6   2  2  2  2]
-          2)))
+(defn string->phrase [ragam s]
+  (let [swaram "[.]*[A-z][.]*"
+        swaram-with-duration (str swaram "[,]*")
+        split-seq (re-seq (re-pattern swaram-with-duration) s)
+        swarams (map #(keyword (re-find (re-pattern swaram) %)) split-seq)
+        durations (map #(count (str/replace % #"\." "")) split-seq)]
+    (phrase ragam swarams durations 1)))
+
+(defn play-string [raga string]
+  (play-phrase
+   (string->phrase raga string)))
+
+(comment
+  (play-string (:bilahari d/janyas)
+               "s,,r g,p, d,s., n,d, p,dp mgrs rs .n .d s,,,
+                s,,r g,p, m,,g p,d, r.,,s. n,d, p,,m g,r,")
+
+  (play-phrase
+   (phrase (:mechakalyani d/melakarthas)
+           [:m :d :n :g :m :d :r :g :m  :g :m :d :n :s.]
+           [ 1  1  2  1  1  2  1  1  4   1  1  1  1  4]
+           2)))
