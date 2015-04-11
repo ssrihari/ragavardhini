@@ -1,5 +1,7 @@
 (ns movertone.core
-  (:require [overtone.live :as olive]
+  (:require [clojure.java.io :as io]
+            [clojure.string :as s]
+            [overtone.live :as olive]
             [overtone.inst.piano :as piano]
             [movertone.violin :as violin]
             [movertone.beep :as beep]
@@ -59,10 +61,15 @@
   (play-phrase
    (string->phrase raga string)))
 
+(defn play-file [raga filename]
+  (play-string raga
+               (-> filename io/resource slurp (s/replace #"\n" ""))))
+
 (comment
 
   (:ragavardhini d/melakarthas)
-   > {:arohanam [:s :r3 :g3 :m1 :p :d1 :n2 :s.], :avarohanam (:s. :n2 :d1 :p :m1 :g3 :r3 :s)}
+  > {:arohanam [:s :r3 :g3 :m1 :p :d1 :n2 :s.],
+     :avarohanam (:s. :n2 :d1 :p :m1 :g3 :r3 :s)}
 
   (play-arohanam-and-avarohanam (:hanumatodi d/melakarthas))
 
@@ -80,4 +87,7 @@
 
   (play-string (:bilahari d/janyas)
                "s,,r g,p, d,s., n,d, p,dp mgrs rs .n .d s,,,
-                s,,r g,p, m,,g p,d, r.,,s. n,d, p,,m g,r,"))
+                s,,r g,p, m,,g p,d, r.,,s. n,d, p,,m g,r,")
+
+  (play-file (:mohana d/janyas)
+             "mohana-varnam.txt"))

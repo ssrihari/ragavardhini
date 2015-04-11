@@ -26,6 +26,9 @@ Not sure what this is meant to do yet.
   (play-string (:bilahari d/janyas)
                "s,,r g,p, d,s., n,d, p,dp mgrs rs .n .d s,,,
                 s,,r g,p, m,,g p,d, r.,,s. n,d, p,,m g,r,")
+
+  (play-file (:mohana d/janyas)
+             "mohana-varnam.txt")
 ```
 
 ## License
