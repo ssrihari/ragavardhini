@@ -54,7 +54,7 @@
         swaram-with-duration (str swaram "[,]*")
         split-seq (re-seq (re-pattern swaram-with-duration) s)
         swarams (map #(keyword (re-find (re-pattern swaram) %)) split-seq)
-        durations (map #(count (str/replace % #"\." "")) split-seq)]
+        durations (map #(count (s/replace % #"\." "")) split-seq)]
     (phrase ragam swarams durations 1)))
 
 (defn play-string [raga string]
@@ -90,4 +90,4 @@
                 s,,r g,p, m,,g p,d, r.,,s. n,d, p,,m g,r,")
 
   (play-file (:mohana d/janyas)
-             "mohana-varnam.txt"))
+             "input-files/mohana-varnam.txt"))

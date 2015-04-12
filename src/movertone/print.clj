@@ -4,27 +4,35 @@
   (:require [movertone.defs :as d]
             [clojure.string :as s]))
 
-(defn ->printable [swarams]
+(defn ->printable [swarams & {:keys [bold?]}]
   (s/join ", " (map name swarams)))
 
-(defn html-rows [ragams]
-  (map-indexed (fn [i [rname {:keys [arohanam avarohanam]}]]
-                 [:tr
-                  [:td i]
-                  [:td (name rname)]
-                  [:td (->printable arohanam)]
-                  [:td (->printable avarohanam)]])
-               ragams))
+(defn html-row [cell-type i ragam]
+  (let [[ragam-name {:keys [arohanam avarohanam]}] (first ragam)]
+    [:tr
+     [cell-type i]
+     [cell-type (name ragam-name)]
+     [cell-type (->printable arohanam)]
+     [cell-type (->printable avarohanam)]]))
 
-(defn write-html [filename ragas]
-  (let [raga-rows (html-rows ragas)]
-    (spit filename (html5
-                    [:style "th {text-align: left;}"]
-                    [:table
-                     [:thead
-                      [:tr [:th "No."] [:th "Name"] [:th "Arohanam"] [:th "Avarohanam"]]]
-                     [:tbody
-                      raga-rows]]))))
+(defn melakartha+janya-rows [[{:keys [num name]} janya-ragams]]
+  (let [janya-ragams (sort-by #(first (keys %)) janya-ragams)]
+    (cons
+     (html-row :th num {name nil})
+     (map (partial html-row :td) (range) janya-ragams))))
+
+(defn html-rows []
+  (mapcat melakartha+janya-rows
+          (sort-by #(-> % first :num) d/janyas-of-melakarthas)))
+
+(defn write-html [filename]
+  (spit filename (html5
+                  [:style "th {text-align: left;}"]
+                  [:table
+                   [:thead
+                    [:tr [:th "No."] [:th "Name"] [:th "Arohanam"] [:th "Avarohanam"]]]
+                   [:tbody
+                    (html-rows)]])))
 
 (defn markdown-rows [ragams]
   (map-indexed (fn [i [rname {:keys [arohanam avarohanam]}]]
@@ -41,5 +49,5 @@
     (spit filename (s/join "\n" (concat [header line] raga-rows)))))
 
 (comment
-  (write-html "ragas.html" (concat d/janyas d/melakarthas))
-  (write-markdown "ragas.md" (concat d/janyas d/melakarthas)))
+  (write-html "ragas/ragas-with-melas.html")
+  (write-markdown "ragas/ragas.md" (concat d/janyas d/melakarthas)))
