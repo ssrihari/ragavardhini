@@ -5,29 +5,61 @@
             [clojure.string :as s]))
 
 (defn ->printable [swarams & {:keys [bold?]}]
-  (s/join ", " (map name swarams)))
+  (s/join ", " (map (comp s/capitalize name) swarams)))
 
-(defn html-row [cell-type i ragam]
+(defn row [mela? ragam]
   (let [[ragam-name {:keys [arohanam avarohanam]}] (first ragam)]
-    [:tr
-     [cell-type i]
-     [cell-type (name ragam-name)]
-     [cell-type (->printable arohanam)]
-     [cell-type (->printable avarohanam)]]))
+    [mela?
+     (s/capitalize (name ragam-name))
+     (->printable arohanam)
+     (->printable avarohanam)]))
 
 (defn melakartha+janya-rows [[{:keys [num name]} janya-ragams]]
   (let [janya-ragams (sort-by #(first (keys %)) janya-ragams)]
     (cons
-     (html-row :th num {name nil})
-     (map (partial html-row :td) (range) janya-ragams))))
+     (row true {name nil})
+     (map (partial row false) janya-ragams))))
+
+(defn rows []
+  (->> d/janyas-of-melakarthas
+       (sort-by #(-> % first :num))
+       (mapcat melakartha+janya-rows)))
 
 (defn html-rows []
-  (mapcat melakartha+janya-rows
-          (sort-by #(-> % first :num) d/janyas-of-melakarthas)))
+  (map-indexed (fn [i [mela? :as row]]
+                 (let [class (if mela? "mela" "janya")
+                       row-i (assoc row 0 i)
+                       html-row (map (fn [c] [:td c]) row-i)]
+                   [:tr {:class class} html-row]))
+               (rows)))
+
+(def css
+  "table {
+  color: #333;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  border-collapse: collapse; border-spacing: 0;
+  }
+
+  td, th { text-align:left;
+  border: 1px solid #CCC;
+  height: 22px;
+  padding: 0 20px 0;
+  } /* Make cells a bit taller */
+
+  th {
+  font-weight: bold;
+  }
+
+  .mela {
+  font-weight: bold;
+  background: #F1F1F1;
+  }
+")
 
 (defn write-html [filename]
   (spit filename (html5
-                  [:style "th {text-align: left;}"]
+                  [:style css]
                   [:table
                    [:thead
                     [:tr [:th "No."] [:th "Name"] [:th "Arohanam"] [:th "Avarohanam"]]]
@@ -49,5 +81,5 @@
     (spit filename (s/join "\n" (concat [header line] raga-rows)))))
 
 (comment
-  (write-html "ragas/ragas-with-melas.html")
+  (write-html "ragas/ragas.html")
   (write-markdown "ragas/ragas.md" (concat d/janyas d/melakarthas)))
