@@ -11,7 +11,7 @@ ds.r.s., dpd s.d,p grsr
 
 g,rg rsr, srsg rgsr
 s .dsr grgp gpd, p,,,
-gpdp ds.r.g. r.,g.s. ,r.d,
+gpdp ds.r.g. r.,g.s., r.d,
 s.p,d s.r.g.s., dp, grsr
 
 g,g, gpgr rgpg p,,,
@@ -27,6 +27,6 @@ p,dd p,gr s,rg r,s .d
 s,rg p,d, s.s.,d p,gr
 
 s.,r.g. r.s.r.s. ds.dp grsr
-s,,, ,,ss rrgg ppdd
+s,,,,, ss rrgg ppdd
 s.r.g.r. g.r.ds. r.s.r.s. pds.d
 s.dgp dpdp r.s.dp grsr
