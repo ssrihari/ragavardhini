@@ -14,14 +14,15 @@
      (->printable arohanam)
      (->printable avarohanam)]))
 
-(defn melakartha+janya-rows [[{:keys [num name]} janya-ragams]]
-  (let [janya-ragams (sort-by #(first (keys %)) janya-ragams)]
+(defn melakartha+janya-rows [[{:keys [num name] :as mela-ragam} janya-ragams]]
+  (prn mela-ragam)
+  (let [janya-ragams (sort-by #(first %) janya-ragams)]
     (cons
-     (row true {name nil})
-     (map (partial row false) janya-ragams))))
+     (row true {name mela-ragam})
+     (map #(row false (into {} [%])) janya-ragams))))
 
 (defn rows []
-  (->> d/janyas-of-melakarthas
+  (->> d/janyams-by-melakarthas
        (sort-by #(-> % first :num))
        (mapcat melakartha+janya-rows)))
 
