@@ -1,10 +1,15 @@
 (ns movertone.defs
   (:require [clojure.edn :as edn]
             [clojure.java.io :as io]
-            [medley.core :as m]))
+            [medley.core :as m]
+            [clojure.pprint :as pp]))
 
 (defn read-file [filename]
   (-> filename io/resource slurp edn/read-string))
+
+(defn write-file [filename data]
+  (spit (-> filename io/resource)
+        (-> data pp/pprint with-out-str)))
 
 (def shruthis
   {:.a  57
@@ -99,22 +104,26 @@
 (defn raga [{:keys [arohanam avarohanam] :as scale}]
   (zipmap arohanam scale))
 
-(defn melakartha-swarams->ragam [swarams]
-  {:arohanam swarams :avarohanam (reverse swarams)})
+(def janyams-by-melakarthas
+  (read-file "ragas.edn"))
+
+(defn name->melakartha [{:keys [name] :as melakartha}]
+  [name melakartha])
 
 (def melakarthas
-  (->> (read-file "ragas.edn")
-       :melakarthas
-       (m/map-vals melakartha-swarams->ragam)))
+  (->> janyams-by-melakarthas
+       keys
+       (map name->melakartha)
+       (into {})))
 
-(def janyas-of-melakarthas
-  (read-file "more-ragas.edn"))
-
-(def janyas
-  (->> janyas-of-melakarthas
+(def janyams
+  (->> janyams-by-melakarthas
        vals
        (apply concat)
        (into {})))
+
+(def ragams
+  (merge melakarthas janyams))
 
 (def simple-swarams
   [:s :r :g :m :p :d :n])

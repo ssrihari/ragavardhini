@@ -47,7 +47,7 @@
        llive/play))
 
 (defn play-arohanam-and-avarohanam [{:keys [arohanam avarohanam] :as ragam}]
-  (play-phrase (phrase (concat arohanam avarohanam) nil 1)))
+  (play-phrase (phrase (concat arohanam avarohanam) nil 3)))
 
 (defn string->phrase [ragam s]
   (let [swaram "[.]*[A-z][.]*"
@@ -67,27 +67,27 @@
 
 (comment
 
-  (:ragavardhini d/melakarthas)
+  (:ragavardhini d/ragams)
   > {:arohanam [:s :r3 :g3 :m1 :p :d1 :n2 :s.],
      :avarohanam (:s. :n2 :d1 :p :m1 :g3 :r3 :s)}
 
-  (play-arohanam-and-avarohanam (:hanumatodi d/melakarthas))
+  (play-arohanam-and-avarohanam (:hanumatodi d/ragams))
 
-  (play-arohanam-and-avarohanam (:vasanta d/janyas))
+  (play-arohanam-and-avarohanam (:vasanta d/ragams))
 
   (play-phrase (phrase [:s :r2 :g3 :p :m1 :g3 :r2 :s]
                        [ 1   1  1  1   1   1   2   4]
                        1))
 
   (play-phrase
-   (phrase (:mechakalyani d/melakarthas)
+   (phrase (:mechakalyani d/ragams)
            [:m :d :n :g :m :d :r :g :m  :g :m :d :n :s.]
            [ 1  1  2  1  1  2  1  1  4   1  1  1  1  4]
            2))
 
-  (play-string (:bilahari d/janyas)
+  (play-string (:bilahari d/ragams)
                "s,,r g,p, d,s., n,d, p,dp mgrs rs .n .d s,,,
                 s,,r g,p, m,,g p,d, r.,,s. n,d, p,,m g,r,")
 
-  (play-file (:mohana d/janyas)
+  (play-file (:mohana d/ragams)
              "input-files/mohana-varnam.txt"))
