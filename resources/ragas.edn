@@ -1564,9 +1564,6 @@
   :sharutti
   {:arohanam (:s :r2 :g2 :p :n3 :s.),
    :avarohanam (:s. :d2 :m1 :g2 :s)},
-  :s
-  {:arohanam (:r2 :g1 :g2 :s :r2 :m1 :m1 :p :d2 :d2 :s.),
-   :avarohanam (:s. :n3 :d2 :p :m1 :g1 :g2 :r2 :s)},
   :shuddhamanohari
   {:arohanam (:s :r2 :m1 :p :n3 :s.),
    :avarohanam (:s. :n3 :d2 :p :m1 :g2 :r2 :s)},
@@ -1887,9 +1884,6 @@
   :madhulika
   {:arohanam (:s :r2 :m1 :p :d1 :n2 :s.),
    :avarohanam (:s. :n2 :d1 :p :m1 :r2 :s)},
-  :s
-  {:arohanam (:r2 :g3 :p :d1 :n2 :d1 :p :d1 :s.),
-   :avarohanam (:s. :d1 :p :g3 :r2 :s :g3 :m1 :r2 :g3 :s)},
   :shivamanohari
   {:arohanam (:s :m1), :avarohanam (:s. :n2 :d1 :p :m1 :g3 :r2 :s)},
   :tiruccintiyam
@@ -10074,10 +10068,7 @@
    :avarohanam (:s. :n1 :d1 :p :r2 :s)},
   :jhankaradhvani
   {:arohanam (:s :r2 :g2 :m1 :p :d1 :n1 :s.),
-   :avarohanam (:s. :n1 :d1 :p :m1 :g2 :r2 :s)},
-  :s
-  {:arohanam (:r2 :g2 :m1 :p :d1 :n1 :d1 :s.),
-   :avarohanam (:d1 :n1 :d1 :p :m1 :g2 :r2 :s)}},
+   :avarohanam (:s. :n1 :d1 :p :m1 :g2 :r2 :s)}},
  {:name :latangi,
   :num 63,
   :arohanam [:s :r2 :g3 :m2 :p :d1 :n3 :s.],
