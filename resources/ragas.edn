@@ -11717,7 +11717,7 @@
    :avarohanam (:s. :n2 :d2 :p :m1 :g3 :r2 :s)},
   :mohana
   {:arohanam (:s :r2 :g3 :p :d2 :s.),
-   :avarohanam (:s. :d2 :r2 :g3 :r2 :s)},
+   :avarohanam (:s. :d2 :p :g3 :r2 :s)},
   :bahurupi
   {:arohanam (:s :g3 :m1 :d2 :p :d2 :n2 :s.),
    :avarohanam (:s. :n2 :p :m1 :g3 :s)},
