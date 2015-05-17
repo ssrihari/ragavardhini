@@ -7,5 +7,5 @@
                  [overtone "0.9.1"]
                  [leipzig "0.8.1"]
                  [medley "0.5.5"]
-                 [hiccup "1.0.5"]
-                 [cider/cider-nrepl "0.8.2"]])
+                 [hiccup "1.0.5"]]
+  :plugins [[cider/cider-nrepl "0.8.2"]])
