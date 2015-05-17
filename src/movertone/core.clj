@@ -14,6 +14,9 @@
 (def shruthi :c)
 (def tempo 80)
 (def jathi 4)
+(def kalams {:lower  1
+             :middle 2
+             :higher 3})
 
 (defn default-durations [num-swarams]
   (take num-swarams (repeatedly (constantly jathi))))
@@ -43,7 +46,7 @@
        llive/play))
 
 (defn play-arohanam-and-avarohanam [{:keys [arohanam avarohanam] :as ragam}]
-  (play-phrase (phrase (concat arohanam avarohanam) nil 2)))
+  (play-phrase (phrase (concat arohanam avarohanam) nil (:middle kalams))))
 
 (defn string->phrase [ragam s]
   (let [swaram "[.]*[A-z][.]*"
@@ -51,7 +54,7 @@
         split-seq (re-seq (re-pattern swaram-with-duration) s)
         swarams (map #(keyword (re-find (re-pattern swaram) %)) split-seq)
         durations (map #(count (s/replace % #"\." "")) split-seq)]
-    (phrase ragam swarams durations 1)))
+    (phrase ragam swarams durations (:middle kalams))))
 
 (defn play-string [raga string]
   (play-phrase
@@ -73,13 +76,13 @@
 
   (play-phrase (phrase [:s :r2 :g3 :p :m1 :g3 :r2 :s]
                        [ 1   1  1  1   1   1   2   4]
-                       1))
+                       (:lower kalams)))
 
   (play-phrase
    (phrase (:mechakalyani r/ragams)
            [:m :d :n :g :m :d :r :g :m  :g :m :d :n :s.]
            [ 1  1  2  1  1  2  1  1  4   1  1  1  1  4]
-           2))
+           (:middle kalams)))
 
   (play-string (:bilahari r/ragams)
                "s,,r g,p, d,s., n,d, p,dp mgrs rs .n .d s,,,
