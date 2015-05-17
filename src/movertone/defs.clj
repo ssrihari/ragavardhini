@@ -116,14 +116,28 @@
        (map name->melakartha)
        (into {})))
 
+(defn deduplicate-by-priority [old-val new-val]
+  (if (< (:alt-priority old-val 0)
+         (:alt-priority new-val 1))
+    old-val
+    new-val))
+
 (def janyams
   (->> janyams-by-melakarthas
        vals
-       (apply concat)
-       (into {})))
+       (apply merge-with deduplicate-by-priority)))
 
 (def ragams
   (merge melakarthas janyams))
+
+(defn ragams-with-duplicates []
+  (->> janyams-by-melakarthas
+       vals
+       (apply concat)
+       (group-by first)
+       (m/map-vals count)
+       (filter #(> (second %) 1))
+       (sort-by second )))
 
 (def simple-swarams
   [:s :r :g :m :p :d :n])
