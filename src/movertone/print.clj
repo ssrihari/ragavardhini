@@ -1,7 +1,7 @@
 (ns movertone.print
   (:use [hiccup.core]
         [hiccup.page])
-  (:require [movertone.defs :as d]
+  (:require [movertone.swarams :as d]
             [clojure.string :as s]))
 
 (defn ->printable [swarams & {:keys [bold?]}]

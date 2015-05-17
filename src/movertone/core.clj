@@ -8,7 +8,8 @@
             [leipzig.live :as llive]
             [leipzig.scale :as scale]
             [leipzig.melody :as melody]
-            [movertone.defs :as d]))
+            [movertone.swarams :as sw]
+            [movertone.ragams :as r]))
 
 (def shruthi :c)
 (def tempo 80)
@@ -18,7 +19,7 @@
   (take num-swarams (repeatedly (constantly jathi))))
 
 (defn simple-phrase->actual-phrase [ragam swarams]
-  (let [simples (d/get-simple-swaram-mappings ragam)]
+  (let [simples (sw/get-simple-swaram-mappings ragam)]
     (map simples swarams)))
 
 (defn phrase
@@ -30,11 +31,6 @@
        (melody/phrase (map #(/ % (* speed jathi)) durations)
                       swarams))))
 
-(defn swaram->midi [swaram]
-  (let [shadjam (shruthi d/shruthis)
-        swara-sthanam (d/swarams->notes swaram)]
-    (+ shadjam swara-sthanam)))
-
 (defmethod llive/play-note :default [{midi :pitch seconds :duration}]
   (let [freq (olive/midi->hz midi)]
     (beep/beep freq seconds)))
@@ -43,11 +39,11 @@
   (->> phrase
        (melody/where :time (melody/bpm tempo))
        (melody/where :duration (melody/bpm tempo))
-       (melody/where :pitch swaram->midi)
+       (melody/where :pitch (partial sw/swaram->midi shruthi))
        llive/play))
 
 (defn play-arohanam-and-avarohanam [{:keys [arohanam avarohanam] :as ragam}]
-  (play-phrase (phrase (concat arohanam avarohanam) nil 3)))
+  (play-phrase (phrase (concat arohanam avarohanam) nil 2)))
 
 (defn string->phrase [ragam s]
   (let [swaram "[.]*[A-z][.]*"
@@ -67,27 +63,27 @@
 
 (comment
 
-  (:ragavardhini d/ragams)
+  (:ragavardhini r/ragams)
   > {:arohanam [:s :r3 :g3 :m1 :p :d1 :n2 :s.],
      :avarohanam (:s. :n2 :d1 :p :m1 :g3 :r3 :s)}
 
-  (play-arohanam-and-avarohanam (:hanumatodi d/ragams))
+  (play-arohanam-and-avarohanam (:hanumatodi r/ragams))
 
-  (play-arohanam-and-avarohanam (:vasanta d/ragams))
+  (play-arohanam-and-avarohanam (:vasanta r/ragams))
 
   (play-phrase (phrase [:s :r2 :g3 :p :m1 :g3 :r2 :s]
                        [ 1   1  1  1   1   1   2   4]
                        1))
 
   (play-phrase
-   (phrase (:mechakalyani d/ragams)
+   (phrase (:mechakalyani r/ragams)
            [:m :d :n :g :m :d :r :g :m  :g :m :d :n :s.]
            [ 1  1  2  1  1  2  1  1  4   1  1  1  1  4]
            2))
 
-  (play-string (:bilahari d/ragams)
+  (play-string (:bilahari r/ragams)
                "s,,r g,p, d,s., n,d, p,dp mgrs rs .n .d s,,,
                 s,,r g,p, m,,g p,d, r.,,s. n,d, p,,m g,r,")
 
-  (play-file (:mohana d/ragams)
+  (play-file (:mohana r/ragams)
              "input-files/mohana-varnam.txt"))

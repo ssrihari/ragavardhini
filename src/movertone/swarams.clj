@@ -1,38 +1,10 @@
-(ns movertone.defs
-  (:require [clojure.edn :as edn]
-            [clojure.java.io :as io]
-            [medley.core :as m]
-            [clojure.pprint :as pp]))
-
-(defn read-file [filename]
-  (-> filename io/resource slurp edn/read-string))
-
-(defn write-file [filename data]
-  (spit (-> filename io/resource)
-        (-> data pp/pprint with-out-str)))
+(ns ^{:doc "Constants related to swara-sthanams"}
+    movertone.swarams)
 
 (def shruthis
-  {:.a  57
-   :.a# 58
-   :.b  59
-   :c   60
-   :c#  61
-   :db  61
-   :d   62
-   :d#  63
-   :eb  63
-   :e   64
-   :f   65
-   :f#  66
-   :gb  66
-   :g   67
-   :g#  68
-   :ab  68
-   :a   69
-   :a#  70
-   :bb  70
-   :b   71
-   :c.  72})
+  {:.a  57 :.a# 58 :.b  59 :c   60 :c#  61 :db  61 :d   62
+   :d#  63 :eb  63 :e   64 :f   65 :f#  66 :gb  66 :g   67
+   :g#  68 :ab  68 :a   69 :a#  70 :bb  70 :b   71 :c.  72})
 
 (def swarams->names
   {:s  "Shadjamam"
@@ -52,23 +24,15 @@
    :n2 "Kaisika Nishaadham"
    :n3 "Kaakali Nishaadham"})
 
-(def madhya-sthayi
+(def madhya-sthayi-sthanams
   {:s 0
-   :r1 1
-   :r2 2
-   :r3 3
-   :g1 2
-   :g2 3
-   :g3 4
-   :m1 5
-   :m2 6
+   :r1 1 :r2 2 :r3 3
+   :g1 2 :g2 3 :g3 4
+   :m1 5 :m2 6
    :p 7
-   :d1 8
-   :d2 9
+   :d1 8 :d2 9
    :d3 10
-   :n1 9
-   :n2 10
-   :n3 11})
+   :n1 9 :n2 10 :n3 11})
 
 (def sthayis
   {:anumandra {:position :before :dots ".." :difference -24}
@@ -76,6 +40,9 @@
    :madhya    {:position :none   :dots ""   :difference 0}
    :thara     {:position :after  :dots "."  :difference 12}
    :athithara {:position :after  :dots ".." :difference 24}})
+
+(def simple-swarams
+  [:s :r :g :m :p :d :n])
 
 (defn swara-rep->sthayi [swaram {:keys [position dots]}]
   (condp = position
@@ -94,53 +61,17 @@
     {new-rep new-sthanam}))
 
 (defn ->sthayi [sthayi]
-  (->> madhya-sthayi
+  (->> madhya-sthayi-sthanams
        (map (partial swaram->sthayi sthayi))
        (into {})))
 
 (def swarams->notes
   (apply merge (map #(->sthayi %) (vals sthayis))))
 
-(defn raga [{:keys [arohanam avarohanam] :as scale}]
-  (zipmap arohanam scale))
-
-(def janyams-by-melakarthas
-  (read-file "ragas.edn"))
-
-(defn name->melakartha [{:keys [name] :as melakartha}]
-  [name melakartha])
-
-(def melakarthas
-  (->> janyams-by-melakarthas
-       keys
-       (map name->melakartha)
-       (into {})))
-
-(defn deduplicate-by-priority [old-val new-val]
-  (if (< (:alt-priority old-val 0)
-         (:alt-priority new-val 1))
-    old-val
-    new-val))
-
-(def janyams
-  (->> janyams-by-melakarthas
-       vals
-       (apply merge-with deduplicate-by-priority)))
-
-(def ragams
-  (merge melakarthas janyams))
-
-(defn ragams-with-duplicates []
-  (->> janyams-by-melakarthas
-       vals
-       (apply concat)
-       (group-by first)
-       (m/map-vals count)
-       (filter #(> (second %) 1))
-       (sort-by second )))
-
-(def simple-swarams
-  [:s :r :g :m :p :d :n])
+(defn swaram->midi [shruthi swaram]
+  (let [shadjam (shruthi shruthis)
+        swara-sthanam (swarams->notes swaram)]
+    (+ shadjam swara-sthanam)))
 
 (defn madhya-swarams-in-ragam [{:keys [arohanam avarohanam]}]
   (let [swarams (concat arohanam avarohanam)]
