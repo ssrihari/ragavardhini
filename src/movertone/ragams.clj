@@ -2,8 +2,8 @@
   movertone.ragams
   (:require [clojure.edn :as edn]
             [clojure.java.io :as io]
-            [medley.core :as m]
-            [clojure.pprint :as pp]))
+            [clojure.pprint :as pp]
+            [medley.core :as m]))
 
 (defn read-file [filename]
   (-> filename io/resource slurp edn/read-string))
@@ -27,6 +27,16 @@
 (def janyams-by-melakarthas
   (read-file ragas-file))
 
+(defn assoc-mela-number [mela [janyam-name janyam-info]]
+  [janyam-name (assoc janyam-info
+                 :name janyam-name
+                 :parent-mela-name (:name mela)
+                 :parent-mela-num (:num mela))])
+
+(defn assoc-mela-numbers [[mela janyams]]
+  [mela (into {} (map (partial assoc-mela-number mela)
+                      janyams))])
+
 (def melakarthas
   (->> janyams-by-melakarthas
        keys
@@ -35,11 +45,13 @@
 
 (def janyams
   (->> janyams-by-melakarthas
+       (map assoc-mela-numbers)
+       (into {})
        vals
        (apply merge-with deduplicate-by-priority)))
 
 (def ragams
-  (merge melakarthas janyams))
+  (merge janyams melakarthas))
 
 (defn ragams-with-duplicates []
   (->> janyams-by-melakarthas
