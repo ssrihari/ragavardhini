@@ -1,0 +1,6 @@
+#!/bin/sh
+
+from=`dirname $0`
+root=`cd ${from}/..; pwd`
+
+java -cp $(cat ${from}/lein-classpath) clojure.main ${root}/src/movertone/main.clj

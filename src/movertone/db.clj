@@ -1,6 +1,5 @@
 (ns movertone.db
-  (:require [movertone.ragams :as r]
-            [clojure.string :as str]
+  (:require [clojure.string :as str]
             [clojure.java.jdbc :as j]))
 
 (defn ragam->csv [[raga-name {:keys [num parent-mela-num arohanam avarohanam]}]]
@@ -11,8 +10,8 @@
                       parent-mela-num])
        "\n"))
 
-(defn ragams->csv []
-  (->> r/ragams
+(defn ragams->csv [ragams]
+  (->> ragams
        (mapv ragam->csv)
        (apply str)
        (spit "ragams.psv")))

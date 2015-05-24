@@ -2,6 +2,7 @@
   (:use [hiccup.core]
         [hiccup.page])
   (:require [movertone.swarams :as d]
+            [movertone.ragams :as r]
             [clojure.string :as s]))
 
 (defn ->printable [swarams & {:keys [bold?]}]
@@ -22,17 +23,24 @@
      (map #(row false (into {} [%])) janya-ragams))))
 
 (defn rows []
-  (->> d/janyams-by-melakarthas
+  (->> r/janyams-by-melakarthas
        (sort-by #(-> % first :num))
        (mapcat melakartha+janya-rows)))
 
-(defn html-rows []
-  (map-indexed (fn [i [mela? :as row]]
-                 (let [class (if mela? "mela" "janya")
-                       row-i (assoc row 0 i)
-                       html-row (map (fn [c] [:td c]) row-i)]
-                   [:tr {:class class} html-row]))
-               (rows)))
+(defn melakartha-rows []
+  (->> r/melakarthas
+       (sort-by #(-> % second :num))
+       (map #(row false [%]))))
+
+(defn html-rows
+  ([] (html-rows (rows)))
+  ([rows]
+     (map-indexed (fn [i [mela? :as row]]
+                    (let [class (if mela? "mela" "janya")
+                          row-i (assoc row 0 i)
+                          html-row (map (fn [c] [:td c]) row-i)]
+                      [:tr {:class class} html-row]))
+                  rows)))
 
 (def css
   "table {
@@ -58,14 +66,17 @@
   }
 ")
 
+(defn make-html [rows]
+  (html5
+   [:style css]
+   [:table
+    [:thead
+     [:tr [:th "No."] [:th "Name"] [:th "Arohanam"] [:th "Avarohanam"]]]
+    [:tbody
+     rows]]))
+
 (defn write-html [filename]
-  (spit filename (html5
-                  [:style css]
-                  [:table
-                   [:thead
-                    [:tr [:th "No."] [:th "Name"] [:th "Arohanam"] [:th "Avarohanam"]]]
-                   [:tbody
-                    (html-rows)]])))
+  (spit filename (make-html (html-rows))))
 
 (defn markdown-rows [ragams]
   (map-indexed (fn [i [rname {:keys [arohanam avarohanam]}]]
