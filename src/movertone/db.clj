@@ -22,11 +22,13 @@
               :password ""})
 
 (defn search [ragam perc]
-  (let [q "SELECT *, difference (?, name) AS soundex_diff
+  (let [q "SELECT *,
+           difference (?, name) AS soundex_diff,
+           levenshtein (?, name) AS lev_diff
            FROM ragams
            WHERE name % ? AND similarity (name, ?) > ?
-           ORDER BY soundex_diff desc"]
-    (j/query db-spec [q ragam ragam ragam perc])))
+           ORDER BY soundex_diff desc, lev_diff desc"]
+    (j/query db-spec [q ragam ragam ragam ragam perc])))
 
 ;; setup DB
 ;;-----------------------

@@ -77,7 +77,7 @@
   order results by soundex difference. perc is the trigram similarity that
   decreases from 0.9 to 0.0 to find closest results. This might be slow
   and might need optimizations later."
-  ([ragam] (search ragam 0.4))
+  ([ragam] (search ragam 0.3))
   ([ragam perc]
      (when (pos? perc)
        (let [result-ragams (db/search ragam perc)]
