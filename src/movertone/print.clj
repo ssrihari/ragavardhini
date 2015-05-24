@@ -16,7 +16,6 @@
      (->printable avarohanam)]))
 
 (defn melakartha+janya-rows [[{:keys [num name] :as mela-ragam} janya-ragams]]
-  (prn mela-ragam)
   (let [janya-ragams (sort-by #(first %) janya-ragams)]
     (cons
      (row true {name mela-ragam})

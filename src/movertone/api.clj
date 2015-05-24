@@ -2,18 +2,18 @@
   (:require [ring.adapter.jetty :as jetty]
             [cider.nrepl :as cider]
             [clojure.tools.nrepl.server :as nrepl]
-            [bidi.ring :refer (make-handler)]
-            [ring.util.http-response :refer [ok content-type header] :as resp]
-            [movertone.print :as p]))
+            [bidi.ring :as br]
+            [movertone.print :as p]
+            [movertone.ragams :as r]))
 
 (defn html-response [html]
-  (-> html
-      resp/ok
-      (resp/content-type "text/html; charset=UTF-8")))
+  {:status 200
+   :body html
+   :content-type "text/html"})
 
 (defn index [request]
-  (prn "here")
-  (html-response "Hello world html not here"))
+  {:status 200
+   :body "muhaha!"})
 
 (defn melakarthas-index [request]
   (-> (p/melakartha-rows)
@@ -21,13 +21,33 @@
       p/make-html
       html-response))
 
+(defn all [request]
+  (-> (p/html-rows)
+      p/make-html
+      html-response))
+
+(defn show-ragam [ragam]
+  (let [ragam-name (keyword (:name params))
+        ragam {ragam-name (r/ragams ragam-name)}]
+    (->> [(p/row false ragam)]
+         p/html-rows
+         p/make-html
+         html-response)))
+
+(defn search [{:keys [params] :as request}]
+  ;; TODO: make a ragam look good
+  (html-response (str (r/search (:query params)))))
+
 (def routes ["/" {"" index
-                  "index.html" index
+                  "all" all
                   "melakarthas/" {"" melakarthas-index
-                                  [:id "/article.html"] :article}}])
+                                  [:name] show-ragam}
+                  "ragams/" {"" all
+                             [:name] show-ragam}
+                  "search/" {[:query] search}}])
 
 (def handler
-  (make-handler routes))
+  (br/make-handler routes))
 
 (defn start! [port nrepl-port]
   (nrepl/start-server :port nrepl-port :handler cider/cider-nrepl-handler)
