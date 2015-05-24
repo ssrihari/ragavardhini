@@ -73,9 +73,14 @@
      :perc (format "%.1f" perc)}))
 
 (defn search
+  "Search in postgres using trigram similary using an index, and
+  order results by soundex difference. perc is the trigram similarity that
+  decreases from 0.9 to 0.0 to find closest results. This might be slow
+  and might need optimizations later."
   ([ragam] (search ragam 0.9))
   ([ragam perc]
-     (let [result-ragams (db/search ragam perc)]
-       (if (empty? result-ragams)
-         (search ragam (- perc 0.1))
-         (build-result result-ragams perc)))))
+     (when (pos? perc)
+       (let [result-ragams (db/search ragam perc)]
+         (if (empty? result-ragams)
+           (search ragam (- perc 0.1))
+           (build-result result-ragams perc))))))
