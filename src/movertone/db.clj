@@ -22,23 +22,12 @@
               :user "sriharisriraman"
               :password ""})
 
-(defn db-ragam->ragam [db-ragam]
-  (r/ragams (keyword (:name db-ragam))))
-
-(defn build-result [ragams perc]
-  {:ragam (first ragams)
-   :more (rest ragams)
-   :perc (format "%.1f" perc)})
-
-(defn search-ragam
-  ([ragam] (search-ragam ragam 0.9))
-  ([ragam perc]
-     (let [q "select * from ragams where name % ? and similarity (name, ?) > ?;"
-           res (j/query db-spec [q ragam ragam perc])
-           ragams (mapv db-ragam->ragam res)]
-       (if (seq ragams)
-         (build-result ragams perc)
-         (search-ragam ragam (- perc 0.1))))))
+(defn search [ragam perc]
+  (let [q "SELECT *, difference (?, name) AS soundex_diff
+           FROM ragams
+           WHERE name % ? AND similarity (name, ?) > ?
+           ORDER BY soundex_diff desc"]
+    (j/query db-spec [q ragam ragam ragam perc])))
 
 ;; setup DB
 ;;-----------------------

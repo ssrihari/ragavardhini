@@ -3,7 +3,8 @@
   (:require [clojure.edn :as edn]
             [clojure.java.io :as io]
             [clojure.pprint :as pp]
-            [medley.core :as m]))
+            [medley.core :as m]
+            [movertone.db :as db]))
 
 (defn read-file [filename]
   (-> filename io/resource slurp edn/read-string))
@@ -61,3 +62,20 @@
        (m/map-vals count)
        (filter #(> (second %) 1))
        (sort-by second )))
+
+(defn db-ragam->ragam [db-ragam]
+  (ragams (keyword (:name db-ragam))))
+
+(defn build-result [results perc]
+  (let [result-ragams (mapv db-ragam->ragam results)]
+    {:ragam (first result-ragams)
+     :more (rest result-ragams)
+     :perc (format "%.1f" perc)}))
+
+(defn search
+  ([ragam] (search ragam 0.9))
+  ([ragam perc]
+     (let [result-ragams (db/search ragam perc)]
+       (if (empty? result-ragams)
+         (search ragam (- perc 0.1))
+         (build-result result-ragams perc)))))
