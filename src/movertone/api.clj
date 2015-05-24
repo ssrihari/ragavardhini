@@ -26,7 +26,7 @@
       p/make-html
       html-response))
 
-(defn show-ragam [ragam]
+(defn show-ragam [{:keys [params] :as request}]
   (let [ragam-name (keyword (:name params))
         ragam {ragam-name (r/ragams ragam-name)}]
     (->> [(p/row false ragam)]
