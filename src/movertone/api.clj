@@ -35,8 +35,9 @@
          html-response)))
 
 (defn search [{:keys [params] :as request}]
-  ;; TODO: make a ragam look good
-  (html-response (str (r/search (:query params)))))
+  (if-let [search-result (r/search (:query params))]
+    (html-response (p/search-result-html search-result))
+    "Sorry, no such ragam."))
 
 (def routes ["/" {"" index
                   "all" all

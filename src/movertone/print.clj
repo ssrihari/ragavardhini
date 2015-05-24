@@ -1,7 +1,8 @@
 (ns movertone.print
   (:use [hiccup.core]
         [hiccup.page])
-  (:require [movertone.swarams :as d]
+  (:require [clojure.pprint :as pprint]
+            [movertone.swarams :as d]
             [movertone.ragams :as r]
             [clojure.string :as s]))
 
@@ -63,6 +64,45 @@
   font-weight: bold;
   background: #F1F1F1;
   }
+
+  .search-result {
+  margin: 40px auto;
+  width: 80%;
+  }
+
+  .search-result h1 {
+  font-size: 26px;
+  margin-bottom: 0;
+  }
+
+  .ragam {
+  background-color: #eee;
+  padding: 2px 15px;
+  margin: 20px 20px 0px 0px;
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+  }
+
+  .ragam-name {
+  margin: 10px 0;
+  font-size: 20px;
+  }
+
+  .notes {
+  font-size: 14px;
+  margin: 8px;
+  }
+
+  .more-info {
+  font-style: italic;
+  margin: 6px 0;
+  }
+
+  .more-results {
+  padding: 0;
+  margin: 0;
+  }
 ")
 
 (defn make-html [rows]
@@ -76,6 +116,31 @@
 
 (defn write-html [filename]
   (spit filename (make-html (html-rows))))
+
+(defn display-ragam-name [ragam-name]
+  (s/capitalize (name ragam-name)))
+
+(defn pretty-ragam-html
+  [{:keys [avarohanam name arohanam num parent-mela-num parent-mela-name] :as ragam}]
+  [:div {:class "ragam"}
+   [:h2 {:class "ragam-name"} (s/capitalize (display-ragam-name name))]
+   [:p {:class "notes"} (->printable arohanam)]
+   [:p {:class "notes"} (->printable avarohanam)]
+   (if parent-mela-num
+     [:p {:class "more-info"} (str "Janyam of " (display-ragam-name parent-mela-name) " (" parent-mela-num ")")]
+     [:p {:class "more-info"} (str "This is Melakartha no. " num)])])
+
+(defn search-result-html [{:keys [ragam more perc] :as search-result}]
+  (html5
+   [:style css]
+   [:div {:class "search-result"}
+    [:h1 "Best match"]
+    (pretty-ragam-html ragam)
+    (when (seq more)
+      [:h1 "More..."])
+    (when (seq more)
+      [:ul {:class "more-results"}
+       (map pretty-ragam-html more)])]))
 
 (defn markdown-rows [ragams]
   (map-indexed (fn [i [rname {:keys [arohanam avarohanam]}]]
