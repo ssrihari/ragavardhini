@@ -9,6 +9,7 @@
                  [org.clojure/java.jdbc "0.3.7"]
                  [postgresql/postgresql "9.3-1101.jdbc4"]
                  [medley "0.5.5"]
+                 [cheshire "5.4.0"]
                  [hiccup "1.0.5"]
                  [bidi "1.19.0"]
                  [org.clojure/tools.cli "0.3.1"]

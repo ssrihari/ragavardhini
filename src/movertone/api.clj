@@ -2,6 +2,7 @@
   (:require [ring.adapter.jetty :as jetty]
             [cider.nrepl :as cider]
             [clojure.tools.nrepl.server :as nrepl]
+            [cheshire.core :as json]
             [bidi.ring :as br]
             [movertone.print :as p]
             [movertone.ragams :as r]))
@@ -11,33 +12,52 @@
    :body html
    :content-type "text/html"})
 
+(defn json-response [response]
+  {:status 200
+   :body (json/encode response)
+   :content-type "application/json"})
+
+(defn accepts-json? [request]
+  (def *r request)
+  (when-let [accepts (get-in request [:headers "accept"])]
+    (.contains accepts "application/json")))
+
 (defn index [request]
   {:status 200
    :body "muhaha!"})
 
 (defn melakarthas-index [request]
-  (-> (p/melakartha-rows)
-      p/html-rows
-      p/make-html
-      html-response))
+  (if (accepts-json? request)
+    (json-response r/melakarthas)
+    (html-response
+     (-> (p/melakartha-rows)
+         p/html-rows
+         p/make-html))))
 
 (defn all [request]
-  (-> (p/html-rows)
-      p/make-html
-      html-response))
+  (if (accepts-json? request)
+    (json-response r/ragams)
+    (html-response
+     (p/make-html (p/html-rows)))))
 
 (defn show-ragam [{:keys [params] :as request}]
   (let [ragam-name (keyword (:name params))
         ragam {ragam-name (r/ragams ragam-name)}]
-    (->> [(p/row false ragam)]
-         p/html-rows
-         p/make-html
-         html-response)))
+    (if (accepts-json? request)
+      (json-response ragam)
+      (html-response
+       (->> [(p/row false ragam)]
+            p/html-rows
+            p/make-html)))))
 
 (defn search [{:keys [params] :as request}]
   (if-let [search-result (r/search (:query params))]
-    (html-response (p/search-result-html search-result))
-    "Sorry, no such ragam."))
+    (if (accepts-json? request)
+      (json-response search-result)
+      (html-response (p/search-result-html search-result)))
+    (if (accepts-json? request)
+      (json-response "Sorry, no such ragam.")
+      (html-response "Sorry, no such ragam."))))
 
 (def routes ["/" {"" index
                   "all" all
