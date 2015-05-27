@@ -27,7 +27,7 @@
            levenshtein (?, name) AS lev_diff
            FROM ragams
            WHERE name % ? AND similarity (name, ?) > ?
-           ORDER BY soundex_diff desc, lev_diff desc"]
+           ORDER BY lev_diff, soundex_diff desc"]
     (j/query db-spec [q ragam ragam ragam ragam perc])))
 
 ;; setup DB
