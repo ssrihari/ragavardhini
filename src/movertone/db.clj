@@ -18,7 +18,7 @@
 
 (def db-spec {:subprotocol "postgresql"
               :subname "//127.0.0.1:5432/ragas"
-              :user "sriharisriraman"
+              :user "ubuntu"
               :password ""})
 
 (defn search [ragam perc]
