@@ -52,9 +52,10 @@
 
 ;; prepare search
 ;;-----------------------
-;; http://bartlettpublishing.com/site/bartpub/blog/3/entry/350
-;; CREATE EXTENSION pg_trgm;
-;; CREATE INDEX ragas_name_trigram_idx ON ragas USING gist(name gist_trgm_ops);
+ ;; http://bartlettpublishing.com/site/bartpub/blog/3/entry/350
+ ;; CREATE EXTENSION pg_trgm;
+ ;; create extension fuzzystrmatch;
+ ;; CREATE INDEX ragas_name_trigram_idx ON ragams USING gist(name gist_trgm_ops);
 
 ;; prepare query
 ;;-----------------------
