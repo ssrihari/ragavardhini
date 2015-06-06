@@ -1177,6 +1177,52 @@
  :kapinarayani ({:composer "Tyagaraja", :kriti "Sarasa Sama Dana"}),
  :candrahasitam
  ({:composer "Gn Balasubramanian", :kriti "Enta Ninnu"}),
+ :mohana
+ ({:composer "Muthaiah Bagavatar", :kriti "Bhadrakali Namostute"}
+  {:composer "Tyagaraja", :kriti "Bhavanuta Na Hridayamuna"}
+  {:composer "Gn Balasubramanian", :kriti "Bhuvanatraya Sammohanakara"}
+  {:composer "Tyagaraja", :kriti "Darishinchuta Telisenura"}
+  {:composer "Tyagaraja", :kriti "Dayarani Dayarani Dasharathi"}
+  {:composer "Muthaiah Bagavatar", :kriti "Dhim Dhim Kitataka Dhimta"}
+  {:composer "Tyagaraja", :kriti "Enduko Baga Teliyadu"}
+  {:composer "Arunacala Kavi", :kriti "En Palli Kondirayya"}
+  {:composer "Tyagaraja", :kriti "Evarura Ninnuvina Gati"}
+  {:composer "Papanasam Sivan", :kriti "Giridhara Gopala Bala"}
+  {:composer "M Dikshitar", :kriti "Gopikamanoharam"}
+  {:composer "Tyagaraja", :kriti "Jaya Mangalam Nitya"}
+  {:composer "M Dikshitar", :kriti "Kadambari Priyayai"}
+  {:composer "Papanasam Sivan", :kriti "Kapali Karunai Nilavu"}
+  {:composer "Muthaiah Bagavatar",
+   :kriti "Manamohana Manini Nipai-varnam"}
+  {:composer "Garbhapurivasa", :kriti "Maruvaka Daya Mohananga Napai"}
+  {:composer "Tyagaraja", :kriti "Mati Matiki Delpavalena"}
+  {:composer "Papanasam Sivan", :kriti "Mayil Vahana Valli"}
+  {:composer "Tyagaraja", :kriti "Mohana Rama Mukhajita"}
+  {:composer "M Dikshitar", :kriti "Nagalingam Namami Satatam"}
+  {:composer "Tyagaraja", :kriti "Nanu Palimpa Nadaci Vaccitivo"}
+  {:composer "M Dikshitar", :kriti "Narasimha Agaccha"}
+  {:composer "Papanasam Sivan", :kriti "Narayana Divya"}
+  {:composer "Poochi Srinivasa Iyengar",
+   :kriti "Ninnu Koriyunnanura-varnam"}
+  {:composer "M Dikshitar", :kriti "Pahi Mam Parvati Parameshvari"}
+  {:composer "Swatitirunal", :kriti "Paripahi Mam Nruhare"}
+  {:composer "Mysore Sadashiva Rao", :kriti "Pedda Devudani Ninnu"}
+  {:composer "Walajapet Venkatramana Bagavat", :kriti "Radha Ramana"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "M Dikshitar", :kriti "Rajagopalam Bhajeham"}
+  {:composer "M Dikshitar", :kriti "Rakta Ganapatim Bhajeham"}
+  {:composer "Arunacala Kavi", :kriti "Ramanaik Kannara"}
+  {:composer "Arunacala Kavi", :kriti "Ramanait Taruvai"}
+  {:composer "Tyagaraja", :kriti "Rama Ninnu Nammina Varamu"}
+  {:composer "Mysore Vasudevacar", :kriti "Rara Rajiva Locana Rama"}
+  {:composer "Gn Balasubramanian", :kriti "Sada Palaya Sarasaksi"}
+  {:composer "Vinai Kuppiyer", :kriti "Sarasaksi Ninne Kori"}
+  {:composer "Papanasam Sivan", :kriti "Saundarya Vellam"}
+  {:composer "Indira Natesan", :kriti "Shantakara Bhujaga"}
+  {:composer "Pallavi Gopala Iyer", :kriti "Shri Rama Ramani"}
+  {:composer "Oothukadu Venkata Kavi", :kriti "Swaagatam Krishnaa"}
+  {:composer "Gopalakrishna Bharati", :kriti "Tatakam Onru"}
+  {:composer "Muthaiah Bagavatar", :kriti "Tillana"}),
  :shanmukhapriya
  ({:composer "Mysore Vasudevacar", :kriti "Abhimanamuto Nannu"}
   {:composer "Papanasam Sivan", :kriti "Andavane Unai"}
@@ -1977,53 +2023,7 @@
   {:composer "M Dikshitar", :kriti "Shri Sundararajam Bhajeham"}
   {:composer "M Dikshitar", :kriti "Ucchistha Ganapatau"}
   {:composer "M Dikshitar", :kriti "Vishalaksim Vishveshim"}),
- :shanam
- ({:composer "Balamurali Krishna", :kriti "Aya Kalaikkellam"}
-  {:composer "Muthaiah Bagavatar", :kriti "Bhadrakali Namostute"}
-  {:composer "Tyagaraja", :kriti "Bhavanuta Na Hridayamuna"}
-  {:composer "Gn Balasubramanian", :kriti "Bhuvanatraya Sammohanakara"}
-  {:composer "Tyagaraja", :kriti "Darishinchuta Telisenura"}
-  {:composer "Tyagaraja", :kriti "Dayarani Dayarani Dasharathi"}
-  {:composer "Muthaiah Bagavatar", :kriti "Dhim Dhim Kitataka Dhimta"}
-  {:composer "Tyagaraja", :kriti "Enduko Baga Teliyadu"}
-  {:composer "Arunacala Kavi", :kriti "En Palli Kondirayya"}
-  {:composer "Tyagaraja", :kriti "Evarura Ninnuvina Gati"}
-  {:composer "Papanasam Sivan", :kriti "Giridhara Gopala Bala"}
-  {:composer "M Dikshitar", :kriti "Gopikamanoharam"}
-  {:composer "Tyagaraja", :kriti "Jaya Mangalam Nitya"}
-  {:composer "M Dikshitar", :kriti "Kadambari Priyayai"}
-  {:composer "Papanasam Sivan", :kriti "Kapali Karunai Nilavu"}
-  {:composer "Muthaiah Bagavatar",
-   :kriti "Manamohana Manini Nipai-varnam"}
-  {:composer "Garbhapurivasa", :kriti "Maruvaka Daya Mohananga Napai"}
-  {:composer "Tyagaraja", :kriti "Mati Matiki Delpavalena"}
-  {:composer "Papanasam Sivan", :kriti "Mayil Vahana Valli"}
-  {:composer "Tyagaraja", :kriti "Mohana Rama Mukhajita"}
-  {:composer "M Dikshitar", :kriti "Nagalingam Namami Satatam"}
-  {:composer "Tyagaraja", :kriti "Nanu Palimpa Nadaci Vaccitivo"}
-  {:composer "M Dikshitar", :kriti "Narasimha Agaccha"}
-  {:composer "Papanasam Sivan", :kriti "Narayana Divya"}
-  {:composer "Poochi Srinivasa Iyengar",
-   :kriti "Ninnu Koriyunnanura-varnam"}
-  {:composer "M Dikshitar", :kriti "Pahi Mam Parvati Parameshvari"}
-  {:composer "Swatitirunal", :kriti "Paripahi Mam Nruhare"}
-  {:composer "Mysore Sadashiva Rao", :kriti "Pedda Devudani Ninnu"}
-  {:composer "Walajapet Venkatramana Bagavat", :kriti "Radha Ramana"}
-  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
-  {:composer "M Dikshitar", :kriti "Rajagopalam Bhajeham"}
-  {:composer "M Dikshitar", :kriti "Rakta Ganapatim Bhajeham"}
-  {:composer "Arunacala Kavi", :kriti "Ramanaik Kannara"}
-  {:composer "Arunacala Kavi", :kriti "Ramanait Taruvai"}
-  {:composer "Tyagaraja", :kriti "Rama Ninnu Nammina Varamu"}
-  {:composer "Mysore Vasudevacar", :kriti "Rara Rajiva Locana Rama"}
-  {:composer "Gn Balasubramanian", :kriti "Sada Palaya Sarasaksi"}
-  {:composer "Vinai Kuppiyer", :kriti "Sarasaksi Ninne Kori"}
-  {:composer "Papanasam Sivan", :kriti "Saundarya Vellam"}
-  {:composer "Indira Natesan", :kriti "Shantakara Bhujaga"}
-  {:composer "Pallavi Gopala Iyer", :kriti "Shri Rama Ramani"}
-  {:composer "Oothukadu Venkata Kavi", :kriti "Swaagatam Krishnaa"}
-  {:composer "Gopalakrishna Bharati", :kriti "Tatakam Onru"}
-  {:composer "Muthaiah Bagavatar", :kriti "Tillana"}),
+ :shanam ({:composer "Balamurali Krishna", :kriti "Aya Kalaikkellam"}),
  :siddhasena ({:composer "Tyagaraja", :kriti "Evaraina Lera Peddalu"}),
  :kamavardhini
  ({:composer "Papanasam Sivan", :kriti "Amba Manam"}
