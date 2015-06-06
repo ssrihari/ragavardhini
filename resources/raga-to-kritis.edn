@@ -1,0 +1,3246 @@
+{:shahana
+ ({:composer "M Dikshitar", :kriti "Abhayambayam Bhaktim"}
+  {:composer "Muthaiah Bagavatar", :kriti "Aryadevi Amareshanute"}
+  {:composer "Papanasam Sivan", :kriti "Cittam Irangadenaiyya"}
+  {:composer "Tyagaraja", :kriti "Dehi Tava Pada Bhaktim"}
+  {:composer "Periyasamy Turan", :kriti "Enna Perum Tavam"}
+  {:composer "Patnam Subhramanya Iyer",
+   :kriti "Evaremi Bodhana Jesinaro"}
+  {:composer "Tyagaraja", :kriti "E Manatichccevo Emencinavo"}
+  {:composer "Tyagaraja", :kriti "Giripai Nelakona Ramuni"}
+  {:composer "Tyagaraja", :kriti "I Vasudha Nivanti Deivamu"}
+  {:composer "Swatitirunal", :kriti "Jayajaya Raghurama"}
+  {:composer "Nila Kanta Sivan", :kriti "Karunai Sheivaiye"}
+  {:composer "Gn Balasubramanian", :kriti "Karuna Juda Rada"}
+  {:composer "Tiruvetriyur Tyagaraja", :kriti "Karunimpa Idi-varnam"}
+  {:composer "Muthaiah Bagavatar", :kriti "Manamu Kavalenu"}
+  {:composer "Vinai Kuppiyer", :kriti "Nannu Brova Jagelara"}
+  {:composer "Tyagaraja", :kriti "Nijamuga Ni Mahimalu"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Tyagaraja", :kriti "Raghupate Rama Raksasa"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Rama Ika Nannu Brova"}
+  {:composer "Tyagaraja", :kriti "Rama Rama Rama Lali"}
+  {:composer "M Dikshitar", :kriti "Shri Kamalambikayam"}
+  {:composer "Tyagaraja", :kriti "Shri Rama Shri Rama"}
+  {:composer "Papanasam Sivan", :kriti "Shri Vatapi Ganapatiye"}
+  {:composer "Mysore Vasudevacar", :kriti "Taramu Gadura"}
+  {:composer "Tyagaraja", :kriti "Urake Galguna Ramuni"}
+  {:composer "Tyagaraja", :kriti "Vandanamu Raghu Nandana"}),
+ :suposini
+ ({:composer "Tyagaraja", :kriti "Ramincuvarevarura Raghuttama"}),
+ :shuddhalalita
+ ({:composer "Muthaiah Bagavatar", :kriti "Sahasrasheersha"}),
+ :kunjari ({:composer "Tyagaraja", :kriti "Abhimanamennadu Galgura"}),
+ :mahuri
+ ({:composer "M Dikshitar", :kriti "Mamava Raghuvira Martyavatara"}),
+ :purvagaula
+ ({:composer "M Dikshitar", :kriti "Nilotpalambikayam Bhaktim"}),
+ :smokambari ({:composer "Gn Balasubramanian", :kriti "Manasu Rada"}),
+ :amrtabehag
+ ({:composer "Gn Balasubramanian", :kriti "Kamala Carane"}),
+ :gurjari
+ ({:composer "M Dikshitar", :kriti "Guni Janadinuta Guruguhodaye"}
+  {:composer "Tyagaraja", :kriti "Varalandu Kommani Nayandu"}),
+ :rudrapriya
+ ({:composer "Krishnasvami Ayya", :kriti "Amba Paradevate"}
+  {:composer "M Dikshitar", :kriti "Gananayakam Bhajeham"}
+  {:composer "M Dikshitar", :kriti "Rudra Kopa Jatavira"}
+  {:composer "M Dikshitar",
+   :kriti "Shri Tyagarajasya Bhakto Bhavami"}),
+ :nagakurinji
+ ({:composer "M Dikshitar", :kriti "Balambikayai Namaste"}
+  {:composer "M Dikshitar", :kriti "Budhamashrayami Satatam"}
+  {:composer "Krishnasvami Ayya", :kriti "Calamelara Napai"}
+  {:composer "Balamurali Krishna", :kriti "Doravadari Vaccitiva"}
+  {:composer "Bhadracala Ramadas", :kriti "Edanunnado"}
+  {:composer "Mysore Vasudevacar", :kriti "Entanine Vannintuno"}
+  {:composer "M Dikshitar", :kriti "Gajadhisha Danyam Na Janeham"}
+  {:composer "Swatitirunal", :kriti "Jagasisa Dada"}
+  {:composer "Ambujam Krishna", :kriti "Kolam Kana Varir"}
+  {:composer "Tyagaraja", :kriti "Kuvalaya Dala Nayana"}
+  {:composer "Mysore Vasudevacar", :kriti "Madhusudanam Aham"}
+  {:composer "Swatitirunal", :kriti "Mamava Sada Varade"}
+  {:composer "Tyagaraja", :kriti "Manasu Visaya Nata Vitula"}
+  {:composer "Syama Sastri", :kriti "Mayamma Nannu Brovavamma"}
+  {:composer "Gn Balasubramanian", :kriti "Nakabhaya Varamosagi"}
+  {:composer "Mysore Vasudevacar", :kriti "Na Ceyi Vidvakura"}
+  {:composer "Pallavi Gopala Iyer", :kriti "Nidu Murtini"}
+  {:composer "Muthaiah Bagavatar", :kriti "Nityaklinne Niskalanke"}
+  {:composer "Swatitirunal", :kriti "Pahi Janani"}
+  {:composer "Oothukadu Venkata Kavi", :kriti "Pal Vadiyum Mukham"}
+  {:composer "M Dikshitar", :kriti "Parvati Kumaram Bhavaye"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Patnam Subhramanya Iyer",
+   :kriti "Samini Vegame Rammanave"}
+  {:composer "Papanasam Sivan", :kriti "Svami Nan Unran-varnam"}
+  {:composer "Nila Kanta Sivan", :kriti "Vinayaka Tunai"}
+  {:composer "Lalitadasar", :kriti "Vyaghrapurisha"}),
+ :kokilapriya
+ ({:composer "Tyagaraja", :kriti "Dasharathe Dayasharadhe"}
+  {:composer "M Dikshitar", :kriti "Kodanda Ramam Anisham"}
+  {:composer "Jayacamaraja Wodayar", :kriti "Manayata Manjula"}
+  {:composer "Mysore Vasudevacar", :kriti "Nikabhimanamu Leda Rama"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Koteswara Iyer", :kriti "Sukha Vazhvadaindu"}),
+ :nadavarangini
+ ({:composer "Tyagaraja", :kriti "Krpalavala Kaladhara"}),
+ :malhar
+ ({:composer "Madurai Gs Mani", :kriti "Rama Dutam Namamyaham"}),
+ :rasikaranjani
+ ({:composer "Lalgudi Jayaraman", :kriti "Tillana"}
+  {:composer "Maharajapuram Santanam", :kriti "Tillana"}
+  {:composer "Periyasamy Turan", :kriti "Karaiyera Vendama"}),
+ :kokilam ({:composer "Dandapani Desikar", :kriti "Nal Vazhkaiye"}),
+ :paraju
+ ({:composer "Vina Seshanna", :kriti "Nadiri Dhittom Tanana-tillana"}
+  {:composer "Nila Kanta Sivan", :kriti "Shambhu Krpai"}
+  {:composer "Dharmapuri Subbaraya Iyer",
+   :kriti "Smara Sundaranguniki"}),
+ :rasamanjari
+ ({:composer "M Dikshitar", :kriti "Shrngara Rasamanjarim"}),
+ :saranga
+ ({:composer "M Dikshitar", :kriti "Arunacala Natham Smarami"}
+  {:composer "Tyagaraja", :kriti "Ehi Trijagadisha Shambho"}
+  {:composer "Tyagaraja", :kriti "Emi Dova Balkuma Ikanu"}
+  {:composer "Tyagaraja", :kriti "Enta Bhagyamu"}
+  {:composer "Periyasamy Turan", :kriti "Gana Nathane Gunabodhane"}
+  {:composer "Tiruvetriyur Tyagaraja", :kriti "Intamodi Seya-varnam"}
+  {:composer "Papanasam Sivan", :kriti "Jnana Sabhaiyil"}
+  {:composer "Swatitirunal", :kriti "Kanjanabha"}
+  {:composer "Tyagaraja", :kriti "Karuna Judumayya Mayayya"}
+  {:composer "Tyagaraja", :kriti "Mamava Raghurama"}
+  {:composer "Tyagaraja", :kriti "Nivada Negana Nikhilaloka"}
+  {:composer "Tyagaraja", :kriti "Odanu Jaripe Muccata"}
+  {:composer "Poochi Srinivasa Iyengar", :kriti "Rama Ninne Nammitini"}
+  {:composer "Mysore Vasudevacar",
+   :kriti "Rame Vasatu Manome Raksasakula"}
+  {:composer "M Dikshitar", :kriti "Saranga Ragapriye Santatam"}
+  {:composer "M Dikshitar", :kriti "Tyagaraje Kritya Krityam"}
+  {:composer "M Dikshitar", :kriti "Varadarajam Upasmahe"}),
+ :deshaksi ({:composer "Balamurali Krishna", :kriti "Simha Calamuna"}),
+ :brndavani
+ ({:composer "Balamurali Krishna",
+   :kriti "Dhim Nanana Tillillana-tillana"}
+  {:composer "Periyasamy Turan", :kriti "Kaliyuga Varadan"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Lalgudi Jayaraman", :kriti "Tillana"}),
+ :hamsavinodini
+ ({:composer "Balamurali Krishna", :kriti "Guruni Smarimpumu"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}),
+ :karavani
+ ({:composer "Muthaiah Bagavatar", :kriti "Amba Vani Nannu"}
+  {:composer "Oothukadu Venkata Kavi", :kriti "Baala Sarasa"}
+  {:composer "Swatitirunal", :kriti "Bhavaye Sarasijanabham"}
+  {:composer "Syama Sastri", :kriti "Brovu Brovu Manine Vedite"}
+  {:composer "Papanasam Sivan", :kriti "Devi Niye Tunai"}
+  {:composer "Dandapani Desikar", :kriti "Ellam Shei"}
+  {:composer "Gopalakrishna Bharati",
+   :kriti "Innamum Sandehappadalamo"}
+  {:composer "Dandapani Desikar", :kriti "Kadavul Arulai"}
+  {:composer "Tyagaraja", :kriti "Kaligiyuntegada Galgunu"}
+  {:composer "Papanasam Sivan", :kriti "Karunakarane Shiva"}
+  {:composer "Poochi Srinivasa Iyengar", :kriti "Nijamuga Rama"}
+  {:composer "Gn Balasubramanian", :kriti "Ni Caranambujamunu"}
+  {:composer "Periyasamy Turan", :kriti "Punniyam Oru Koti"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Balamurali Krishna", :kriti "Shri Daksinamurtim"}
+  {:composer "Ambujam Krishna", :kriti "Uruga Vendamo"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Varamulosagi"}
+  {:composer "Koteswara Iyer", :kriti "Velava Vinai"}),
+ :kannadabangala
+ ({:composer "M Dikshitar", :kriti "Renuka Devi Samraksitoham"}),
+ :kalavati
+ ({:composer "Tyagaraja", :kriti "Ennadu Jutuno"}
+  {:composer "M Dikshitar", :kriti "Kalavati Kamalananayuvati"}
+  {:composer "Tyagaraja", :kriti "Okapari Judaga Rada"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}),
+ :vamshavati
+ ({:composer "M Dikshitar", :kriti "Bhaktavatsalam Abhisekavalli"}
+  {:composer "M Dikshitar", :kriti "Vamshavati Shiva Yuvati"}),
+ :jyotisvarupini
+ ({:composer "Walajapet Venkatramana Bagavat",
+   :kriti "Anandamaya Manave"}
+  {:composer "Koteswara Iyer", :kriti "Ganamuda Panam"}
+  {:composer "Periyasamy Turan", :kriti "Jyotisvarupini Jaya"}
+  {:composer "M Dikshitar", :kriti "Rame Bharata Palita"}),
+ :todi
+ ({:composer "Pallavi Gopala Iyer", :kriti "Amba Nadu Vinnapamu"}
+  {:composer "Tyagaraja", :kriti "Aragimpave Palaragimpave"}
+  {:composer "Muthaiah Bagavatar", :kriti "Bhagala Deviya"}
+  {:composer "Swatitirunal", :kriti "Bharati Mamava"}
+  {:composer "Tyagaraja", :kriti "Brndavanalola Govinda"}
+  {:composer "Tyagaraja", :kriti "Cesinadella Maracitivo"}
+  {:composer "Tyagaraja", :kriti "Dacukovalena Dasharathi"}
+  {:composer "M Dikshitar", :kriti "Daksayani Abhayambike"}
+  {:composer "Swatitirunal", :kriti "Dani Samajendra"}
+  {:composer "Tyagaraja", :kriti "Dasharathini Runamu"}
+  {:composer "Swatitirunal", :kriti "Devadeva Mam Palaya"}
+  {:composer "Tyagaraja", :kriti "Emani Mataditivo Rama"}
+  {:composer "Syama Sastri", :kriti "Emani Migula Varnintu"}
+  {:composer "Tyagaraja", :kriti "Emi Jesitenemi Shri"}
+  {:composer "Tyagaraja", :kriti "Enduku Dayaradura Shri"}
+  {:composer "Tyagaraja", :kriti "Endu Daginado"}
+  {:composer "Koththavasal Venkatarama Iyer",
+   :kriti "Era Napai Inta-varnam"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Era Napai Inta-varnam"}
+  {:composer "Papanasam Sivan", :kriti "Gangai Ani"}
+  {:composer "Tyagaraja", :kriti "Gati Nivani Ne Kori"}
+  {:composer "Ambujam Krishna", :kriti "Gati Niye Enru"}
+  {:composer "Papanasam Sivan", :kriti "Kadaikkan Nokki Kavadadum"}
+  {:composer "Tyagaraja", :kriti "Kaddanu Variki Kaddukaddani"}
+  {:composer "Koteswara Iyer", :kriti "Kali Tira Vandarul"}
+  {:composer "M Dikshitar", :kriti "Kamala Ambike Aahrta Kalpalatike"}
+  {:composer "Pallavi Gopala Iyer",
+   :kriti "Kanakangi Ni Celimi-varnam"}
+  {:composer "Papanasam Sivan", :kriti "Kartikeya Gangeya"}
+  {:composer "Syama Sastri", :kriti "Karunanidhi Ilalo Nivanucunu"}
+  {:composer "Tyagaraja", :kriti "Karuna Judavamma"}
+  {:composer "Tyagaraja", :kriti "Koluvamaregada Kodandapani"}
+  {:composer "Tyagaraja", :kriti "Koti Nadulu Dhanuskotilo"}
+  {:composer "Mysore Sadashiva Rao",
+   :kriti "Krpalaya Shri Guru Madhvaraya"}
+  {:composer "M Dikshitar", :kriti "Maha Ganapatim Vande"}
+  {:composer "Gn Balasubramanian", :kriti "Mama Kuleshvaram"}
+  {:composer "Swatitirunal", :kriti "Mandaradharasundara"}
+  {:composer "Lalitadasar", :kriti "Marakatamani Nila"}
+  {:composer "Balamurali Krishna", :kriti "Ma Ma Ni Ni"}
+  {:composer "Muthaiah Bagavatar", :kriti "Meenalocani Amba"}
+  {:composer "Tyagaraja", :kriti "Munnu Ravana Badha Norvaka"}
+  {:composer "Subbaraya Shastri", :kriti "Nannu Brocutaku"}
+  {:composer "Tyagaraja", :kriti "Ne Morabettite Madilona"}
+  {:composer "Syama Sastri", :kriti "Ninne Namminanu Sada"}
+  {:composer "Tyagaraja", :kriti "Ninnu Vina Sukhamu Gana"}
+  {:composer "Tyagaraja", :kriti "Nivanti Daivamu Sadanana"}
+  {:composer "Tyagaraja", :kriti "Ni Daya Ravalegaka Nenenta"}
+  {:composer "M Dikshitar", :kriti "Palaya Mam Brhadishvari"}
+  {:composer "Swatitirunal", :kriti "Pankajaksanam"}
+  {:composer "Swatitirunal", :kriti "Pankajaksa Tava"}
+  {:composer "Mysore Vasudevacar", :kriti "Paratpara Raghuvara"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Tyagaraja", :kriti "Raju Vedale Jutamu Rare"}
+  {:composer "M Dikshitar", :kriti "Ramacandraya Namaste"}
+  {:composer "Bhadracala Ramadas", :kriti "Rama Daivashikhamanee"}
+  {:composer "Walajapet Venkatramana Bagavat", :kriti "Rara Vasudeva"}
+  {:composer "Syama Sastri", :kriti "Rave Himagiri Kumari"}
+  {:composer "Tyagaraja", :kriti "Re Manasa Cintaya Shri"}
+  {:composer "M Dikshitar", :kriti "Rupamu Juci Valaci Vaccitini"}
+  {:composer "Papanasam Sivan", :kriti "Sadasiva Bhajaname"}
+  {:composer "Patnam Subhramanya Iyer",
+   :kriti "Sami Ninne Koriyunnanura"}
+  {:composer "Balamurali Krishna", :kriti "Saraguna Gavumu-varnam"}
+  {:composer "Swatitirunal", :kriti "Sarasijanabhamurare"}
+  {:composer "Subbaraya Shastri", :kriti "Shri Kamalambike"}
+  {:composer "M Dikshitar", :kriti "Shri Krsnam Bhaja Manasa"}
+  {:composer "M Dikshitar", :kriti "Shri Subrahmanyo Mam Rakshatu"}
+  {:composer "Poochi Srinivasa Iyengar",
+   :kriti "Shri Venkatesham Vara"}
+  {:composer "Swatitirunal", :kriti "Sriramacandra Disa"}
+  {:composer "Balamurali Krishna", :kriti "Sudhanidhe Mamava"}
+  {:composer "Oothukadu Venkata Kavi", :kriti "Taaye Yashodaa"}
+  {:composer "Papanasam Sivan", :kriti "Tamadamen Svami"}
+  {:composer "Papanasam Sivan", :kriti "Tanikai Valar"}
+  {:composer "Papanasam Sivan", :kriti "Tanikeshanai Panindu"}
+  {:composer "Tyagaraja", :kriti "Tappi Bratiki Pova Tarama"}
+  {:composer "Ambujam Krishna", :kriti "Tedittedi"}
+  {:composer "Balamurali Krishna", :kriti "Telisu Kolumanna"}
+  {:composer "Poochi Srinivasa Iyengar", :kriti "Tillana"}
+  {:composer "Tyagaraja", :kriti "Varidhi Niku Vandana"}
+  {:composer "Tyagaraja", :kriti "Vedalenu Kodandapani"}
+  {:composer "M Dikshitar", :kriti "Vedaranyeshvaraya Namaste"}
+  {:composer "Periyasamy Turan", :kriti "Vel Edutta Kaiye"}
+  {:composer "Oothukadu Venkata Kavi", :kriti "Venugana Ramana"}),
+ :varali
+ ({:composer "Tyagaraja", :kriti "Dharanu Ni Saridaivamu"}
+  {:composer "Papanasam Sivan", :kriti "Dikku Verillai"}
+  {:composer "Ambujam Krishna", :kriti "Engini Shelven"}
+  {:composer "Tyagaraja", :kriti "Eti Janmam Idiha O Rama"}
+  {:composer "Tyagaraja", :kriti "I Menu Galiginanduku"}
+  {:composer "Syama Sastri", :kriti "Kamaksi Bangaru Kamaksi"}
+  {:composer "Tyagaraja", :kriti "Kanakana Rucira Kanakavasana"}
+  {:composer "Nila Kanta Sivan", :kriti "Karunai Puri Idu"}
+  {:composer "Tyagaraja", :kriti "Karuna Elagante Ni Vidhame"}
+  {:composer "Syama Sastri", :kriti "Karuna Judavamma Vinavamma"}
+  {:composer "Papanasam Sivan", :kriti "Ka Va Va Kanda Va Va"}
+  {:composer "M Dikshitar", :kriti "Lambodaraya Namaste"}
+  {:composer "M Dikshitar", :kriti "Mamava Minaksi Rajamatangi"}
+  {:composer "Swatitirunal", :kriti "Mamava Padmanabham"}
+  {:composer "Tyagaraja", :kriti "Marakata Mani Varna"}
+  {:composer "Tyagaraja", :kriti "Ne Pogadakunte Nikemi"}
+  {:composer "Tyagaraja", :kriti "Noremi Shri Rama Ninnada"}
+  {:composer "Tyagaraja", :kriti "Pahi Paramatma Dayalo"}
+  {:composer "Tyagaraja", :kriti "Pahi Rama Ramana Mam"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "M Dikshitar", :kriti "Shesacala Nayakam Bhajami"}
+  {:composer "Tyagaraja", :kriti "Shri Rama Shri Rama"}
+  {:composer "Poochi Srinivasa Iyengar",
+   :kriti "Vanajaksa Nive Gatiyani"}),
+ :hindolam
+ ({:composer "Indira Natesan", :kriti "Abhaya Varade Sharade"}
+  {:composer "Maharajapuram Santanam",
+   :kriti "Chandrashekhara Sarasvatiye"}
+  {:composer "Jayacamaraja Wodayar", :kriti "Cintayami Jagadambam"}
+  {:composer "Balamurali Krishna",
+   :kriti "Dhimnana Ta Dhirana-tillana"}
+  {:composer "Mysore Vasudevacar", :kriti "Dhim Tananana-tillana"}
+  {:composer "Tulasivanam", :kriti "Eka Radanam"}
+  {:composer "Balamurali Krishna", :kriti "Gana Rasike Gana Verevaru"}
+  {:composer "M Dikshitar", :kriti "Govardhana Girisham"}
+  {:composer "Lalitadasar", :kriti "Imaya Malai Petra"}
+  {:composer "Vedanayakam Pillai", :kriti "Karunalaya Nidhiye"}
+  {:composer "Tanjavur Sankara Iyer", :kriti "Mal Marugan Murugan"}
+  {:composer "Mysore Vasudevacar", :kriti "Mamavatu Shri Sarasvati"}
+  {:composer "Tyagaraja", :kriti "Manasuloni Marmamulu"}
+  {:composer "Gn Balasubramanian", :kriti "Manavakula Bhusana"}
+  {:composer "Dandapani Desikar", :kriti "Matsi Mighunda"}
+  {:composer "Papanasam Sivan", :kriti "Ma Ramanan Uma Ramanan"}
+  {:composer "Papanasam Sivan", :kriti "Nambik Kettavar"}
+  {:composer "Muthaiah Bagavatar", :kriti "Nava Lavanya"}
+  {:composer "M Dikshitar", :kriti "Nirajaksi Kamaksi"}
+  {:composer "Swatitirunal", :kriti "Padmanabha Pahi"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Arunacala Kavi", :kriti "Ramanukku Mannan Mudi"}
+  {:composer "Gn Balasubramanian", :kriti "Sakala Kala Vani"}
+  {:composer "Papanasam Sivan", :kriti "Samagana Lolane"}
+  {:composer "Gn Balasubramanian", :kriti "Samagana Lole"}
+  {:composer "Tyagaraja", :kriti "Samaja Vara Gamana"}
+  {:composer "Poochi Srinivasa Iyengar",
+   :kriti "Sami Ninne Kori Yunnanu"}
+  {:composer "M Dikshitar", :kriti "Sarasvati Vidhiyuvati"}
+  {:composer "Papanasam Sivan", :kriti "Shivanai Ninandavar"}
+  {:composer "Poochi Srinivasa Iyengar", :kriti "Tillana"}
+  {:composer "Papanasam Sivan", :kriti "Tirupparam Kunra"}
+  {:composer "Papanasam Sivan", :kriti "Tunai Purindarul"}),
+ :vishnupriya
+ ({:composer "Tanjavur Sankara Iyer", :kriti "Balasubramanyan Padame"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}),
+ :malavashri ({:composer "Tyagaraja", :kriti "Evarunnaru Brova"}),
+ :phalamanjari
+ ({:composer "Patnam Subhramanya Iyer", :kriti "Palukutace Phalamemi"}
+  {:composer "Tyagaraja", :kriti "Sanaatana Paramapavana"}
+  {:composer "Tyagaraja", :kriti "Shri Narasimha Mam Pahi"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Shri Venkatesha"}),
+ :pavani
+ ({:composer "Koteswara Iyer", :kriti "Anjade Nenjame"}
+  {:composer "Tyagaraja", :kriti "Lemidelpa Peddalevaru"}),
+ :chayaranjani
+ ({:composer "Gn Balasubramanian", :kriti "Nivalayince"}),
+ :gaurimanohari
+ ({:composer "Garbhapurivasa", :kriti "Brova Samayamide"}
+  {:composer "Muthaiah Bagavatar",
+   :kriti "Devi Gauri Ninna Dhyanisuva"}
+  {:composer "Gopalakrishna Bharati", :kriti "Eppo Tolaiyum"}
+  {:composer "Tyagaraja", :kriti "Garuda Gamana Vasudeva"}
+  {:composer "Papanasam Sivan", :kriti "Gaurimanohara"}
+  {:composer "Tyagaraja", :kriti "Guruleka Etuvanti Guniki"}
+  {:composer "Vedanayakam Pillai", :kriti "Karunakara Paramporule"}
+  {:composer "M Dikshitar", :kriti "Kaumari Gauri Velavali"}
+  {:composer "Pallavi Sesha Iyer", :kriti "Oka Matatavelara"}
+  {:composer "Koteswara Iyer", :kriti "Parai Arul"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Swatitirunal", :kriti "Sarasasama Mrudupada"}
+  {:composer "Mysore Vasudevacar", :kriti "Varalaksmi Namostute"}),
+ :janjuti ({:composer "Balamurali Krishna", :kriti "Marulu Konnane"}),
+ :kalgada
+ ({:composer "Syama Sastri", :kriti "Parvati Ninnu Nera Nammiti"}
+  {:composer "Tyagaraja", :kriti "Samayamu Emarake Manasa"}),
+ :kharaharapriya
+ ({:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Muthaiah Bagavatar",
+   :kriti "Annapurneshvari Akhileshvari"}
+  {:composer "Nila Kanta Sivan", :kriti "Antari Sundari"}
+  {:composer "Papanasam Sivan", :kriti "Appan Avataritta"}
+  {:composer "Papanasam Sivan", :kriti "Aranamum Agamum"}
+  {:composer "Koteswara Iyer", :kriti "Arulvay"}
+  {:composer "Periyasamy Turan", :kriti "Azhagu Deivamaga Vandu"}
+  {:composer "Tyagaraja", :kriti "Cakkani Rajamargamu"}
+  {:composer "Tyagaraja", :kriti "Cetulara Shrngaramu"}
+  {:composer "Papanasam Sivan", :kriti "Dayavillaiya Dayalo"}
+  {:composer "Papanasam Sivan", :kriti "Enna Seidalum Endan"}
+  {:composer "Papanasam Sivan", :kriti "Ganapatiye Karunanidhiye"}
+  {:composer "Mysore Vasudevacar", :kriti "Gana Sudha Rasa"}
+  {:composer "Papanasam Sivan", :kriti "Janakipate Jaya"}
+  {:composer "Papanasam Sivan", :kriti "Kakka Unakkirakkam"}
+  {:composer "Koteswara Iyer", :kriti "Kan Parayya"}
+  {:composer "Tyagaraja", :kriti "Kori Sevimparare"}
+  {:composer "Tanjavur Sankara Iyer", :kriti "Madhuram Madhuram"}
+  {:composer "Tyagaraja", :kriti "Mitri Bhagyame"}
+  {:composer "Muthaiah Bagavatar", :kriti "Moovasai Konda"}
+  {:composer "Tyagaraja", :kriti "Nadaci Nadaci Cucera"}
+  {:composer "Mysore Vasudevacar", :kriti "Narayana Pilicite Ravademi"}
+  {:composer "Nila Kanta Sivan", :kriti "Navasiddhi Petralum"}
+  {:composer "Ambujam Krishna", :kriti "Nidamoru Taram"}
+  {:composer "Garbhapurivasa",
+   :kriti "Ninnu Nammina Vadanu Nerama Nannubrova"}
+  {:composer "Tyagaraja", :kriti "Pahi Rama Rama Yanucu"}
+  {:composer "Tyagaraja", :kriti "Pakkala Nilabadi Golice"}
+  {:composer "Balamurali Krishna", :kriti "Parameshvara Palayashu"}
+  {:composer "Papanasam Sivan", :kriti "Paramukham Enayya"}
+  {:composer "Tyagaraja", :kriti "Peridi Ninu Bencinavarevre"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Ambujam Krishna", :kriti "Rama Idi Samayamu"}
+  {:composer "Tyagaraja", :kriti "Rama Niyeda Prema Rahitulaku"}
+  {:composer "Tyagaraja", :kriti "Rama Ni Samanamevaru"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Sankalpam Ettido"}
+  {:composer "Papanasam Sivan", :kriti "Sarasvati Annaiye"}
+  {:composer "Swatitirunal", :kriti "Satatam Tavaka"}
+  {:composer "Muthaiah Bagavatar", :kriti "Sharanagata Vatsala"}
+  {:composer "Papanasam Sivan", :kriti "Shendil Andavan"}
+  {:composer "Papanasam Sivan", :kriti "Shrinivasa Tava"}
+  {:composer "Lalitadasar", :kriti "Shri Sharadambike"}
+  {:composer "Tiruvetriyur Tyagaraja", :kriti "Tyagarajaswami"}
+  {:composer "Tyagaraja", :kriti "Videmu Seyave Nannu Vidnadakuve"}),
+ :umabharana
+ ({:composer "Muthaiah Bagavatar", :kriti "Hayagreeva Agastya"}
+  {:composer "Tyagaraja", :kriti "Nija Marmamulanu Delisina"}),
+ :mararanjani
+ ({:composer "Koteswara Iyer", :kriti "Malaginen Velava"}
+  {:composer "Tyagaraja", :kriti "Manasa Shri Ramuni Dayaleka"}),
+ :bageshri
+ ({:composer "Swatitirunal", :kriti "Gopala Bhaktim Dehi"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Lalgudi Jayaraman", :kriti "Tillana"}
+  {:composer "Madurai Gs Mani", :kriti "Vilaiyada Mayilum Undu"}),
+ :naganandini
+ ({:composer "Balamurali Krishna", :kriti "Daksayani Raksamam"}
+  {:composer "Koteswara Iyer", :kriti "Nayen Unaiye"}
+  {:composer "Tyagaraja", :kriti "Sattaleni Dinamulu Vaccena"}),
+ :kantamani
+ ({:composer "Balamurali Krishna", :kriti "Bhuvaneshvari Pahimam"}
+  {:composer "Tyagaraja", :kriti "Edari Sancarintura"}
+  {:composer "Koteswara Iyer", :kriti "Nadasukham"}
+  {:composer "Tyagaraja", :kriti "Palintuvo Palimpava"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}),
+ :bhogavasantam
+ ({:composer "Jayacamaraja Wodayar",
+   :kriti "Amba Shri Rajarajeshvari"}),
+ :varunapriya ({:composer "Koteswara Iyer", :kriti "Shrngara Kumara"}),
+ :sindhubhairavi
+ ({:composer "Madurai Gs Mani", :kriti "Chandrashekharam"}
+  {:composer "Madurai Gs Mani", :kriti "Chidambaranai Digambaranai"}
+  {:composer "Madurai Srinivasan", :kriti "Karunai Deivame"}
+  {:composer "Papanasam Sivan", :kriti "Kuvi Azhaikka Kudada"}
+  {:composer "Tanjavur Sankara Iyer", :kriti "Manadirku Ughandadu"}
+  {:composer "Muthaiah Bagavatar", :kriti "Mavoor Valam"}
+  {:composer "Poochi Srinivasa Iyengar", :kriti "Nadhrudhru Dhim"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Nadhru Dhru Dhim"}
+  {:composer "Tulasivanam", :kriti "Pankajaksa Pahi"}
+  {:composer "Indira Natesan", :kriti "Pranata Jana"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Swatitirunal", :kriti "Ramacandra Prabhu"}
+  {:composer "Gopalakrishna Bharati", :kriti "Ta Tai Enraduvar"}
+  {:composer "Lalgudi Jayaraman", :kriti "Tillana"}
+  {:composer "Swatitirunal", :kriti "Vishveshvar Darsan Kar"}),
+ :shuddhavasanta
+ ({:composer "M Dikshitar", :kriti "Soma Sundareshvaram"}),
+ :pratapavarali
+ ({:composer "Jayacamaraja Wodayar", :kriti "Bhuri Bhagyalahari"}
+  {:composer "Tyagaraja", :kriti "Vina Nashakoni Yunnanura"}),
+ :dhatuvardhani
+ ({:composer "M Dikshitar", :kriti "Matangi Marakatangi"}
+  {:composer "Koteswara Iyer", :kriti "Sukhakara"}),
+ :sugunabhusani
+ ({:composer "Patnam Subhramanya Iyer", :kriti "Bhajare Manasa Shri"}),
+ :bhupala
+ ({:composer "Nila Kanta Sivan", :kriti "Shambho Mahadeva 1"}
+  {:composer "Swatitirunal", :kriti "Gopalaka Pahimam"}
+  {:composer "Muthaiah Bagavatar", :kriti "Kadamba Vanavasini"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "M Dikshitar", :kriti "Sadacaleshvaram Bhavayeham"}),
+ :mahati ({:composer "Balamurali Krishna", :kriti "Mahaniya Madhura"}),
+ :hindolavasanta
+ ({:composer "Ambujam Krishna", :kriti "Padaravindame"}
+  {:composer "Tyagaraja", :kriti "Rara Sita Ramani Manohara"}
+  {:composer "M Dikshitar", :kriti "Santana Ramasvaminam"}),
+ :pilu ({:composer "Periyasamy Turan", :kriti "Kanbadenro Nam"}),
+ :pahadi
+ ({:composer "Muthaiah Bagavatar", :kriti "Parama Purushham Bho"}
+  {:composer "Lalgudi Jayaraman", :kriti "Tillana"}),
+ :divyamani ({:composer "Koteswara Iyer", :kriti "Appa Murugayyane"}),
+ :abheri
+ ({:composer "Muthaiah Bagavatar", :kriti "Balasubramanyam Bhajeham"}
+  {:composer "Mysore Vasudevacar", :kriti "Bhajare Re Manasa Shri"}
+  {:composer "Muthaiah Bagavatar", :kriti "Eeshwari Rajeshwari"}
+  {:composer "Mysore Vasudevacar", :kriti "Gokula Nilaya Krpalaya"}
+  {:composer "Papanasam Sivan", :kriti "Kanda Vandarul"}
+  {:composer "Tyagaraja", :kriti "Nagumomu Ganaleni"}
+  {:composer "Syama Sastri", :kriti "Ninnu Vina Mari Galada"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "M Dikshitar", :kriti "Vinabheri Venuvadyadi Vinodinim"}),
+ :tarangini
+ ({:composer "M Dikshitar", :kriti "Maye Tvam Yahi Mam Badhitum"}
+  {:composer "M Dikshitar", :kriti "Palaya Mam Parameshvari"}),
+ :asaveri
+ ({:composer "Gopalakrishna Bharati", :kriti "Adiya Padattait Tarum"}
+  {:composer "Arunacala Kavi", :kriti "Ayyane Un Menmaiyai"}
+  {:composer "M Dikshitar", :kriti "Candram Bhaja Manasa"}
+  {:composer "Arunacala Kavi", :kriti "Caranam Caranam"}
+  {:composer "Tyagaraja", :kriti "Dasharatha Nandana Danavabhanjana"}
+  {:composer "Swatitirunal", :kriti "Deva Palaya Murare"}
+  {:composer "Tyagaraja", :kriti "E Paniko Janmincitinani"}
+  {:composer "Tyagaraja", :kriti "Janakaja Sameta"}
+  {:composer "Arunacala Kavi", :kriti "Kadaikkannal Irangi"}
+  {:composer "M Dikshitar", :kriti "Kumarasvaminam Guruguham"}
+  {:composer "Tyagaraja", :kriti "Lekana Ninnu Juttuukonnaru"}
+  {:composer "Tyagaraja", :kriti "Mapala Velasi Ika Mamu"}
+  {:composer "Tyagaraja", :kriti "Nammaka Ne Mosa Bodunaa"}
+  {:composer "Swatitirunal", :kriti "Palaya Madhava"}
+  {:composer "Tyagaraja", :kriti "Rara Mayinti Daka Raghuvira"}
+  {:composer "Tyagaraja", :kriti "Samayamu Delisi Punyamu"}
+  {:composer "Arunacala Kavi", :kriti "Sharanam Sharanam Raghurama"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Tamasincu Talajala"}
+  {:composer "Arunacala Kavi", :kriti "Vidu Vidada"}),
+ :namai
+ ({:composer "Oothukadu Venkata Kavi",
+   :kriti "Aananda Nartana Ganapatim"}
+  {:composer "Koteswara Iyer", :kriti "Danta Mamukha"}
+  {:composer "Oothukadu Venkata Kavi", :kriti "Ekadanta Vinayakam"}
+  {:composer "Swatitirunal", :kriti "Pahi Saure"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Muthaiah Bagavatar", :kriti "Shakti Ganapatim"}
+  {:composer "Oothukadu Venkata Kavi", :kriti "Tillana"}
+  {:composer "Koteswara Iyer", :kriti "Vava Shikhivahana"}
+  {:composer "Muthaiah Bagavatar", :kriti "Veda Mate"}),
+ :jhalavarali ({:composer "Koteswara Iyer", :kriti "Anatharakshhaka"}),
+ :cencukambhoji
+ ({:composer "Tyagaraja", :kriti "Vara Raga Layajnulu"}),
+ :vanamali
+ ({:composer "Tyagaraja", :kriti "Aparadhamulanorva Samayamu"}),
+ :sindhumandari
+ ({:composer "Patnam Subhramanya Iyer", :kriti "Karunincutakide"}),
+ :manoranjani
+ ({:composer "Tyagaraja", :kriti "Atu Karadani Palka"}
+  {:composer "M Dikshitar", :kriti "Balambike Pahi"}),
+ :surati
+ ({:composer "Gopalakrishna Bharati", :kriti "Adiya Padattai"}
+  {:composer "Swatitirunal", :kriti "Alarsara"}
+  {:composer "M Dikshitar", :kriti "Angarakam Ashrayami"}
+  {:composer "M Dikshitar", :kriti "Balasubramanyam Bhajeham"}
+  {:composer "Tyagaraja",
+   :kriti "Bhajana Parulakela Dandapani Bhayamu"}
+  {:composer "Tyagaraja", :kriti "Bhiksatana Vesamu Nikeelanayya"}
+  {:composer "Madurai Gs Mani", :kriti "Chirakalam Nammitini"}
+  {:composer "Nila Kanta Sivan", :kriti "Dayavu Sheyyavinnamenna"}
+  {:composer "Tiruvetriyur Tyagaraja", :kriti "Ento Premato-varnam"}
+  {:composer "Tyagaraja", :kriti "Gitarthamu Sangitanandamu"}
+  {:composer "Muthaiah Bagavatar", :kriti "Haridra Kumkuma"}
+  {:composer "Swatitirunal", :kriti "Jalajabandhu"}
+  {:composer "Gopalakrishna Bharati", :kriti "Kanaka Sabhai"}
+  {:composer "Gopalakrishna Bharati",
+   :kriti "Kanaka Sabhai Tirunatanam"}
+  {:composer "Arunacala Kavi", :kriti "Kana Venum Laksam Kangal"}
+  {:composer "Oothukadu Venkata Kavi", :kriti "Kannalavo Swaami"}
+  {:composer "M Dikshitar", :kriti "Lalita Parameshvari"}
+  {:composer "Mysore Sadashiva Rao", :kriti "Mahadeva Kancipuradhisha"}
+  {:composer "Tanjavur Sankara Iyer", :kriti "Manamalar Alittu Maiyal"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Mariyada Teliyakane"}
+  {:composer "Tyagaraja", :kriti "Ma Kulamununakihapara"}
+  {:composer "Vinai Kuppiyer", :kriti "Paradevi Ni Padamule"}
+  {:composer "Tyagaraja", :kriti "Paramukham Elara Ramayya"}
+  {:composer "Oothukadu Venkata Kavi", :kriti "Parvai Ondre Podume"}
+  {:composer "Tyagaraja", :kriti "Patiki Haratire Sitapatiki"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Tyagaraja", :kriti "Ramacandra Ni Daya"}
+  {:composer "Tyagaraja", :kriti "Rama Daivama Raga Raga"}
+  {:composer "Swatitirunal", :kriti "Sadaramava Sarasija"}
+  {:composer "Papanasam Sivan", :kriti "Shiva Peruman"}
+  {:composer "Mysore Vasudevacar",
+   :kriti "Shive Pahi Shri Camundeshvari"}
+  {:composer "Papanasam Sivan", :kriti "Shri Rama Jayamangalam"}
+  {:composer "M Dikshitar", :kriti "Shri Venkatagirisham"}
+  {:composer "Tyagaraja", :kriti "Shrngarincukoni Vedaliri"}
+  {:composer "Mysore Vasudevacar", :kriti "Tadara Tanitom Tomta"}
+  {:composer "Gopalakrishna Bharati", :kriti "Tillai Ambalattanai"}
+  {:composer "Madurai Srinivasan", :kriti "Tillana"}
+  {:composer "Nila Kanta Sivan", :kriti "Unnait Tavira Verillai"}
+  {:composer "Poochi Srinivasa Iyengar", :kriti "Vega Nivu Vani"}),
+ :tanarupi
+ ({:composer "Balamurali Krishna", :kriti "Shri Ramam Sada"}
+  {:composer "Koteswara Iyer", :kriti "Va Velava"}),
+ :vardhani
+ ({:composer "Tyagaraja", :kriti "Manasa Mana Samarthyamemi"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}),
+ :gaulipantu
+ ({:composer "M Dikshitar", :kriti "Krsnananda Mukunda Murare"}
+  {:composer "Tyagaraja", :kriti "Mosaboku Vinave Satsahavasamu"}
+  {:composer "Gopalakrishna Bharati", :kriti "Namakkini Bhayamedu"}
+  {:composer "Arunacala Kavi", :kriti "Parabrahma Svarupame"}
+  {:composer "Syama Sastri", :kriti "Purahara Jaye Palaya"}
+  {:composer "Tyagaraja", :kriti "Rama Rama Krsna Yanare"}
+  {:composer "Syama Sastri", :kriti "Tarunam Idamma Ennai"}
+  {:composer "Tyagaraja", :kriti "Tera Tiyaga Rada Loni"}
+  {:composer "Muthaiah Bagavatar", :kriti "Maharagjni Mahalakshmi"}),
+ :citrambari ({:composer "Koteswara Iyer", :kriti "Samaganalola"}),
+ :dhamavati ({:composer "Own/others", :kriti "Ragam Tanam Pallavi"}),
+ :kanada
+ ({:composer "Oothukadu Venkata Kavi", :kriti "Alai Paayude"}
+  {:composer "M Dikshitar", :kriti "Balambikayah Param"}
+  {:composer "Balamurali Krishna", :kriti "Brhadishvara Mahadeva"}
+  {:composer "Arunacala Kavi", :kriti "Devi Ival Rama"}
+  {:composer "Ambujam Krishna", :kriti "Enna Sholli"}
+  {:composer "Gopalakrishna Bharati", :kriti "Ghantamani Adudu"}
+  {:composer "Garbhapurivasa", :kriti "Kamalamba Na Chinta"}
+  {:composer "Papanasam Sivan", :kriti "Kantimati Annai"}
+  {:composer "Koteswara Iyer", :kriti "Maha Ganapate"}
+  {:composer "Swatitirunal", :kriti "Mamava Sada Janani"}
+  {:composer "Vina Seshanna", :kriti "Na Dhirana Tom-tillana"}
+  {:composer "Poochi Srinivasa Iyengar", :kriti "Neranammitinayya"}
+  {:composer "Tiruvetriyur Tyagaraja",
+   :kriti "Ninne Koriyunnadi-varnam"}
+  {:composer "Gn Balasubramanian", :kriti "Ni Allal Ini"}
+  {:composer "Muthaiah Bagavatar", :kriti "Pancasyayane"}
+  {:composer "Gn Balasubramanian", :kriti "Paramukhamela Namma"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Tyagaraja", :kriti "Shri Narada Nada"}
+  {:composer "Tyagaraja", :kriti "Sukhi Evvaro Rama Nama"}
+  {:composer "Lalgudi Jayaraman", :kriti "Tillana"}
+  {:composer "Poochi Srinivasa Iyengar", :kriti "Tom Taddara"}
+  {:composer "Dharmapuri Subbaraya Iyer",
+   :kriti "Vanipondu Calu Vaddane"}
+  {:composer "Mysore Vasudevacar",
+   :kriti "Varanasyam Pranamami-varnam"}
+  {:composer "Muthaiah Bagavatar", :kriti "Varasiddhi Vinayaka"}
+  {:composer "M Dikshitar", :kriti "Vira Hanumate Namo Namaha"}
+  {:composer "M Dikshitar", :kriti "Vishveshvaro Raksatu Mam"}),
+ :ganasamavarali
+ ({:composer "M Dikshitar", :kriti "Brhadishvaro Raksatu Mam"}),
+ :shubhapantuvarali
+ ({:composer "Tyagaraja", :kriti "Ennallu Urake Unduvo"}
+  {:composer "Gn Balasubramanian", :kriti "Inkevarunnaru"}
+  {:composer "Lalitadasar", :kriti "Kailasapate"}
+  {:composer "Muthaiah Bagavatar", :kriti "Manonmani Mandahasini"}
+  {:composer "Tyagaraja", :kriti "Ne Pogadakunte Nikemi"}
+  {:composer "Gn Balasubramanian", :kriti "Ni Samanamevaru"}
+  {:composer "Mysore Vasudevacar",
+   :kriti "Paripahimam Shri Dasharathe"}
+  {:composer "M Dikshitar", :kriti "Pashupatishvaram Pranaumi"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "M Dikshitar", :kriti "Shri Satyanarayanam"}
+  {:composer "Koteswara Iyer", :kriti "Velane Vere"}),
+ :nasamani ({:composer "M Dikshitar", :kriti "Shri Rama Sarasvati"}),
+ :vijayavasantam
+ ({:composer "Tyagaraja", :kriti "Ni Cittamu Na Bhagyamayya"}),
+ :shuddhadeshi
+ ({:composer "Tyagaraja", :kriti "Raghunandana Rajamohana"}),
+ :gaula
+ ({:composer "Periyasamy Turan", :kriti "Ainkarane Omkara"}
+  {:composer "Dandapani Desikar", :kriti "Andarulvai"}
+  {:composer "Walajapet Venkatramana Bagavat", :kriti "Bhajare Manasa"}
+  {:composer "Tyagaraja", :kriti "Dudukugala Nanne Dorakoduku"}
+  {:composer "Swatitirunal", :kriti "Kamajanaka Ripuguna"}
+  {:composer "M Dikshitar", :kriti "Mahishasura Mardani"}
+  {:composer "Periyasamy Turan", :kriti "Padmanabha Dayanidhe"}
+  {:composer "Mysore Vasudevacar",
+   :kriti "Pranamamyaham Shri Gaurisutam"}
+  {:composer "Muthaiah Bagavatar", :kriti "Shankaree"}
+  {:composer "Gopalakrishna Bharati", :kriti "Sharanagatiyenru Nambi"}
+  {:composer "M Dikshitar", :kriti "Shri Maha Ganapatiravatumam"}
+  {:composer "M Dikshitar", :kriti "Tyagaraja Palayashu"}),
+ :bhairavi
+ ({:composer "Arunacala Kavi", :kriti "Arivar Yar Unnai"}
+  {:composer "Gopalakrishna Bharati", :kriti "Arukku Ponnambalan"}
+  {:composer "M Dikshitar", :kriti "Aryam Abhayambam Bhaja"}
+  {:composer "Papanasam Sivan", :kriti "Attarunam Abhayam"}
+  {:composer "Swatitirunal", :kriti "Aye Giridhar"}
+  {:composer "M Dikshitar", :kriti "Balagopala Palayashu"}
+  {:composer "Muthaiah Bagavatar", :kriti "Bhairavi Parameshwari"}
+  {:composer "Swatitirunal", :kriti "Bhavadiya Katha"}
+  {:composer "Tyagaraja", :kriti "Cetulara Shringaramu"}
+  {:composer "M Dikshitar", :kriti "Cintayamakanda Mulakandam"}
+  {:composer "Tyagaraja", :kriti "Enati Nomu Phalamo"}
+  {:composer "Oothukadu Venkata Kavi", :kriti "Ettanai Kettalum"}
+  {:composer "Gn Balasubramanian", :kriti "Gati Verevaramma"}
+  {:composer "Gn Balasubramanian", :kriti "Inta Paraku Nive"}
+  {:composer "Swatitirunal", :kriti "Janani Mamava"}
+  {:composer "Syama Sastri", :kriti "Kamaksi Anudinamu-swarajati"}
+  {:composer "Lalitadasar", :kriti "Karpakavalliyun Porpadam"}
+  {:composer "Tyagaraja", :kriti "Koluvaiyunnade Kodandapani"}
+  {:composer "Swatitirunal", :kriti "Krusna Candra"}
+  {:composer "Tyagaraja", :kriti "Lalite Shri Pravrddhe"}
+  {:composer "Pallavi Gopala Iyer", :kriti "Maha Tripurasundari"}
+  {:composer "Papanasam Sivan", :kriti "Mayilapuriyil Vanda"}
+  {:composer "Tyagaraja", :kriti "Nammina Varini Maraccedi"}
+  {:composer "Tyagaraja", :kriti "Nijamaite Mundara Niluvu"}
+  {:composer "Vinai Kuppiyer", :kriti "Ninne Nera Nammiti Talli"}
+  {:composer "Tyagaraja", :kriti "Nivanti Daivamu Ne Gana"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Ni Padamule Gatiyani"}
+  {:composer "Swatitirunal", :kriti "Palaya Devagopala"}
+  {:composer "Periyasamy Turan", :kriti "Pazham Ni Pazham"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Tyagaraja", :kriti "Raksa Btttare Doraku"}
+  {:composer "Swatitirunal", :kriti "Ramarama Gunakusuma"}
+  {:composer "Tyagaraja", :kriti "Rama Kodandarama Rama"}
+  {:composer "Walajapet Venkatramana Bagavat",
+   :kriti "Rara Dasharatha"}
+  {:composer "Syama Sastri", :kriti "Sari Evaramma Amba"}
+  {:composer "Tyagaraja", :kriti "Sarvantaryami Ni Vane"}
+  {:composer "Balamurali Krishna", :kriti "Satyamunakidi"}
+  {:composer "M Dikshitar", :kriti "Shri Kamalambayaha Param"}
+  {:composer "Mysore Sadashiva Rao", :kriti "Shri Parthasarathe"}
+  {:composer "Tyagaraja", :kriti "Shri Raghuvara Apremeya"}
+  {:composer "Tyagaraja", :kriti "Shri Raghuvara Sugunalaya"}
+  {:composer "Muthaiah Bagavatar", :kriti "Shri Rama"}
+  {:composer "Papanasam Sivan", :kriti "Shri Vishvanatham"}
+  {:composer "Tyagaraja", :kriti "Tanayande Prema Yanucu"}
+  {:composer "Tyagaraja", :kriti "Tanayuni Brova Janani"}
+  {:composer "Papanasam Sivan", :kriti "Taye Bhairaviye"}
+  {:composer "Papanasam Sivan", :kriti "Taye Ezhaipal"}
+  {:composer "Papanasam Sivan", :kriti "Taye Nine Tanjam"}
+  {:composer "Tyagaraja", :kriti "Upacaramulanu Cekonavayya"}
+  {:composer "Tyagaraja", :kriti "Upacaramu Jese Varunnarani"}
+  {:composer "Indira Natesan", :kriti "Vandeham Shri"}
+  {:composer "Nila Kanta Sivan", :kriti "Vela Sharanam"}
+  {:composer "Pacimiriyam Adiappaiya",
+   :kriti "Viriboni Ninne Kori-varnam"}
+  {:composer "Arunacala Kavi", :kriti "Yaro Ivar Yaro"}),
+ :kalakamadi ({:composer "Tyagaraja", :kriti "Shri Janaka Tanaye"}),
+ :gaudamallar
+ ({:composer "Muthaiah Bagavatar", :kriti "Jaya Devi"}
+  {:composer "Muthaiah Bagavatar", :kriti "Sarasamukhi Sakala"}),
+ :kuntalam
+ ({:composer "M Dikshitar", :kriti "Shri Sugandhi Kuntalambike"}),
+ :rasali
+ ({:composer "Tyagaraja", :kriti "Aparadhamulanorva Samayamu"}),
+ :lalitapancamam
+ ({:composer "Swatitirunal", :kriti "Paramapurusa Hrudaya"}),
+ :vishvambari
+ ({:composer "Koteswara Iyer", :kriti "Paramananda"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}),
+ :varam
+ ({:composer "Tyagaraja", :kriti "Manasuloni Marmamulu"}
+  {:composer "Lalgudi Jayaraman",
+   :kriti "Nambum Anbarkarulum-varnam"}),
+ :jayamanohari
+ ({:composer "Tyagaraja", :kriti "Ni Bhakti Bhagya Sudhanidhi"}
+  {:composer "Tyagaraja", :kriti "Shri Ramya Citta Alankara Swarupa"}
+  {:composer "Tyagaraja", :kriti "Yagnyadulu Sukhamanu"}),
+ :deshyatodi
+ ({:composer "Tyagaraja", :kriti "Namo Namo Raghavaya"}
+  {:composer "Tyagaraja", :kriti "Ne Pogadakunte Nikemi"}
+  {:composer "Gopalakrishna Bharati", :kriti "Vazhi Maraittirukkude"}),
+ :deshi ({:composer "Swatitirunal", :kriti "Sarasiruhanabham"}),
+ :bangala
+ ({:composer "Tyagaraja", :kriti "Girirajasuta Tanaya"}
+  {:composer "Tyagaraja", :kriti "Munupe Teliyaka Poyena"}
+  {:composer "Garbhapurivasa", :kriti "Rara Rama Ravikula Soma"}
+  {:composer "Tyagaraja", :kriti "Saksi Ledanucu Sadhimpake"}),
+ :gurupriya ({:composer "Balamurali Krishna", :kriti "Daivamu Nive"}),
+ :shuddhatodi
+ ({:composer "Patnam Subhramanya Iyer",
+   :kriti "Sami Nine Koriyunnanura"}
+  {:composer "Koththavasal Venkatarama Iyer",
+   :kriti "Sami Ninne Kori-varnam"}),
+ :manirangu
+ ({:composer "Muthaiah Bagavatar", :kriti "Bhandasura Vimardhini"}
+  {:composer "Papanasam Sivan", :kriti "Dandapani Padam"}
+  {:composer "Swatitirunal", :kriti "Jayajaya Padmanabha"}
+  {:composer "Papanasam Sivan", :kriti "Kadalil Amizhndiduvom"}
+  {:composer "M Dikshitar", :kriti "Mamava Pattabhirama"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Naravara Raghunandana"}
+  {:composer "Papanasam Sivan", :kriti "Paradevate Padam"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Tyagaraja", :kriti "Ranidhi Radu Surasurulakaina"}
+  {:composer "Papanasam Sivan", :kriti "Tamizh Manam"}),
+ :bhinnasadjam
+ ({:composer "Tyagaraja", :kriti "Sarivarilona Cauka Caladayena"}),
+ :jingala ({:composer "Tyagaraja", :kriti "Anathudanu Ganu Rama"}),
+ :vivardhani
+ ({:composer "Tyagaraja", :kriti "Abhimanamennadu Galgura"}
+  {:composer "Tyagaraja", :kriti "Vinave O Manasa Vivarambuna"}),
+ :madhavamanohari
+ ({:composer "M Dikshitar", :kriti "Maha Laksmi Karunarasalahari"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}),
+ :malahari
+ ({:composer "M Dikshitar", :kriti "Panca Matanga Mukha"}
+  {:composer "Muthaiah Bagavatar", :kriti "Shri Mahaganapate"}),
+ :shivashakti
+ ({:composer "Gn Balasubramanian", :kriti "Shri Cakraraja Nilaye"}
+  {:composer "Gn Balasubramanian", :kriti "Vinuta Palini"}),
+ :bauli
+ ({:composer "Lalgudi Jayaraman", :kriti "Arunodayame-varnam"}
+  {:composer "Tyagaraja", :kriti "Dinajanavana Shri Rama"}
+  {:composer "Papanasam Sivan", :kriti "Karunanidhiye Taye"}
+  {:composer "Tyagaraja", :kriti "Melukovayya Mammeluko"}
+  {:composer "Swatitirunal", :kriti "Parvatinayaka"}
+  {:composer "Nila Kanta Sivan", :kriti "Shambho Mahadeva"}
+  {:composer "M Dikshitar", :kriti "Shri Parvati Parameshvarau"}),
+ :natakapriya
+ ({:composer "Tanjavur Sankara Iyer", :kriti "Gita Vadya Natana"}
+  {:composer "Mysore Vasudevacar", :kriti "Idi Samayamu Brova Rada"}
+  {:composer "Koteswara Iyer", :kriti "Irangada Saminatha"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}),
+ :darbar
+ ({:composer "Gopalakrishna Bharati", :kriti "Adiya Pada Darishanam"}
+  {:composer "Tyagaraja", :kriti "Aparadhamula Manpi Adukovayya"}
+  {:composer "Tiruvetriyur Tyagaraja", :kriti "Calamela-varnam"}
+  {:composer "Tyagaraja", :kriti "Edi Ni Bahubala Parakrama"}
+  {:composer "Tyagaraja", :kriti "Ela Teliyalero"}
+  {:composer "Tyagaraja", :kriti "Endundi Vedalitivo Evuro"}
+  {:composer "Muthaiah Bagavatar", :kriti "Jvalajjihve Jvalamukhi"}
+  {:composer "Subbaraya Shastri", :kriti "Mina Nayana Nivu"}
+  {:composer "Tyagaraja", :kriti "Mundu Venuka Iru Prakkala"}
+  {:composer "Tyagaraja", :kriti "Narada Gurusvami Ikanaina"}
+  {:composer "Walajapet Venkatramana Bagavat", :kriti "Neeve Nannu"}
+  {:composer "Tyagaraja", :kriti "Nitya Rupa Evari Pandityamemi"}
+  {:composer "Swatitirunal", :kriti "Palaya Sada Mamayi"}
+  {:composer "Tyagaraja", :kriti "Paripalaya Mam Kodandapane"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Mysore Vasudevacar", :kriti "Raghavendra Guru Manatosmi"}
+  {:composer "Tyagaraja", :kriti "Ramabhirama Ramaniya"}
+  {:composer "Swatitirunal", :kriti "Saure Vitara Kusalam"}
+  {:composer "Swatitirunal", :kriti "Smara Manasa"}
+  {:composer "M Dikshitar", :kriti "Tyagarajadanyam Na Jane"}
+  {:composer "Ambujam Krishna", :kriti "Vezha Mukhattarashe"}
+  {:composer "Tyagaraja", :kriti "Yocana Kamala Locana"}),
+ :arabhi
+ ({:composer "Papanasam Sivan", :kriti "Aiyappanai Panivom"}
+  {:composer "Dandapani Desikar", :kriti "Anbu Kondennai"}
+  {:composer "Tyagaraja", :kriti "Calakalladukonna Soukhyamemira"}
+  {:composer "Tyagaraja", :kriti "Cutamurare Sudatulara"}
+  {:composer "Papanasam Sivan", :kriti "Durgalaksmi Sarasvati"}
+  {:composer "Ambujam Krishna", :kriti "En Tai Niyanro"}
+  {:composer "M Dikshitar", :kriti "Ganarajena Raksitoham"}
+  {:composer "M Dikshitar", :kriti "Gaurishaya Namaste"}
+  {:composer "Tyagaraja", :kriti "Ipudaina Nannu Dalacinara"}
+  {:composer "Muthaiah Bagavatar", :kriti "Madhukaitabha Samhartri"}
+  {:composer "Balamurali Krishna", :kriti "Mahadeva Sutam Aham"}
+  {:composer "Balamurali Krishna", :kriti "Mangala Dayaka"}
+  {:composer "Oothukadu Venkata Kavi", :kriti "Maragata Manimaya"}
+  {:composer "Tyagaraja", :kriti "Nada Sudha Rasambilanu"}
+  {:composer "Swatitirunal", :kriti "Narasimha Mamava"}
+  {:composer "Tyagaraja", :kriti "Na Moralanu Vini Emaravalena"}
+  {:composer "Nila Kanta Sivan", :kriti "Nilakantha Nityananda"}
+  {:composer "Tyagaraja", :kriti "Ninne Neranamminanu"}
+  {:composer "Tiruvetriyur Tyagaraja",
+   :kriti "Ni Sari Velpula Nenendu"}
+  {:composer "Nila Kanta Sivan", :kriti "Oraru Mukhane"}
+  {:composer "Tyagaraja", :kriti "O Rajivaksa"}
+  {:composer "Swatitirunal", :kriti "Pahi Parvatanandini"}
+  {:composer "Syama Sastri", :kriti "Palayasu Mam Paradevate"}
+  {:composer "Tyagaraja", :kriti "Palukavemi Patita Pavana"}
+  {:composer "Tyagaraja", :kriti "Patiki Mangala Haratire"}
+  {:composer "Gopalakrishna Bharati", :kriti "Piravada Varam"}
+  {:composer "Oothukadu Venkata Kavi", :kriti "Pranavaakaaram"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Tyagaraja", :kriti "Sadhincene O Manasa"}
+  {:composer "Oothukadu Venkata Kavi", :kriti "Sakala Loka Nayike"}
+  {:composer "M Dikshitar", :kriti "Shivakameshvarim Cintayamyaham"}
+  {:composer "Balamurali Krishna", :kriti "Shri Sakala Ganadhipa"}
+  {:composer "M Dikshitar", :kriti "Shri Sarasvati Namostute"}
+  {:composer "M Dikshitar", :kriti "Shvetaranyeshvaram"}
+  {:composer "Swatitirunal", :kriti "Sriramana Vibho"}
+  {:composer "Lalitadasar", :kriti "Varijadala Locani"}
+  {:composer "Tulasivanam", :kriti "Vighneshvara Kumara"}
+  {:composer "Tulasivanam", :kriti "Vighneshvara Shubhakara"}),
+ :revati
+ ({:composer "Tanjavur Sankara Iyer", :kriti "Mahadeva Shiva Shambho"}
+  {:composer "Balamurali Krishna", :kriti "Mohana Vamshi"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Lalgudi Jayaraman", :kriti "Tillana"}
+  {:composer "Maharajapuram Santanam", :kriti "Tillana"}),
+ :margahindolam
+ ({:composer "Tyagaraja", :kriti "Calamelara Saketa Rama"}
+  {:composer "M Dikshitar", :kriti "Candrashekharam Sada Bhajeham"}
+  {:composer "Mysore Sadashiva Rao", :kriti "Mamava Sarasvati"}
+  {:composer "Gn Balasubramanian", :kriti "Sarasijaksi Ni"}),
+ :natanarayani
+ ({:composer "M Dikshitar", :kriti "Maha Ganapate Palayashu"}),
+ :navamalika
+ ({:composer "Balamurali Krishna", :kriti "Amba Mamava"}
+  {:composer "Ambujam Krishna", :kriti "Andaal kalyaanam"}
+  {:composer "Swatitirunal", :kriti "Bhavayami Ragahuramam"}
+  {:composer "Ambujam Krishna", :kriti "Devaki Tan Kula"}
+  {:composer "Arunacala Kavi", :kriti "Enakkun Irupadam"}
+  {:composer "Balamurali Krishna", :kriti "Ganalola Ni Lilalenna"}
+  {:composer "Ambujam Krishna", :kriti "Gana Mazhai"}
+  {:composer "Vinai Kuppiyer", :kriti "Inta Kopamelara-varnam"}
+  {:composer "Swatitirunal", :kriti "Kamalajasya"}
+  {:composer "Ambujam Krishna", :kriti "Kannanidam Eduttu"}
+  {:composer "Ambujam Krishna", :kriti "Kannan Enradume"}
+  {:composer "Ambujam Krishna", :kriti "Kanna Va"}
+  {:composer "Lalitadasar", :kriti "Nrtyati Mama Hrdaye"}
+  {:composer "Mysore Sadashiva Rao", :kriti "Panca Banudu-javali"}
+  {:composer "Swatitirunal", :kriti "Pannagendrasayana"}
+  {:composer "Maha Vaidyanatha Iyer", :kriti "Pranatarthihara"}
+  {:composer "M Dikshitar", :kriti "Purna Candra Bimba Vijayavadane"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Tanjavur Sankara Iyer", :kriti "Ranjani Mrdu Pankaja"}
+  {:composer "Poochi Srinivasa Iyengar", :kriti "Sami Nipai Asara"}
+  {:composer "Swatitirunal", :kriti "Sanandam Kamala"}
+  {:composer "M Dikshitar", :kriti "Shri Vishvanatham Bhaje"}
+  {:composer "M Dikshitar", :kriti "Simhasana Sthite"}
+  {:composer "Muthaiah Bagavatar", :kriti "Unnai Ninaindu"}
+  {:composer "Koththavasal Venkatarama Iyer",
+   :kriti "Valachi Vachchiyunna-varnam"}
+  {:composer "Patnam Subhramanya Iyer",
+   :kriti "Valaci Vacciyunna-varnam"}
+  {:composer "Muthaiah Bagavatar", :kriti "Vedattin Ucciyil"}),
+ :kalanidhi
+ ({:composer "Tyagaraja", :kriti "Cinnanade Na Ceyi Battitivi"}),
+ :shivaranjani
+ ({:composer "Tr Subramaniam", :kriti "Angayarkkanni Niye--varnam"}
+  {:composer "Papanasam Sivan", :kriti "Andavan Anbe Shakti"}
+  {:composer "Papanasam Sivan", :kriti "Tarunm Idaiyya"}),
+ :kesari ({:composer "Tyagaraja", :kriti "Nannu Kanna Talli"}),
+ :manohari
+ ({:composer "M Dikshitar", :kriti "Kanjadalaya Takshi Kamaksi"}
+  {:composer "Tyagaraja", :kriti "Paritapamu Ganiyadina"}
+  {:composer "M Dikshitar", :kriti "Shankaram Abhirami Manoharam"}),
+ :gangeyabhushani
+ ({:composer "Tyagaraja", :kriti "Evare Ramayya Ni Sari"}),
+ :vasantabhairavi
+ ({:composer "Tyagaraja", :kriti "Ni Daya Rada"}
+  {:composer "Tyagaraja", :kriti "Rama Ramana Bharama"}),
+ :candrajyoti
+ ({:composer "Tyagaraja", :kriti "Bagayanayya Ni Mayalento"}
+  {:composer "Tyagaraja", :kriti "Shashi Vadana Bhakta Janavana"}),
+ :malayamarutam
+ ({:composer "Vedanayakam Pillai", :kriti "Dayai Puriya Innum"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Dhanyudevvado"}
+  {:composer "Arunacala Kavi", :kriti "Hanumane Samikku Inda Adayalam"}
+  {:composer "Papanasam Sivan", :kriti "Karpaka Manohara"}
+  {:composer "Tyagaraja", :kriti "Manasa Etulortune"}
+  {:composer "Gn Balasubramanian", :kriti "Niravadhi Sukha Dayaki"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Muthaiah Bagavatar", :kriti "Sugandha Pushpa"}),
+ :adibhairavi
+ ({:composer "Balamurali Krishna",
+   :kriti "Na Diru Diru Dhim Tanana-tillana"}
+  {:composer "Lalgudi Jayaraman", :kriti "Shri Jagadisvari Durga"}),
+ :candrika
+ ({:composer "Balamurali Krishna", :kriti "Ni Sati Nive Ranga"}),
+ :purnacandrika
+ ({:composer "Jayacamaraja Wodayar",
+   :kriti "Bhajare Re Manasa Mardinim"}
+  {:composer "Muthaiah Bagavatar", :kriti "Candra Mandala"}
+  {:composer "Mysore Vasudevacar", :kriti "Narayana Namostute"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Ne Jesina Neramu"}
+  {:composer "Gopalakrishna Bharati", :kriti "Padame Tunai"}
+  {:composer "Tyagaraja", :kriti "Palukavemi Na Daivama"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Panca Nadisha Pahimam"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Swatitirunal", :kriti "Ramacandra Pahi"}
+  {:composer "M Dikshitar", :kriti "Shankha Cakra Gada Panim"}
+  {:composer "M Dikshitar", :kriti "Shri Rajarajeshvari"}
+  {:composer "Tyagaraja", :kriti "Shri Rama Rama Jagadatma"}
+  {:composer "Tyagaraja", :kriti "Telisi Rama Cintanato"}
+  {:composer "Poochi Srinivasa Iyengar", :kriti "Tom Tom Tadhara"}
+  {:composer "Muthaiah Bagavatar", :kriti "Tudikkaikuriya"}
+  {:composer "Gn Balasubramanian", :kriti "Varada Nipuna"}),
+ :cittaranjani
+ ({:composer "Tyagaraja", :kriti "Nada Tanumanisham Shankaram"}),
+ :hamsadhvani
+ ({:composer "Tyagaraja", :kriti "Abhista Varada Shri"}
+  {:composer "Tulasivanam", :kriti "Bhajamahe Shri"}
+  {:composer "Tiruvetriyur Tyagaraja", :kriti "Centa Dircci"}
+  {:composer "Muthaiah Bagavatar", :kriti "Gam Ganapate"}
+  {:composer "Koththavasal Venkatarama Iyer",
+   :kriti "Jalajaksha Ninnedabasi-varnam"}
+  {:composer "Madurai Gs Mani", :kriti "Jaya Jaya Vijaya Vinayakam"}
+  {:composer "Muthaiah Bagavatar", :kriti "Jaya Mahishasura"}
+  {:composer "Papanasam Sivan", :kriti "Kapali Karunai Nidhi"}
+  {:composer "Papanasam Sivan", :kriti "Karunai Seivai Gajaraja"}
+  {:composer "Indira Natesan", :kriti "Maha Ganapate"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Manasu Karagudemi"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Maracedi Nyayama"}
+  {:composer "Papanasam Sivan", :kriti "Muladhara Murti"}
+  {:composer "Krishnasvami Ayya", :kriti "Namami Vighna Vinayaka"}
+  {:composer "Gopalakrishna Bharati", :kriti "Padame Tunai Ayyane"}
+  {:composer "Patnam Subhramanya Iyer",
+   :kriti "Pagavari Bodhana-varnam"}
+  {:composer "Balamurali Krishna", :kriti "Pahi Prabho Ganarajama"}
+  {:composer "Swatitirunal", :kriti "Pahi Sripate"}
+  {:composer "Mysore Vasudevacar", :kriti "Palayashu Padmanabha"}
+  {:composer "Papanasam Sivan", :kriti "Parashakti Janani"}
+  {:composer "Balamurali Krishna", :kriti "Paripari Ni"}
+  {:composer "M Dikshitar", :kriti "Parvatipatim Pranaumi"}
+  {:composer "Balamurali Krishna", :kriti "Pirai Aniyum Peruman"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Tyagaraja", :kriti "Raghunayaka Ni Padayuga"}
+  {:composer "Maharajapuram Santanam", :kriti "Sadashiva Maindane"}
+  {:composer "Tyagaraja", :kriti "Shri Raghukula Mundubutti"}
+  {:composer "Papanasam Sivan", :kriti "Ullam Irangi"}
+  {:composer "Mysore Vasudevacar", :kriti "Vande Anisham Aham Varana"}
+  {:composer "Koteswara Iyer", :kriti "Varana Mukhava"}
+  {:composer "Gn Balasubramanian", :kriti "Vara Vallabha Ramana"}
+  {:composer "M Dikshitar", :kriti "Vatapi Ganapatim Bhajeham"}
+  {:composer "Vinai Kuppiyer", :kriti "Vinayaka Ninu Vina Brocutaku"}),
+ :karnatakakapi
+ ({:composer "Syama Sastri", :kriti "Akhilandeshvari Durusuga"}
+  {:composer "Muthaiah Bagavatar", :kriti "Kowsumbhavasanopete"}
+  {:composer "Swatitirunal", :kriti "Sambho Satatam"}
+  {:composer "M Dikshitar", :kriti "Venkatacalapate"}),
+ :hamsagamani ({:composer "Muthaiah Bagavatar", :kriti "Sadashivam"}),
+ :andolika
+ ({:composer "Gn Balasubramanian", :kriti "Karanamemi Kanane"}
+  {:composer "Muthaiah Bagavatar", :kriti "Mahisasura Mardhini-varnam"}
+  {:composer "Gn Balasubramanian", :kriti "Ni Dayarada-varnam"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Tyagaraja", :kriti "Raga Sudharasa Panamu"}
+  {:composer "Muthaiah Bagavatar", :kriti "Vajreshi Mate"}
+  {:composer "Lalgudi Jayaraman", :kriti "Varnam"}),
+ :hindustanikapi
+ ({:composer "Mysore Vasudevacar", :kriti "Bhaja Madhavam Anisham"}
+  {:composer "Papanasam Sivan", :kriti "Radha Mukha Kamala"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Nila Kanta Sivan", :kriti "Sanmukhane Shiva Shakti"}),
+ :desha
+ ({:composer "Lalitadasar", :kriti "Nanda Nandana"}
+  {:composer "Tanjavur Sankara Iyer", :kriti "Rama Namame Tudi Maname"}
+  {:composer "Lalgudi Jayaraman", :kriti "Tillana"}),
+ :dipakam ({:composer "Tyagaraja", :kriti "Kalala Nercina"}),
+ :chayatarangini
+ ({:composer "Tyagaraja", :kriti "Krpa Jucutaku Velara"}
+  {:composer "M Dikshitar", :kriti "Sarasvati Chayatarangini"}),
+ :padi ({:composer "M Dikshitar", :kriti "Shri Guruna Palitosmi"}),
+ :harikambhoji
+ ({:composer "Tyagaraja", :kriti "Avataram Enduku Ayasam"}
+  {:composer "Tyagaraja", :kriti "Cani Todi Teve O Manasa"}
+  {:composer "Tyagaraja", :kriti "Dinamani Vamsha Tilaka"}
+  {:composer "Papanasam Sivan", :kriti "Enadu Manam Kavalai"}
+  {:composer "Tyagaraja", :kriti "Enduku Nirdaya"}
+  {:composer "Tyagaraja", :kriti "Entarani Tanakenta Poni"}
+  {:composer "Papanasam Sivan", :kriti "Kamalappada Malarinai"}
+  {:composer "Muthaiah Bagavatar", :kriti "Karangulina"}
+  {:composer "Tyagaraja", :kriti "Lali Laliyani Yucedara"}
+  {:composer "Tanjavur Sankara Iyer", :kriti "Muruga Tirumal Maruga"}
+  {:composer "Koteswara Iyer", :kriti "Neeye Gati En Taye"}
+  {:composer "Tyagaraja", :kriti "Nenendu Vedukudura"}
+  {:composer "Tyagaraja", :kriti "Oka Mata Oka Banamu"}
+  {:composer "Papanasam Sivan", :kriti "Pamalaikkinai Undo"}
+  {:composer "Mysore Sadashiva Rao", :kriti "Pannaga Shayana"}
+  {:composer "Poochi Srinivasa Iyengar",
+   :kriti "Paripalayamam Padmasane"}
+  {:composer "Gopalakrishna Bharati", :kriti "Parkkap Parkka"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Tyagaraja", :kriti "Rama Nannu Brovaravemako"}
+  {:composer "Tyagaraja", :kriti "Rara Phanishayana"}
+  {:composer "Mysore Sadashiva Rao", :kriti "Saketa Nagara Natha"}
+  {:composer "Tyagaraja", :kriti "Undedi Ramudokadu"}
+  {:composer "Tyagaraja", :kriti "Vallagadanaka Sita Vallabha"}
+  {:composer "Tyagaraja", :kriti "Vinata Suta Vahanudai"}),
+ :bhuvanagandhari
+ ({:composer "Muthaiah Bagavatar", :kriti "Lalitambe Shri Mate"}),
+ :vasanti ({:composer "Lalgudi Jayaraman", :kriti "Tillana"}),
+ :kaikavashi ({:composer "Tyagaraja", :kriti "Vacamagocarame Manasa"}),
+ :simhendramadhyamam
+ ({:composer "Oothukadu Venkata Kavi", :kriti "Ashaindaadum Mayil"}
+  {:composer "Muthaiah Bagavatar", :kriti "Ashtadasha Supeethastite"}
+  {:composer "Papanasam Sivan", :kriti "En Manam Usalada"}
+  {:composer "Papanasam Sivan", :kriti "Ihaparamenum Iru"}
+  {:composer "M Dikshitar", :kriti "Kamaksi Kamakoti Pithavasini"}
+  {:composer "Periyasamy Turan", :kriti "Kazhanigal Shuzh"}
+  {:composer "Vinai Kuppiyer", :kriti "Mammu Brocu Patla"}
+  {:composer "Balamurali Krishna", :kriti "Marakata Simhasana"}
+  {:composer "Ambujam Krishna", :kriti "Narahariyai Vandan"}
+  {:composer "Tyagaraja", :kriti "Natajana Paripala Ghana"}
+  {:composer "Tyagaraja", :kriti "Nidu Caranamule Gatiyani"}
+  {:composer "Mysore Vasudevacar", :kriti "Ninne Nammitinaiya Sri"}
+  {:composer "Papanasam Sivan", :kriti "Nin Carana Malare"}
+  {:composer "M Dikshitar", :kriti "Pamara Jana Palini Brhannayaki"}
+  {:composer "Gn Balasubramanian", :kriti "Porumaiyai Izhainden"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Swatitirunal", :kriti "Ramarama Gunasima"}
+  {:composer "Balamurali Krishna", :kriti "Telugu Tamila"}
+  {:composer "Koteswara Iyer", :kriti "Unnaiyallal Vere Gati"}),
+ :navarasakannada
+ ({:composer "Muthaiah Bagavatar", :kriti "Durgadevi Durita Nivarini"}
+  {:composer "Muthaiah Bagavatar", :kriti "Lambodara Maha Ganesha"}
+  {:composer "Papanasam Sivan", :kriti "Nanoru Vilayattu"}
+  {:composer "Tyagaraja", :kriti "Ninnu Vina Namadi Endu"}
+  {:composer "Poochi Srinivasa Iyengar", :kriti "Ni Padamule Gatiyani"}
+  {:composer "Tyagaraja", :kriti "Paluku Kanda Cakkeranu"}
+  {:composer "Swatitirunal", :kriti "Vande Sada Padmanabham"}),
+ :simhavahini
+ ({:composer "Patnam Subhramanya Iyer",
+   :kriti "Evarunnaru Nannu Brocutaku"}
+  {:composer "Tyagaraja", :kriti "Nenaruncara Napaini"}
+  {:composer "Muthaiah Bagavatar", :kriti "Simhavahane"}),
+ :nata
+ ({:composer "Papanasam Sivan", :kriti "Dayanidhe Janakipate"}
+  {:composer "Balamurali Krishna", :kriti "E Nadamulo I Sakala-varnam"}
+  {:composer "Balamurali Krishna", :kriti "Ganadhipam Satatam"}
+  {:composer "Balamurali Krishna", :kriti "Gana Sudharasa Pana"}
+  {:composer "Tyagaraja", :kriti "Jagadanandakaraka Jayajanaki"}
+  {:composer "Jayacamaraja Wodayar", :kriti "Kamalambike Mamava"}
+  {:composer "Gn Balasubramanian", :kriti "Karimukha Varada"}
+  {:composer "M Dikshitar", :kriti "Maha Ganapatim Manasa Smarami"}
+  {:composer "Tanjavur Sankara Iyer", :kriti "Maha Ganapati Va Va"}
+  {:composer "Tyagaraja", :kriti "Ninne Bhajana Seyu Vadanu"}
+  {:composer "Syama Sastri", :kriti "Pahi Mam Shri Rajarajeshvari"}
+  {:composer "M Dikshitar", :kriti "Parameshvara Jagadishvara"}
+  {:composer "M Dikshitar", :kriti "Pavanatmaja Agaccha"}
+  {:composer "Tulasivanam", :kriti "Pranatosmi Devam"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Koththavasal Venkatarama Iyer",
+   :kriti "Sami Ninne Korinanu-varnam"}
+  {:composer "Tulasivanam", :kriti "Shri Padmanabham"}
+  {:composer "Nila Kanta Sivan", :kriti "Shri  Ganapatiye Tunai"}
+  {:composer "Nila Kanta Sivan", :kriti "Siddhi Arul"}
+  {:composer "M Dikshitar", :kriti "Svaminatha Paripalayashu"}
+  {:composer "Ambujam Krishna", :kriti "Varana Mukhane"}),
+ :andhali ({:composer "M Dikshitar", :kriti "Brhannayaki Varadayaki"}),
+ :guharanjani
+ ({:composer "Muthaiah Bagavatar", :kriti "Ikane Talajalanura"}
+  {:composer "Muthaiah Bagavatar", :kriti "Navavarana Sampoojye"}),
+ :nasikabhushani
+ ({:composer "Tyagaraja", :kriti "Maravairi Ramani Manjubhasini"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "M Dikshitar", :kriti "Shri Rama Sarasvati"}
+  {:composer "Koteswara Iyer", :kriti "Tandarul Ayya"}),
+ :gayakapriya ({:composer "Koteswara Iyer", :kriti "Nada Nilai"}),
+ :kedaragaula
+ ({:composer "M Dikshitar", :kriti "Abhayamba Nayaka Varadayaka"}
+  {:composer "M Dikshitar", :kriti "Abhayambikayaha Anyam"}
+  {:composer "Arunacala Kavi", :kriti "Anda Rama Saundaryam"}
+  {:composer "Tyagaraja", :kriti "Dharmatma Nannippudu"}
+  {:composer "Muthaiah Bagavatar", :kriti "Dvatrimshat Jvaladayute"}
+  {:composer "Ambujam Krishna", :kriti "Enadu Manam"}
+  {:composer "Dharmapuri Subbaraya Iyer", :kriti "Era Tagunatara"}
+  {:composer "Swatitirunal", :kriti "Jalajanabha Mamava"}
+  {:composer "Tyagaraja", :kriti "Karuna Jaladhi Dasharathi"}
+  {:composer "Tyagaraja", :kriti "Lali Lalayya Lali"}
+  {:composer "Tyagaraja", :kriti "Ma Ramacanduniki Jayamangalam"}
+  {:composer "M Dikshitar", :kriti "Nilakantham Bhajeham"}
+  {:composer "Mysore Vasudevacar", :kriti "Palumaru Ninne Padi"}
+  {:composer "Syama Sastri", :kriti "Parakela Nannu Paripalimpa"}
+  {:composer "Balamurali Krishna", :kriti "Parama Pavanamu"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Tyagaraja", :kriti "Raghunandana Raghunandana"}
+  {:composer "Tyagaraja", :kriti "Ramuni Maravakave"}
+  {:composer "Papanasam Sivan", :kriti "Samikku Sari Evare"}
+  {:composer "Tiruvetriyur Tyagaraja", :kriti "Sami Daya Jooda-varnam"}
+  {:composer "Papanasam Sivan", :kriti "Sangita Trimurtigalai"}
+  {:composer "Poochi Srinivasa Iyengar", :kriti "Saraguna Palimpa"}
+  {:composer "Papanasam Sivan", :kriti "Svamikku Sari"}
+  {:composer "Walajapet Venkatramana Bagavat", :kriti "Tillana"}
+  {:composer "Tyagaraja", :kriti "Tulasi Bilva Mallikadi"}
+  {:composer "Dharmapuri Subbaraya Iyer", :kriti "Uri Varemi Jesedare"}
+  {:composer "Tyagaraja", :kriti "Vanajanayanudani Valacitivo"}
+  {:composer "Tyagaraja", :kriti "Varija Nayana Ni Vadanu"}
+  {:composer "Tyagaraja", :kriti "Venugana Loluni"}),
+ :nalinakanti
+ ({:composer "Mysore Vasudevacar", :kriti "Evarunnaru Nannu-varnam"}
+  {:composer "Tyagaraja", :kriti "Manavinalakinca Radate"}
+  {:composer "Tanjavur Sankara Iyer",
+   :kriti "Natajana Palini Nalinakanti"}
+  {:composer "Gn Balasubramanian",
+   :kriti "Ni Padame Gati Nalinakantimati"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Lalgudi Jayaraman", :kriti "Varnam"}),
+ :dvijavanti
+ ({:composer "M Dikshitar", :kriti "Akhilandeshvari Raksamam"}
+  {:composer "M Dikshitar", :kriti "Cetaha Shri Balakrsnam"}
+  {:composer "Balamurali Krishna",
+   :kriti "Dhirana Nadira Tanomtana-tillana"}
+  {:composer "Periyasamy Turan", :kriti "Engu Nan Selvenayya"}
+  {:composer "Muthaiah Bagavatar", :kriti "Parama Mangalade"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Swatitirunal", :kriti "Taruni Nan Endu"}
+  {:composer "Lalgudi Jayaraman", :kriti "Tillana"}),
+ :kokilavarali
+ ({:composer "Tyagaraja", :kriti "Sumukhana Nilva Galguna"}),
+ :rishabhapriya
+ ({:composer "Koteswara Iyer", :kriti "Ghananaya"}
+  {:composer "Mysore Vasudevacar", :kriti "Mahatmule Teliyaleru"}
+  {:composer "Tyagaraja", :kriti "Mahima Dakkincukovayya"}
+  {:composer "Balamurali Krishna", :kriti "Nandisham Vande"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}),
+ :parai
+ ({:composer "Swatitirunal", :kriti "Bhaja Bhaja Manasa"}
+  {:composer "M Dikshitar", :kriti "Cintaye Mahalinga Murtim"}
+  {:composer "M Dikshitar", :kriti "Madhuramba Jayati"}
+  {:composer "Syama Sastri", :kriti "Nilayataksi Nive Jagatsaksi"}
+  {:composer "Swatitirunal", :kriti "Pannagasayana Pahimam"}
+  {:composer "Muthaiah Bagavatar", :kriti "Sarva Mangala"}
+  {:composer "Mysore Vasudevacar", :kriti "Shri Mahalaksmim Bhajeham"}
+  {:composer "M Dikshitar", :kriti "Shri Shukra Bhagavantam"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Tadhim Timta Tara"}
+  {:composer "Poochi Srinivasa Iyengar", :kriti "Tanom Tanata Dhirana"}
+  {:composer "Syama Sastri", :kriti "Triloka Mata Nannu Brovu"}
+  {:composer "Swatitirunal", :kriti "Vande Sada Padmanabham"}
+  {:composer "Tyagaraja", :kriti "Varamaina Netrotsavamunu"}),
+ :sauvira
+ ({:composer "M Dikshitar", :kriti "Sarasa Sauvira Rasavada"}),
+ :bhavini
+ ({:composer "M Dikshitar", :kriti "Jayati Shivabhavani"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Dandapani Desikar", :kriti "Unnaiyanri Utra Tunai"}),
+ :bhimpalas
+ ({:composer "Papanasam Sivan", :kriti "Maname Kanamum"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Lalgudi Jayaraman", :kriti "Tillana"}
+  {:composer "Indira Natesan", :kriti "Venkatacala Nilayam Guru"}),
+ :tilang
+ ({:composer "Papanasam Sivan", :kriti "Shri Ganesha Sharanam"}
+  {:composer "Lalgudi Jayaraman", :kriti "Tillana"}),
+ :kapinarayani ({:composer "Tyagaraja", :kriti "Sarasa Sama Dana"}),
+ :candrahasitam
+ ({:composer "Gn Balasubramanian", :kriti "Enta Ninnu"}),
+ :shanmukhapriya
+ ({:composer "Mysore Vasudevacar", :kriti "Abhimanamuto Nannu"}
+  {:composer "Papanasam Sivan", :kriti "Andavane Unai"}
+  {:composer "Gopalakrishna Bharati", :kriti "Bhavasagaram Karai"}
+  {:composer "M Dikshitar", :kriti "Ekamresha Nayakim Ishvarim"}
+  {:composer "Periyasamy Turan", :kriti "Gurupara Guhane"}
+  {:composer "Papanasam Sivan", :kriti "Kannanai Pani"}
+  {:composer "M Dikshitar", :kriti "Mahasuram Ketum"}
+  {:composer "Swatitirunal", :kriti "Mamava Karunaya"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Marivere Dikkevarayya"}
+  {:composer "Gn Balasubramanian", :kriti "Ni Daya Galguno"}
+  {:composer "Balamurali Krishna", :kriti "Omkara Pranava-varnam"}
+  {:composer "Gn Balasubramanian", :kriti "Paritapamuleka"}
+  {:composer "Papanasam Sivan", :kriti "Parvati Nayakane"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "M Dikshitar", :kriti "Sadashraye Abhayambike"}
+  {:composer "Balamurali Krishna", :kriti "Sada Tava Pada"}
+  {:composer "Muthaiah Bagavatar", :kriti "Sati Deviya"}
+  {:composer "Papanasam Sivan", :kriti "Sharavanabhava Enum"}
+  {:composer "Oothukadu Venkata Kavi", :kriti "Shri Ganesvara"}
+  {:composer "M Dikshitar", :kriti "Siddhi Vinayakam Anisham"}
+  {:composer "Koteswara Iyer", :kriti "Sukhame Sukham"}
+  {:composer "Gopalakrishna Bharati", :kriti "Tandai Tai"}
+  {:composer "Tyagaraja", :kriti "Vaddane Varu Leru"}
+  {:composer "Muthaiah Bagavatar", :kriti "Vallee Nayaka"}
+  {:composer "Lalitadasar", :kriti "Vanaja Nayana"}
+  {:composer "Lalgudi Jayaraman", :kriti "Varnam"}),
+ :cakrapradipta
+ ({:composer "Muthaiah Bagavatar", :kriti "Cakreshi Devi"}),
+ :kuvalayabharanam
+ ({:composer "Indira Natesan", :kriti "Nilakantha Mahadeva"}),
+ :ravikriya
+ ({:composer "M Dikshitar", :kriti "Himagiri Kumari Ishvari"}),
+ :ragavardhini
+ ({:composer "Balamurali Krishna", :kriti "Gana Sudharasame"}
+  {:composer "Koteswara Iyer", :kriti "Kalangade Maname"}
+  {:composer "M Dikshitar", :kriti "Shveta Ganapatim Vande"}),
+ :urmika
+ ({:composer "Pallavi Sesha Iyer", :kriti "Entani Vina Vintura"}
+  {:composer "Muthaiah Bagavatar", :kriti "Kalaratri Svarupini Amba"}),
+ :dhanyasi
+ ({:composer "Papanasam Sivan", :kriti "Balakrisnan Padamalar"}
+  {:composer "Subbaraya Shastri", :kriti "Dalacinavaru"}
+  {:composer "Tyagaraja", :kriti "Dhyaname Varamaina"}
+  {:composer "Tyagaraja", :kriti "Endu Bayera Daya Inakula"}
+  {:composer "Mysore Sadashiva Rao",
+   :kriti "E Maguva Bodhincera-varnam"}
+  {:composer "Swatitirunal", :kriti "Jamuna Kinare"}
+  {:composer "Tyagaraja", :kriti "Janaki Nayaka Niku Jayamangalam"}
+  {:composer "Muthaiah Bagavatar", :kriti "Japa Kusuma"}
+  {:composer "Swatitirunal", :kriti "Kalayami Sriramam"}
+  {:composer "Gopalakrishna Bharati", :kriti "Kanaka Sabhapati"}
+  {:composer "Walajapet Venkatramana Bagavat",
+   :kriti "Kannulara Kantinipudu"}
+  {:composer "Tiruvetriyur Tyagaraja", :kriti "Kapadu Gananatha"}
+  {:composer "M Dikshitar", :kriti "Mayuranatham Bhajami"}
+  {:composer "Syama Sastri", :kriti "Mina Locana Brova Yocana"}
+  {:composer "Mysore Sadashiva Rao", :kriti "Namami Shri Satya"}
+  {:composer "Bhadracala Ramadas", :kriti "Nammina Varini"}
+  {:composer "Vinai Kuppiyer", :kriti "Na Moralakinci"}
+  {:composer "Tyagaraja", :kriti "Ni Cittamu Nishcalamu"}
+  {:composer "Papanasam Sivan", :kriti "Ni Inda Mayam-varnam"}
+  {:composer "M Dikshitar", :kriti "Paradevata Brhatkucalamba"}
+  {:composer "Swatitirunal", :kriti "Prananayaka Mampahi"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Tyagaraja", :kriti "Ramabhirama Manasu Ranjilla"}
+  {:composer "Bhadracala Ramadas", :kriti "Ramakrshna Govinda"}
+  {:composer "Bhadracala Ramadas", :kriti "Rama Dayajoodave"}
+  {:composer "Tyagaraja", :kriti "Sangita Jnanamu Bhaktivina"}
+  {:composer "Nila Kanta Sivan", :kriti "Shodippadenna Nyayama"}
+  {:composer "Tyagaraja", :kriti "Shri Rama Dasa Dasoham"}
+  {:composer "M Dikshitar", :kriti "Shri Ranganathaya Namaste"}
+  {:composer "Tyagaraja", :kriti "Shyama Sundaranga"}
+  {:composer "Bhadracala Ramadas", :kriti "Taraka Mantramu"}
+  {:composer "Gopalakrishna Bharati",
+   :kriti "Tiruvatirai Darishanattukku"}
+  {:composer "M Dikshitar", :kriti "Vedapurishvaram"}),
+ :karnaranjani
+ ({:composer "Ambujam Krishna", :kriti "Om Namo Narayana"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Muthaiah Bagavatar", :kriti "Sthanum Bhajamyaham"}
+  {:composer "Lalgudi Jayaraman", :kriti "Tillana"}
+  {:composer "Muthaiah Bagavatar", :kriti "Vancatonu"}),
+ :ramalila
+ ({:composer "Balamurali Krishna", :kriti "Dru Tom Nanana-tillana"}
+  {:composer "Balamurali Krishna", :kriti "Tanom Nom"}),
+ :sindhukannada ({:composer "Tyagaraja", :kriti "Nannu Kanna Talli"}),
+ :cenjuruti
+ ({:composer "Gopalakrishna Bharati", :kriti "Cidambaram Poghamal"}
+  {:composer "Vina Seshanna", :kriti "Dhirana Tanadhimta-tillana"}
+  {:composer "M Dikshitar", :kriti "Gajamba Nayako Raksatu"}
+  {:composer "M Dikshitar", :kriti "Ganesha Kumara Pahi"}
+  {:composer "M Dikshitar", :kriti "Gange Mam Pahi"}
+  {:composer "Gopalakrishna Bharati", :kriti "Innam Varak Kanen"}
+  {:composer "Bhadracala Ramadas", :kriti "Kamalanayana Vasudeva"}
+  {:composer "Dharmapuri Subbaraya Iyer", :kriti "Marubari Orvalene"}
+  {:composer "Tyagaraja", :kriti "Navanita Cora"}
+  {:composer "Gopalakrishna Bharati", :kriti "Pittam Teliya"}
+  {:composer "Mysore Vasudevacar", :kriti "Pranatartiharam Aham"}
+  {:composer "Oothukadu Venkata Kavi",
+   :kriti "Pullaay Piravi Taravendum"}
+  {:composer "Tyagaraja", :kriti "Rama Rama Rama Rara"}
+  {:composer "Dharmapuri Subbaraya Iyer",
+   :kriti "Sakhi Prana Sakhuditu"}
+  {:composer "Tanjavur Sankara Iyer", :kriti "Shanti Alittidum"}
+  {:composer "Lalgudi Jayaraman", :kriti "Tillana"}
+  {:composer "Walajapet Venkatramana Bagavat",
+   :kriti "Vinaradu Gadara"}
+  {:composer "Madurai Gs Mani", :kriti "Paripurna Chandrananan"}),
+ :sama
+ ({:composer "M Dikshitar", :kriti "Annapurne Vishalaksi"}
+  {:composer "Mysore Sadashiva Rao", :kriti "Bhajana Seyave Baguga"}
+  {:composer "Gopalakrishna Bharati", :kriti "Cidambaram Poi"}
+  {:composer "Tyagaraja", :kriti "Etulaina Bhakti Vaccutake"}
+  {:composer "M Dikshitar", :kriti "Guruguhaya Bhaktanugrahaya"}
+  {:composer "Tr Subramaniam", :kriti "Innamum Shodanaiyo-varnam"}
+  {:composer "Mysore Vasudevacar", :kriti "Mamavasu Govinda"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Maravakave O Manasa"}
+  {:composer "Papanasam Sivan", :kriti "Narayana Nalinayata"}
+  {:composer "Mysore Vasudevacar",
+   :kriti "Parakelanayya Rama Paratpara"}
+  {:composer "M Dikshitar", :kriti "Parvata Vardhini"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Tyagaraja", :kriti "Shantamu Leka Saukhyamu Ledu"}
+  {:composer "Swatitirunal", :kriti "Smara Haripadaravindam"}
+  {:composer "Gopalakrishna Bharati", :kriti "Tillai Stalam Enru"}
+  {:composer "M Dikshitar", :kriti "Tripurasundari Shankari"}
+  {:composer "Lalgudi Jayaraman", :kriti "Varnam"}
+  {:composer "Gopalakrishna Bharati",
+   :kriti "Varuvaro Varam Taruvaro"}),
+ :manjari ({:composer "Tyagaraja", :kriti "Patti Viduvaradu Naceyi"}),
+ :sumanapriya
+ ({:composer "Muthaiah Bagavatar", :kriti "Shri Sharavana"}),
+ :karnatakabhoga
+ ({:composer "Tyagaraja", :kriti "Nenendu Vedukudura"}),
+ :sarvashri
+ ({:composer "Balamurali Krishna", :kriti "Uma Sutam Namami"}),
+ :hamsanadam
+ ({:composer "Tyagaraja", :kriti "Banturiti Koluviyavayya"}
+  {:composer "Gn Balasubramanian", :kriti "Bharama I Baluni"}
+  {:composer "Gn Balasubramanian", :kriti "Dasha Shata Dala"}
+  {:composer "Tanjavur Sankara Iyer", :kriti "Ezhiludai Hamsanadam"}
+  {:composer "Oothukadu Venkata Kavi", :kriti "Kalyaanaraama"}
+  {:composer "Muthaiah Bagavatar", :kriti "Krupanidhae kurpajaladhe "}
+  {:composer "Dandapani Desikar", :kriti "Pada Vendume"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}),
+ :devamanohari
+ ({:composer "Gopalakrishna Bharati", :kriti "Arukkut Tan Teriyum"}
+  {:composer "Tyagaraja", :kriti "Evarikai Avataram Ettitivo"}
+  {:composer "Vedanayakam Pillai", :kriti "Innum Tamadamen"}
+  {:composer "Tyagaraja", :kriti "Kanna Tandri Napai"}
+  {:composer "Muthaiah Bagavatar", :kriti "Katyayani skanda janani"}
+  {:composer "Tyagaraja", :kriti "Kulabirudunu Brocukommu"}
+  {:composer "M Dikshitar", :kriti "Mahadevena Palitosmyaham"}
+  {:composer "Poochi Srinivasa Iyengar", :kriti "Nikela Nayeda"}
+  {:composer "Muthaiah Bagavatar", :kriti "Ninnu Nera Nammi"}
+  {:composer "Mysore Vasudevacar", :kriti "Palukavademira Nato"}
+  {:composer "Koththavasal Venkatarama Iyer",
+   :kriti "Palumaru Ninne Korina-varnam"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Koteswara Iyer", :kriti "Samee Deekshita"}
+  {:composer "Gn Balasubramanian", :kriti "Shankara Mahadeva"}
+  {:composer "Papanasam Sivan", :kriti "Vandarulvai Muruga"}),
+ :hemavati
+ ({:composer "Papanasam Sivan", :kriti "Ennai Kattarulvadu"}
+  {:composer "M Dikshitar", :kriti "Hariyuvatim Haimavatim"}
+  {:composer "M Dikshitar", :kriti "Madhurambikayam"}
+  {:composer "Koteswara Iyer", :kriti "Manade Maravade"}
+  {:composer "Muthaiah Bagavatar", :kriti "Mantrini Matanga Tanaye"}
+  {:composer "Dandapani Desikar", :kriti "Navukkarashanai"}
+  {:composer "Tyagaraja", :kriti "Ni Sari Sati Evaru Ledanucu"}
+  {:composer "Vinai Kuppiyer", :kriti "Palimpave Nannu"}
+  {:composer "Papanasam Sivan", :kriti "Paripalanai Puri"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "M Dikshitar", :kriti "Shri Kantimatim Shankara Yuvatim"}
+  {:composer "Balamurali Krishna", :kriti "Tarunamidenamma"}),
+ :kalyanavasantam
+ ({:composer "Madurai Gs Mani", :kriti "Damodara Mamava"}
+  {:composer "Gopalakrishna Bharati", :kriti "Deva Jagannatha"}
+  {:composer "Balamurali Krishna", :kriti "Ganamalinci"}
+  {:composer "Tyagaraja", :kriti "Kanulu Takani Parakantala"}
+  {:composer "Tyagaraja", :kriti "Nada Loludai"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Jayacamaraja Wodayar", :kriti "Shri Ranganatha Pahimam"}
+  {:composer "M Dikshitar", :kriti "Shri Venkatesham Bhajami"}),
+ :margadeshi
+ ({:composer "M Dikshitar", :kriti "Mangala Devate Paradevate"}),
+ :kokilaravam
+ ({:composer "M Dikshitar", :kriti "Kodanda Ramam Anisham"}),
+ :hamirkalyani
+ ({:composer "Muthaiah Bagavatar", :kriti "Avan Seyal Anri"}
+  {:composer "Muthaiah Bagavatar",
+   :kriti "Devi Shritamstrakarala Vadane"}
+  {:composer "Gopalakrishna Bharati", :kriti "Edo Teriyamal"}
+  {:composer "Swatitirunal", :kriti "Gangeyavasana"}
+  {:composer "Lalgudi Jayaraman", :kriti "Innum Tamadam Eno Varnam"}
+  {:composer "Swatitirunal", :kriti "Karunanidhan Kunj"}
+  {:composer "Tyagaraja", :kriti "Manamu Leda"}
+  {:composer "Balamurali Krishna", :kriti "Na Jane Tava"}
+  {:composer "M Dikshitar", :kriti "Parimala Ranganatham"}
+  {:composer "M Dikshitar", :kriti "Purahara Nandana"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Tr Subramaniam", :kriti "Shendil Vazh Murugayya-varnam"}
+  {:composer "Nila Kanta Sivan", :kriti "Shivanai Ninai Maname"}
+  {:composer "Lalgudi Jayaraman", :kriti "Tillana"}
+  {:composer "Muthaiah Bagavatar", :kriti "Udana Tatana Tara Dhim"}
+  {:composer "Subbaraya Shastri", :kriti "Venkata Shaila"}),
+ :gambhirani
+ ({:composer "Balamurali Krishna", :kriti "Amma Ananda-varnam"}
+  {:composer "Mysore Sadashiva Rao", :kriti "Anajaksa Ninne Nammiti"}
+  {:composer "Mysore Vasudevacar", :kriti "Girija Ramana Natajana"}
+  {:composer "Tyagaraja", :kriti "Ninne Bhajana Seyu Vadanu"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Oothukadu Venkata Kavi",
+   :kriti "Shree Vigna Raajam Bhaje"}
+  {:composer "Jayacamaraja Wodayar", :kriti "Shri Jalandharam"}),
+ :suksmarupi
+ ({:composer "Balamurali Krishna", :kriti "Ayya Guruvarya"}),
+ :saindhavi
+ ({:composer "Dharmapuri Subbaraya Iyer", :kriti "Emandune Muddu"}
+  {:composer "Swatitirunal", :kriti "Itu Sahasamulu"}
+  {:composer "Muthaiah Bagavatar", :kriti "Marakatamani Chaye Maye"}),
+ :janaranjani
+ ({:composer "Muthaiah Bagavatar", :kriti "Ganapate Sugunanidhe"}
+  {:composer "Tyagaraja", :kriti "Nadadina Mata Nedu Tappavaladu"}
+  {:composer "Syama Sastri", :kriti "Nannu Brova Rada O Jagadamba"}
+  {:composer "Maha Vaidyanatha Iyer",
+   :kriti "Pahimam Shri Rajarajeshvari"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Lalitadasar", :kriti "Shritajana Ranjani"}
+  {:composer "Muthaiah Bagavatar", :kriti "Shri Cakra Varada"}
+  {:composer "Tyagaraja", :kriti "Smarane Sukhamu Ramanama"}
+  {:composer "Tyagaraja", :kriti "Vidajaladura Na Manasu"}),
+ :sarangamallar
+ ({:composer "Muthaiah Bagavatar", :kriti "Shri Mahabala"}),
+ :udayaravicandrika
+ ({:composer "Tyagaraja", :kriti "Enta Nercina Enta Jucina"}
+  {:composer "Gn Balasubramanian", :kriti "Niratamuga Ninne"}
+  {:composer "Mysore Sadashiva Rao",
+   :kriti "Palayamam Siddhivinayakam"}
+  {:composer "M Dikshitar", :kriti "Shri Guruguha Murte"}
+  {:composer "Mysore Vasudevacar", :kriti "Shri Hari Vallabhe Mam"}),
+ :kedaram
+ ({:composer "M Dikshitar", :kriti "Abhayambikaya Abhayambikaya"}
+  {:composer "Periyasamy Turan", :kriti "Ainkaranillamal"}
+  {:composer "M Dikshitar", :kriti "Ananda Natana Prakasham"}
+  {:composer "Garbhapurivasa", :kriti "Durusuga Kripa Judu"}
+  {:composer "Balamurali Krishna", :kriti "Graha Viksanamu"}
+  {:composer "Mysore Vasudevacar", :kriti "Hare Paripahimam"}
+  {:composer "Tyagaraja", :kriti "Marace Vadana Rama Ninu"}
+  {:composer "Tyagaraja", :kriti "O Rama Ramana Rama Rama"}
+  {:composer "Swatitirunal", :kriti "Paramananda Natana"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Tyagaraja", :kriti "Rama Nipai Tanaku Prema"}
+  {:composer "Papanasam Sivan", :kriti "Sakala Bhuvana Nayaka"}
+  {:composer "Patnam Subhramanya Iyer",
+   :kriti "Samayamidhe Nanu Brova"}
+  {:composer "Tiruvetriyur Tyagaraja", :kriti "Sami Nee-varnam"}
+  {:composer "Muthaiah Bagavatar", :kriti "Vanhivasini"}),
+ :salagam ({:composer "Koteswara Iyer", :kriti "Ganamudam"}),
+ :vegavahini
+ ({:composer "Tyagaraja", :kriti "Callaganato Balkumi"}
+  {:composer "M Dikshitar", :kriti "Gajananayutam Ganeshvaram"}
+  {:composer "M Dikshitar", :kriti "Vinayaka Vighna Nashaka"}
+  {:composer "M Dikshitar", :kriti "Vina Pustaka Dharinim"}),
+ :revagupti
+ ({:composer "Tyagaraja", :kriti "Grahabalamemi"}
+  {:composer "M Dikshitar", :kriti "Sharavana Bhava Guruguham"}),
+ :jayanarayani ({:composer "Tyagaraja", :kriti "Manavini Vinuma"}),
+ :sarangi ({:composer "Periyasamy Turan", :kriti "Ram Surat Padam"}),
+ :ahiri
+ ({:composer "Tyagaraja", :kriti "Adaya Shri Raghuvara"}
+  {:composer "Tyagaraja", :kriti "Callare Ramachandru"}
+  {:composer "Swatitirunal", :kriti "Manasi Dasaca"}
+  {:composer "Swatitirunal", :kriti "Manasi Dussaham"}
+  {:composer "Syama Sastri", :kriti "Mayammayani Ne Pilacite"}
+  {:composer "Swatitirunal", :kriti "Panagendrasya"}
+  {:composer "Tyagaraja", :kriti "Pula Panpu Mida Baga"}
+  {:composer "M Dikshitar", :kriti "Shri Kamalamba Jayati"}),
+ :calanata
+ ({:composer "Koteswara Iyer", :kriti "Edayya Gati"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}),
+ :hamsanandi
+ ({:composer "Gn Balasubramanian", :kriti "Dhim Tadhim Tanana"}
+  {:composer "Muthaiah Bagavatar", :kriti "Dhim Tare Nare Nare"}
+  {:composer "Papanasam Sivan", :kriti "Madhava Maya"}
+  {:composer "Balamurali Krishna", :kriti "Minaksi Jayata"}
+  {:composer "Vedanayakam Pillai", :kriti "Nane Unai"}
+  {:composer "Muthaiah Bagavatar", :kriti "Needu Mahima"}
+  {:composer "Swatitirunal", :kriti "Pahi Jagajjanani"}
+  {:composer "Lalitadasar", :kriti "Pavana Guru"}
+  {:composer "Ambujam Krishna", :kriti "Punnagai Onre"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Muthaiah Bagavatar", :kriti "Sacamara Ramavani"}
+  {:composer "Lalitadasar", :kriti "Samagana Vinodini"}
+  {:composer "Swatitirunal", :kriti "Sankara Srigiri"}
+  {:composer "Ambujam Krishna", :kriti "Shollittan Teriyumo"}
+  {:composer "Papanasam Sivan", :kriti "Shrinivasa Tiruvenkata"}
+  {:composer "Gn Balasubramanian", :kriti "Sujana Manasa"}
+  {:composer "Lalgudi Jayaraman", :kriti "Tillana"}
+  {:composer "Indira Natesan", :kriti "Tirupati Vasa"}
+  {:composer "Periyasamy Turan", :kriti "Velava Shuranenum"}),
+ :dhenuka
+ ({:composer "Koteswara Iyer", :kriti "Karunai Kadale"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Tyagaraja", :kriti "Teliyaleru Rama Bhakti"}),
+ :bindumalini
+ ({:composer "Tyagaraja", :kriti "Entamuddo Enta Sogaso"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Lalgudi Jayaraman", :kriti "Tillana"}),
+ :mukhari
+ ({:composer "Arunacala Kavi", :kriti "Arivar Yar Unnai Arivar"}
+  {:composer "Swatitirunal", :kriti "Balagopala Palayapankajanayana"}
+  {:composer "Swatitirunal", :kriti "Bhavati Visvaso"}
+  {:composer "Gopalakrishna Bharati", :kriti "Cidambara Darishanama"}
+  {:composer "Tyagaraja", :kriti "Elavataram Ettukontivi"}
+  {:composer "Dharmapuri Subbaraya Iyer", :kriti "Emandune Muddu"}
+  {:composer "Subbaraya Shastri", :kriti "Emani Ne"}
+  {:composer "Nila Kanta Sivan", :kriti "Enraikku Shiva Kripai"}
+  {:composer "Tyagaraja", :kriti "Entani Ne Varnintunu"}
+  {:composer "Bhadracala Ramadas", :kriti "Etiki Dayaradura"}
+  {:composer "Tyagaraja", :kriti "Induka I Tanavunu Bencina"}
+  {:composer "Arunacala Kavi", :kriti "Kanden Kanden"}
+  {:composer "Tyagaraja", :kriti "Karubaru Seyuvaru Galare"}
+  {:composer "Tyagaraja", :kriti "Ksinamai Tiruga Janmincu"}
+  {:composer "Tyagaraja", :kriti "Muripemu Galigegada"}
+  {:composer "M Dikshitar", :kriti "Pahi Mam Ratnacala Nayaka"}
+  {:composer "Swatitirunal", :kriti "Pahi Sada Padmanabha"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Tyagaraja", :kriti "Sangita Shastra Jnanamu"}
+  {:composer "Tyagaraja", :kriti "Sarasiruhanana Rama"}
+  {:composer "Papanasam Sivan", :kriti "Sharanam Ayyappa"}
+  {:composer "Papanasam Sivan", :kriti "Shivakama Sundari"}
+  {:composer "Tyagaraja", :kriti "Talacinantane Na Tanuvemo"}
+  {:composer "Muthaiah Bagavatar", :kriti "Taye Bhavani"}),
+ :shrutiranjani ({:composer "Tyagaraja", :kriti "Edari Sancarintura"}),
+ :sarangatarangini
+ ({:composer "Gn Balasubramanian", :kriti "Samana Rahite"}),
+ :nilambari
+ ({:composer "M Dikshitar", :kriti "Amba Nilayataksi"}
+  {:composer "Swatitirunal", :kriti "Anandavalli Kuru"}
+  {:composer "Papanasam Sivan", :kriti "Bala Pahi Vasudeva Devaki"}
+  {:composer "Syama Sastri", :kriti "Brovavamma Bangaru Bomma"}
+  {:composer "Tulasivanam", :kriti "Duritaranya Krshanmo"}
+  {:composer "Tyagaraja", :kriti "Ennaga Manasuku Rani"}
+  {:composer "Swatitirunal", :kriti "Kalakanthii"}
+  {:composer "Swatitirunal", :kriti "Kantanodu Cennu"}
+  {:composer "Tyagaraja", :kriti "Lali Yugave Mapali Daivama"}
+  {:composer "Oothukadu Venkata Kavi", :kriti "Mani Noopura Dhaari"}
+  {:composer "Tyagaraja", :kriti "Nike Dayaraka Ne Jeyu"}
+  {:composer "Papanasam Sivan", :kriti "Nilambari Jagadishvari"}
+  {:composer "Swatitirunal", :kriti "Pancasayakajanakan"}
+  {:composer "Bhadracala Ramadas", :kriti "Rama Rama Bhadracala"}
+  {:composer "Swatitirunal", :kriti "Satatam Samsmaraniha"}
+  {:composer "Tyagaraja", :kriti "Shri Rama Rama Rama"}
+  {:composer "Tyagaraja", :kriti "Uyyalalugavayya"}
+  {:composer "Lalgudi Jayaraman", :kriti "Varnam"}
+  {:composer "Swatitirunal", :kriti "Vimalakamaladala"}
+  {:composer "Oothukadu Venkata Kavi", :kriti "Yeppadittaan Yen Ullam"}
+  {:composer "Muthaiah Bagavatar", :kriti "Yoga Nidre"}),
+ :devamrtavarsani
+ ({:composer "Tyagaraja", :kriti "Evarani Nirnayincirira"}),
+ :bhairavam
+ ({:composer "Tyagaraja", :kriti "Mariyada Gadayya"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Nannu Brova Rada"}
+  {:composer "Arunacala Kavi", :kriti "Arivar Yar Unnai"}),
+ :suvarnangi ({:composer "Koteswara Iyer", :kriti "Iha Para Sukham"}),
+ :hamsadipakam
+ ({:composer "Muthaiah Bagavatar", :kriti "Shikhi Vahana"}),
+ :murti
+ ({:composer "Balamurali Krishna", :kriti "Ennadaina Vintina-padam"}),
+ :devaranji ({:composer "M Dikshitar", :kriti "Namaste Paradevate"}),
+ :manorama
+ ({:composer "Balamurali Krishna", :kriti "Navamohana"}
+  {:composer "Muthaiah Bagavatar", :kriti "Sarva Jagad"}),
+ :nadatarangini
+ ({:composer "Tyagaraja", :kriti "Krpalavala Kaladhara"}),
+ :senavati ({:composer "Koteswara Iyer", :kriti "Vandarul Nee Ta"}),
+ :narayani
+ ({:composer "Tyagaraja", :kriti "Bhajanaseyu Margamu"}
+  {:composer "Muthaiah Bagavatar", :kriti "Candike Shri"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Kanna Tandri Nive"}
+  {:composer "Gn Balasubramanian", :kriti "Na Moralanu"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Tyagaraja", :kriti "Rama Nivegani Nannu"}),
+ :puspalatika ({:composer "Swatitirunal", :kriti "Bhavaye Gopabalam"}),
+ :vativasantabhairavi
+ ({:composer "M Dikshitar", :kriti "Prasanna Venkateshvaram"}),
+ :sumadyuti
+ ({:composer "M Dikshitar", :kriti "Kamaksi Kamakoti Pithavasini"}
+  {:composer "M Dikshitar", :kriti "Nilacala Natham Bhajeham"}
+  {:composer "M Dikshitar", :kriti "Pamara Jana Palini Brhannayaki"}
+  {:composer "M Dikshitar", :kriti "Shaileshvaram Bhajare"}),
+ :sarasangi
+ ({:composer "Balamurali Krishna", :kriti "Hanuma Anuma"}
+  {:composer "Swatitirunal", :kriti "Jayajaya Padmanabha"}
+  {:composer "Koteswara Iyer", :kriti "Malaiyade Maname"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Manavi Cekonavayya"}
+  {:composer "Maha Vaidyanatha Iyer", :kriti "Neekela Dayaradhu"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Jayacamaraja Wodayar", :kriti "Sadashivam Upsmahe"}
+  {:composer "Dandapani Desikar", :kriti "Tirupati Malaiyurai"}
+  {:composer "Gopalakrishna Bharati", :kriti "Unadu Tiruvadi Nambi"}),
+ :bhusavali
+ ({:composer "Swatitirunal", :kriti "Gopanandana"}
+  {:composer "Tyagaraja", :kriti "Tanamidane Jeppu Kovale"}
+  {:composer "Tyagaraja", :kriti "Toli Nenu Jesina Puja"}
+  {:composer "M Dikshitar", :kriti "Bhusavatim Manju Bhasavatim"}),
+ :bhavabharanam ({:composer "Tyagaraja", :kriti "Maha Ganesham"}),
+ :ganavaridhi
+ ({:composer "Tyagaraja", :kriti "Dayajucutakidi Velara"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}),
+ :namanarayani ({:composer "Koteswara Iyer", :kriti "En Maname"}),
+ :jayantasena
+ ({:composer "Madurai Gs Mani", :kriti "Arjuna Sarathim"}
+  {:composer "Tyagaraja", :kriti "Vinata Suta Vahana Shriramana"}),
+ :candrakauns
+ ({:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Madurai Gs Mani", :kriti "Nalai Varum Enre Nambalama"}),
+ :chayagaula
+ ({:composer "M Dikshitar", :kriti "Sarasvatya Bhagavatya"}),
+ :bhanumati
+ ({:composer "M Dikshitar", :kriti "Brhadamba Madamba Jayati"}
+  {:composer "M Dikshitar", :kriti "Guruguha Svamini Bhaktim"}),
+ :behag
+ ({:composer "Gopalakrishna Bharati", :kriti "Adum Cidambaramo"}
+  {:composer "Mysore Vasudevacar", :kriti "Bhavayeham Raghuviram"}
+  {:composer "Muthaiah Bagavatar", :kriti "Dhim Tana Tare Dhirana"}
+  {:composer "Papanasam Sivan",
+   :kriti "Dhim Tana Udara Dhirana-tillana"}
+  {:composer "Balamurali Krishna",
+   :kriti "Dru Dru Tom Taka Dhim-tillana"}
+  {:composer "Gopalakrishna Bharati", :kriti "Idu Tano"}
+  {:composer "Gopalakrishna Bharati", :kriti "Irakkam Varamal"}
+  {:composer "Papanasam Sivan", :kriti "Kalpakambikai Ni"}
+  {:composer "Indira Natesan", :kriti "Muralidhara Gana"}
+  {:composer "Vina Seshanna",
+   :kriti "Nadiri Diri Tom Tadirana-tillana"}
+  {:composer "Poochi Srinivasa Iyengar", :kriti "Nirupamana Samini"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Swatitirunal", :kriti "Rinamadhunuta"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Samayamide Rara"}
+  {:composer "Swatitirunal", :kriti "Saramaina Matalento"}
+  {:composer "Nila Kanta Sivan", :kriti "Shankara Nin Karunai"}
+  {:composer "Papanasam Sivan", :kriti "Shri Madhava"}
+  {:composer "Swatitirunal", :kriti "Smarajanaka"}
+  {:composer "Lalgudi Jayaraman", :kriti "Tillana"}
+  {:composer "Tr Subramaniam", :kriti "Vanajaksha Ninne-varnam"}
+  {:composer "Ambujam Krishna", :kriti "Varuvai Enrun"}),
+ :kurinji
+ ({:composer "Swatitirunal", :kriti "Aliveni Enduceyyum"}
+  {:composer "Papanasam Sivan", :kriti "Engum Niraindirukkum"}
+  {:composer "Muthaiah Bagavatar", :kriti "Kameshwari"}
+  {:composer "Papanasam Sivan", :kriti "Kanne En Kanmaiye"}
+  {:composer "Swatitirunal", :kriti "Nandasuta"}
+  {:composer "M Dikshitar", :kriti "Shri Venugopala"}
+  {:composer "Tyagaraja", :kriti "Sita Kalyana Vaibhogame"}),
+ :bilahari
+ ({:composer "Periyasamy Turan", :kriti "Appa Unai Maravene"}
+  {:composer "Swatitirunal", :kriti "Aradhayami"}
+  {:composer "Mysore Vasudevacar", :kriti "Calamela Jesevura-varnam"}
+  {:composer "Mysore Vasudevacar", :kriti "Dasharathe Pahimam"}
+  {:composer "Tyagaraja", :kriti "Dorakuna Ituvanti Seva"}
+  {:composer "M Dikshitar", :kriti "Ekadantam Bhajeham"}
+  {:composer "Koteswara Iyer", :kriti "Ini Namakkoru"}
+  {:composer "Tyagaraja", :kriti "Intakannanandamemi"}
+  {:composer "Vinai Kuppiyer", :kriti "Inta Cauka Seya Idi-varnam"}
+  {:composer "M Dikshitar", :kriti "Kamaksi Varalaksmi Kamalaksi"}
+  {:composer "Ambujam Krishna", :kriti "Kanbedeppoden Ayyane"}
+  {:composer "Tyagaraja", :kriti "Kanukontini Shri Ramuni"}
+  {:composer "Papanasam Sivan", :kriti "Karpakambike Kadaikkan"}
+  {:composer "Tyagaraja", :kriti "Kshetra Palaka Ksema"}
+  {:composer "Muthaiah Bagavatar", :kriti "Mahakali Maharagjni"}
+  {:composer "Periyasamy Turan", :kriti "Manadu Kalangade"}
+  {:composer "Ambujam Krishna", :kriti "Narasimha Enai"}
+  {:composer "Tyagaraja", :kriti "Narasimha Nannu Brovave"}
+  {:composer "Tyagaraja", :kriti "Na Jivadhara Na Nomuphalama"}
+  {:composer "Papanasam Sivan", :kriti "Nijamunnai Nambinen"}
+  {:composer "Balamurali Krishna", :kriti "Palumaru Ninu"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Paridanaminchite"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Oothukadu Venkata Kavi", :kriti "Santatam Aham Seve"}
+  {:composer "Swatitirunal", :kriti "Santatam Bhajamiha"}
+  {:composer "Tiruvetriyur Tyagaraja", :kriti "Sarasa Dala"}
+  {:composer "Papanasam Sivan", :kriti "Sarvesha Adimaiyai"}
+  {:composer "M Dikshitar", :kriti "Shri Balasubramanya"}
+  {:composer "Mysore Vasudevacar",
+   :kriti "Shri Camundeshvari Palayamam"}
+  {:composer "M Dikshitar", :kriti "Shri Madhurapuri Viharini"}
+  {:composer "Poochi Srinivasa Iyengar", :kriti "Shri Rama Nannubrova"}
+  {:composer "Swatitirunal", :kriti "Smara Sada Manasa"}
+  {:composer "Papanasam Sivan", :kriti "Svami Undan-varnam"}
+  {:composer "Tyagaraja", :kriti "Toli Janmamuna Jeyu"}
+  {:composer "Koteswara Iyer", :kriti "Va Sharavanabhava"}),
+ :ramakali
+ ({:composer "M Dikshitar", :kriti "Rama Ramakali Kalusavirama"}),
+ :vagadishvari
+ ({:composer "M Dikshitar", :kriti "Bhogachaya Natakapriye"}
+  {:composer "Koteswara Iyer", :kriti "Nadanu Santana"}
+  {:composer "Tyagaraja", :kriti "Paramatmudu Velige"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}),
+ :devagandhari
+ ({:composer "Gopalakrishna Bharati", :kriti "Enneramum Undan"}
+  {:composer "Gopalakrishna Bharati", :kriti "Enneramum Unran"}
+  {:composer "Tyagaraja", :kriti "Evaru Manaku Samanamilalo"}
+  {:composer "Tyagaraja", :kriti "Karuna Samudra Nanu"}
+  {:composer "Tyagaraja", :kriti "Koluvaiyunnade Kodandapani"}
+  {:composer "Tyagaraja", :kriti "Ksira Sagara Shayana"}
+  {:composer "M Dikshitar", :kriti "Ksitija Ramanam Cintaye"}
+  {:composer "Tyagaraja", :kriti "Maravakara Nava Manmatha"}
+  {:composer "Ambujam Krishna", :kriti "Matada Bekayya"}
+  {:composer "Tyagaraja", :kriti "Na Moralakimpavemi"}
+  {:composer "Swatitirunal", :kriti "Rama Rama Pahi"}
+  {:composer "Muthaiah Bagavatar", :kriti "Saccidananda"}
+  {:composer "M Dikshitar", :kriti "Shalivatishvaram Bhajeham"}
+  {:composer "Papanasam Sivan", :kriti "Sharade Vina Vadana"}
+  {:composer "Tyagaraja", :kriti "Shri Raghuvara Karunakara"}
+  {:composer "Tyagaraja", :kriti "Shri Tulasamma Mayinta"}
+  {:composer "Tyagaraja", :kriti "Sitavara Sangita Jnanamu"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Svamiki Sariyevvarana"}
+  {:composer "M Dikshitar", :kriti "Vadanyeshvaram Bhajeham"}
+  {:composer "Lalgudi Jayaraman", :kriti "Varnam"}
+  {:composer "Tyagaraja", :kriti "Vinarada Na Manavi Vinarda"}),
+ :yamunakalyani
+ ({:composer "Dharmapuri Subbaraya Iyer", :kriti "Adi Nipai Marulu"}
+  {:composer "Swatitirunal", :kriti "Aj Aye"}
+  {:composer "Tyagaraja", :kriti "Hari Dasalu Vedale Muccata"}
+  {:composer "M Dikshitar", :kriti "Jambupate Mam Pahi"}
+  {:composer "Swatitirunal", :kriti "Jayajaya Devi"}
+  {:composer "Swatitirunal", :kriti "Jaya Jaagadisa"}
+  {:composer "Tulasivanam", :kriti "Nama Shravana Sukham"}
+  {:composer "M Dikshitar", :kriti "Nanda Gopala Mukunda"}
+  {:composer "Bhadracala Ramadas", :kriti "Narahari Deva"}
+  {:composer "Tyagaraja", :kriti "Narayana Hari Narayana"}
+  {:composer "Bhadracala Ramadas", :kriti "O Rama Nee"}
+  {:composer "Tyagaraja", :kriti "Sagarundu Vedale Nito"}
+  {:composer "Lalgudi Jayaraman", :kriti "Tillana"}
+  {:composer "Tyagaraja", :kriti "Vidhi Shakradulaku Dorakuna"}),
+ :bahudari
+ ({:composer "Tulasivanam", :kriti "Bhaja Manasa Vighneshvaram"}
+  {:composer "Tyagaraja", :kriti "Brova Bharama Raghurama"}
+  {:composer "Lalgudi Jayaraman", :kriti "Ento Prematonu Ninne-varnam"}
+  {:composer "Balamurali Krishna", :kriti "Kamala Dalayata"}
+  {:composer "Gn Balasubramanian", :kriti "Marakoti Sundari"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Gn Balasubramanian", :kriti "Unnadiye Gati"}),
+ :punnagavarali
+ ({:composer "Gopalakrishna Bharati", :kriti "Ayye Mettakkadinam"}
+  {:composer "Syama Sastri", :kriti "Brova Samayamide Devi"}
+  {:composer "Muthaiah Bagavatar", :kriti "Devi Shivadooti"}
+  {:composer "M Dikshitar", :kriti "Ehi Annapurne Sannidhehi"}
+  {:composer "Syama Sastri", :kriti "Enneramum Un Pada Kamala"}
+  {:composer "Tyagaraja", :kriti "Enomu Nocitimo"}
+  {:composer "Tyagaraja", :kriti "Gandhamu Puyyaruga"}
+  {:composer "M Dikshitar", :kriti "Kamalambikayaha"}
+  {:composer "Syama Sastri", :kriti "Kanaka Shaila Viharini"}
+  {:composer "Tyagaraja", :kriti "Manasa Sancarare Rame"}
+  {:composer "Oothukadu Venkata Kavi", :kriti "Nilavanam Thannil"}
+  {:composer "Papanasam Sivan", :kriti "Shivaganga Nagara"}
+  {:composer "Tyagaraja", :kriti "Tava Dasoham Tava Dasoham"}
+  {:composer "Swatitirunal", :kriti "Teliviyalum"}),
+ :raghupriya
+ ({:composer "M Dikshitar", :kriti "Himagiri Kumari Ishvari"}
+  {:composer "Koteswara Iyer", :kriti "Sadananda Bhakti"}),
+ :jivanpuri
+ ({:composer "Muthaiah Bagavatar", :kriti "Andavan Darishaname"}
+  {:composer "Arunacala Kavi", :kriti "Avataram Cheydiduveere"}
+  {:composer "Gopalakrishna Bharati", :kriti "Eppo Varuvaro"}
+  {:composer "Muthaiah Bagavatar", :kriti "Mangala Roopiniye"}
+  {:composer "Muthaiah Bagavatar", :kriti "Mavoor Valar"}
+  {:composer "Papanasam Sivan", :kriti "Muruganai Bhaji"}
+  {:composer "Madurai Gs Mani", :kriti "Nilamegha Shyama"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}),
+ :purnasadjam
+ ({:composer "Tyagaraja", :kriti "Lavanya Rama Kannulara"}
+  {:composer "Tyagaraja", :kriti "Shri Manini Manohara"}),
+ :dundumi
+ ({:composer "Tyagaraja", :kriti "Lilaganu Jucu Gunashilula"}),
+ :shuddhasaveri
+ ({:composer "Papanasam Sivan", :kriti "Arumukha Adimaiyai"}
+  {:composer "Tyagaraja", :kriti "Darini Telusukonti Tripurasundarini"}
+  {:composer "Gopalakrishna Bharati", :kriti "Indap Pratapamum"}
+  {:composer "Swatitirunal", :kriti "Janani Pahi Sada"}
+  {:composer "Tyagaraja", :kriti "Kala Haranamelara Hare"}
+  {:composer "Tyagaraja", :kriti "Laksanamulu Gala Shri"}
+  {:composer "M Dikshitar", :kriti "Lalitambikam Cintayamyaham"}
+  {:composer "Papanasam Sivan", :kriti "Sadashiva Kumara"}
+  {:composer "Swatitirunal", :kriti "Sahasika Dhanujahara"}
+  {:composer "Poochi Srinivasa Iyengar", :kriti "Samaja Varada"}
+  {:composer "M Dikshitar", :kriti "Sandhya Devim Savitrim"}
+  {:composer "Oothukadu Venkata Kavi", :kriti "Sarva Jiva Dayakari"}
+  {:composer "Muthaiah Bagavatar", :kriti "Shankara Gangadhara"}
+  {:composer "Muthaiah Bagavatar", :kriti "Shrimat Simhasaneshwari"}
+  {:composer "M Dikshitar", :kriti "Shri Guruguha Tarayashu"}
+  {:composer "Periyasamy Turan", :kriti "Taye Tripurasundari"}),
+ :mayamalavagaula
+ ({:composer "Mysore Vasudevacar", :kriti "Cintayeham Janakikantam"}
+  {:composer "Mysore Vasudevacar", :kriti "Dasharatha Nandana Disha"}
+  {:composer "Swatitirunal", :kriti "Devadeva Kalayami"}
+  {:composer "Mysore Sadashiva Rao", :kriti "Devadi Deva Nannu"}
+  {:composer "Tyagaraja", :kriti "Devi Shri Tulasamma"}
+  {:composer "Papanasam Sivan", :kriti "Illadadai Virumbi"}
+  {:composer "Papanasam Sivan", :kriti "Inda Paramukhama"}
+  {:composer "Mysore Vasudevacar", :kriti "Kalinarulaku Ni Mahima"}
+  {:composer "Jayacamaraja Wodayar", :kriti "Ksira Sagara Shayana"}
+  {:composer "Tyagaraja", :kriti "Meru Samana Dhira Varada"}
+  {:composer "Koteswara Iyer", :kriti "Nan En Seiven"}
+  {:composer "Syama Sastri", :kriti "Nilayataksi Nive Jagatsaksi"}
+  {:composer "M Dikshitar", :kriti "Nilotpalambikayaha Tava"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Tyagaraja", :kriti "Raksimpave Shri Rajata"}
+  {:composer "Ambujam Krishna", :kriti "Sangita Devate"}
+  {:composer "Swatitirunal", :kriti "Sarasijanabhamurare"}
+  {:composer "M Dikshitar", :kriti "Shri Nathadi Guruguho"}
+  {:composer "Muthaiah Bagavatar", :kriti "Shri Vidya Vedya"}
+  {:composer "Gopalakrishna Bharati", :kriti "Sivaloga Nadanai Kandu"}
+  {:composer "Tyagaraja", :kriti "Tulasi Dalamulace"}
+  {:composer "Tyagaraja",
+   :kriti "Vidulaku Mrokkeda Sangitakovidulaku"}),
+ :purvi
+ ({:composer "M Dikshitar", :kriti "Shri Guruguhasya Dasoham"}
+  {:composer "Swatitirunal", :kriti "Tillana"}),
+ :gitapriya
+ ({:composer "M Dikshitar", :kriti "Sadhujana Vinutam Guruguham"}),
+ :shyamalangi
+ ({:composer "Koteswara Iyer", :kriti "Kanda Bhakta"}
+  {:composer "Balamurali Krishna", :kriti "Shyamalangi"}),
+ :salagabhairavi
+ ({:composer "Muthaiah Bagavatar", :kriti "Dandini Shri"}
+  {:composer "Tyagaraja", :kriti "Padavi Ni Sadbhaktiyu"}
+  {:composer "Vinai Kuppiyer", :kriti "Samagana Lola"}
+  {:composer "M Dikshitar", :kriti "Tyagarajena Samraksitoham"}
+  {:composer "Papanasam Sivan ",
+   :kriti "Varalaksmi Niye Vandarulvaye"}),
+ :shankarabharanam
+ ({:composer "Papanasam Sivan", :kriti "Akhilanda Nayaki"}
+  {:composer "M Dikshitar", :kriti "Aksaya Linga Vibho"}
+  {:composer "Vinai Kuppiyer", :kriti "Bagu Miraganu"}
+  {:composer "Swatitirunal", :kriti "Bhaktapaarayana"}
+  {:composer "Tyagaraja", :kriti "Bhakti Biccamiyyave"}
+  {:composer "M Dikshitar", :kriti "Brhadishvaraya Namaste"}
+  {:composer "Tyagaraja", :kriti "Buddhi Radu Buddhi Radu"}
+  {:composer "Swatitirunal", :kriti "Calamela"}
+  {:composer "Muthaiah Bagavatar", :kriti "Candra Rekha"}
+  {:composer "M Dikshitar", :kriti "Daksinnamurte"}
+  {:composer "Swatitirunal", :kriti "Devi Jagjjanani"}
+  {:composer "Syama Sastri", :kriti "Devi Mina Netri Brova"}
+  {:composer "Tyagaraja", :kriti "Eduta Nilacite Nidu"}
+  {:composer "Tyagaraja", :kriti "Emi Neramu Nannu Brova"}
+  {:composer "Koteswara Iyer", :kriti "Enai Alayya"}
+  {:composer "Tyagaraja", :kriti "Enduki Calamu Nenevarito"}
+  {:composer "Tyagaraja", :kriti "Enduku Peddalavale"}
+  {:composer "Muthaiah Bagavatar", :kriti "English Note"}
+  {:composer "Lalitadasar", :kriti "Ennil Kaninda Un"}
+  {:composer "Subbaraya Shastri", :kriti "Entanucu Vinnavintune"}
+  {:composer "M Dikshitar", :kriti "Girijayajaya Abhayambikaya"}
+  {:composer "M Dikshitar", :kriti "Gurumurte Bahukirte"}
+  {:composer "Tyagaraja", :kriti "Ivaraku Jucinadi Calada"}
+  {:composer "Swatitirunal", :kriti "Kalaye Parvatinatham"}
+  {:composer "Papanasam Sivan", :kriti "Mahalaksmi Jaganmata"}
+  {:composer "Muthaiah Bagavatar", :kriti "Manadirkkishainda Manalan"}
+  {:composer "Tyagaraja", :kriti "Manasu Svadhinamaina"}
+  {:composer "Tyagaraja", :kriti "Mariyada Gadura"}
+  {:composer "Poochi Srinivasa Iyengar", :kriti "Nadhru Dhimdhim"}
+  {:composer "M Dikshitar", :kriti "Nagalingam Bhajeham"}
+  {:composer "Mysore Vasudevacar", :kriti "Nannu Brocutakevarennaru"}
+  {:composer "Tyagaraja", :kriti "Nannu Brovakanu Vidavanura"}
+  {:composer "Garbhapurivasa",
+   :kriti "Nannu Karuninchi Brovave Shankari"}
+  {:composer "Tyagaraja", :kriti "Na Pali Shri Rama Bhupalaka"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Niluparani Mohamuto"}
+  {:composer "Swatitirunal", :kriti "Nrutyati Nrutyati"}
+  {:composer "Tyagaraja", :kriti "Pahi Ramacandra"}
+  {:composer "Balamurali Krishna", :kriti "Patale Ni Bhakti"}
+  {:composer "M Dikshitar", :kriti "Pavanatmajam Bhajare"}
+  {:composer "Tyagaraja", :kriti "Prana Natha Birana Brovave"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Swatitirunal", :kriti "Rajivaksa"}
+  {:composer "Bhadracala Ramadas", :kriti "Ramabhadra Rara"}
+  {:composer "M Dikshitar", :kriti "Ramacandram Rajivaksam"}
+  {:composer "Tyagaraja", :kriti "Rama Ninnu Vina Raksimpa"}
+  {:composer "Mysore Sadashiva Rao", :kriti "Rama Ninu Nammina Vaduga"}
+  {:composer "Tyagaraja", :kriti "Rama Ramana Rara"}
+  {:composer "Tyagaraja", :kriti "Rama Shri Rama Lali"}
+  {:composer "Tyagaraja", :kriti "Rama Sita Rama Rama"}
+  {:composer "Tyagaraja", :kriti "Ranganayaka Raksimpumayya"}
+  {:composer "M Dikshitar", :kriti "Sadashivam Upasmahesham"}
+  {:composer "Muthaiah Bagavatar", :kriti "Sahajaguna"}
+  {:composer "Vinai Kuppiyer", :kriti "Sami Ninne Kori-varnam"}
+  {:composer "Tyagaraja", :kriti "Sarasa Netra Paraguna"}
+  {:composer "Syama Sastri", :kriti "Saroja Dala Netri Himagiri"}
+  {:composer "M Dikshitar", :kriti "Shakti Sahita Ganapatim"}
+  {:composer "M Dikshitar", :kriti "Shri Kamalambikaya Kataksitoham"}
+  {:composer "Mysore Vasudevacar", :kriti "Shri Rama Devi Mamavatu"}
+  {:composer "Mysore Sadashiva Rao", :kriti "Shri Sanmukha"}
+  {:composer "Balamurali Krishna", :kriti "Shri Subrahmanyam"}
+  {:composer "M Dikshitar", :kriti "Shyamale Minaksi"}
+  {:composer "Tyagaraja", :kriti "Sita Kalyana Vaibhogame"}
+  {:composer "Papanasam Sivan", :kriti "Sundara Rupa"}
+  {:composer "M Dikshitar", :kriti "Sundareshvaraya Namaste"}
+  {:composer "Tyagaraja", :kriti "Sundareshvaruni Juci"}
+  {:composer "Tyagaraja", :kriti "Svara Raga Sudha Rasayuta"}
+  {:composer "M Dikshitar", :kriti "Tarakeshvara Dayanidhe"}
+  {:composer "Tyagaraja", :kriti "Vallagadanaka Sita Vallabha"}
+  {:composer "Tyagaraja", :kriti "Vara Lila Ganalola"}
+  {:composer "Tyagaraja", :kriti "Visnu Vahanundidigo"}
+  {:composer "Arunacala Kavi", :kriti "Yarenrennamale"}),
+ :ravicandrika
+ ({:composer "Tyagaraja", :kriti "Makelara Vicaramu"}
+  {:composer "Gn Balasubramanian", :kriti "Manam Irangada"}
+  {:composer "Tyagaraja", :kriti "Niravadhi Sukhada Nirmalarupa"}),
+ :rupavati ({:composer "Koteswara Iyer", :kriti "Nalagude"}),
+ :kadanakutuhalam
+ ({:composer "Gn Balasubramanian", :kriti "Kuvalayaksi Kushalam-varna"}
+  {:composer "Gn Balasubramanian", :kriti "Mangala Varadayaki"}
+  {:composer "Gn Balasubramanian", :kriti "Mohana Krsna"}
+  {:composer "Balamurali Krishna",
+   :kriti "Na Diru Diru Dhim Tanana-tillana"}
+  {:composer "Mysore Vasudevacar", :kriti "Nikela Dayaradu Ramacandra"}
+  {:composer "Mysore Vasudevacar", :kriti "Nive Raksakudani Ninne"}
+  {:composer "Patnam Subhramanya Iyer",
+   :kriti "Raghu Vamsa Sudhambudhi"}
+  {:composer "Lalgudi Jayaraman", :kriti "Tillana"}
+  {:composer "Muthaiah Bagavatar", :kriti "Giripriyam Gangadharam"}
+  {:composer "Muthaiah Bagavatar", :kriti "Gopala Nandana"}),
+ :dharmavati
+ ({:composer "Dandapani Desikar", :kriti "Arulvai Angayarkkanniye"}
+  {:composer "Mysore Vasudevacar", :kriti "Bhajanaseya Rada"}
+  {:composer "Muthaiah Bagavatar", :kriti "Cakrarajara Dharude"}
+  {:composer "Jayacamaraja Wodayar", :kriti "Durgadevi Samraksaka"}
+  {:composer "Ambujam Krishna", :kriti "Janaki Vallabha"}
+  {:composer "Koteswara Iyer", :kriti "Kanda Bhakta"}
+  {:composer "Ambujam Krishna", :kriti "Ododi Vanden"}
+  {:composer "M Dikshitar", :kriti "Parandhamavati Jayati"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "M Dikshitar", :kriti "Ramacandrasya Dasoham"}
+  {:composer "Vina Seshanna", :kriti "Taramu Gadura Padmanabha"}
+  {:composer "Balamurali Krishna", :kriti "Vashama Ni"}),
+ :balahamsa
+ ({:composer "Tyagaraja", :kriti "Dandamu Bettenura"}
+  {:composer "Muthaiah Bagavatar", :kriti "Devi Dakshayani"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Ennadu Daya"}
+  {:composer "Mysore Sadashiva Rao", :kriti "Evarunnaru Nannu"}
+  {:composer "M Dikshitar", :kriti "Guruguhadanyam Na Janeham"}
+  {:composer "Tyagaraja", :kriti "Ika Kavalasinademi Manasa"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Nenaru Leni Vani"}
+  {:composer "Oothukadu Venkata Kavi", :kriti "Nila Lohita Ramani"}
+  {:composer "Mysore Sadashiva Rao", :kriti "Ninnuvina Gati"}
+  {:composer "Tyagaraja", :kriti "Parulanu Vedanu Patita"}
+  {:composer "Tyagaraja", :kriti "Rama Eva Daivatam Raghukula"}
+  {:composer "Tyagaraja", :kriti "Talli Tandrulu Gala"}
+  {:composer "Tyagaraja", :kriti "Virajaturaga Rajarajeshvara"}),
+ :vinadhari
+ ({:composer "Muthaiah Bagavatar", :kriti "Girijadeviya"}
+  {:composer "Gn Balasubramanian", :kriti "Sharatcandra"}),
+ :yadukulakambhoji
+ ({:composer "M Dikshitar", :kriti "Abhayambikayai Ashvarudhayai"}
+  {:composer "Tyagaraja", :kriti "Adikaadu Bhajana Manasa"}
+  {:composer "Swatitirunal", :kriti "Bhujaga Shayino"}
+  {:composer "Tyagaraja", :kriti "Celimini Jalajaksu Gante"}
+  {:composer "Tyagaraja", :kriti "Daya Seyavayya Sadaya"}
+  {:composer "M Dikshitar", :kriti "Divakara Tanujam"}
+  {:composer "Tyagaraja", :kriti "Entani Sairintunu Sitakanta"}
+  {:composer "Tyagaraja", :kriti "Etavuna Nercitivo Rama"}
+  {:composer "Papanasam Sivan", :kriti "Gomati Taye"}
+  {:composer "Tyagaraja", :kriti "Heccarikaga Rara"}
+  {:composer "Gopalakrishna Bharati", :kriti "Innamum Oru Taram"}
+  {:composer "Tiruvetriyur Tyagaraja", :kriti "Kamakshi Ninne-varnam"}
+  {:composer "Syama Sastri", :kriti "Kamaksi Ni Padayugame"}
+  {:composer "Papanasam Sivan", :kriti "Kumaran Tal"}
+  {:composer "Swatitirunal", :kriti "Mangalam Bhujaga"}
+  {:composer "Swatitirunal", :kriti "Mohanamayi Tava"}
+  {:composer "Subbaraya Shastri", :kriti "Ninnu Sevincina"}
+  {:composer "Tyagaraja", :kriti "Ni Dayace Rama Nityanandudaiti"}
+  {:composer "Tyagaraja", :kriti "Pahi Ramacandra Raghava"}
+  {:composer "Gn Balasubramanian", :kriti "Paramakrpa Sagari"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Muthaiah Bagavatar", :kriti "Ratnabhusani Ratnambar"}
+  {:composer "Mysore Vasudevacar", :kriti "Sharade Pahimam Saroruha"}
+  {:composer "Tyagaraja", :kriti "Shri Rama Raghurama"}
+  {:composer "Syama Sastri", :kriti "Svara Siddhi"}
+  {:composer "Poochi Srinivasa Iyengar", :kriti "Tillana"}
+  {:composer "M Dikshitar", :kriti "Tyagarajam Bhajare Re"}
+  {:composer "Arunacala Kavi", :kriti "Yarenru Raghavanai"}),
+ :latangi
+ ({:composer "Patnam Subhramanya Iyer", :kriti "Aparadhamulanniyu"}
+  {:composer "Tyagaraja", :kriti "Diname Sudinamu"}
+  {:composer "Koteswara Iyer", :kriti "Kaikkooda"}
+  {:composer "Tyagaraja", :kriti "Kanta Judumi Okapari"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Marivere Dikkevvaru"}
+  {:composer "Papanasam Sivan", :kriti "Pirava Varam Tarum"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Papanasam Sivan", :kriti "Shri Jagadambikaiye"}
+  {:composer "Balamurali Krishna", :kriti "Tamra Locani Latangi"}
+  {:composer "Papanasam Sivan", :kriti "Venkata Ramana"}),
+ :kashiramakriya
+ ({:composer "M Dikshitar", :kriti "Ramanatham Bhajeham"}
+  {:composer "M Dikshitar", :kriti "Shri Sundararajam Bhajeham"}
+  {:composer "M Dikshitar", :kriti "Ucchistha Ganapatau"}
+  {:composer "M Dikshitar", :kriti "Vishalaksim Vishveshim"}),
+ :shanam
+ ({:composer "Balamurali Krishna", :kriti "Aya Kalaikkellam"}
+  {:composer "Muthaiah Bagavatar", :kriti "Bhadrakali Namostute"}
+  {:composer "Tyagaraja", :kriti "Bhavanuta Na Hridayamuna"}
+  {:composer "Gn Balasubramanian", :kriti "Bhuvanatraya Sammohanakara"}
+  {:composer "Tyagaraja", :kriti "Darishinchuta Telisenura"}
+  {:composer "Tyagaraja", :kriti "Dayarani Dayarani Dasharathi"}
+  {:composer "Muthaiah Bagavatar", :kriti "Dhim Dhim Kitataka Dhimta"}
+  {:composer "Tyagaraja", :kriti "Enduko Baga Teliyadu"}
+  {:composer "Arunacala Kavi", :kriti "En Palli Kondirayya"}
+  {:composer "Tyagaraja", :kriti "Evarura Ninnuvina Gati"}
+  {:composer "Papanasam Sivan", :kriti "Giridhara Gopala Bala"}
+  {:composer "M Dikshitar", :kriti "Gopikamanoharam"}
+  {:composer "Tyagaraja", :kriti "Jaya Mangalam Nitya"}
+  {:composer "M Dikshitar", :kriti "Kadambari Priyayai"}
+  {:composer "Papanasam Sivan", :kriti "Kapali Karunai Nilavu"}
+  {:composer "Muthaiah Bagavatar",
+   :kriti "Manamohana Manini Nipai-varnam"}
+  {:composer "Garbhapurivasa", :kriti "Maruvaka Daya Mohananga Napai"}
+  {:composer "Tyagaraja", :kriti "Mati Matiki Delpavalena"}
+  {:composer "Papanasam Sivan", :kriti "Mayil Vahana Valli"}
+  {:composer "Tyagaraja", :kriti "Mohana Rama Mukhajita"}
+  {:composer "M Dikshitar", :kriti "Nagalingam Namami Satatam"}
+  {:composer "Tyagaraja", :kriti "Nanu Palimpa Nadaci Vaccitivo"}
+  {:composer "M Dikshitar", :kriti "Narasimha Agaccha"}
+  {:composer "Papanasam Sivan", :kriti "Narayana Divya"}
+  {:composer "Poochi Srinivasa Iyengar",
+   :kriti "Ninnu Koriyunnanura-varnam"}
+  {:composer "M Dikshitar", :kriti "Pahi Mam Parvati Parameshvari"}
+  {:composer "Swatitirunal", :kriti "Paripahi Mam Nruhare"}
+  {:composer "Mysore Sadashiva Rao", :kriti "Pedda Devudani Ninnu"}
+  {:composer "Walajapet Venkatramana Bagavat", :kriti "Radha Ramana"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "M Dikshitar", :kriti "Rajagopalam Bhajeham"}
+  {:composer "M Dikshitar", :kriti "Rakta Ganapatim Bhajeham"}
+  {:composer "Arunacala Kavi", :kriti "Ramanaik Kannara"}
+  {:composer "Arunacala Kavi", :kriti "Ramanait Taruvai"}
+  {:composer "Tyagaraja", :kriti "Rama Ninnu Nammina Varamu"}
+  {:composer "Mysore Vasudevacar", :kriti "Rara Rajiva Locana Rama"}
+  {:composer "Gn Balasubramanian", :kriti "Sada Palaya Sarasaksi"}
+  {:composer "Vinai Kuppiyer", :kriti "Sarasaksi Ninne Kori"}
+  {:composer "Papanasam Sivan", :kriti "Saundarya Vellam"}
+  {:composer "Indira Natesan", :kriti "Shantakara Bhujaga"}
+  {:composer "Pallavi Gopala Iyer", :kriti "Shri Rama Ramani"}
+  {:composer "Oothukadu Venkata Kavi", :kriti "Swaagatam Krishnaa"}
+  {:composer "Gopalakrishna Bharati", :kriti "Tatakam Onru"}
+  {:composer "Muthaiah Bagavatar", :kriti "Tillana"}),
+ :siddhasena ({:composer "Tyagaraja", :kriti "Evaraina Lera Peddalu"}),
+ :kamavardhini
+ ({:composer "Papanasam Sivan", :kriti "Amba Manam"}
+  {:composer "Tyagaraja", :kriti "Appa Ramabhakti Yento Goppara"}
+  {:composer "Tiruvetriyur Tyagaraja", :kriti "Celiya Pai-varnam"}
+  {:composer "Tyagaraja", :kriti "Cudare Celulara Yamunadevi"}
+  {:composer "Gopalakrishna Bharati", :kriti "Edukkinda Sadalam"}
+  {:composer "Bhadracala Ramadas", :kriti "Ennaganu Rama Bhajana"}
+  {:composer "Periyasamy Turan", :kriti "Karuttil Ennalum"}
+  {:composer "Koteswara Iyer", :kriti "Ka Murugayya"}
+  {:composer "Tyagaraja", :kriti "Naradamuni Vedalina"}
+  {:composer "Tyagaraja", :kriti "Ninnu Nera Namminanura"}
+  {:composer "Papanasam Sivan", :kriti "Nin Arul Iyambalagumo"}
+  {:composer "Papanasam Sivan", :kriti "Niye Pedai Mukham"}
+  {:composer "Mysore Sadashiva Rao", :kriti "Pahi Pahi Shri"}
+  {:composer "Tyagaraja", :kriti "Parama Pavana Gunashali"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Tyagaraja", :kriti "Raghuvara Nannu Marava"}
+  {:composer "M Dikshitar", :kriti "Ramanatham Bhajeham"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Sami Ninne Nammina"}
+  {:composer "Poochi Srinivasa Iyengar", :kriti "Sami Ni Todi-varnam"}
+  {:composer "Vinai Kuppiyer", :kriti "Sami Ni Todi Teve-varnam"}
+  {:composer "Tyagaraja", :kriti "Saramegani Yanya Marga"}
+  {:composer "M Dikshitar", :kriti "Senapate Palaya Mam"}
+  {:composer "Tyagaraja", :kriti "Shambho Mahadeva Shankara"}
+  {:composer "Tulasivanam", :kriti "Shankara Sutam Anisham"}
+  {:composer "Mysore Vasudevacar", :kriti "Shankari Ninne Ika Cala"}
+  {:composer "Patnam Subhramanya Iyer",
+   :kriti "Shesacalanivasa Mamava"}
+  {:composer "Gn Balasubramanian", :kriti "Shivananda Kamavardhani"}
+  {:composer "Tyagaraja", :kriti "Shiva Shiva Shiva Yanarada"}
+  {:composer "Tyagaraja", :kriti "Shobhane Vadanadhyuti Jitasoma"}
+  {:composer "Muthaiah Bagavatar", :kriti "Shrishti Sthityantakarini"}
+  {:composer "M Dikshitar", :kriti "Shri Sundararajam Bhajeham"}
+  {:composer "Tyagaraja", :kriti "Sundaratara Deham Vandeham"}
+  {:composer "M Dikshitar", :kriti "Ucchistha Ganapatau"}
+  {:composer "Nila Kanta Sivan", :kriti "Umaikkuriya Tiru"}
+  {:composer "Tyagaraja", :kriti "Vadera Daivamu Manasa"}
+  {:composer "Balamurali Krishna", :kriti "Varuga Varuga"}
+  {:composer "M Dikshitar", :kriti "Vishalaksim Vishveshim"}),
+ :bhavapriya
+ ({:composer "M Dikshitar", :kriti "Jayati Shivabhavani"}
+  {:composer "Swatitirunal", :kriti "Mamavasrita"}
+  {:composer "Mysore Vasudevacar", :kriti "Nikentani Danya"}
+  {:composer "Koteswara Iyer", :kriti "Sen Tiru Velan"}
+  {:composer "Tyagaraja", :kriti "Shri Kanta Niyeda"}),
+ :samantam
+ ({:composer "M Dikshitar", :kriti "Pranatarthi Haraya Namaste"}
+  {:composer "M Dikshitar", :kriti "Vishvanathena Raksitoham"}),
+ :hanumatodi ({:composer "Koteswara Iyer", :kriti "Kali Teera"}),
+ :mohanangi
+ ({:composer "Balamurali Krishna", :kriti "Namamu Na Jivamu"}),
+ :ishamanohari
+ ({:composer "Tyagaraja", :kriti "Manasa Shri Ramacandruni"}
+  {:composer "M Dikshitar", :kriti "Shri Gananatham Bhajare"}),
+ :nirosta
+ ({:composer "Muthaiah Bagavatar", :kriti "Rajaraja Radhite"}),
+ :navaroj
+ ({:composer "Gopalakrishna Bharati", :kriti "Adanuril Oru Vediyar"}
+  {:composer "Muthaiah Bagavatar", :kriti "Catushashtyupasharadye"}
+  {:composer "M Dikshitar", :kriti "Hasti Vadanaya Namastubhyam"}
+  {:composer "Gopalakrishna Bharati", :kriti "Mukti Alikkum Tillai"}
+  {:composer "Tyagaraja", :kriti "Na Pali Shri Rama Bhupalaka"}
+  {:composer "Balamurali Krishna", :kriti "Shrinivasaya"}),
+ :budhamanohari
+ ({:composer "Muthaiah Bagavatar", :kriti "Kamesha Baddha"}
+  {:composer "Muthaiah Bagavatar", :kriti "Samayamide"}),
+ :vasanta
+ ({:composer "M Dikshitar", :kriti "Brhadambikayai"}
+  {:composer "Poochi Srinivasa Iyengar", :kriti "Dani Korikenu"}
+  {:composer "Mysore Vasudevacar", :kriti "Devi Rame Mamavabdhi"}
+  {:composer "Tyagaraja", :kriti "Etla Dorakitivo Rama"}
+  {:composer "M Dikshitar", :kriti "Harihara Putram Shastaram"}
+  {:composer "Indira Natesan", :kriti "Himagiri Putri"}
+  {:composer "Nila Kanta Sivan", :kriti "Inda Tiruvadivam"}
+  {:composer "Muthaiah Bagavatar", :kriti "Jayamangalam Nitya"}
+  {:composer "Papanasam Sivan", :kriti "Mal Maruga Sanmukha"}
+  {:composer "M Dikshitar", :kriti "Marakata Lingam Cintayeham"}
+  {:composer "Papanasam Sivan", :kriti "Ma Dayai Nidhiyenum"}
+  {:composer "Gopalakrishna Bharati", :kriti "Natanam Adinar Vegu"}
+  {:composer "Oothukadu Venkata Kavi", :kriti "Neelamalark Kola"}
+  {:composer "Swatitirunal", :kriti "Paramapurusa Jagad"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "M Dikshitar", :kriti "Ramacandram Bhavayami"}
+  {:composer "Muthaiah Bagavatar", :kriti "Sannutangi"}
+  {:composer "Mysore Vasudevacar", :kriti "Shaila Sute Shiva Sahite"}
+  {:composer "Subbaraya Shastri", :kriti "Shri Kamaksi Kataksi"}
+  {:composer "Tyagaraja", :kriti "Sitamma Mayamma"}
+  {:composer "Lalgudi Jayaraman", :kriti "Tillana"}),
+ :harinarayani
+ ({:composer "Muthaiah Bagavatar", :kriti "Devi Shri Mahalaksmi"}),
+ :tanukirti
+ ({:composer "M Dikshitar", :kriti "Cidambara Nataraja Murtim"}),
+ :darbarikanada
+ ({:composer "Vina Seshanna", :kriti "Dani Udanita-tillana"}
+  {:composer "Swatitirunal", :kriti "Devan Ke Pati"}
+  {:composer "Muthaiah Bagavatar", :kriti "Na Dhiru Dhiru Dhim"}
+  {:composer "Periyasamy Turan", :kriti "Ni Ninaindal"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Lalgudi Jayaraman", :kriti "Tillana"}),
+ :vanaspati
+ ({:composer "Koteswara Iyer", :kriti "Dasa Nesha Guheshane"}
+  {:composer "Tyagaraja", :kriti "Pariyacakama Mata Padigurilo"}
+  {:composer "Muthaiah Bagavatar", :kriti "Vana Durge"}),
+ :dhanashri
+ ({:composer "Swatitirunal", :kriti "Sisa Ganga"}
+  {:composer "Swatitirunal", :kriti "Tillana"}
+  {:composer "Swatitirunal", :kriti "Visvesvara Daarsan"}),
+ :sunadavinodini
+ ({:composer "Mysore Vasudevacar", :kriti "Devadi Deva Shri Vasudeva"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}),
+ :bhooshaavati
+ ({:composer "Muthaiah Bagavatar", :kriti "Runda Malala"}),
+ :kanakangi
+ ({:composer "Koteswara Iyer", :kriti "Kanakangaka"}
+  {:composer "Tyagaraja", :kriti "Shri Gananatham Bhajamyaham"}),
+ :vandanadharini
+ ({:composer "Gn Balasubramanian", :kriti "Sudha Madhurya"}
+  {:composer "Muthaiah Bagavatar", :kriti "Sudha Madhurya Bhashini"}),
+ :maruvadhanyasi
+ ({:composer "Tyagaraja", :kriti "Mrdu Bhasana Nata Vibhisana"}),
+ :kumudakriya
+ ({:composer "M Dikshitar", :kriti "Ardhanarishvaram Aradhayami"}),
+ :dhavalambari
+ ({:composer "Koteswara Iyer", :kriti "Karunya Kanda"}
+  {:composer "M Dikshitar", :kriti "Shrngaradi Navarasangi"}),
+ :khamas
+ ({:composer "Balamurali Krishna", :kriti "Amma Ninnu Korina"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Apudu Manasu"}
+  {:composer "Mysore Vasudevacar", :kriti "Brocevarevarura Ninnu"}
+  {:composer "Bhadracala Ramadas", :kriti "Ee Vela Nannu"}
+  {:composer "Nila Kanta Sivan", :kriti "Guruparane Yenakkarul"}
+  {:composer "Papanasam Sivan", :kriti "Idadu Padamtukki"}
+  {:composer "Nila Kanta Sivan", :kriti "Iha Param Tharum Perumai"}
+  {:composer "Mysore Vasudevacar", :kriti "Indira Ramana Govinda"}
+  {:composer "Mysore Vasudevacar", :kriti "Inta Parakelanayya"}
+  {:composer "Papanasam Sivan", :kriti "Kadaikkan Parvai"}
+  {:composer "Gopalakrishna Bharati", :kriti "Kanaka Sabeshan"}
+  {:composer "Oothukadu Venkata Kavi", :kriti "Kanire Kanjamalar"}
+  {:composer "Periyasamy Turan", :kriti "Konji Konji Va Guhane"}
+  {:composer "Vedanayakam Pillai", :kriti "Madarai Ninaiyade"}
+  {:composer "Lalitadasar", :kriti "Mamava Sada Karunaya"}
+  {:composer "Walajapet Venkatramana Bagavat", :kriti "Manasa Ramuni"}
+  {:composer "Vinai Kuppiyer", :kriti "Manavyala Kimpavademi"}
+  {:composer "Dharmapuri Subbaraya Iyer", :kriti "Marubari Talalenura"}
+  {:composer "Poochi Srinivasa Iyengar", :kriti "Marulu Konnadira"}
+  {:composer "Muthaiah Bagavatar", :kriti "Mate Malayadwaja-varnam"}
+  {:composer "Oothukadu Venkata Kavi", :kriti "Nan Enna Tavam"}
+  {:composer "Dharmapuri Subbaraya Iyer",
+   :kriti "Narimani Nikainadira"}
+  {:composer "Gn Balasubramanian", :kriti "Pada Bhajana"}
+  {:composer "Swatitirunal", :kriti "Palaya Mamayi"}
+  {:composer "Mysore Sadashiva Rao", :kriti "Paramadbhutamaina"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Bhadracala Ramadas", :kriti "Ramajogi Mandu"}
+  {:composer "Mysore Sadashiva Rao", :kriti "Rama Katha Sagara"}
+  {:composer "Papanasam Sivan", :kriti "Rama Nama Amrta"}
+  {:composer "M Dikshitar", :kriti "Sadanane Sakalam Arpayami"}
+  {:composer "M Dikshitar", :kriti "Santana Gopalakrisnam"}
+  {:composer "M Dikshitar", :kriti "Sarasa Dala Nayana Hare"}
+  {:composer "Swatitirunal", :kriti "Sarasa Samamukha"}
+  {:composer "Swatitirunal", :kriti "Sa Vamarusa"}
+  {:composer "Muthaiah Bagavatar", :kriti "Shri Parameshwari"}
+  {:composer "M Dikshitar", :kriti "Shri Svaminathaya Namaste"}
+  {:composer "Tyagaraja", :kriti "Sitapatte Na Manasuna"}
+  {:composer "Tyagaraja", :kriti "Sujana Jivana Rama"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Tam Tam Tam Udani"}
+  {:composer "Nila Kanta Sivan", :kriti "Teruvadeppo Nenje"}
+  {:composer "Lalgudi Jayaraman", :kriti "Tillana"}
+  {:composer "Gopalakrishna Bharati", :kriti "Tirunalaip Povan"}
+  {:composer "Mysore Vasudevacar",
+   :kriti "Upendramashrayami Santatam"}),
+ :ranjani
+ ({:composer "Gn Balasubramanian", :kriti "Amboruha Padame-varnam"}
+  {:composer "Madurai Gs Mani", :kriti "Bhaja Satatam Raghuviram"}
+  {:composer "Tyagaraja", :kriti "Durmarga Caradhamula"}
+  {:composer "Ambujam Krishna", :kriti "Kadiruvenu"}
+  {:composer "Periyasamy Turan", :kriti "Kai Koduppaye"}
+  {:composer "Gn Balasubramanian", :kriti "Nive Nannu"}
+  {:composer "Mysore Vasudevacar",
+   :kriti "Pranamamyaham Shri Prananatham"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Gn Balasubramanian", :kriti "Ranjani Niranjani"}
+  {:composer "Balamurali Krishna", :kriti "Vande Mataram"}),
+ :ghanta ({:composer "M Dikshitar", :kriti "Shri Kamalambike Avava"}),
+ :sarasvatimanohari
+ ({:composer "Muthaiah Bagavatar", :kriti "Amba Mahavani"}
+  {:composer "Tyagaraja", :kriti "Enta Vedukondu Raghava"}
+  {:composer "Swatitirunal", :kriti "Mamava Jagadisvara"}
+  {:composer "M Dikshitar", :kriti "Sarasvatimanohari Shankari"}
+  {:composer "Mysore Vasudevacar", :kriti "Shri Purandara Guruvaram"}),
+ :saramati
+ ({:composer "Dandapani Desikar", :kriti "Arula Vendum"}
+  {:composer "Tanjavur Sankara Iyer", :kriti "Manasaramatiyani Shivan"}
+  {:composer "Tyagaraja", :kriti "Moksamu Galada Bhuvilo"}
+  {:composer "Maharajapuram Santanam", :kriti "Nadam Adum Deivame"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Muthaiah Bagavatar", :kriti "Sarasadala Nayane"}
+  {:composer "Papanasam Sivan", :kriti "Shri Ramabhadra"}
+  {:composer "Tulasivanam", :kriti "Unnata Venkata"}),
+ :sharavati ({:composer "M Dikshitar", :kriti "Sharavati Tatavasini"}),
+ :carukesi
+ ({:composer "Tyagaraja", :kriti "Adamodi Galade Ramayya"}
+  {:composer "Ambujam Krishna", :kriti "Ayiram Ayiram Gopiyargalodu"}
+  {:composer "Mysore Vasudevacar", :kriti "Dhim Dhim Dhim-tillana"}
+  {:composer "Papanasam Sivan", :kriti "Karunai Varumo Enrenginen"}
+  {:composer "Swatitirunal", :kriti "Krupaya Palaya"}
+  {:composer "Ambujam Krishna", :kriti "Kuzhaloshai Ketka"}
+  {:composer "Koteswara Iyer", :kriti "Nee Tan Appa"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Maharajapuram Santanam", :kriti "Tillana"}
+  {:composer "Lalgudi Jayaraman", :kriti "Varnam"}),
+ :amrtavarsani
+ ({:composer "M Dikshitar", :kriti "Anandamrtakarsini Amrtavarsani"}
+  {:composer "Balamurali Krishna", :kriti "A Balagopalamu-varnam"}
+  {:composer "Ambujam Krishna", :kriti "Dhyaname Tarume"}
+  {:composer "Dandapani Desikar", :kriti "Enai Ni Maravade"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Balamurali Krishna", :kriti "Sama Gana"}
+  {:composer "Tyagaraja", :kriti "Sarasiruha Nayane Sarasijasane"}
+  {:composer "Balamurali Krishna", :kriti "Siddhi Nayakena"}
+  {:composer "Muthaiah Bagavatar", :kriti "Sudhamayi Sudhanidhi"}
+  {:composer "Balamurali Krishna", :kriti "Tillana"}
+  {:composer "Lalitadasar", :kriti "Tripurasundari Napai"}
+  {:composer "Lalgudi Jayaraman", :kriti "Varnam"}),
+ :pashupatipriya
+ ({:composer "Muthaiah Bagavatar", :kriti "Sharavanabhava"}
+  {:composer "Muthaiah Bagavatar", :kriti "Uragaraja Mani"}),
+ :ragacudamani
+ ({:composer "M Dikshitar", :kriti "Shveta Ganapatim Vande"}),
+ :shivakambhoji
+ ({:composer "Jayacamaraja Wodayar",
+   :kriti "Kamaksi Pahimam Minaksi"}),
+ :saurastram
+ ({:composer "Tyagaraja", :kriti "Allakallolamayenamma"}
+  {:composer "Poochi Srinivasa Iyengar", :kriti "Citta Dirccara"}
+  {:composer "Tyagaraja", :kriti "Deva Rama Rama Mahadeva"}
+  {:composer "Tyagaraja", :kriti "Ennado Raksincite Ni"}
+  {:composer "Tyagaraja", :kriti "Meluko Dayanidhi"}
+  {:composer "Tyagaraja", :kriti "Melu Melu Rama Nama"}
+  {:composer "Syama Sastri", :kriti "Na Manavini Vinu I Vela"}
+  {:composer "Patnam Subhramanya Iyer",
+   :kriti "Ninnu Juci Dhanyudaiti"}
+  {:composer "Tyagaraja", :kriti "Ni Nama Rupamulaku Nitya"}
+  {:composer "Tyagaraja", :kriti "Pahi Mam Hare Mahanubhava"}
+  {:composer "Tyagaraja", :kriti "Pahi Pahi Dinabandho"}
+  {:composer "Tyagaraja", :kriti "Rama Rama Govinda Raksincu"}
+  {:composer "Swatitirunal", :kriti "Sarasijanabhanin"}
+  {:composer "Arunacala Kavi", :kriti "Sharanam Sharanam Enrane"}
+  {:composer "Tyagaraja", :kriti "Shri Ganapatini Sevimpa"}
+  {:composer "M Dikshitar", :kriti "Suryamurte Namostute"}
+  {:composer "M Dikshitar", :kriti "Varalaksmim Bhajare"}
+  {:composer "Arunacala Kavi", :kriti "Vinayaka Sharanam"}
+  {:composer "Tyagaraja", :kriti "Vinayamu Nanu Kaushikunu"}
+  {:composer "Arunacala Kavi", :kriti "Caranam Caranam"}
+  {:composer "Muthaiah Bagavatar", :kriti "Shri Rajaraja Varade"}),
+ :nariritigaula
+ ({:composer "M Dikshitar", :kriti "Nilotpalambam Bhaja"}),
+ :shadvidamargini
+ ({:composer "Koteswara Iyer", :kriti "Antaranga Bhakti"}
+  {:composer "Tyagaraja", :kriti "Jnanamosaga Rada"}
+  {:composer "Tyagaraja", :kriti "Pahi Ramaduta Jagatprana"}),
+ :ragapanjaram
+ ({:composer "Tyagaraja", :kriti "Sarvabhauma Saketa Rama"}
+  {:composer "Tyagaraja", :kriti "Varada Navanitasha Pahi"}),
+ :gaurivelavali
+ ({:composer "M Dikshitar", :kriti "Kaumari Gauri Velavali"}),
+ :nadanamakriya
+ ({:composer "Oothukadu Venkata Kavi",
+   :kriti "Bhajasva Shri Tripurasundari"}
+  {:composer "Vedanayakam Pillai", :kriti "Cittam Eppadiyo"}
+  {:composer "Swatitirunal", :kriti "Devadeva Kalayami"}
+  {:composer "Bhadracala Ramadas", :kriti "E Teeruga"}
+  {:composer "Swatitirunal", :kriti "Jagadisa Pancaksara"}
+  {:composer "Tyagaraja", :kriti "Jaya Mangalam Nitya"}
+  {:composer "Syama Sastri", :kriti "Kanaka Shaila Viharini"}
+  {:composer "Tyagaraja", :kriti "Karuna Jaladhe Dasharathe"}
+  {:composer "Vedanayakam Pillai", :kriti "Ninaippadeppodu Nenje"}
+  {:composer "M Dikshitar", :kriti "Pratyangira Bhagavatim"}
+  {:composer "Gopalakrishna Bharati", :kriti "Shivaloka Nathanai"}
+  {:composer "Jayacamaraja Wodayar", :kriti "Shiva Shiva Shiva Bho"}
+  {:composer "Muthaiah Bagavatar", :kriti "Shri Lalite"}
+  {:composer "Gopalakrishna Bharati", :kriti "Tedi Alaigiraye"}),
+ :mayapradipa
+ ({:composer "Muthaiah Bagavatar", :kriti "Tappa Mannisau"}),
+ :rohini ({:composer "Balamurali Krishna", :kriti "Mamava Ganalola"}),
+ :tandavam
+ ({:composer "Dandapani Desikar", :kriti "Kadavulai Maravade"}),
+ :cintamani
+ ({:composer "Syama Sastri", :kriti "Devi Brova Samayamide"}),
+ :nasikabhusani
+ ({:composer "Balamurali Krishna", :kriti "Ambikam Upaseham"}),
+ :vijayasarasvati
+ ({:composer "Muthaiah Bagavatar", :kriti "Sharanam Vijaya"}),
+ :narayanagaula
+ ({:composer "Tyagaraja", :kriti "Darshanamu Seya Na Tarama"}
+  {:composer "Tyagaraja", :kriti "Kadale Vadu Gade Ramudu"}
+  {:composer "Vinai Kuppiyer", :kriti "Maguva Nine Kori"}
+  {:composer "M Dikshitar", :kriti "Shri Ramam Ravikulabdhi Somam"}
+  {:composer "Muthaiah Bagavatar", :kriti "Vindhyacala"}),
+ :chayanata ({:composer "Tyagaraja", :kriti "Idi Samayamura Inakula"}),
+ :namadesi
+ ({:composer "M Dikshitar", :kriti "Narmada Kaveri Nilaiye"}),
+ :sumukham
+ ({:composer "Balamurali Krishna", :kriti "Mahaniya Manas-sulive"}),
+ :gamanashrama
+ ({:composer "Mysore Vasudevacar", :kriti "Idi Niku Nyayama Shri"}
+  {:composer "Koteswara Iyer", :kriti "Ihame Sukham"}
+  {:composer "Tyagaraja", :kriti "Jnanamosagarada"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Muthaiah Bagavatar", :kriti "Shri Cakrapura Vasini"}),
+ :garudadhvani
+ ({:composer "Tyagaraja", :kriti "Ananda Sagaramidani"}
+  {:composer "Muthaiah Bagavatar", :kriti "Canda Munda"}
+  {:composer "Mysore Vasudevacar", :kriti "Devi Kamalalaye"}
+  {:composer "Garbhapurivasa",
+   :kriti "Emi Neramu Nannu Brochutaku Emi Neramu"}
+  {:composer "Balamurali Krishna",
+   :kriti "Na Dru Dru Tom Dru Na-tillana"}
+  {:composer "Tyagaraja", :kriti "Tatvameruga Tarama"}
+  {:composer "Lalgudi Jayaraman", :kriti "Varnam"}),
+ :shulini
+ ({:composer "Koteswara Iyer", :kriti "Paramukham Adeno"}
+  {:composer "Tyagaraja", :kriti "Prana Natha Birana Brovave"}),
+ :ratnangi
+ ({:composer "Tyagaraja", :kriti "Kalasha Vardhijam Satatam"}
+  {:composer "Koteswara Iyer", :kriti "Tarunam Ide Dayanidhe"}),
+ :gambhiravani
+ ({:composer "Tyagaraja", :kriti "Sada Madin Dalatu Gadara"}),
+ :shuddhabangala
+ ({:composer "Tyagaraja", :kriti "Rama Bhakti Samrajya"}
+  {:composer "Tyagaraja", :kriti "Tappagane Vaccuna Tanuvaku"}
+  {:composer "Tyagaraja", :kriti "Toli Ne Jesina Puja Phalamu"}),
+ :athana
+ ({:composer "Tyagaraja", :kriti "Anupama Gunambudhi Yani"}
+  {:composer "Tyagaraja", :kriti "Bhajana Seyarada"}
+  {:composer "M Dikshitar", :kriti "Brhaspate Tarapate Brahmajate"}
+  {:composer "Tyagaraja", :kriti "Cede Buddhi Manura"}
+  {:composer "Muthaiah Bagavatar", :kriti "Cidagni Kunda"}
+  {:composer "Mysore Sadashiva Rao", :kriti "Ekkadunnavu Na-javali"}
+  {:composer "Tyagaraja", :kriti "Ela Ni Dayaradu"}
+  {:composer "Tyagaraja", :kriti "E Papamu Jesitira Rama"}
+  {:composer "Oothukadu Venkata Kavi", :kriti "Gopakumara"}
+  {:composer "Tyagaraja", :kriti "Ilalo Pranatarti Harudanucu"}
+  {:composer "Muthaiah Bagavatar", :kriti "Jagadguro Dayanidhe"}
+  {:composer "Periyasamy Turan", :kriti "Kala Kalan Kayilai Nathan"}
+  {:composer "Gopalakrishna Bharati", :kriti "Kanaka Sabhapatikku"}
+  {:composer "Swatitirunal", :kriti "Kanta Tava Pizha"}
+  {:composer "Tyagaraja", :kriti "Mummurtulu Gumigudi"}
+  {:composer "Tyagaraja", :kriti "Narada Gana Lola"}
+  {:composer "Papanasam Sivan", :kriti "Ni Irangayenil"}
+  {:composer "Tyagaraja", :kriti "Rama Namamu Janma Raksaka"}
+  {:composer "Tyagaraja", :kriti "Rara Raghuvira Venta"}
+  {:composer "Swatitirunal", :kriti "Sarasayatalocana"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Shrinivasa Dayanidhe"}
+  {:composer "Tyagaraja", :kriti "Shripapriya Sangitopaasana"}
+  {:composer "Jayacamaraja Wodayar",
+   :kriti "Shri Mahaganapatim Bhajeham"}
+  {:composer "Papanasam Sivan", :kriti "Shri Rama Nama"}
+  {:composer "Mysore Vasudevacar", :kriti "Shri Sarasvatim Bhagavatim"}
+  {:composer "M Dikshitar", :kriti "Shri Vaidyanatham Bhajami"}
+  {:composer "Swatitirunal", :kriti "Srikumaranagaralaye"}
+  {:composer "Koteswara Iyer", :kriti "Ta Ta Nin Padam"}
+  {:composer "Papanasam Sivan", :kriti "Tiruvarul Tara"}
+  {:composer "Ambujam Krishna", :kriti "Tyagaraja Svami"}
+  {:composer "M Dikshitar", :kriti "Tyagarajo Virajate Maharaja"}
+  {:composer "Mysore Sadashiva Rao", :kriti "Vacam Agocarudani"}
+  {:composer "Swatitirunal", :kriti "Valaputala"}),
+ :lalita
+ ({:composer "M Dikshitar", :kriti "Agastishvaram Aradhayeham"}
+  {:composer "Walajapet Venkatramana Bagavat", :kriti "Cedipoke O"}
+  {:composer "M Dikshitar", :kriti "Hiranmayim Laksmim Sada Bhajami"}
+  {:composer "Syama Sastri", :kriti "Nannu Brovu Lalita Vegame"}
+  {:composer "Tyagaraja", :kriti "Sitamma Mayamma"}),
+ :gauri
+ ({:composer "M Dikshitar", :kriti "Gauri Girirajakumari"}
+  {:composer "Tyagaraja", :kriti "Jaya Jaya Shri Raghurama"}),
+ :valaji
+ ({:composer "Muthaiah Bagavatar", :kriti "Jalandhara Supithaste"}
+  {:composer "Ambujam Krishna", :kriti "Kodanda Panikkinai Edu"}
+  {:composer "Papanasam Sivan", :kriti "Padame Tunai"}
+  {:composer "Gn Balasubramanian", :kriti "Santatamu Ninne"}
+  {:composer "Lalgudi Jayaraman", :kriti "Varnam"}),
+ :salanganata
+ ({:composer "M Dikshitar", :kriti "Avyaja Karuna Kataksi"}),
+ :brndavanasaranga
+ ({:composer "Tulasivanam", :kriti "Atma Nivedanam"}
+  {:composer "Swatitirunal", :kriti "Caliye Kunjan Mo"}
+  {:composer "Tyagaraja", :kriti "Kamalaptakula Kalashabdhi"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "M Dikshitar", :kriti "Rangapura Vihaara"}
+  {:composer "M Dikshitar", :kriti "Saundararajam Ashraye"}
+  {:composer "M Dikshitar", :kriti "Svaminathena Samraksitoham"}),
+ :purnalalita
+ ({:composer "Tyagaraja", :kriti "Kaluguna Pada Nirajaseva"}),
+ :yaman
+ ({:composer "Madurai Gs Mani", :kriti "Pashi Padarnda Tadakam"}),
+ :ganamurti
+ ({:composer "Tyagaraja", :kriti "Ganamurte Shri Krsna"}
+  {:composer "Koteswara Iyer", :kriti "Ma Madhura"}
+  {:composer "Balamurali Krishna", :kriti "Pahi Jagadishvara"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Vina Seshanna", :kriti "Shripate Premamuga"}),
+ :shriranjani
+ ({:composer "Tyagaraja", :kriti "Bhuvini Dasudane Perasace"}
+  {:composer "Tyagaraja", :kriti "Brocevarevare Raghupate"}
+  {:composer "Garbhapurivasa",
+   :kriti "Brochutakevarunnaru Paramatma Ninnuvina"}
+  {:composer "Papanasam Sivan", :kriti "Gajavadana Karuna"}
+  {:composer "Papanasam Sivan", :kriti "Ini Oru Kanam"}
+  {:composer "Papanasam Sivan", :kriti "Kana Vendamo Iru Kan"}
+  {:composer "Ambujam Krishna", :kriti "Karunai Puriya"}
+  {:composer "Tyagaraja", :kriti "Marubalkakunnavemira"}
+  {:composer "Papanasam Sivan", :kriti "Mata Innum Vata"}
+  {:composer "Indira Natesan", :kriti "Nannu Brovavamma"}
+  {:composer "Oothukadu Venkata Kavi",
+   :kriti "Nee Daan Meccikollavendum"}
+  {:composer "M Dikshitar", :kriti "Ni Sati Daivamendu Ledani"}
+  {:composer "M Dikshitar", :kriti "Parvata Rajakumari Parvati"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Koththavasal Venkatarama Iyer",
+   :kriti "Sarasa Dala Nayana--varnam"}
+  {:composer "Tyagaraja", :kriti "Sari Evvare Shri Janaki"}
+  {:composer "Walajapet Venkatramana Bagavat",
+   :kriti "Shree Raghuramam"}
+  {:composer "M Dikshitar", :kriti "Shri Dum Durge Shivasamsarge"}
+  {:composer "M Dikshitar", :kriti "Shri Ramacandro Raksatumam"}
+  {:composer "Tyagaraja", :kriti "Sogasuga Mrudanga Talamu"}
+  {:composer "Muthaiah Bagavatar", :kriti "Soorya Candragni"}
+  {:composer "Papanasam Sivan ", :kriti "Svami Ni Manam-varnam"}
+  {:composer "Koteswara Iyer", :kriti "Ulam Ariyada"}),
+ :svarabhusani
+ ({:composer "Tyagaraja", :kriti "Varadaraja Ninnu Kori"}),
+ :shri
+ ({:composer "Koteswara Iyer", :kriti "Anbon Annaiye"}
+  {:composer "Tyagaraja", :kriti "Endaro Mahanubhavulu"}
+  {:composer "Koteswara Iyer", :kriti "Kanakavela"}
+  {:composer "Syama Sastri", :kriti "Karuna Judu Ninnu Nammina"}
+  {:composer "Gopalakrishna Bharati", :kriti "Maravamal Eppadiyum"}
+  {:composer "M Dikshitar", :kriti "Muladhara Cakra"}
+  {:composer "Mysore Vasudevacar",
+   :kriti "Nadhrudhru Dhim Tanana-tillana"}
+  {:composer "Tyagaraja", :kriti "Nama Kusumamulace Pujince"}
+  {:composer "Papanasam Sivan", :kriti "Ramam Bhajata"}
+  {:composer "Garbhapurivasa", :kriti "Sami Ninne Koriyunnanu-varnam"}
+  {:composer "M Dikshitar", :kriti "Shri Abhayamba Ninnu"}
+  {:composer "M Dikshitar", :kriti "Shri Kamalambike Shive"}
+  {:composer "M Dikshitar", :kriti "Shri Muladhara Cakra"}
+  {:composer "M Dikshitar", :kriti "Shri Varalaksmi Namastubhyam"}
+  {:composer "Muthaiah Bagavatar", :kriti "Ume Ninage"}
+  {:composer "Subbaraya Shastri", :kriti "Vanajasana Vinuta"}
+  {:composer "Tyagaraja", :kriti "Yuktamu Gadu Nanu Raksincaka"}),
+ :sucaritra
+ ({:composer "Balamurali Krishna", :kriti "Cintayami Satatam"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "M Dikshitar", :kriti "Santanamanjari Shankari"}
+  {:composer "Koteswara Iyer", :kriti "Velu Mayilume"}),
+ :ramapriya
+ ({:composer "Balamurali Krishna", :kriti "Calamu Jesina-varnam"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Ittivaru Letiki"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Korina Varamosagu"}
+  {:composer "Muthaiah Bagavatar", :kriti "Mahabaladi Nilaye"}
+  {:composer "Periyasamy Turan", :kriti "Mangala Vinayakane"}
+  {:composer "Ambujam Krishna", :kriti "Niliciyunnanu"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Koteswara Iyer", :kriti "Samee Sada"}
+  {:composer "Swatitirunal", :kriti "Samodam Paripalaya"}
+  {:composer "Tyagaraja", :kriti "Sandehamunu Dirpumayya"}
+  {:composer "Mysore Vasudevacar", :kriti "Shri Vasudevam Shri"}
+  {:composer "Nila Kanta Sivan", :kriti "Va Va Kalai Made"}
+  {:composer "Periyasamy Turan", :kriti "Velavanai Ninaindu"}),
+ :vijayanagari
+ ({:composer "Tiruvetriyur Tyagaraja", :kriti "Evarito Ne"}
+  {:composer "Lalitadasar", :kriti "Rara Muralidhara"}
+  {:composer "Muthaiah Bagavatar", :kriti "Vijayambike Vimalatmike"}),
+ :mohanakalyani
+ ({:composer "Ambujam Krishna", :kriti "Adinaiye Kanna"}
+  {:composer "Mysore Vasudevacar", :kriti "Bhajare Re Bhaja Manasa"}
+  {:composer "Muthaiah Bagavatar", :kriti "Bhuvaneshwariya"}
+  {:composer "Ambujam Krishna", :kriti "En Tai Ni Irukka"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Swatitirunal", :kriti "Seve Srikantam"}
+  {:composer "Muthaiah Bagavatar", :kriti "Shivam Vrshabharudham"}
+  {:composer "Muthaiah Bagavatar", :kriti "Siddhi Vinayakam"}
+  {:composer "Lalgudi Jayaraman", :kriti "Tillana"}
+  {:composer "Lalgudi Jayaraman", :kriti "Varnam"}),
+ :sarasvati
+ ({:composer "Lalitadasar", :kriti "Amba Sarasvati"}
+  {:composer "Tyagaraja", :kriti "Anuragamuleni Manasuna"}
+  {:composer "Papanasam Sivan", :kriti "Arul Puri Ainkarane"}
+  {:composer "Walajapet Venkatramana Bagavat",
+   :kriti "Hari Hari Hariyani"}
+  {:composer "Nila Kanta Sivan", :kriti "Kanden Kali Tirnden"}
+  {:composer "Gn Balasubramanian", :kriti "Kavalai Ellam"}
+  {:composer "Ambujam Krishna", :kriti "Nada Rupini"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Muthaiah Bagavatar", :kriti "Rudram Mahesham"}
+  {:composer "Swatitirunal", :kriti "Sadaramava Nirupama"}
+  {:composer "Muthaiah Bagavatar", :kriti "Saraseeruhakshi"}
+  {:composer "Papanasam Sivan", :kriti "Sarasvati Dayai"}
+  {:composer "Gn Balasubramanian", :kriti "Sarasvati Namostute"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Shrikara Raghuvira"}
+  {:composer "Muthaiah Bagavatar", :kriti "Vageeshwari"}),
+ :kokiladhvani
+ ({:composer "Tyagaraja", :kriti "Koniyadedu Nayeda"}
+  {:composer "Tyagaraja", :kriti "Toli Nenu Jesina Puja"}),
+ :gundakriya
+ ({:composer "Tyagaraja", :kriti "Intanucu Varnimpa Tarama"}),
+ :suryakantam
+ ({:composer "Koteswara Iyer", :kriti "Kanjam Konjam"}
+  {:composer "Tyagaraja", :kriti "Muddumomu Elagu Celangeno"}),
+ :vallabhi
+ ({:composer "Balamurali Krishna", :kriti "Jaya Jaya Gurunatha"}),
+ :suraranjani
+ ({:composer "Poochi Srinivasa Iyengar", :kriti "Raghunatha Nannu"}),
+ :mand
+ ({:composer "Jayacamaraja Wodayar", :kriti "Brahmanda Valaye"}
+  {:composer "Mysore Vasudevacar", :kriti "Janaki Manoharam Bhajeham"}
+  {:composer "Periyasamy Turan", :kriti "Muralidhara Gopala"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Papanasam Sivan", :kriti "Ramanai Bhajittal"}
+  {:composer "Lalgudi Jayaraman", :kriti "Tillana"}),
+ :nagabhasani
+ ({:composer "Muthaiah Bagavatar", :kriti "Ganesha Skanda"}),
+ :nagagandhari
+ ({:composer "M Dikshitar", :kriti "Nagagandhari Raganute"}
+  {:composer "M Dikshitar", :kriti "Sarasija Nabha Sodari"}),
+ :yagapriya
+ ({:composer "M Dikshitar", :kriti "Kalavati Kamalananayuvati"}
+  {:composer "Koteswara Iyer", :kriti "Shambho Sadashiva"}),
+ :abhogi
+ ({:composer "Balamurali Krishna", :kriti "Bhajami Sada"}
+  {:composer "Balamurali Krishna", :kriti "Bratukanta Cinte"}
+  {:composer "Patnam Subhramanya Iyer",
+   :kriti "Evari Bodhanavini-varnam"}
+  {:composer "Periyasamy Turan", :kriti "Harihara Sutane"}
+  {:composer "Gn Balasubramanian", :kriti "Manasarakane Nammaka"}
+  {:composer "Patnam Subhramanya Iyer",
+   :kriti "Manasavrta Garvametike"}
+  {:composer "Tyagaraja", :kriti "Manasu Nilpa Shakti"}
+  {:composer "Tyagaraja", :kriti "Nannu Brova Nikinta"}
+  {:composer "Madurai Gs Mani", :kriti "Nartana Ganapatim"}
+  {:composer "Papanasam Sivan", :kriti "Nekkurugi Unnai"}
+  {:composer "Mysore Sadashiva Rao", :kriti "Nikeppudu Daya Vaccuno"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Gopalakrishna Bharati",
+   :kriti "Sabhapatikku Veru Deivam"}
+  {:composer "M Dikshitar", :kriti "Shri Lakshmi Varaham"}
+  {:composer "Muthaiah Bagavatar", :kriti "Shri Shiva Jaya"}
+  {:composer "Gn Balasubramanian", :kriti "Tamasamika Talanu"}
+  {:composer "Papanasam Sivan", :kriti "Tanjam Enrale-varnam"}
+  {:composer "Balamurali Krishna", :kriti "Vegame Gava Ravayya"}),
+ :viravasantam
+ ({:composer "Jayacamaraja Wodayar",
+   :kriti "Chintayami Satatam Hastivadanam"}
+  {:composer "Tyagaraja", :kriti "Emani Pogadudura"}
+  {:composer "M Dikshitar", :kriti "Viravasanta Tyagaraja"}),
+ :jalarnavam ({:composer "Koteswara Iyer", :kriti "Kanaka Mayoora"}),
+ :shuddhabhairavi
+ ({:composer "Swatitirunal", :kriti "Vihara Manasa Sada"}),
+ :sindhuramakriya
+ ({:composer "Jayacamaraja Wodayar", :kriti "Cintaya Sada"}
+  {:composer "Tyagaraja", :kriti "Devadi Deva Sadashiva"}
+  {:composer "Muthaiah Bagavatar", :kriti "Kailasavasam"}
+  {:composer "Tyagaraja", :kriti "Sudha Madhurya Bhasana"}),
+ :chakravakam
+ ({:composer "Gopalakrishna Bharati", :kriti "Arivudaiyor"}
+  {:composer "Tyagaraja", :kriti "Etula Brotuvo Teliya"}
+  {:composer "M Dikshitar", :kriti "Gajananayutam Ganeshvaram"}
+  {:composer "Papanasam Sivan", :kriti "Guruvayurappa"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Inka Daya Raleda"}
+  {:composer "Papanasam Sivan", :kriti "Ishane Inda Ezahai"}
+  {:composer "Patnam Subhramanya Iyer",
+   :kriti "Jalajaksi Ninne Dalaci"}
+  {:composer "Koteswara Iyer", :kriti "Kana Kan Koti"}
+  {:composer "Muthaiah Bagavatar", :kriti "Madhurapura Nayike"}
+  {:composer "Periyasamy Turan", :kriti "Nanoru Siru Vinai"}
+  {:composer "Garbhapurivasa",
+   :kriti "Na Manavi Ni Vinavayya Nagaraja Shayana"}
+  {:composer "Walajapet Venkatramana Bagavat",
+   :kriti "Nenarunci Brova"}
+  {:composer "Mysore Vasudevacar", :kriti "Neranammiti Nive Gati"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Papanasam Sivan", :kriti "Ranganai Tudipporkku"}
+  {:composer "Swatitirunal", :kriti "Sarojanabha"}
+  {:composer "Tyagaraja", :kriti "Sugunamule Jeppukonti"}
+  {:composer "M Dikshitar", :kriti "Varahim Vaisnavim Vanavasini"}
+  {:composer "M Dikshitar", :kriti "Vinayaka Vighna Nashaka"}
+  {:composer "Garbhapurivasa",
+   :kriti "Yadukula Tilaka Enduku Nirdaya Evaru"}),
+ :rasikapriya
+ ({:composer "Koteswara Iyer", :kriti "Arul Seyya Vendum"}
+  {:composer "Balamurali Krishna", :kriti "Pavana Tanaya"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "M Dikshitar", :kriti "Shrngara Rasamanjarim"}),
+ :takka
+ ({:composer "Tyagaraja", :kriti "Raka Shashi Vadana"}
+  {:composer "M Dikshitar", :kriti "Sundaramurtim Ashrayami"}),
+ :saveri
+ ({:composer "Bhadracala Ramadas", :kriti "Amma Nannubrovave"}
+  {:composer "Swatitirunal", :kriti "Anjaneya"}
+  {:composer "Arunacala Kavi", :kriti "Annai Janaki"}
+  {:composer "Tyagaraja", :kriti "Balamu Kulamu Yela Ramabhakti"}
+  {:composer "Swatitirunal", :kriti "Bhasurangi Bale"}
+  {:composer "Tyagaraja", :kriti "Calu Calu Ni Yuktulu"}
+  {:composer "Tyagaraja", :kriti "Daridapuleka Vedite"}
+  {:composer "Swatitirunal", :kriti "Devi Pavane Seve"}
+  {:composer "Syama Sastri", :kriti "Durusuga Krpa Juci"}
+  {:composer "Patnam Subhramanya Iyer",
+   :kriti "Enta Nercina Saphalamemi"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Etu Nammina O Manasa"}
+  {:composer "Arunacala Kavi", :kriti "Hanumane Niye"}
+  {:composer "Tyagaraja", :kriti "Intakanna Delpa Tarama"}
+  {:composer "Tyagaraja", :kriti "Inta Tamasamaite"}
+  {:composer "Syama Sastri", :kriti "Janani Natajana Paripalini"}
+  {:composer "Krishnasvami Ayya", :kriti "Jaya Jaya Janaka Sute"}
+  {:composer "Papanasam Sivan", :kriti "Kamaksi Gauri"}
+  {:composer "Tyagaraja", :kriti "Kannatalli Nivu Napala"}
+  {:composer "Papanasam Sivan", :kriti "Kapali Irukka Vin"}
+  {:composer "M Dikshitar", :kriti "Kari Kalabha Mukham"}
+  {:composer "Muthaiah Bagavatar", :kriti "Moola Prakrti"}
+  {:composer "Periyasamy Turan", :kriti "Muruga Muruga Enral"}
+  {:composer "Papanasam Sivan", :kriti "Muruga Muzhumadi"}
+  {:composer "Tyagaraja", :kriti "Parashakti Manuparada"}
+  {:composer "Swatitirunal", :kriti "Paripahi Ganadhipa"}
+  {:composer "Mysore Vasudevacar", :kriti "Purusottama Mam Palaya"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Tyagaraja", :kriti "Ramabana Trana Shaurya"}
+  {:composer "Tyagaraja", :kriti "Ramam Bhajeham Sada"}
+  {:composer "Tyagaraja", :kriti "Samsarulaite Nemayya"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Sarasuda Ninne"}
+  {:composer "Koththavasal Venkatarama Iyer",
+   :kriti "Sarasuda Ninne Kori-varnam"}
+  {:composer "Vinai Kuppiyer", :kriti "Sarojaksa Ni Padamulane"}
+  {:composer "Syama Sastri", :kriti "Shankari Shamkuru Candramukhi"}
+  {:composer "Syama Sastri", :kriti "Shripati Mukha Viracita"}
+  {:composer "Mysore Sadashiva Rao", :kriti "Shri Kamakoti"}
+  {:composer "M Dikshitar", :kriti "Shri Rajagopala Bala"}
+  {:composer "Tyagaraja", :kriti "Shri Rama Rama Rama"}
+  {:composer "Tyagaraja", :kriti "Tiruna Loni Dugdha"}
+  {:composer "Tyagaraja", :kriti "Tulasi Jagajjanani Duritapaharini"}
+  {:composer "Koteswara Iyer", :kriti "Velayya"}),
+ :hindustanibehag
+ ({:composer "Vinai Kuppiyer",
+   :kriti "Vanajaksa Nine Nammiti-varnam"}),
+ :megharanjani
+ ({:composer "Balamurali Krishna", :kriti "Akhila Devanuta"}
+  {:composer "Poochi Srinivasa Iyengar", :kriti "Karunato Nannu"}
+  {:composer "Muthaiah Bagavatar", :kriti "Parama Pavane"}
+  {:composer "Mysore Vasudevacar", :kriti "Smara Bhumi Sutadhipatim"}
+  {:composer "M Dikshitar", :kriti "Venkateshvara Ettappa"}),
+ :mandari
+ ({:composer "Muthaiah Bagavatar", :kriti "Atishaya Vara"}
+  {:composer "Mysore Vasudevacar",
+   :kriti "Bhaja Manasa Shri Vasudevam"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Endukitu Capalamu"}
+  {:composer "Muthaiah Bagavatar", :kriti "Ennallu Tirugudunu"}
+  {:composer "Patnam Subhramanya Iyer",
+   :kriti "Ninnu Jeppa Karanamemi"}
+  {:composer "Balamurali Krishna", :kriti "Pahi Samira"}
+  {:composer "Tyagaraja", :kriti "Paraloka Bhayamu Leka"}
+  {:composer "Mysore Vasudevacar",
+   :kriti "Vanajaksa Ninne Kori-varnam"}
+  {:composer "Lalgudi Jayaraman", :kriti "Varnam"}),
+ :shuddhahindola
+ ({:composer "Papanasam Sivan", :kriti "Tunai Purindarul"}),
+ :jyoti ({:composer "M Dikshitar", :kriti "Rame Bharata Palita"}),
+ :ramamanohari
+ ({:composer "M Dikshitar", :kriti "Matangi Shri Raja Rajeshvari"}
+  {:composer "Tyagaraja", :kriti "Sita Manohara Shrngara"}
+  {:composer "M Dikshitar", :kriti "Smaramyaham Sada Rahum"}),
+ :mangalakaishiki
+ ({:composer "M Dikshitar", :kriti "Shri Bhargavi Bhadram"}),
+ :santanamanjari
+ ({:composer "M Dikshitar", :kriti "Santanamanjari Shankari"}),
+ :kannadagaula
+ ({:composer "M Dikshitar", :kriti "Nilotpalambikaya"}
+  {:composer "Tyagaraja", :kriti "Orajupu Jucedi Nyayama"}
+  {:composer "Tyagaraja", :kriti "Sogasu Juda Tarama"}),
+ :phenadhyuti
+ ({:composer "M Dikshitar", :kriti "Shri Daksinamurtim Isham"}),
+ :jayantashri
+ ({:composer "Tyagaraja", :kriti "Marugelara O Raghava"}
+  {:composer "Oothukadu Venkata Kavi", :kriti "Neerada Sama Neela"}
+  {:composer "Mysore Vasudevacar", :kriti "Shridhara Pahi Dayakara"}),
+ :shuddhadhanyasi
+ ({:composer "Periyasamy Turan", :kriti "Andavane Sharanam"}
+  {:composer "Ambujam Krishna", :kriti "Azhaga Azhaga"}
+  {:composer "Muthaiah Bagavatar", :kriti "Bherundambe Beduve"}
+  {:composer "Muthaiah Bagavatar", :kriti "Himagiri Tanaye"}
+  {:composer "Papanasam Sivan", :kriti "Jaya Jaya Guha"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Swatitirunal", :kriti "Samodam Cintayami"}
+  {:composer "M Dikshitar", :kriti "Shri Parthasarathina"}
+  {:composer "Muthaiah Bagavatar", :kriti "Shri Rajamatangi"}
+  {:composer "M Dikshitar", :kriti "Subrahmanyena Raksitoham"}
+  {:composer "Balamurali Krishna", :kriti "Tana Hitave"}),
+ :gopikavasantam
+ ({:composer "M Dikshitar", :kriti "Balakrsnam Bhavayami"}),
+ :nagasvaravali
+ ({:composer "Jayacamaraja Wodayar", :kriti "Gam Ganapate Sada"}
+  {:composer "Patnam Subhramanya Iyer",
+   :kriti "Garuda Gamana Samayamide"}
+  {:composer "Papanasam Sivan", :kriti "Muralidhara Mana"}
+  {:composer "Papanasam Sivan", :kriti "Padumanabhan Maruga"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Mysore Vasudevacar", :kriti "Rama Ramana Narayana"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Sami Nipai Cala"}
+  {:composer "Balamurali Krishna", :kriti "Shivagangasthali"}
+  {:composer "Tyagaraja", :kriti "Shripate Ni Pada Cintana"}
+  {:composer "Maha Vaidyanatha Iyer",
+   :kriti "Shri Shankara Guruvaram"}),
+ :kapi
+ ({:composer "Tyagaraja", :kriti "Anyayamu Seyukura Rama"}
+  {:composer "Ambujam Krishna", :kriti "Aravinda Padamalar"}
+  {:composer "Balamurali Krishna", :kriti "Bhavaname Maha"}
+  {:composer "Bhadracala Ramadas", :kriti "Caranamule Nammiti"}
+  {:composer "Ambujam Krishna", :kriti "Cinna Cinna Padam"}
+  {:composer "Tyagaraja", :kriti "Cutamurare I Vedkanu"}
+  {:composer "Tyagaraja", :kriti "Edi Ni Bahubala Parakrama"}
+  {:composer "Papanasam Sivan", :kriti "Enna Tavam Seidanai"}
+  {:composer "Mysore Vasudevacar", :kriti "Govindam Bhajare Mana"}
+  {:composer "Tyagaraja", :kriti "Inta Saukhyamani Ne Ceppajala"}
+  {:composer "Papanasam Sivan", :kriti "Ishan Anbarkk-uvamai"}
+  {:composer "Muthaiah Bagavatar", :kriti "Kalilo Hari"}
+  {:composer "Tyagaraja", :kriti "Mivalla Guna Dosamemi"}
+  {:composer "Vedanayakam Pillai", :kriti "Nale Nalla Nal"}
+  {:composer "Vedanayakam Pillai", :kriti "Nityanadattai Nadu"}
+  {:composer "Ambujam Krishna", :kriti "Ni Poi Azhaittu"}
+  {:composer "Tyagaraja", :kriti "Pahi Kalyana Rama"}
+  {:composer "Tyagaraja", :kriti "Pahi Mam Shri Ramacandra"}
+  {:composer "Tyagaraja", :kriti "Pahi Parama Dayalo"}
+  {:composer "Dharmapuri Subbaraya Iyer", :kriti "Parulanna Mata"}
+  {:composer "Periyasamy Turan", :kriti "Pazhani Ninra Paraman"}
+  {:composer "Vedanayakam Pillai", :kriti "Punniyam Pol"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Tyagaraja", :kriti "Rama Pahi Meghashyama"}
+  {:composer "Tyagaraja", :kriti "Rama Raghukula Jalanidhi"}
+  {:composer "Poochi Srinivasa Iyengar", :kriti "Sarasamu Ladedanduku"}
+  {:composer "Papanasam Sivan", :kriti "Shodanai Shumaikka"}
+  {:composer "Swatitirunal", :kriti "Sumasayaka"}
+  {:composer "Tyagaraja", :kriti "Sundara Dasharata Nandana"}
+  {:composer "Poochi Srinivasa Iyengar",
+   :kriti "Tadhara Dani Tana Dhirana"}
+  {:composer "Poochi Srinivasa Iyengar",
+   :kriti "Taradhipanana Tana Tillana"}
+  {:composer "Gopalakrishna Bharati", :kriti "Tillai Tillai Enral"}
+  {:composer "Lalgudi Jayaraman", :kriti "Tillana"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Vaddani Ne"}
+  {:composer "Poochi Srinivasa Iyengar", :kriti "Vaddani Nenantiga"}
+  {:composer "Swatitirunal", :kriti "Vihara Manasa"}),
+ :kannada
+ ({:composer "Muthaiah Bagavatar", :kriti "Aparajite Amareshanute"}
+  {:composer "Tyagaraja", :kriti "Bhajare Bhaja Manasa"}
+  {:composer "Vina Seshanna", :kriti "Diri Diri Dhim-tillana"}
+  {:composer "Gn Balasubramanian", :kriti "Ento Moralida Leda"}
+  {:composer "M Dikshitar", :kriti "Giticakra Ratha Sthitayai"}
+  {:composer "Tyagaraja", :kriti "Ide Bhagyamugaka Emi"}
+  {:composer "Ambujam Krishna", :kriti "Indattamadam"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Intakante Kavalena"}
+  {:composer "Lalgudi Jayaraman", :kriti "Inta Tamasa-varnam"}
+  {:composer "Swatitirunal", :kriti "Kalayami Hrudinanda"}
+  {:composer "Ambujam Krishna", :kriti "Mari Emi"}
+  {:composer "Tyagaraja", :kriti "Ninnadanela Nirajaksa"}
+  {:composer "M Dikshitar", :kriti "Palaya Mam Parvatisha"}
+  {:composer "Mysore Vasudevacar",
+   :kriti "Paripahi Mam Shri Raghupate"}
+  {:composer "Poochi Srinivasa Iyengar", :kriti "Paritapamula Dircci"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Tyagaraja", :kriti "Saketa Niketana Saketananaga"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Sami Idi Vela"}
+  {:composer "Papanasam Sivan", :kriti "Sharavanabhava Guhane"}
+  {:composer "Jayacamaraja Wodayar", :kriti "Shri Camundeshvari Devi"}
+  {:composer "M Dikshitar", :kriti "Shri Matrubhutam Trishiragiri"}),
+ :svaravali ({:composer "Tyagaraja", :kriti "Prarabdha Mitlundaga"}),
+ :madhuvanti ({:composer "Lalgudi Jayaraman", :kriti "Tillana"}),
+ :gamakakriya
+ ({:composer "M Dikshitar", :kriti "Ekamranatham Bhajeham"}
+  {:composer "M Dikshitar", :kriti "Kashi Vishalakshim Bhajeham"}
+  {:composer "M Dikshitar", :kriti "Minaksi Memudam Dehi"}),
+ :bageshribahar
+ ({:composer "Maharajapuram Santanam", :kriti "Tillana"}),
+ :kambhoji
+ ({:composer "Papanasam Sivan", :kriti "Adum Deivam"}
+  {:composer "Papanasam Sivan", :kriti "Anandame Paramanandame"}
+  {:composer "Syama Sastri", :kriti "Devi Ni Pada Sarasamule"}
+  {:composer "Tyagaraja", :kriti "Elara Shri Krsna Nato"}
+  {:composer "Balamurali Krishna", :kriti "Ele Palimpa Jala Mingela"}
+  {:composer "Bhadracala Ramadas", :kriti "Emayya Rama"}
+  {:composer "Nila Kanta Sivan", :kriti "Enakkun Tirumana"}
+  {:composer "Ambujam Krishna", :kriti "En Kula Deivame"}
+  {:composer "Tyagaraja", :kriti "Evari Mata Vinnavo Ravo"}
+  {:composer "M Dikshitar", :kriti "Gopalakrishnaya Namaste"}
+  {:composer "Papanasam Sivan", :kriti "Kadir Kama Kandan"}
+  {:composer "M Dikshitar", :kriti "Kailasa Nathena Samraksitoham"}
+  {:composer "M Dikshitar", :kriti "Kamalambikayai Kanakamshukayai"}
+  {:composer "Papanasam Sivan", :kriti "Kanakkan Koti Vendum"}
+  {:composer "Vinai Kuppiyer", :kriti "Koniyadina Napai"}
+  {:composer "Oothukadu Venkata Kavi", :kriti "Kuzhaloodi Manamellaam"}
+  {:composer "Mysore Vasudevacar", :kriti "Lambodaram Avalanbe"}
+  {:composer "Gn Balasubramanian", :kriti "Maha Tripurasundari"}
+  {:composer "Tyagaraja", :kriti "Mahita Pravrddha Shrimati"}
+  {:composer "M Dikshitar", :kriti "Marakatavallim Manasa Smarami"}
+  {:composer "Tyagaraja", :kriti "Mari Mari Ninne Moralida"}
+  {:composer "Mysore Vasudevacar", :kriti "Mari Mari Vaccuna Ma"}
+  {:composer "Tyagaraja", :kriti "Ma Janaki Cettabattaga"}
+  {:composer "Papanasam Sivan", :kriti "Niye Sharan Sanmukha"}
+  {:composer "Tyagaraja", :kriti "O Rangashayi Pilacite"}
+  {:composer "Swatitirunal", :kriti "Padasanati Munijana"}
+  {:composer "Maha Vaidyanatha Iyer", :kriti "Pankajakhipai-varnam"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Swatitirunal", :kriti "Rasavilasalolo"}
+  {:composer "Muthaiah Bagavatar", :kriti "Ratna Kancuka Dharini"}
+  {:composer "Mysore Sadashiva Rao", :kriti "Samrajyadaya"}
+  {:composer "Swatitirunal", :kriti "Sarasijanabha Ninnu-varnam"}
+  {:composer "Papanasam Sivan", :kriti "Shikkal Meviya"}
+  {:composer "Muthaiah Bagavatar", :kriti "Shivam Harim"}
+  {:composer "Nila Kanta Sivan", :kriti "Shivanai Ninaindu"}
+  {:composer "Tyagaraja", :kriti "Shri Raghuvara Aprameya"}
+  {:composer "M Dikshitar", :kriti "Shri Subrahmanyaya Namaste"}
+  {:composer "Balamurali Krishna", :kriti "Simharupa Deva"}
+  {:composer "Vina Seshanna", :kriti "Tamasambu Seyakane Nannu"}
+  {:composer "Balamurali Krishna", :kriti "Telugu Velagu"}
+  {:composer "Gopalakrishna Bharati", :kriti "Tiruvadi Sharanam"}
+  {:composer "Periyasamy Turan", :kriti "Vennai Unnum En"}),
+ :karnatakashuddhasaveri
+ ({:composer "M Dikshitar", :kriti "Ekamresha Nayike Shive"}),
+ :supratapa ({:composer "Tyagaraja", :kriti "Vara Shikhi Vahana"}),
+ :saurastra
+ ({:composer "Balamurali Krishna", :kriti "Svami Nivedaga"}),
+ :kosalam
+ ({:composer "Koteswara Iyer", :kriti "Ka Guha"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}),
+ :malavi
+ ({:composer "Patnam Subhramanya Iyer", :kriti "Idi Nyayama"}
+  {:composer "Gn Balasubramanian", :kriti "Marivere Gati"}
+  {:composer "Tyagaraja", :kriti "Nenaruncinanu Annitiki"}
+  {:composer "Gn Balasubramanian", :kriti "Ninnu Vina Verevaru"}
+  {:composer "Jayacamaraja Wodayar", :kriti "Shankarai Sadananda"}
+  {:composer "Muthaiah Bagavatar", :kriti "Shrikanthadayite"}),
+ :gavambhodi ({:composer "Koteswara Iyer", :kriti "Viraivagave"}),
+ :durga
+ ({:composer "Swatitirunal", :kriti "Jayajaya Devi"}
+  {:composer "Lalgudi Jayaraman", :kriti "Tillana"}),
+ :shrimani ({:composer "Tyagaraja", :kriti "Emandune Vicitramunu"}),
+ :jaganmohini
+ ({:composer "Syama Sastri", :kriti "Daya Juda Manci Samayamide"}
+  {:composer "Lalitadasar", :kriti "Gajanana Pahi Sada"}
+  {:composer "Tyagaraja", :kriti "Mamava Satatam Raghunatha"}
+  {:composer "Swatitirunal", :kriti "Pahi Taraksupuralaya"}
+  {:composer "Mysore Vasudevacar", :kriti "Paripahimam Para Vasudeva"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Gopalakrishna Bharati", :kriti "Shiva Kama Sundari"}
+  {:composer "Tyagaraja", :kriti "Shobhillu Saptasvara Sundarulanu"}
+  {:composer "Muthaiah Bagavatar", :kriti "Shri Shubhadevi"}
+  {:composer "M Dikshitar", :kriti "Shri Vidya Rajagopalam"}),
+ :shuddhasimantini ({:composer "Tyagaraja", :kriti "Janaki Ramana"}),
+ :junavali ({:composer "Tyagaraja", :kriti "Ne Pogadakunte Nikemi"}),
+ :shyama
+ ({:composer "Muthaiah Bagavatar", :kriti "Paratpare Pakarinute"}),
+ :lavangi ({:composer "Balamurali Krishna", :kriti "Omkara Akarini"}),
+ :amrtavahini
+ ({:composer "Jayacamaraja Wodayar", :kriti "Mahaganapatim Bhajeham"}
+  {:composer "Tyagaraja", :kriti "Shri Rama Padama Ni Krpa"}),
+ :vakulabharanam
+ ({:composer "Tyagaraja", :kriti "E Ramuni Nammitino"}
+  {:composer "Garbhapurivasa",
+   :kriti "Koniyada Tarama Ni Mahima Kanakadri"}
+  {:composer "Balamurali Krishna", :kriti "Kumaruni Valenu"}
+  {:composer "Jayacamaraja Wodayar",
+   :kriti "Paripahimam Siddhi Vinayaka"}
+  {:composer "M Dikshitar", :kriti "Prasanna Venkateshvaram"}),
+ :jhankaradhvani
+ ({:composer "Tyagaraja", :kriti "Phanipati Shayi Mam Patu"}
+  {:composer "Koteswara Iyer", :kriti "Varam Tarum"}),
+ :anandabhairavi
+ ({:composer "Dharmapuri Subbaraya Iyer", :kriti "Alavani Nammarade"}
+  {:composer "Papanasam Sivan", :kriti "Anandabhairavi Anaiyum"}
+  {:composer "M Dikshitar", :kriti "Anandeshvarena Samraksitoham"}
+  {:composer "Swatitirunal", :kriti "Andolikavahane"}
+  {:composer "Nila Kanta Sivan", :kriti "Bhajanai Sheivai"}
+  {:composer "M Dikshitar", :kriti "Dandayudapanim Dandita"}
+  {:composer "Walajapet Venkatramana Bagavat",
+   :kriti "Guruvara Mahimala"}
+  {:composer "Arunacala Kavi", :kriti "Hanumane Samikkinda"}
+  {:composer "Syama Sastri", :kriti "Himacala Tanaya Brocutakidi"}
+  {:composer "M Dikshitar", :kriti "Kamalamba Samraksatu"}
+  {:composer "Vinai Kuppiyer", :kriti "Kanikaramu Leka"}
+  {:composer "Tyagaraja", :kriti "Ksira Sagara Vihara"}
+  {:composer "Muthaiah Bagavatar", :kriti "Mahavishnu Sodari"}
+  {:composer "Syama Sastri",
+   :kriti "Mahilo Amba Nidu Mahimatishayamenna"}
+  {:composer "M Dikshitar", :kriti "Manasa Guruguharupam"}
+  {:composer "Syama Sastri", :kriti "Marivere Gati Evaramma"}
+  {:composer "Papanasam Sivan", :kriti "Nanganallur"}
+  {:composer "Tyagaraja", :kriti "Nike Teliyakapote"}
+  {:composer "Tyagaraja", :kriti "Ni Balama Nama Balama"}
+  {:composer "Syama Sastri", :kriti "O Jagadamba Nanu Amba"}
+  {:composer "Syama Sastri", :kriti "Pahi Shri Girirajasute"}
+  {:composer "Swatitirunal", :kriti "Pahi Taraksupuralaya"}
+  {:composer "Bhadracala Ramadas", :kriti "Paluke Bangara Mayena"}
+  {:composer "Mysore Sadashiva Rao", :kriti "Pulu Callare"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Bhadracala Ramadas", :kriti "Ramabhadra Rara"}
+  {:composer "Arunacala Kavi", :kriti "Ramanukku Mannan"}
+  {:composer "Arunacala Kavi", :kriti "Raman Ezhundarulinan"}
+  {:composer "Vina Seshanna", :kriti "Rama Ninnu Neranammiti"}
+  {:composer "Tyagaraja", :kriti "Rama Rama Nivaramu"}
+  {:composer "Bhadracala Ramadas", :kriti "Rama Rama Seetarama"}
+  {:composer "Poochi Srinivasa Iyengar", :kriti "Rara Sami"}
+  {:composer "Poochi Srinivasa Iyengar", :kriti "Sadbhaktiyu Galga"}
+  {:composer "Periyasamy Turan", :kriti "Samagana Priye"}
+  {:composer "Vinai Kuppiyer", :kriti "Sami Nipai-varnam"}
+  {:composer "Papanasam Sivan", :kriti "Singara Velavan"}
+  {:composer "Papanasam Sivan", :kriti "Svami Sharanam"}
+  {:composer "Tanjavur Sankara Iyer", :kriti "Ta Dhirana-tillana"}
+  {:composer "Lalgudi Jayaraman", :kriti "Tillana"}
+  {:composer "M Dikshitar", :kriti "Tyagaraja Yoga Vaibhavam"}
+  {:composer "Poochi Srinivasa Iyengar",
+   :kriti "Valliyin Kalyanamadai"}
+  {:composer "Oothukadu Venkata Kavi", :kriti "Yoga Yogeshwari"}),
+ :kuntalavarali
+ ({:composer "Swatitirunal", :kriti "Bhogendrasayinam"}
+  {:composer "Tyagaraja", :kriti "Centane Sada Yunchukovayya"}
+  {:composer "Tyagaraja", :kriti "Kalinarulaku Mahimalu"}
+  {:composer "Vinai Kuppiyer", :kriti "Kanna Tandri Nannu"}
+  {:composer "Indira Natesan", :kriti "Mama Acaryam"}
+  {:composer "Gn Balasubramanian", :kriti "Ninnu Pogada Tarama"}
+  {:composer "Muthaiah Bagavatar", :kriti "Niramaye Niranjane"}
+  {:composer "Papanasam Sivan", :kriti "Padi Alutten Ayya"}
+  {:composer "Tyagaraja", :kriti "Shara Shara Samaraika Shura"}
+  {:composer "Papanasam Sivan", :kriti "Shivaya Namavenre"}
+  {:composer "Papanasam Sivan", :kriti "Tamasama Amma"}
+  {:composer "Balamurali Krishna", :kriti "Tillana"}
+  {:composer "Lalgudi Jayaraman", :kriti "Tillana"}
+  {:composer "Papanasam Sivan", :kriti "Unnait Tudikka"}),
+ :vacaspati
+ ({:composer "Vina Seshanna", :kriti "Emani Delupudura"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Ennadu Ni Krpa"}
+  {:composer "Oothukadu Venkata Kavi", :kriti "Ennathai Sonnalum"}
+  {:composer "Koteswara Iyer", :kriti "Ihapara Sukhadayaka"}
+  {:composer "Tyagaraja", :kriti "Kanta Judumi Okapari"}
+  {:composer "Swatitirunal", :kriti "Pahi Jagajjanani"}
+  {:composer "Papanasam Sivan", :kriti "Paratpara Parameshvara"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Muthaiah Bagavatar", :kriti "Sahasrakaramandite"}
+  {:composer "Tulasivanam", :kriti "Shripate Jaya"}),
+ :caturangini
+ ({:composer "M Dikshitar", :kriti "Ekamranatheshvarena"}
+  {:composer "M Dikshitar", :kriti "Guruguha Bhavantaranginim"}),
+ :hatakambari ({:composer "Koteswara Iyer", :kriti "Alalagada"}),
+ :manavati
+ ({:composer "Tyagaraja", :kriti "Evarito Ne Delpudu Rama"}
+  {:composer "Koteswara Iyer", :kriti "Nija Bhakti"}),
+ :kiranivali
+ ({:composer "Tyagaraja", :kriti "Eti Yocanalu Jesevura"}
+  {:composer "M Dikshitar", :kriti "Panca Bhuta Kiranavalim"}
+  {:composer "Tyagaraja", :kriti "Paraku Nikelara Rama"}),
+ :huseni
+ ({:composer "Oothukadu Venkata Kavi",
+   :kriti "Adum Varai Avar Adattum"}
+  {:composer "Tyagaraja", :kriti "Bhaja Ramam Satatam"}
+  {:composer "Muthaiah Bagavatar", :kriti "Bindu Peetha"}
+  {:composer "Tyagaraja", :kriti "Emani Vegintune Shrirama"}
+  {:composer "Arunacala Kavi", :kriti "Eppadi Manam Tunindado"}
+  {:composer "Tulasivanam", :kriti "Gayami Tava Nama"}
+  {:composer "Arunacala Kavi", :kriti "Inda Vibhisanan"}
+  {:composer "Swatitirunal", :kriti "Kanakamayamayidum"}
+  {:composer "Pallavi Sesha Iyer", :kriti "Netalalenura Ninnu"}
+  {:composer "Papanasam Sivan", :kriti "Pizhai Poruttarulvai"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Tyagaraja", :kriti "Raghuvira Ranadhira"}
+  {:composer "Tyagaraja", :kriti "Rama Ninne Namminanu"}
+  {:composer "Tyagaraja", :kriti "Rama Rama Rama Sita"}
+  {:composer "Tyagaraja", :kriti "Sarvaloka Dayanidhe"}
+  {:composer "M Dikshitar", :kriti "Shri Kalahastisha"}
+  {:composer "Poochi Srinivasa Iyengar",
+   :kriti "Shri Raghukula Nidhim"}
+  {:composer "Swatitirunal", :kriti "Sriramacandra Parilasa"}
+  {:composer "Muthaiah Bagavatar", :kriti "Teliyaka Nejesina"}
+  {:composer "Tyagaraja", :kriti "Vinata Suta Rara Na"}),
+ :natabhairavi
+ ({:composer "Koteswara Iyer", :kriti "Amboruha Padame"}
+  {:composer "Papanasam Sivan", :kriti "Bharata Mata"}
+  {:composer "Tyagaraja", :kriti "Cetulara Shrngaramu"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Papanasam Sivan", :kriti "Shri Valli Devasenapate"}),
+ :navaneetam
+ ({:composer "Tyagaraja", :kriti "Lemidelpa Peddalevaru"}
+  {:composer "Koteswara Iyer", :kriti "Sami Ide"}),
+ :navaratnavilasam
+ ({:composer "Muthaiah Bagavatar", :kriti "Navaksharamanustute"}),
+ :begada
+ ({:composer "Patnam Subhramanya Iyer", :kriti "Abhimanamennadu Galgu"}
+  {:composer "Poochi Srinivasa Iyengar",
+   :kriti "Anudinamunu Kavumayya"}
+  {:composer "Muthaiah Bagavatar", :kriti "Arukkum Adangada"}
+  {:composer "Muthaiah Bagavatar", :kriti "Bale Paripalisow"}
+  {:composer "Tyagaraja", :kriti "Bhaktuni Caritramu Vinave"}
+  {:composer "Papanasam Sivan", :kriti "Bhuvaneshvari Padam"}
+  {:composer "Vinai Kuppiyer", :kriti "Brovanu Rara"}
+  {:composer "Muthaiah Bagavatar", :kriti "Chaya Devi"}
+  {:composer "Gopalakrishna Bharati", :kriti "Cidambaram Enrorutaram"}
+  {:composer "Gopalakrishna Bharati", :kriti "Cidambaram Harahara"}
+  {:composer "Syama Sastri", :kriti "Dayanidhe Mamava Sada"}
+  {:composer "Koteswara Iyer", :kriti "Eeshan Kanaka Sabheshan"}
+  {:composer "Dandapani Desikar", :kriti "Ennai Andarulvai"}
+  {:composer "Papanasam Sivan", :kriti "Gana Rasamudan"}
+  {:composer "Tyagaraja", :kriti "Gattiganu Nanu Ceyibaqtti"}
+  {:composer "Muthaiah Bagavatar", :kriti "Hara Maheshwara"}
+  {:composer "Balamurali Krishna", :kriti "Hari Ni Smarane"}
+  {:composer "Vinai Kuppiyer", :kriti "Inta Calamu Jesite-varnam"}
+  {:composer "Vinai Kuppiyer", :kriti "Inta Parakelanamma"}
+  {:composer "Swatitirunal", :kriti "Kalayami Raghuramam"}
+  {:composer "Syama Sastri", :kriti "Kamaksi Nato Vada Dayaleda"}
+  {:composer "Oothukadu Venkata Kavi", :kriti "Kankanda Deivame"}
+  {:composer "Swatitirunal", :kriti "Karunakara Madhava"}
+  {:composer "Tyagaraja", :kriti "Lokavana Catura Pahimam"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Manasuna Nera"}
+  {:composer "Vina Seshanna", :kriti "Nadiri Tomdiri Taddhim-tillana"}
+  {:composer "Tyagaraja", :kriti "Nadopasanace Shankaranarayana"}
+  {:composer "Gopalakrishna Bharati", :kriti "Nandanare Undan"}
+  {:composer "Tyagaraja", :kriti "Niku Tanaku Runa Runi"}
+  {:composer "Tyagaraja", :kriti "Nivera Kula Dhanamu"}
+  {:composer "Tyagaraja", :kriti "Ni Pada Pankajamula"}
+  {:composer "Gn Balasubramanian", :kriti "Pada Malarinaiye"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Mysore Sadashiva Rao", :kriti "Sagara Kanyaka"}
+  {:composer "Tyagaraja", :kriti "Samiki Sari Jeppajala"}
+  {:composer "Subbaraya Shastri", :kriti "Shankari Nive"}
+  {:composer "M Dikshitar", :kriti "Shri Mataha Shiva Vamange"}
+  {:composer "Mysore Sadashiva Rao", :kriti "Shri Raghukula"}
+  {:composer "Tyagaraja", :kriti "Sundari Nannindarilo"}
+  {:composer "Indira Natesan", :kriti "Sundari Palayashu Mam"}
+  {:composer "Tyagaraja", :kriti "Tanavaritanamu Leda"}
+  {:composer "M Dikshitar", :kriti "Tyagarajaya Namaste"}
+  {:composer "M Dikshitar", :kriti "Vallabha Nayakasya Bhakto Bhavami"}
+  {:composer "Swatitirunal", :kriti "Vande Devadeva"}),
+ :kalyani
+ ({:composer "M Dikshitar", :kriti "Abhayamba Jagadamba"}
+  {:composer "Swatitirunal", :kriti "Adrisutavara"}
+  {:composer "Nila Kanta Sivan", :kriti "Ambike Arul Shei"}
+  {:composer "Tyagaraja", :kriti "Amma Ravamma Tulasamma"}
+  {:composer "Gopalakrishna Bharati",
+   :kriti "Anandak Kuttadinar Ambalam"}
+  {:composer "Tyagaraja", :kriti "Bhajana Seyave Manasa"}
+  {:composer "Tyagaraja", :kriti "Bhajare Raghuviram"}
+  {:composer "M Dikshitar", :kriti "Bhajare Re Citta Balambikam"}
+  {:composer "Syama Sastri", :kriti "Birana Varalicci Brovumu"}
+  {:composer "Papanasam Sivan", :kriti "Cidambaram Ena Manam"}
+  {:composer "Papanasam Sivan", :kriti "Cintai Telindu"}
+  {:composer "Papanasam Sivan", :kriti "Devi Shri Minalocani"}
+  {:composer "Mysore Vasudevacar",
+   :kriti "Dhim Tadara Tani Tam-tillana"}
+  {:composer "Tyagaraja", :kriti "Enduko Ni Manasu Karagadu"}
+  {:composer "Dharmapuri Subbaraya Iyer", :kriti "Entati Kuluke"}
+  {:composer "Tyagaraja", :kriti "Etavunara Nilakada Niku"}
+  {:composer "Tyagaraja", :kriti "E Varamadugudura Rama"}
+  {:composer "M Dikshitar", :kriti "Ganapate Mahamate"}
+  {:composer "Balamurali Krishna", :kriti "Gati Nive I Jagatini"}
+  {:composer "Syama Sastri", :kriti "Himadri Sute Pahimam"}
+  {:composer "Arunacala Kavi", :kriti "Inge Irum Kanum"}
+  {:composer "Tyagaraja", :kriti "Isha Pahimam Jagadisha"}
+  {:composer "M Dikshitar", :kriti "Kamakshim Kalyanim Bhajeham"}
+  {:composer "M Dikshitar", :kriti "Kamalambam Bhajare"}
+  {:composer "Gn Balasubramanian", :kriti "Kamalasini Sundari"}
+  {:composer "Gopalakrishna Bharati", :kriti "Kanden Kali Tirnden"}
+  {:composer "Papanasam Sivan", :kriti "Kanindarul Purindal"}
+  {:composer "Mysore Sadashiva Rao", :kriti "Kanugoni Dhanyudaitini"}
+  {:composer "Tyagaraja", :kriti "Karu Velpulu Niku Sarikaru"}
+  {:composer "Swatitirunal", :kriti "Kintu Ceyvu Nan"}
+  {:composer "M Dikshitar", :kriti "Kumbheshvaraya Namaste"}
+  {:composer "Periyasamy Turan", :kriti "Kunruruva Vel Vangi"}
+  {:composer "Muthaiah Bagavatar", :kriti "Lambodara Sodara"}
+  {:composer "Oothukadu Venkata Kavi", :kriti "Maadhava Hridi"}
+  {:composer "Muthaiah Bagavatar", :kriti "Muruganukkoru Shidan"}
+  {:composer "Tyagaraja", :kriti "Nammi Vaccina Nannu"}
+  {:composer "Bhadracala Ramadas", :kriti "Nannu Brovumani"}
+  {:composer "Walajapet Venkatramana Bagavat", :kriti "Narada Gana"}
+  {:composer "Tyagaraja", :kriti "Nidhi Cala Sukhama"}
+  {:composer "Pallavi Gopala Iyer", :kriti "Nidu Carana"}
+  {:composer "Patnam Subhramanya Iyer", :kriti "Nija Dasa Varada"}
+  {:composer "Tyagaraja", :kriti "Ninnanavalasinademi"}
+  {:composer "Subbaraya Shastri", :kriti "Ninnu Vina Gati Gana"}
+  {:composer "Syama Sastri", :kriti "Nive Gatiyani Nera Namminanu"}
+  {:composer "Mysore Vasudevacar", :kriti "Nive Gatiyani Ninnu"}
+  {:composer "Swatitirunal", :kriti "Pahimam Srivagisvari"}
+  {:composer "Swatitirunal", :kriti "Pankaja Locana"}
+  {:composer "Syama Sastri", :kriti "Paramukham Enamma Parvati"}
+  {:composer "Swatitirunal", :kriti "Paripahi Mamayi"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Tyagaraja", :kriti "Rama Nivadukonduvo"}
+  {:composer "Tyagaraja", :kriti "Rama Rama Rama Napai"}
+  {:composer "Syama Sastri", :kriti "Rave Parvata Rajakumari"}
+  {:composer "Muthaiah Bagavatar", :kriti "Sampatprade"}
+  {:composer "Tyagaraja", :kriti "Sandehamu Elara Na Sami"}
+  {:composer "Balamurali Krishna", :kriti "Sangitame Varasukhadayi"}
+  {:composer "Swatitirunal", :kriti "Sarasa Locana"}
+  {:composer "Oothukadu Venkata Kavi", :kriti "Sarasija Bhava Jaye"}
+  {:composer "Tiruvetriyur Tyagaraja", :kriti "Saraswati Nannepudu"}
+  {:composer "Walajapet Venkatramana Bagavat",
+   :kriti "Sarojaksha Rama-varnam"}
+  {:composer "Swatitirunal", :kriti "Seve Syanandurapura"}
+  {:composer "M Dikshitar", :kriti "Shivakameshvarim Cintayeham"}
+  {:composer "Tyagaraja", :kriti "Shive Pahimam Ambike"}
+  {:composer "Papanasam Sivan", :kriti "Shridhara Venkatesham"}
+  {:composer "Mysore Vasudevacar", :kriti "Shrimadadi Tyagaraja"}
+  {:composer "M Dikshitar", :kriti "Shri Madhurambike Shive"}
+  {:composer "Balamurali Krishna", :kriti "Sogasu Ni Sommu"}
+  {:composer "Papanasam Sivan", :kriti "Sundareshvarane"}
+  {:composer "Tyagaraja", :kriti "Sundari Ni Divya Rupamunu"}
+  {:composer "Syama Sastri", :kriti "Talli Ninnu Nera Namminanu"}
+  {:composer "Tyagaraja", :kriti "Tarama Ni Mahima Pogada"}
+  {:composer "Papanasam Sivan", :kriti "Unaiyallal Gati"}
+  {:composer "Papanasam Sivan", :kriti "Unaiyallal Vere"}
+  {:composer "Lalitadasar", :kriti "Un Perumaiyai"}
+  {:composer "Poochi Srinivasa Iyengar", :kriti "Vanajaksiro I Viraha"}
+  {:composer "Pallavi Gopala Iyer",
+   :kriti "Vanajaksi Nine Kori-varnam"}
+  {:composer "Oothukadu Venkata Kavi",
+   :kriti "Vanchayati Yadi Kushalam"}
+  {:composer "Tyagaraja", :kriti "Vasudevayani Vedalina"}),
+ :nayaki
+ ({:composer "Muthaiah Bagavatar", :kriti "Caracara Jagadroope"}
+  {:composer "Tyagaraja", :kriti "Dayaleni Bratukemi"}
+  {:composer "Tyagaraja", :kriti "Kanugonu Saukhyamu Kamalajukaina"}
+  {:composer "Tyagaraja", :kriti "Ni Bhajanagana Rasikula"}
+  {:composer "Swatitirunal", :kriti "Palaya Mam Sri"}
+  {:composer "M Dikshitar", :kriti "Ranganayakam Bhavayeham"}),
+ :ritigaula
+ ({:composer "Tyagaraja", :kriti "Badalikadira Pavvalincave"}
+  {:composer "Tyagaraja", :kriti "Bale Balendu Bhusani"}
+  {:composer "Tyagaraja", :kriti "Cera Ravademira Ramayya"}
+  {:composer "Tyagaraja", :kriti "Dvaitamu Sukhama"}
+  {:composer "Oothukadu Venkata Kavi", :kriti "Enna Punniyam Seidheno"}
+  {:composer "Gn Balasubramanian", :kriti "En Manattamarai"}
+  {:composer "Ambujam Krishna", :kriti "Guruvayur Appane"}
+  {:composer "Subbaraya Shastri", :kriti "Janani Ninnuvina"}
+  {:composer "Tyagaraja", :kriti "Jo Jo Rama Ananda Ghana"}
+  {:composer "Tiruvetriyur Tyagaraja", :kriti "Kanikaramu Leda"}
+  {:composer "Papanasam Sivan", :kriti "Malarinai Tunaiye"}
+  {:composer "Mysore Vasudevacar", :kriti "Mama Hrdaye Vihara Dayalo"}
+  {:composer "Mysore Sadashiva Rao", :kriti "Nannu Brocutaku"}
+  {:composer "Tyagaraja", :kriti "Nannu Vidaci Kadalakura"}
+  {:composer "Syama Sastri", :kriti "Ninnu Vina Mari Galada"}
+  {:composer "Gn Balasubramanian", :kriti "Ninnu Vina Vere Gati"}
+  {:composer "Nila Kanta Sivan", :kriti "Oraru Mukhane"}
+  {:composer "Swatitirunal", :kriti "Paripalaya Mam"}
+  {:composer "Tyagaraja", :kriti "Paripalaya Paripalaya"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Tyagaraja", :kriti "Ragaratna Malikace Ranjillunata"}
+  {:composer "Poochi Srinivasa Iyengar", :kriti "Sadguru Svamiki"}
+  {:composer "Tyagaraja", :kriti "Sadguru Svamiki Satiyu"}
+  {:composer "Muthaiah Bagavatar", :kriti "Sakala Sampatprade"}
+  {:composer "M Dikshitar", :kriti "Shri Nilotpala Nayike"}
+  {:composer "Tyagaraja", :kriti "Sita Nayaka Shrtajana"}
+  {:composer "Gopalakrishna Bharati", :kriti "Tandava Darishanam"}
+  {:composer "Papanasam Sivan", :kriti "Tatvamariya Tarama"}
+  {:composer "Vinai Kuppiyer", :kriti "Vanjaksa Nine Korina-varnam"}),
+ :vasantavarali
+ ({:composer "Tyagaraja", :kriti "Pahi Ramaduta Jagatprana"}),
+ :kamalamanohari
+ ({:composer "M Dikshitar", :kriti "Kanjadalaya Taksi Kamaksi"}
+  {:composer "Tyagaraja", :kriti "Ni Muddu Momu Jupave"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "M Dikshitar", :kriti "Shankaram Abhirami Manoharam"}
+  {:composer "Muthaiah Bagavatar", :kriti "Shri Shaila"}),
+ :karnatakadevagandhari
+ ({:composer "M Dikshitar", :kriti "Kayarohanesham Bhaja"}
+  {:composer "M Dikshitar", :kriti "Pancashat Pitha Rupini"}),
+ :manji
+ ({:composer "Syama Sastri", :kriti "Brovavamma Tamasamela"}
+  {:composer "Swatitirunal", :kriti "Harasi Mudhakimu"}
+  {:composer "Oothukadu Venkata Kavi", :kriti "Kannan Varuginra Neram"}
+  {:composer "M Dikshitar", :kriti "Ramacandrena Samraksitoham"}
+  {:composer "M Dikshitar", :kriti "Shri Sarasvati Hite"}
+  {:composer "Gopalakrishna Bharati", :kriti "Varugalamo Ayya"}),
+ :dhavalangi
+ ({:composer "M Dikshitar", :kriti "Shrngaradi Navarasangi"}),
+ :purvikalyani
+ ({:composer "Nila Kanta Sivan", :kriti "Abhisekam Kondarulinar"}
+  {:composer "Nila Kanta Sivan", :kriti "Ananda Natam Aduvar"}
+  {:composer "Mysore Vasudevacar", :kriti "Bhavayacyutam Vasudevam"}
+  {:composer "Swatitirunal", :kriti "Devadeva Jagadisvara"}
+  {:composer "Mysore Sadashiva Rao",
+   :kriti "Dhim Tam Tam Dhiri-thillana"}
+  {:composer "Ambujam Krishna", :kriti "Edutturaippai"}
+  {:composer "M Dikshitar", :kriti "Ekamranatham Bhajeham"}
+  {:composer "Syama Sastri", :kriti "Enneramum Un Namam Uraippade"}
+  {:composer "Mysore Sadashiva Rao", :kriti "Gangadhara Tripura"}
+  {:composer "Ambujam Krishna", :kriti "Iniyaghilum Ninai"}
+  {:composer "Tyagaraja", :kriti "Jnanamosaga Rada"}
+  {:composer "Gopalakrishna Bharati", :kriti "Karanam Kettu Vadi"}
+  {:composer "Vedanayakam Pillai", :kriti "Karunakara Murti"}
+  {:composer "M Dikshitar", :kriti "Kashi Vishalaksim Bhajeham"}
+  {:composer "Muthaiah Bagavatar", :kriti "Krti Vasase"}
+  {:composer "Papanasam Sivan", :kriti "Ksira Sagara Shayi"}
+  {:composer "Gn Balasubramanian", :kriti "Madhurapuri Kalyani"}
+  {:composer "Mysore Vasudevacar",
+   :kriti "Maracitivemo Nannu Maravakura"}
+  {:composer "M Dikshitar", :kriti "Minaksi Memudam Dehi"}
+  {:composer "Gopalakrishna Bharati", :kriti "Natamadum Nathan"}
+  {:composer "Syama Sastri", :kriti "Ninnu Vinaga Mari Dikkevarunnaru"}
+  {:composer "Balamurali Krishna", :kriti "Ni Dayarada"}
+  {:composer "Bhadracala Ramadas", :kriti "O Rama Ni Namam Emi Rucira"}
+  {:composer "Oothukadu Venkata Kavi", :kriti "Padmavathi Ramanam"}
+  {:composer "Swatitirunal", :kriti "Pancabana"}
+  {:composer "Tyagaraja", :kriti "Paraloka Sadhaname Manasa"}
+  {:composer "Poochi Srinivasa Iyengar", :kriti "Parama Pavana Rama"}
+  {:composer "Papanasam Sivan", :kriti "Para Deivam Unaiyanri"}
+  {:composer "Indira Natesan", :kriti "Paripalayamam Bhuvaneshvari"}
+  {:composer "Tyagaraja", :kriti "Paripurna Kama Bhavamuna"}
+  {:composer "Muthaiah Bagavatar", :kriti "Purandara Vinute"}
+  {:composer "Own/others", :kriti "Ragam Tanam Pallavi"}
+  {:composer "Gopalakrishna Bharati", :kriti "Shatre Vilagiyirum"}
+  {:composer "Tanjavur Sankara Iyer", :kriti "Shri Rajarajeshvari"}
+  {:composer "Gn Balasubramanian", :kriti "Taramu Gadamma"}
+  {:composer "Gopalakrishna Bharati", :kriti "Tillai Cidambaram"}
+  {:composer "Walajapet Venkatramana Bagavat", :kriti "Vadarasa Ne"}),
+ :vijayashri ({:composer "Tyagaraja", :kriti "Vara Narada Narayana"})}

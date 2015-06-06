@@ -67,12 +67,22 @@
      [:p {:class "more-info"} (str "Janyam of " (display-ragam-name parent-mela-name) " (" parent-mela-num ")")]
      [:p {:class "more-info"} (str "This is Melakartha no. " num)])])
 
-(defn search-result-html [{:keys [ragam more perc] :as search-result}]
+(defn pretty-kriti [kriti]
+  [:div
+   [:p.kriti-name (:kriti kriti)]
+   [:p.composer (:composer kriti)]])
+
+(defn search-result-html [{:keys [ragam kritis more perc] :as search-result}]
   (html5
    (include-css "/style.css")
    [:div {:class "search-result"}
     [:h1 "Best match"]
     (pretty-ragam-html ragam)
+    (when (seq kritis)
+      [:h1 "Kritis"])
+    (when (seq kritis)
+      [:ul.kritis (for [k (sort-by :kriti kritis)]
+                    [:li.kriti (pretty-kriti k)])])
     (when (seq more)
       [:h1 "More..."])
     (when (seq more)

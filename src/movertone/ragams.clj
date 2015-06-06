@@ -54,6 +54,9 @@
 (def ragams
   (merge janyams melakarthas))
 
+(def raga-to-kritis
+  (read-file "raga-to-kritis.edn"))
+
 (defn ragams-with-duplicates []
   (->> janyams-by-melakarthas
        vals
@@ -67,10 +70,12 @@
   (ragams (keyword (:name db-ragam))))
 
 (defn build-result [results perc]
-  (let [result-ragams (mapv db-ragam->ragam results)]
-    {:ragam (first result-ragams)
+  (let [result-ragams (mapv db-ragam->ragam results)
+        best-result (first result-ragams)]
+    {:ragam best-result
      :more (rest result-ragams)
-     :perc (format "%.1f" perc)}))
+     :perc (format "%.1f" perc)
+     :kritis (get raga-to-kritis (:name best-result))}))
 
 (defn search
   "Search in postgres using trigram similary using an index, and

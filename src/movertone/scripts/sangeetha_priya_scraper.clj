@@ -1,9 +1,12 @@
 (ns movertone.scripts.sangeetha-priya-scraper
   (:require [clojure.string :as s]
             [clojure.pprint :as pp]
+            [clojure.edn :as edn]
+            [clojure.java.io :as io]
+            [medley.core :as m]
             [net.cgrand.enlive-html :as html]
             [clj-http.client :as client]
-            [clojure.java.io :as io]))
+            [movertone.ragams :as r]))
 
 (defn str->html-resource [string]
   (let [filename (str (gensym "html-resource") ".html")]
@@ -53,3 +56,16 @@
         filename "all-kritis.edn"]
     (spit (-> filename io/resource)
           (-> data pp/pprint with-out-str))))
+
+(def kritis
+  (r/read-file "all-kritis.edn"))
+
+(defn find-ragam-for-krithi [kriti]
+  (let [search-result (:ragam (r/search (:ragam kriti)))]
+    (merge kriti search-result)))
+
+(defn get-name->kritis []
+  (let [name->kritis (group-by :name (map find-ragam-for-krithi kritis))
+        n->ks (m/map-vals (fn [ks] (map #(select-keys % [:kriti :composer]) ks))
+                          name->kritis)]
+    (r/write-file "raga-to-kritis.edn" n->ks)))

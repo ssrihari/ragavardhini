@@ -59,3 +59,25 @@ th {
     padding: 0;
     margin: 0;
 }
+
+.kritis {
+    margin: 0;
+}
+
+.kriti {
+    list-style-type: none;
+    display: inline-block;
+    width: 180px;
+    vertical-align: top;
+    margin: 24px 0 0;
+}
+
+.kriti-name {
+    margin: 6px;
+}
+
+.composer {
+    color: #999;
+    font-size: 12px;
+    margin: 0 6px;
+}
