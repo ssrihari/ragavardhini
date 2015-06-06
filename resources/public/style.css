@@ -16,6 +16,10 @@ th {
     font-weight: bold;
 }
 
+a {
+    color: initial;
+}
+
 .mela {
     font-weight: bold;
     background: #F1F1F1;

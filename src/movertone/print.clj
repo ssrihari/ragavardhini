@@ -57,15 +57,19 @@
 (defn display-ragam-name [ragam-name]
   (s/capitalize (name ragam-name)))
 
+(defn ragam-url [ragam]
+  (str "/search/" (name (:name ragam))))
+
 (defn pretty-ragam-html
   [{:keys [avarohanam name arohanam num parent-mela-num parent-mela-name] :as ragam}]
-  [:div {:class "ragam"}
-   [:h2 {:class "ragam-name"} (s/capitalize (display-ragam-name name))]
-   [:p {:class "notes"} (->printable arohanam)]
-   [:p {:class "notes"} (->printable avarohanam)]
-   (if parent-mela-num
-     [:p {:class "more-info"} (str "Janyam of " (display-ragam-name parent-mela-name) " (" parent-mela-num ")")]
-     [:p {:class "more-info"} (str "This is Melakartha no. " num)])])
+  [:a {:href (ragam-url ragam)}
+   [:div {:class "ragam"}
+    [:h2 {:class "ragam-name"} (s/capitalize (display-ragam-name name))]
+    [:p {:class "notes"} (->printable arohanam)]
+    [:p {:class "notes"} (->printable avarohanam)]
+    (if parent-mela-num
+      [:p {:class "more-info"} (str "Janyam of " (display-ragam-name parent-mela-name) " (" parent-mela-num ")")]
+      [:p {:class "more-info"} (str "This is Melakartha no. " num)])]])
 
 (defn pretty-kriti [kriti]
   [:div
