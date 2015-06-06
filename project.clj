@@ -16,6 +16,5 @@
                  [org.clojure/tools.nrepl "0.2.6"]
                  [ring/ring-core "1.3.2"]
                  [ring/ring-jetty-adapter "1.3.2"]
-                 [ring-middleware-format "0.3.2" :exclusions [ring]]
-                 [cider/cider-nrepl "0.8.2"]]
-  :plugins [])
+                 [ring-middleware-format "0.3.2" :exclusions [ring]]]
+  :plugins [[cider/cider-nrepl "0.8.2"]])

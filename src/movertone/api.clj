@@ -65,8 +65,7 @@
                                    [:name] show-ragam}]
                   ["ragams/" {"" all
                               [:name] show-ragam}]
-                  ["search/" {[:query] search}]]
-             ])
+                  ["search/" {[:query] search}]]])
 
 (def handler
   (br/make-handler routes))
