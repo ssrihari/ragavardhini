@@ -12,6 +12,8 @@
                  [cheshire "5.4.0"]
                  [hiccup "1.0.5"]
                  [bidi "1.19.0"]
+                 [clj-http "1.1.2"]
+                 [enlive "1.1.5"]
                  [org.clojure/tools.cli "0.3.1"]
                  [org.clojure/tools.nrepl "0.2.6"]
                  [ring/ring-core "1.3.2"]
