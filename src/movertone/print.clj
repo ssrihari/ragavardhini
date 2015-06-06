@@ -4,7 +4,8 @@
   (:require [clojure.pprint :as pprint]
             [movertone.swarams :as d]
             [movertone.ragams :as r]
-            [clojure.string :as s]))
+            [clojure.string :as s])
+  (:import java.net.URI))
 
 (defn ->printable [swarams & {:keys [bold?]}]
   (s/join ", " (map (comp s/capitalize name) swarams)))
@@ -42,9 +43,17 @@
                       [:tr {:class class} html-row]))
                   rows)))
 
-(defn make-html [rows]
+(defn html-skeleton [body]
   (html5
-   (include-css "/style.css")
+   (include-css "/css/style.css")
+   (include-js "/js/react.js"
+               "/js/JSXTransformer.js"
+               "https://code.jquery.com/jquery-2.1.3.min.js")
+   [:script {:type "text/jsx", :src (URI. "/js/search.js")}]
+   body))
+
+(defn make-html [rows]
+  (html-skeleton
    [:table
     [:thead
      [:tr [:th "No."] [:th "Name"] [:th "Arohanam"] [:th "Avarohanam"]]]
@@ -68,9 +77,9 @@
      [:p {:class "more-info"} (str "This is Melakartha no. " num)])])
 
 (defn search-result-html [{:keys [ragam more perc] :as search-result}]
-  (html5
-   (include-css "/style.css")
-   [:div {:class "search-result"}
+  (html-skeleton
+   [:div#container
+    [:input {:name "query" :type "text" :class "query-box" :placeholder "Search raga..."}]
     [:h1 "Best match"]
     (pretty-ragam-html ragam)
     (when (seq more)

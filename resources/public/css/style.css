@@ -59,3 +59,11 @@ th {
     padding: 0;
     margin: 0;
 }
+
+.query-box {
+    width: 300px;
+    height: 20px;
+    font-size: 12px;
+    margin-bottom: 20px;
+    padding-left: 4px;
+}
