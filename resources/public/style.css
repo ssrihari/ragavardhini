@@ -23,7 +23,7 @@ th {
 
 .search-result {
     margin: 40px auto;
-    width: 80%;
+    width: 90%;
 }
 
 .search-result h1 {
@@ -67,17 +67,22 @@ th {
 .kriti {
     list-style-type: none;
     display: inline-block;
-    width: 180px;
+    width: 240px;
     vertical-align: top;
     margin: 24px 0 0;
 }
 
 .kriti-name {
     margin: 6px;
+    font-size: 16px;
 }
 
 .composer {
     color: #999;
     font-size: 12px;
     margin: 0 6px;
+}
+
+@-ms-viewport{
+  width: device-width;
 }

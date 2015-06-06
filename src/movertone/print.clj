@@ -75,6 +75,7 @@
 (defn search-result-html [{:keys [ragam kritis more perc] :as search-result}]
   (html5
    (include-css "/style.css")
+   [:meta {:name "viewport" :content "width=device-width"}]
    [:div {:class "search-result"}
     [:h1 "Best match"]
     (pretty-ragam-html ragam)
