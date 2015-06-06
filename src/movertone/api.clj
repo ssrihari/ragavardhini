@@ -18,7 +18,6 @@
    :content-type "application/json"})
 
 (defn accepts-json? [request]
-  (def *r request)
   (when-let [accepts (get-in request [:headers "accept"])]
     (.contains accepts "application/json")))
 
@@ -59,13 +58,14 @@
       (json-response "Sorry, no such ragam.")
       (html-response "Sorry, no such ragam."))))
 
-(def routes ["/" {"" index
-                  "all" all
-                  "melakarthas/" {"" melakarthas-index
-                                  [:name] show-ragam}
-                  "ragams/" {"" all
-                             [:name] show-ragam}
-                  "search/" {[:query] search}}])
+(def routes ["/" [["" index]
+                  ["all" all]
+                  ["" (br/->ResourcesMaybe {:prefix "public/"})]
+                  ["melakarthas/" {"" melakarthas-index
+                                   [:name] show-ragam}]
+                  ["ragams/" {"" all
+                              [:name] show-ragam}]
+                  ["search/" {[:query] search}]]])
 
 (def handler
   (br/make-handler routes))

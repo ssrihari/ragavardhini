@@ -42,72 +42,9 @@
                       [:tr {:class class} html-row]))
                   rows)))
 
-(def css
-  "table {
-  color: #333;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 12px;
-  border-collapse: collapse; border-spacing: 0;
-  }
-
-  td, th { text-align:left;
-  border: 1px solid #CCC;
-  height: 22px;
-  padding: 0 20px 0;
-  } /* Make cells a bit taller */
-
-  th {
-  font-weight: bold;
-  }
-
-  .mela {
-  font-weight: bold;
-  background: #F1F1F1;
-  }
-
-  .search-result {
-  margin: 40px auto;
-  width: 80%;
-  }
-
-  .search-result h1 {
-  font-size: 26px;
-  margin-bottom: 0;
-  }
-
-  .ragam {
-  background-color: #eee;
-  padding: 2px 15px;
-  margin: 20px 20px 0px 0px;
-  width: 300px;
-  display: inline-block;
-  vertical-align: top;
-  }
-
-  .ragam-name {
-  margin: 10px 0;
-  font-size: 20px;
-  }
-
-  .notes {
-  font-size: 14px;
-  margin: 8px;
-  }
-
-  .more-info {
-  font-style: italic;
-  margin: 6px 0;
-  }
-
-  .more-results {
-  padding: 0;
-  margin: 0;
-  }
-")
-
 (defn make-html [rows]
   (html5
-   [:style css]
+   (include-css "/style.css")
    [:table
     [:thead
      [:tr [:th "No."] [:th "Name"] [:th "Arohanam"] [:th "Avarohanam"]]]
@@ -130,12 +67,23 @@
      [:p {:class "more-info"} (str "Janyam of " (display-ragam-name parent-mela-name) " (" parent-mela-num ")")]
      [:p {:class "more-info"} (str "This is Melakartha no. " num)])])
 
-(defn search-result-html [{:keys [ragam more perc] :as search-result}]
+(defn pretty-kriti [kriti]
+  [:div
+   [:p.kriti-name (:kriti kriti)]
+   [:p.composer (:composer kriti)]])
+
+(defn search-result-html [{:keys [ragam kritis more perc] :as search-result}]
   (html5
-   [:style css]
+   (include-css "/style.css")
+   [:meta {:name "viewport" :content "width=device-width"}]
    [:div {:class "search-result"}
     [:h1 "Best match"]
     (pretty-ragam-html ragam)
+    (when (seq kritis)
+      [:h1 "Kritis"])
+    (when (seq kritis)
+      [:ul.kritis (for [k (sort-by :kriti kritis)]
+                    [:li.kriti (pretty-kriti k)])])
     (when (seq more)
       [:h1 "More..."])
     (when (seq more)

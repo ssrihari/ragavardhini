@@ -1,0 +1,6 @@
+#!/bin/sh
+
+from=`dirname $0`
+root=`cd ${from}/..; pwd`
+
+pg_ctl -D ${root}/data -l ${root}/pg.log start
