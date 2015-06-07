@@ -4,7 +4,7 @@
             [clojure.tools.nrepl.server :as nrepl]
             [cheshire.core :as json]
             [bidi.ring :as br]
-            [movertone.print :as p]
+            [movertone.html :as p]
             [movertone.ragams :as r]))
 
 (defn html-response [html]
