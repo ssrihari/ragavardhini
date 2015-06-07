@@ -1,0 +1,1 @@
+ssh -i ~/.ssh/ragavardhini.pem ubuntu@ec2-54-152-153-8.compute-1.amazonaws.com

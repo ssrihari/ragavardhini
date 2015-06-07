@@ -1,8 +1,19 @@
+body {
+    margin: 40px auto;
+    width: 90%;
+    font-family: 'PT Serif', serif;
+}
+
 table {
     color: #333;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 12px;
     border-collapse: collapse; border-spacing: 0;
+}
+
+h1, h2, h3 {
+
+    font-family: 'PT Sans', sans-serif;
 }
 
 td, th {
@@ -26,8 +37,7 @@ a {
 }
 
 .search-result {
-    margin: 40px auto;
-    width: 90%;
+
 }
 
 .search-result h1 {
@@ -47,6 +57,7 @@ a {
 .ragam-name {
     margin: 10px 0;
     font-size: 20px;
+    font-family: 'PT Serif', serif;
 }
 
 .notes {
@@ -89,4 +100,32 @@ a {
 
 @-ms-viewport{
   width: device-width;
+}
+
+.search-box {
+    box-sizing: border-box;
+    vertical-align: top;
+    height: 30px;
+    width: 240px;
+    padding: 0 5px;
+    font-size: 14px;
+    font-family: 'PT Serif', serif;
+}
+
+.search-box:focus {
+    outline-width: 0;
+}
+
+.submit-button {
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    vertical-align: top;
+    height: 30px;
+    background-color: #FFF;
+    color: #666;
+    border: solid #666 1px;
+    margin: 0 5px;
+    width: 60px;
+    font-family: 'PT Serif', serif;
+    font-size: 14px;
 }

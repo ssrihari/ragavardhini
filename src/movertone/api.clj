@@ -1,10 +1,11 @@
 (ns movertone.api
   (:require [ring.adapter.jetty :as jetty]
+            [ring.middleware.params :as params]
             [cider.nrepl :as cider]
             [clojure.tools.nrepl.server :as nrepl]
             [cheshire.core :as json]
             [bidi.ring :as br]
-            [movertone.print :as p]
+            [movertone.html :as p]
             [movertone.ragams :as r]))
 
 (defn html-response [html]
@@ -50,13 +51,15 @@
             p/make-html)))))
 
 (defn search [{:keys [params] :as request}]
-  (if-let [search-result (r/search (:query params))]
-    (if (accepts-json? request)
-      (json-response search-result)
-      (html-response (p/search-result-html search-result)))
-    (if (accepts-json? request)
-      (json-response "Sorry, no such ragam.")
-      (html-response "Sorry, no such ragam."))))
+  (let [query (or (get (:params (params/params-request request)) "q")
+                  (:query params))]
+    (if-let [search-result (r/search query)]
+      (if (accepts-json? request)
+        (json-response search-result)
+        (html-response (p/search-result-html search-result)))
+      (if (accepts-json? request)
+        (json-response "Sorry, no such ragam.")
+        (html-response "Sorry, no such ragam.")))))
 
 (def routes ["/" [["" index]
                   ["all" all]
@@ -65,6 +68,7 @@
                                    [:name] show-ragam}]
                   ["ragams/" {"" all
                               [:name] show-ragam}]
+                  ["search" search]
                   ["search/" {[:query] search}]]])
 
 (def handler
