@@ -24,7 +24,7 @@
 
 (defn index [request]
   {:status 200
-   :body "muhaha!"})
+   :body (p/html-skeleton nil)})
 
 (defn melakarthas-index [request]
   (if (accepts-json? request)
@@ -59,7 +59,7 @@
         (html-response (p/search-result-html search-result)))
       (if (accepts-json? request)
         (json-response "Sorry, no such ragam.")
-        (html-response "Sorry, no such ragam.")))))
+        (html-response (p/html-skeleton "Sorry, no such ragam."))))))
 
 (def routes ["/" [["" index]
                   ["all" all]

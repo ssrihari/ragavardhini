@@ -54,8 +54,8 @@
    (include-css "http://fonts.googleapis.com/css?family=PT+Serif")
    (include-css "http://fonts.googleapis.com/css?family=PT+Sans")
    [:meta {:name "viewport" :content "width=device-width"}]
-   [:form {:action "/search"}
-    [:input.search-box {:type "text" :name "q" :placeholder "search here..."}]
+   [:form.search-form {:action "/search"}
+    [:input.search-box {:type "text" :name "q" :placeholder "search ragam..."}]
     [:input.submit-button {:type "submit" :value "Search"}]]
    body))
 
