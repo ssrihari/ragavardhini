@@ -51,7 +51,12 @@
 (defn html-skeleton [body]
   (html5
    (include-css "/style.css")
+   (include-css "http://fonts.googleapis.com/css?family=PT+Serif")
+   (include-css "http://fonts.googleapis.com/css?family=PT+Sans")
    [:meta {:name "viewport" :content "width=device-width"}]
+   [:form {:action "/search"}
+    [:input.search-box {:type "text" :name "q" :placeholder "search here..."}]
+    [:input.submit-button {:type "submit" :value "Search"}]]
    body))
 
 (defn make-html [rows]
