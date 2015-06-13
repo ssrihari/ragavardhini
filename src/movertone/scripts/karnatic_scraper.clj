@@ -43,12 +43,25 @@
           (s/replace #"\"" "")
           (s/trim)))))
 
+(defn composer-name [elems]
+  (->> (html/select elems [:p :a])
+       (filter #(re-find #"co\d+.*" (get-in % [:attrs :href])))
+       first
+       :content
+       first))
+
 (defn song-raga [url]
   (prn (str "fetching " url))
-  (let [elems (foo url)]
-    {:kriti (song-name elems)
-     :ragam (raga-name elems)
-     :url url}))
+  (try
+    (let [elems (foo url)]
+      {:kriti (song-name elems)
+       :ragam (raga-name elems)
+       :composer (composer-name elems)
+       :url url})
+    (catch Exception e
+      (prn "Caught exception when parsing " url)
+      (.printStackTrace e)
+      nil)))
 
 (defn get-all-songs []
   (let [url "http://www.karnatik.com/lyrics.shtml"
@@ -62,13 +75,47 @@
          (map #(s/replace % #"\"" ""))
          (filter #(re-find #"c\d+.*" %)))))
 
+(defn all-song-ragas []
+  (let [all-pages (get-all-songs)
+        urls (map build-url all-pages)]
+    (->>  urls
+          (pmap song-raga))))
+
+(defn all-kritis []
+  (let [data (doall (all-song-ragas))
+        filename "all-karnatic-kritis.edn"]
+    (spit (-> filename io/resource)
+          (-> data pp/pprint with-out-str))))
+
+(def kritis
+  (r/read-file "all-karnatic-kritis.edn"))
+
 (defn find-ragam-for-krithi [kriti]
   (let [search-result (:ragam (r/search (:ragam kriti)))]
     (merge kriti search-result)))
 
-(defn all-song-ragas []
-  (let [all-pages as
-        urls (map build-url all-pages)]
-    (->>  urls
-          (map song-raga)
-          (map find-ragam-for-krithi))))
+(defn pretty-name [kriti-name]
+  (->> (s/split kriti-name #"_")
+       (map s/capitalize)
+       (s/join " ")))
+
+(defn clean-name [kriti-name]
+  (-> kriti-name
+      (s/replace #"(?i)- click to.*" "")
+      (s/replace #"\\n" "")
+      (s/replace #"\\r" "")
+      s/trim))
+
+(defn prettify [{:keys [kriti composer url] :as k}]
+  (when (and (seq kriti)
+             (seq composer)
+             (seq url))
+    {:kriti (pretty-name (clean-name kriti))
+     :composer (pretty-name (clean-name composer))
+     :url url}))
+
+(defn get-name->kritis []
+  (let [name->kritis (group-by :name (map find-ragam-for-krithi kritis))
+        n->ks (m/map-vals (fn [ks] (keep prettify ks))
+                          name->kritis)]
+    (r/write-file "raga-to-kritis-more.edn" n->ks)))

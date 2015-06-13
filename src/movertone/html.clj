@@ -80,7 +80,7 @@
 
 (defn pretty-kriti [kriti]
   [:li.kriti
-   [:p.kriti-name (:kriti kriti)]
+   [:a {:href (:url kriti) :target "_blank"} [:p.kriti-name (:kriti kriti)]]
    [:p.composer (:composer kriti)]])
 
 (defn search-result-html [{:keys [ragam kritis more perc] :as search-result}]

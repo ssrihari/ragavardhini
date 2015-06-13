@@ -57,6 +57,9 @@
 (def raga-to-kritis
   (read-file "raga-to-kritis.edn"))
 
+(def raga-to-kritis-more
+  (read-file "raga-to-kritis-more.edn"))
+
 (defn ragams-with-duplicates []
   (->> janyams-by-melakarthas
        vals
@@ -75,7 +78,8 @@
     {:ragam best-result
      :more (rest result-ragams)
      :perc (format "%.1f" perc)
-     :kritis (get raga-to-kritis (:name best-result))}))
+     :kritis (concat (get raga-to-kritis (:name best-result))
+                     (get raga-to-kritis-more (:name best-result)))}))
 
 (defn search
   "Search in postgres using trigram similary using an index, and
