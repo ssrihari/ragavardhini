@@ -1,19 +1,12 @@
 (ns movertone.scripts.sangeetha-priya-scraper
-  (:require [clojure.string :as s]
-            [clojure.pprint :as pp]
-            [clojure.edn :as edn]
+  (:require [clj-http.client :as client]
             [clojure.java.io :as io]
+            [clojure.pprint :as pp]
+            [clojure.string :as s]
             [medley.core :as m]
-            [net.cgrand.enlive-html :as html]
-            [clj-http.client :as client]
-            [movertone.ragams :as r]))
-
-(defn str->html-resource [string]
-  (let [filename (str (gensym "html-resource") ".html")]
-    (spit filename string)
-    (-> filename
-        io/file
-        html/html-resource)))
+            [movertone.ragams :as r]
+            [movertone.scripts.util :as util]
+            [net.cgrand.enlive-html :as html]))
 
 (defn pretty-name [kriti-name]
   (->> (s/split kriti-name #"_")
@@ -33,7 +26,7 @@
   (prn "fetching kritis for" ragam)
   (try
     (let [ragam-post-url "http://www.sangeethapriya.org/fetch_tracks.php?ragam"
-          res (str->html-resource (client/post ragam-post-url {:form-params {"FIELD_TYPE" ragam}}))
+          res (util/str->html-resource (client/post ragam-post-url {:form-params {"FIELD_TYPE" ragam}}))
           cells (html/select res [:td])
           rows (partition 7 (map html/text cells))
           entities (map row->entity rows)]
@@ -46,7 +39,7 @@
 (defn get-all-raga-names []
   (prn "fetching all raga names")
   (let [url "http://www.sangeethapriya.org/display_tracks.php"
-        res (str->html-resource (client/get url))
+        res (util/str->html-resource (client/get url))
         selects (html/select res [:form :td :select])
         ragas (nth selects 5)]
     (map html/text (html/select ragas [:option]))))
