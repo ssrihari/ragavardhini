@@ -6,7 +6,8 @@
             [cheshire.core :as json]
             [bidi.ring :as br]
             [movertone.html :as p]
-            [movertone.ragams :as r]))
+            [movertone.ragams :as r]
+            [movertone.search :as s]))
 
 (defn html-response [html]
   {:status 200
@@ -50,16 +51,34 @@
             p/html-rows
             p/make-html)))))
 
-(defn search [{:keys [params] :as request}]
+(defn search-ragam [{:keys [params] :as request}]
   (let [query (or (get (:params (params/params-request request)) "q")
                   (:query params))]
-    (if-let [search-result (r/search query)]
+    (if-let [search-result (s/search-ragam query)]
       (if (accepts-json? request)
         (json-response search-result)
-        (html-response (p/search-result-html search-result)))
+        (html-response (p/search-ragam-result search-result)))
       (if (accepts-json? request)
         (json-response "Sorry, no such ragam.")
         (html-response (p/html-skeleton "Sorry, no such ragam."))))))
+
+(defn search-kriti [{:keys [params] :as request}]
+  (let [query (or (get (:params (params/params-request request)) "q")
+                  (:query params))]
+    (if-let [search-result (s/search-kriti query)]
+      (if (accepts-json? request)
+        (json-response search-result)
+        (html-response (p/search-kriti-result search-result)))
+      (if (accepts-json? request)
+        (json-response "Sorry, no such kriti.")
+        (html-response (p/html-skeleton "Sorry, no such kriti."))))))
+
+(defn search [{:keys [params] :as request}]
+  (let [type (or (get (:params (params/params-request request)) "t")
+                 (:type params))]
+    (case type
+      "ragam" (search-ragam request)
+      "kriti" (search-kriti request))))
 
 (def routes ["/" [["" index]
                   ["all" all]
@@ -69,7 +88,7 @@
                   ["ragams/" {"" all
                               [:name] show-ragam}]
                   ["search" search]
-                  ["search/" {[:query] search}]]])
+                  ["search/" {[:type "/"] {[:query] search}}]]])
 
 (def handler
   (br/make-handler routes))
