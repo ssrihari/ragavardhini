@@ -81,7 +81,7 @@
 
 (defn pretty-kriti [{:keys [url ragam kriti composer] :as kriti-result}]
   [:li.kriti
-   [:a {:href url} [:p.kriti-name kriti]]
+   [:a {:href url :target "_blank"} [:p.kriti-name kriti]]
    [:p.composer composer]
    (when ragam
      [:p.kriti-ragam
