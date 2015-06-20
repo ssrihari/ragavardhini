@@ -164,3 +164,13 @@ a {
     display: inline-block;
     vertical-align: top;
 }
+
+.lyrics-heading {
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+.lyrics-content {
+    margin: 10px;
+    color: #666;
+}

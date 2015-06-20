@@ -15,6 +15,9 @@
 (defn ragam-url [ragam]
   (str "/search/ragam/" (name (:name ragam))))
 
+(defn kriti-url [kriti]
+  (str "/search/kriti/" (s/replace (:kriti kriti) #" " "")))
+
 (defn row [mela? ragam]
   (let [[ragam-name {:keys [arohanam avarohanam]}] (first ragam)]
     [mela?
@@ -79,14 +82,23 @@
       [:p {:class "more-info"} (str "Janyam of " (display-ragam-name parent-mela-name) " (" parent-mela-num ")")]
       [:p {:class "more-info"} (str "This is Melakartha no. " num)])]])
 
-(defn pretty-kriti [{:keys [url ragam kriti composer] :as kriti-result}]
+(defn pretty-kriti [{:keys [url ragam kriti composer taalam language] :as kriti-result}]
   [:li.kriti
-   [:a {:href url} [:p.kriti-name kriti]]
+   [:a {:href (kriti-url kriti-result)} [:p.kriti-name kriti]]
    [:p.composer composer]
    (when ragam
      [:p.kriti-ragam
       [:a.kriti-ragam-link {:href (ragam-url {:name ragam})}
-       (display-ragam-name ragam)]])])
+       (display-ragam-name ragam)]
+      (when taalam (str ", " taalam))
+      (when language (str ", " language))])])
+
+(defn pretty-lyrics [lyric-lines]
+  (let [heading? #(re-find #"(?i)pallavi|anupallavi|caranam" %)
+        bolden #(str "<b class='lyrics-heading'>" % "</b>")
+        lyricify #(str "<div class='lyrics-content'>" % "</div>")
+        bolded (map #(if (heading? %) (bolden %) (lyricify %)) lyric-lines)]
+    (s/join bolded)))
 
 (defn pretty-thing [type thing]
   (case type
@@ -132,4 +144,10 @@
 
     (more-of "More marching kritis"
              (map pretty-kriti more-kritis)
-             "more-kritis")]))
+             "more-kritis")
+
+    (when (seq (:lyrics kriti))
+      [:h1 "Lyrics for \"" (:kriti kriti) "\""])
+    (when (seq (:lyrics kriti))
+      [:div.lyrics
+       (pretty-lyrics (:lyrics kriti))])]))
