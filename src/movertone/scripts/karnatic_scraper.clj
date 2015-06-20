@@ -142,13 +142,17 @@
       (s/replace #"\\r" "")
       s/trim))
 
-(defn prettify [{:keys [kriti composer url] :as k}]
+(defn prettify [{:keys [kriti composer url language taalam lyrics] :as k}]
   (when (and (seq kriti)
              (seq composer)
              (seq url))
     {:kriti (pretty-name (clean-name kriti))
      :composer (pretty-name (clean-name composer))
-     :url url}))
+     :url url
+     :karnatic-ragam (:ragam k)
+     :language language
+     :taalam taalam
+     :lyrics lyrics}))
 
 (defn get-name->kritis []
   (let [name->kritis (group-by :name (map find-ragam-for-krithi kritis))
