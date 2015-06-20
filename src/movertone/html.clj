@@ -13,7 +13,7 @@
   (s/capitalize (name ragam-name)))
 
 (defn ragam-url [ragam]
-  (str "/search/" (name (:name ragam))))
+  (str "/search/ragam/" (name (:name ragam))))
 
 (defn row [mela? ragam]
   (let [[ragam-name {:keys [arohanam avarohanam]}] (first ragam)]
@@ -55,8 +55,9 @@
    (include-css "http://fonts.googleapis.com/css?family=PT+Sans")
    [:meta {:name "viewport" :content "width=device-width"}]
    [:form.search-form {:action "/search"}
-    [:input.search-box {:type "text" :name "q" :placeholder "search ragam..."}]
-    [:input.submit-button {:type "submit" :value "Search"}]]
+    [:input.search-box {:type "text" :name "q" :placeholder "search..."}]
+    [:input.submit-button {:name "t" :type "submit" :value "ragam"}]
+    [:input.submit-button {:name "t" :type "submit" :value "kriti"}]]
    body))
 
 (defn make-html [rows]
@@ -71,30 +72,64 @@
   [{:keys [avarohanam name arohanam num parent-mela-num parent-mela-name] :as ragam}]
   [:a {:href (ragam-url ragam)}
    [:div {:class "ragam"}
-    [:h2 {:class "ragam-name"} (s/capitalize (display-ragam-name name))]
+    [:h2 {:class "ragam-name"} (display-ragam-name name)]
     [:p {:class "notes"} (->printable arohanam)]
     [:p {:class "notes"} (->printable avarohanam)]
     (if parent-mela-num
       [:p {:class "more-info"} (str "Janyam of " (display-ragam-name parent-mela-name) " (" parent-mela-num ")")]
       [:p {:class "more-info"} (str "This is Melakartha no. " num)])]])
 
-(defn pretty-kriti [kriti]
+(defn pretty-kriti [{:keys [url ragam kriti composer] :as kriti-result}]
   [:li.kriti
-   [:a {:href (:url kriti) :target "_blank"} [:p.kriti-name (:kriti kriti)]]
-   [:p.composer (:composer kriti)]])
+   [:a {:href url} [:p.kriti-name kriti]]
+   [:p.composer composer]
+   (when ragam
+     [:p.kriti-ragam
+      [:a.kriti-ragam-link {:href (ragam-url {:name ragam})}
+       (display-ragam-name ragam)]])])
 
-(defn search-result-html [{:keys [ragam kritis more perc] :as search-result}]
+(defn pretty-thing [type thing]
+  (case type
+    :kriti (pretty-kriti thing)
+    :ragam (pretty-ragam thing)))
+
+(defn more-of [heading coll class-name]
+  (when (seq coll)
+    [:div.more-of
+     [:h1.more-heading (str heading "..")]
+     [:ul {:class class-name}
+      coll]]))
+
+(defn best-match [heading result type]
+  (when result
+    [:div.best-match
+     [:h1 heading]
+     (pretty-thing type result)]))
+
+(defn search-ragam-result [{:keys [ragam kritis more-ragams perc] :as search-result}]
   (html-skeleton
    [:div {:class "search-result"}
-    [:h1 "Best match"]
-    (pretty-ragam ragam)
-    (when (seq kritis)
-      [:h1 "Kritis"])
-    (when (seq kritis)
-      [:ul.kritis
-       (map pretty-kriti (sort-by :kriti kritis))])
-    (when (seq more)
-      [:h1 "More..."])
-    (when (seq more)
-      [:ul {:class "more-results"}
-       (map pretty-ragam more)])]))
+
+    (best-match "Best ragam match"
+                ragam
+                :ragam)
+
+    (more-of (str "Kritis in " (display-ragam-name (:name ragam)))
+             (map pretty-kriti (sort-by :kriti kritis))
+             "kritis-in-ragam")
+
+    (more-of "More matching ragams"
+             (map pretty-ragam more-ragams)
+             "more-ragams")]))
+
+(defn search-kriti-result [{:keys [kriti more-kritis] :as search-result}]
+  (html-skeleton
+   [:div {:class "search-result"}
+
+    (best-match "Best kriti match"
+                kriti
+                :kriti)
+
+    (more-of "More marching kritis"
+             (map pretty-kriti more-kritis)
+             "more-kritis")]))

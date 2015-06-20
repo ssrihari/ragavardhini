@@ -1,5 +1,5 @@
 body {
-    margin: 40px auto;
+    margin: 3% auto;
     width: 90%;
     font-family: 'PT Serif', serif;
 }
@@ -65,17 +65,30 @@ a {
     margin: 8px;
 }
 
+.more-of ul {
+}
+
+.more-heading a {
+    text-decoration: none;
+    border-bottom: 1px dotted black;
+}
+
 .more-info {
     font-style: italic;
     margin: 6px 0;
 }
 
-.more-results {
+.more-ragams {
     padding: 0;
     margin: 0;
 }
 
-.kritis {
+.more-kritis {
+    padding: 0;
+    margin: 0;
+}
+
+.kritis-in-ragam {
     margin: 0;
 }
 
@@ -98,6 +111,17 @@ a {
     margin: 0 6px;
 }
 
+.kriti-ragam {
+    color: #999;
+    font-size: 12px;
+    margin: 6px;
+}
+
+.kriti-ragam-link {
+  text-decoration: none;
+  border-bottom: 1px dotted;
+}
+
 @-ms-viewport{
   width: device-width;
 }
@@ -110,6 +134,8 @@ a {
     padding: 0 5px;
     font-size: 14px;
     font-family: 'PT Serif', serif;
+    margin-bottom: 5px;
+    margin-right: 5px;
 }
 
 .search-box:focus {
@@ -124,12 +150,17 @@ a {
     background-color: #FFF;
     color: #666;
     border: solid #666 1px;
-    margin: 0 5px;
-    width: 60px;
+    width: 116px;
     font-family: 'PT Serif', serif;
     font-size: 14px;
+    margin-right: 5px;
 }
 
 .search-form {
     margin-bottom: 10px;
+}
+
+.best-match {
+    display: inline-block;
+    vertical-align: top;
 }

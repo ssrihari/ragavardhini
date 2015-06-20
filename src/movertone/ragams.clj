@@ -60,6 +60,15 @@
 (def raga-to-kritis-more
   (read-file "raga-to-kritis-more.edn"))
 
+(def all-kritis
+  (concat
+   (mapcat (fn [[r ks]] (map #(assoc % :ragam r) ks)) raga-to-kritis)
+   (mapcat (fn [[r ks]] (map #(assoc % :ragam r) ks)) raga-to-kritis-more)))
+
+(def all-kritis-by-name
+  (zipmap (map :kriti all-kritis)
+          all-kritis))
+
 (defn ragams-with-duplicates []
   (->> janyams-by-melakarthas
        vals
@@ -68,28 +77,3 @@
        (m/map-vals count)
        (filter #(> (second %) 1))
        (sort-by second )))
-
-(defn db-ragam->ragam [db-ragam]
-  (ragams (keyword (:name db-ragam))))
-
-(defn build-result [results perc]
-  (let [result-ragams (mapv db-ragam->ragam results)
-        best-result (first result-ragams)]
-    {:ragam best-result
-     :more (rest result-ragams)
-     :perc (format "%.1f" perc)
-     :kritis (concat (get raga-to-kritis (:name best-result))
-                     (get raga-to-kritis-more (:name best-result)))}))
-
-(defn search
-  "Search in postgres using trigram similary using an index, and
-  order results by soundex difference. perc is the trigram similarity that
-  decreases from 0.9 to 0.0 to find closest results. This might be slow
-  and might need optimizations later."
-  ([ragam] (search ragam 0.3))
-  ([ragam perc]
-     (when (pos? perc)
-       (let [result-ragams (db/search ragam perc)]
-         (if (empty? result-ragams)
-           (search ragam (- perc 0.1))
-           (build-result result-ragams perc))))))
