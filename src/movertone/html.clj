@@ -16,7 +16,7 @@
   (str "/search/ragam/" (name (:name ragam))))
 
 (defn kriti-url [kriti]
-  (str "/search/kriti/" (s/replace (:kriti kriti) #" " "")))
+  (str "/kritis/" (s/replace (:kriti kriti) #"[ \(\)]" "")))
 
 (defn row [mela? ragam]
   (let [[ragam-name {:keys [arohanam avarohanam]}] (first ragam)]
@@ -84,7 +84,10 @@
 
 (defn pretty-kriti [{:keys [url ragam kriti composer taalam language] :as kriti-result}]
   [:li.kriti
-   [:a {:href (kriti-url kriti-result)} [:p.kriti-name kriti]]
+   (if (seq url)
+     [:a {:href (kriti-url kriti-result)}
+      [:p.kriti-name kriti]]
+     [:p.kriti-name kriti])
    [:p.composer composer]
    (when ragam
      [:p.kriti-ragam
@@ -151,3 +154,41 @@
     (when (seq (:lyrics kriti))
       [:div.lyrics
        (pretty-lyrics (:lyrics kriti))])]))
+
+(defn show-kriti [{:keys [kriti more-kritis] :as search-result}]
+  (let [{kriti-name :kriti :keys [composer url taalam language]} kriti
+        ragam (r/ragams (:ragam kriti))]
+    (html-skeleton
+     [:div.search-result
+      [:h1.show-kriti (:kriti kriti)]
+
+      [:div.kriti-blurb
+       [:p.composer-line composer
+        (when taalam (str ", " taalam))
+        (when language (str ", " language))]
+
+       (when ragam
+         [:div.kriti-ragam
+          [:a.kriti-ragam-link {:href (ragam-url ragam)}
+           (display-ragam-name (:name ragam))]
+          [:p.notes (->printable (:arohanam ragam))]
+          [:p.notes (->printable (:avarohanam ragam))]
+          (if (:parent-mela-num ragam)
+            [:p.more-info
+             (str "Janyam of "
+                  (display-ragam-name (:parent-mela-name ragam))
+                  " (" (:parent-mela-num ragam) ")")]
+            [:p.more-info (str "This is Melakartha no. " num)])])]
+      [:br]
+      (when (seq (:lyrics kriti))
+        [:h2 "Lyrics"])
+      (when (seq (:lyrics kriti))
+        [:div.lyrics
+         (pretty-lyrics (:lyrics kriti))])
+
+      (when (seq url)
+        [:a {:href url :target "_blank"} "See in karnatik"])
+
+      (more-of "More marching kritis"
+               (map pretty-kriti more-kritis)
+               "more-kritis")])))

@@ -10,12 +10,14 @@
 
 (defn build-ragam-result [results perc]
   (let [result-ragams (mapv db-ragam->ragam results)
-        best-result (first result-ragams)]
+        best-result (first result-ragams)
+        kritis (concat (get r/raga-to-kritis (:name best-result))
+                       (get r/raga-to-kritis-more (:name best-result)))
+        db-like-kritis (map #(assoc % :name (:kriti %)) kritis)]
     {:ragam best-result
      :more-ragams (rest result-ragams)
      :perc (format "%.1f" perc)
-     :kritis (concat (get r/raga-to-kritis (:name best-result))
-                     (get r/raga-to-kritis-more (:name best-result)))}))
+     :kritis (mapv db-kriti->kriti db-like-kritis)}))
 
 (defn build-kriti-result [results]
   (let [result-kritis (mapv db-kriti->kriti results)

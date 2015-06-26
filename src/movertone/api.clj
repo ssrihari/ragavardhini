@@ -51,6 +51,15 @@
             p/html-rows
             p/make-html)))))
 
+(defn show-kriti [{:keys [params] :as request}]
+  (if-let [search-result (s/search-kriti (:name params))]
+    (if (accepts-json? request)
+      (json-response search-result)
+      (html-response (p/show-kriti search-result)))
+    (if (accepts-json? request)
+      (json-response "Sorry, no such kriti.")
+      (html-response (p/html-skeleton "Sorry, no such kriti.")))))
+
 (defn search-ragam [{:keys [params] :as request}]
   (let [query (or (get (:params (params/params-request request)) "q")
                   (:query params))]
@@ -87,6 +96,7 @@
                                    [:name] show-ragam}]
                   ["ragams/" {"" all
                               [:name] show-ragam}]
+                  ["kritis/" {[:name] show-kriti}]
                   ["search" search]
                   ["search/" {[:type "/"] {[:query] search}}]]])
 
