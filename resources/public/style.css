@@ -68,6 +68,10 @@ a {
 .more-of ul {
 }
 
+.more-heading {
+    margin-top: 30px;
+}
+
 .more-heading a {
     text-decoration: none;
     border-bottom: 1px dotted black;
@@ -118,12 +122,12 @@ a {
 }
 
 .kriti-ragam-link {
-  text-decoration: none;
-  border-bottom: 1px dotted;
+    text-decoration: none;
+    border-bottom: 1px dotted;
 }
 
 @-ms-viewport{
-  width: device-width;
+    width: device-width;
 }
 
 .search-box {
@@ -173,4 +177,40 @@ a {
 .lyrics-content {
     margin: 10px;
     color: #666;
+}
+
+h1.show-kriti {
+    font-size: 30px;
+}
+
+.kriti-blurb {
+    background-color: #eee;
+    padding: 2px 15px;
+    margin: 20px 20px 0px 0px;
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.kriti-blurb .composer-line {
+    color: initial;
+    font-size: 16px;
+    margin: 6px 0;
+}
+
+.kriti-blurb .kriti-ragam {
+    color: initial;
+    font-size: 16px;
+    margin: 18px 0 6px;
+    font-weight: bolder;
+}
+
+.kriti-blurb .notes {
+    margin: 8px 0;
+    font-weight: lighter;
+}
+
+.kriti-blurb .more-info {
+    font-size: 14px;
+    font-weight: lighter;
 }
