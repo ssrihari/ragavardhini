@@ -178,7 +178,7 @@
              (str "Janyam of "
                   (display-ragam-name (:parent-mela-name ragam))
                   " (" (:parent-mela-num ragam) ")")]
-            [:p.more-info (str "This is Melakartha no. " num)])])]
+            [:p.more-info (str "This is Melakartha no. " (:num ragam))])])]
       [:br]
       (when (seq (:lyrics kriti))
         [:h2 "Lyrics"])
