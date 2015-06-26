@@ -1,0 +1,23 @@
+#!/bin/sh
+
+### pull and merge
+cd /apps/ragavardhini
+git checkout master
+git pull
+git checkout production
+git merge master
+
+### restart service - brutal kill and start
+pid=$(pgrep java)
+echo "found java process with pid" $pid
+kill $pid
+echo "kill command exited with status" $?
+
+sleep 1
+
+echo $(pwd)
+
+nohup /apps/ragavardhini/bin/run-server &
+echo "nohup done with status" $?
+
+exit
