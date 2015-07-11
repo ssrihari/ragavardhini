@@ -56,6 +56,8 @@
    (include-css "/style.css")
    (include-css "http://fonts.googleapis.com/css?family=PT+Serif")
    (include-css "http://fonts.googleapis.com/css?family=PT+Sans")
+   (include-js "https://www.google.com/jsapi")
+   (include-js "/js/trans.js")
    [:meta {:name "viewport" :content "width=device-width"}]
    [:form.search-form {:action "/search"}
     [:input.search-box {:type "text" :name "q" :placeholder "search..."}]
@@ -183,7 +185,7 @@
       (when (seq (:lyrics kriti))
         [:h2 "Lyrics"])
       (when (seq (:lyrics kriti))
-        [:div.lyrics
+        [:div.lyrics {:id "lyrics"}
          (pretty-lyrics (:lyrics kriti))])
 
       (when (seq url)
