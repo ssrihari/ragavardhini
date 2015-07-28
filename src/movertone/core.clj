@@ -1,15 +1,17 @@
 (ns movertone.core
+  (:use [overtone.core])
   (:require [clojure.java.io :as io]
             [clojure.string :as s]
             [overtone.live :as olive]
             [overtone.inst.piano :as piano]
             [movertone.violin :as violin]
-            [movertone.beep :as beep]
             [leipzig.live :as llive]
             [leipzig.scale :as scale]
             [leipzig.melody :as melody]
+            [movertone.beep :as beep]
             [movertone.swarams :as sw]
-            [movertone.ragams :as r]))
+            [movertone.ragams :as r]
+            [movertone.gamakams :as g]))
 
 (def shruthi :c)
 (def tempo 80)
@@ -35,8 +37,11 @@
                       swarams))))
 
 (defmethod llive/play-note :default [{midi :pitch seconds :duration}]
-  (let [freq (olive/midi->hz midi)]
-    (beep/beep freq seconds)))
+  #_(demo (pan2 (* (sin-osc (g/sphuritam midi seconds))
+                 (env-gen (envelope [1 1 0] [(* 0.9 seconds) (* 0.1 seconds)])))))
+  (let [f (midi->hz midi)
+        lf (midi->hz (- midi 2))]
+    (beep/sphuritam-sine f lf seconds)))
 
 (defn play-phrase [phrase]
   (->> phrase
@@ -46,7 +51,7 @@
        llive/play))
 
 (defn play-arohanam-and-avarohanam [{:keys [arohanam avarohanam] :as ragam}]
-  (play-phrase (phrase (concat arohanam avarohanam) nil (:middle kalams))))
+  (play-phrase (phrase (concat arohanam avarohanam) nil (:lower kalams))))
 
 (defn string->phrase [ragam s]
   (let [swaram "[.]*[A-z][.]*"
@@ -54,7 +59,7 @@
         split-seq (re-seq (re-pattern swaram-with-duration) s)
         swarams (map #(keyword (re-find (re-pattern swaram) %)) split-seq)
         durations (map #(count (s/replace % #"\." "")) split-seq)]
-    (phrase ragam swarams durations (:middle kalams))))
+    (phrase ragam swarams durations (:lower kalams))))
 
 (defn play-string [raga string]
   (play-phrase
@@ -83,6 +88,7 @@
            [:m :d :n :g :m :d :r :g :m  :g :m :d :n :s.]
            [ 1  1  2  1  1  2  1  1  4   1  1  1  1  4]
            (:middle kalams)))
+
 
   (play-string (:bilahari r/ragams)
                "s,,r g,p, d,s., n,d, p,dp mgrs rs .n .d s,,,

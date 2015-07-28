@@ -73,6 +73,9 @@
         swara-sthanam (swarams->notes swaram)]
     (+ shadjam swara-sthanam)))
 
+(defn actual-swarams->simple-swarams [swarams]
+  (map #(->> % name first str keyword) swarams))
+
 (defn madhya-swarams-in-ragam [{:keys [arohanam avarohanam]}]
   (let [swarams (concat arohanam avarohanam)]
     (->> swarams
