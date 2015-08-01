@@ -21,17 +21,18 @@
 (g-inst kampitam-inst
         (envelope [pf f pf f]
                   [d5 d1 d4]
-                  :linear))
+                  :welch))
 
 (def gamakams-dict
   {:plain plain-inst
    :sphuritam sphuritam-inst
    :kampitam kampitam-inst})
 
-(defn with-synth-args [midi seconds gamakam]
-  (let [f (midi->hz midi)
-        pf (midi->hz (dec midi))
-        lf (midi->hz (- midi 2))
+(defn with-synth-args [pre cur nex seconds gamakam]
+  (let [pf (midi->hz pre)
+        f (midi->hz cur)
+        nf (midi->hz nex)
+        lf (midi->hz (- cur 2))
         d seconds
         d1 (* 0.1 d)
         d4 (* 0.4 d)

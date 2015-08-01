@@ -27,23 +27,36 @@
   (let [simples (sw/get-simple-swaram-mappings ragam)]
     (map simples swarams)))
 
+(defrecord Triplet [swarams])
+
+(defn make-triplets [swarams]
+  (let [sw-list (flatten [nil swarams nil])]
+    (->> sw-list
+         (map-indexed (fn [i e] (Triplet. (take 3 (drop i sw-list)))))
+         (drop-last 2))))
+
 (defn phrase
   ([ragam swarams durations speed]
      (phrase (simple-phrase->actual-phrase ragam swarams) durations speed))
   ([swarams durations speed]
-     (let [durations (or durations
+     (let [triplets (make-triplets swarams)
+           durations (or durations
                          (default-durations (count swarams)))]
        (melody/phrase (map #(/ % (* speed jathi)) durations)
-                      swarams))))
+                      triplets))))
 
-(defmethod llive/play-note :default [{midi :pitch seconds :duration}]
-  (beep/with-synth-args midi seconds :sphuritam))
+(defmethod llive/play-note :default [{triplet :pitch seconds :duration}]
+  (let [swarams (:swarams triplet)
+        get-midi #(some->> (nth swarams %) (sw/swaram->midi shruthi))
+        cur (get-midi 1)
+        pre (or (get-midi 0) cur)
+        nex (or (get-midi 2) cur)]
+    (beep/with-synth-args pre cur nex seconds (rand-nth [:plain :sphuritam :kampitam]))))
 
 (defn play-phrase [phrase]
   (->> phrase
        (melody/where :time (melody/bpm tempo))
        (melody/where :duration (melody/bpm tempo))
-       (melody/where :pitch (partial sw/swaram->midi shruthi))
        llive/play))
 
 (defn play-arohanam-and-avarohanam [{:keys [arohanam avarohanam] :as ragam}]
