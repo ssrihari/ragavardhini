@@ -14,7 +14,7 @@
             [movertone.gamakams :as g]))
 
 (def shruthi :c)
-(def tempo 80)
+(def tempo 60)
 (def jathi 4)
 (def kalams {:lower  1
              :middle 2
@@ -37,11 +37,7 @@
                       swarams))))
 
 (defmethod llive/play-note :default [{midi :pitch seconds :duration}]
-  #_(demo (pan2 (* (sin-osc (g/sphuritam midi seconds))
-                 (env-gen (envelope [1 1 0] [(* 0.9 seconds) (* 0.1 seconds)])))))
-  (let [f (midi->hz midi)
-        lf (midi->hz (- midi 2))]
-    (beep/sphuritam-sine f lf seconds)))
+  (beep/with-synth-args midi seconds :sphuritam))
 
 (defn play-phrase [phrase]
   (->> phrase
