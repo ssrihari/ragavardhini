@@ -14,7 +14,7 @@
             [movertone.gamakams :as g]))
 
 (def shruthi :c)
-(def tempo 60)
+(def tempo 40)
 (def jathi 4)
 (def kalams {:lower  1
              :middle 2
@@ -23,21 +23,26 @@
 (defn default-durations [num-swarams]
   (take num-swarams (repeatedly (constantly jathi))))
 
-(defn simple-phrase->actual-phrase [ragam swarams]
-  (let [simples (sw/get-simple-swaram-mappings ragam)]
-    (map simples swarams)))
+(defn simple-swaram->actual-swaram [ragam swaram]
+  (get (sw/get-simple-swaram-mappings ragam)
+       swaram))
 
 (defrecord Triplet [swarams])
 
 (defn make-triplets [swarams]
   (let [sw-list (flatten [nil swarams nil])]
     (->> sw-list
-         (map-indexed (fn [i e] (Triplet. (take 3 (drop i sw-list)))))
+         (map-indexed (fn [i e] (Triplet. {:pre (-> (drop i sw-list) vec (get 0))
+                                           :cur (-> (drop i sw-list) vec (get 1))
+                                           :nex (-> (drop i sw-list) vec (get 2))})))
          (drop-last 2))))
+
+(defn ->jathi [speed jathi duration]
+  (/ duration (* speed jathi)))
 
 (defn phrase
   ([ragam swarams durations speed]
-     (phrase (simple-phrase->actual-phrase ragam swarams) durations speed))
+     (phrase (map #(simple-swaram->actual-swaram ragam %) swarams) durations speed))
   ([swarams durations speed]
      (let [triplets (make-triplets swarams)
            durations (or durations
@@ -45,13 +50,12 @@
        (melody/phrase (map #(/ % (* speed jathi)) durations)
                       triplets))))
 
-(defmethod llive/play-note :default [{triplet :pitch seconds :duration}]
-  (let [swarams (:swarams triplet)
-        get-midi #(some->> (nth swarams %) (sw/swaram->midi shruthi))
-        cur (get-midi 1)
-        pre (or (get-midi 0) cur)
-        nex (or (get-midi 2) cur)]
-    (beep/with-synth-args pre cur nex seconds (rand-nth [:plain :sphuritam :kampitam]))))
+(defmethod llive/play-note :default [{{{:keys [pre cur nex]} :swarams} :pitch seconds :duration}]
+  (let [get-midi #(some->> % :swaram )
+        cur-midi (sw/swaram->midi shruthi (:swaram cur))
+        pre-midi (sw/swaram->midi shruthi (or (:swaram pre) (:swaram cur)))
+        nex-midi (sw/swaram->midi shruthi (or (:swaram nex) (:swaram cur)))]
+    (beep/with-synth-args pre-midi cur-midi nex-midi seconds (:gamakam cur))))
 
 (defn play-phrase [phrase]
   (->> phrase
@@ -62,13 +66,23 @@
 (defn play-arohanam-and-avarohanam [{:keys [arohanam avarohanam] :as ragam}]
   (play-phrase (phrase (concat arohanam avarohanam) nil (:lower kalams))))
 
-(defn string->phrase [ragam s]
-  (let [swaram "[.]*[A-z][.]*"
-        swaram-with-duration (str swaram "[,]*")
-        split-seq (re-seq (re-pattern swaram-with-duration) s)
-        swarams (map #(keyword (re-find (re-pattern swaram) %)) split-seq)
-        durations (map #(count (s/replace % #"\." "")) split-seq)]
-    (phrase ragam swarams durations (:lower kalams))))
+(def gamakam-strs
+  {"-" :plain
+   "~" :kampitam-2
+   "^" :sphuritam})
+
+(defn swaram-str->swaram [ragam sw-str]
+  {:gamakam (gamakam-strs (re-find #"[~^-]*" sw-str))
+   :swaram (simple-swaram->actual-swaram ragam (keyword (re-find #"[.]*[srgmpdn][.]*" sw-str)))
+   :duration (inc (get (frequencies sw-str) \, 0))})
+
+(defn string->phrase [ragam phrase-str speed]
+  (let [swarams (map #(swaram-str->swaram ragam %) (s/split phrase-str #" "))
+        triplets (make-triplets swarams)
+        durations (or (map :duration swarams)
+                      (default-durations (count swarams)))]
+    (melody/phrase (map #(->jathi speed jathi %) durations)
+                   triplets)))
 
 (defn play-string [raga string]
   (play-phrase
@@ -88,16 +102,14 @@
 
   (play-arohanam-and-avarohanam (:vasanta r/ragams))
 
-  (play-phrase (phrase [:s :r2 :g3 :p :m1 :g3 :r2 :s]
-                       [ 1   1  1  1   1   1   2   4]
-                       (:lower kalams)))
+  (play-phrase (string->phrase (:mayamalavagaula r/ragams)
+                               "-s, ~r, ^g, -m, ^p, ~d, ^n, -s.,"
+                               1))
 
   (play-phrase
-   (phrase (:mechakalyani r/ragams)
-           [:m :d :n :g :m :d :r :g :m  :g :m :d :n :s.]
-           [ 1  1  2  1  1  2  1  1  4   1  1  1  1  4]
-           (:middle kalams)))
-
+   (string->phrase (:mechakalyani r/ragams)
+                   "-m -d ^n, -g -m ^d, -r -g -m, -g -m -d -n -s.,,,"
+                   3))
 
   (play-string (:bilahari r/ragams)
                "s,,r g,p, d,s., n,d, p,dp mgrs rs .n .d s,,,
