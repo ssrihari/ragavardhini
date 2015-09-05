@@ -4,7 +4,8 @@
             [clojure.java.io :as io]
             [clojure.string :as s]
             [clojure.pprint :as pp]
-            [cheshire.core :as json]))
+            [cheshire.core :as json]
+            [movertone.tanpura :as tanpura]))
 
 (definst ignore-this [x 1]
   (def *mx *)
@@ -90,21 +91,12 @@
     (play-phrase rest-envs)))
 
 (defn play-sahana-varnam []
-  (for [phrase (mapcat :pasr sahana-pasr)]
-		  (play-phrase (envs-for-phrase 60 12 phrase))))
+  (tanpura/play 60 0.3)
+  (Thread/sleep 2000)
+  (doall (for [phrase (mapcat :pasr sahana-pasr)]
+           (play-phrase (envs-for-phrase 60 12 phrase))))
+  (stop))
 
-(comment
-
-  (defrecord PASRUnit [data])
-
-  (defn make-pasr [phrase]
-    (let [plucks (phrase->plucks phrase)]
-      (map-indexed (fn [i [p a s r :as pasr]]
-                     (PASRUnit. {:pasr pasr
-                                 :dur (+ a s r)
-                                 :pre (first (when (pos? i) (nth plucks (dec i))))
-                                 :nex (first (when (< i (dec (count plucks))) (nth plucks (inc i))))}))
-                   plucks))))
 
 
 (comment

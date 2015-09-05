@@ -9,3 +9,4 @@ pom.xml.asc
 /.nrepl-port
 /data
 pg.log
+resources/electronic-tanpura
