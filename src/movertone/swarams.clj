@@ -73,6 +73,10 @@
         swara-sthanam (swarams->notes swaram)]
     (+ shadjam swara-sthanam)))
 
+(defn rel-num->midi [shruthi rel-num]
+  (let [shadjam (shruthi shruthis)]
+    (+ shadjam rel-num)))
+
 (defn actual-swarams->simple-swarams [swarams]
   (map #(->> % name first str keyword) swarams))
 

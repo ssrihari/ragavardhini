@@ -13,7 +13,7 @@
             [movertone.ragams :as r]
             [movertone.gamakams :as g]))
 
-(def shruthi :c)
+(def shruthi :e)
 (def tempo 40)
 (def jathi 4)
 (def kalams {:lower  1
@@ -55,7 +55,7 @@
         cur-midi (sw/swaram->midi shruthi (:swaram cur))
         pre-midi (sw/swaram->midi shruthi (or (:swaram pre) (:swaram cur)))
         nex-midi (sw/swaram->midi shruthi (or (:swaram nex) (:swaram cur)))]
-    (beep/with-synth-args pre-midi cur-midi nex-midi seconds (:gamakam cur))))
+    (beep/with-synth-args pre-midi cur-midi nex-midi seconds 0 0 0 (:gamakam cur))))
 
 (defn play-phrase [phrase]
   (->> phrase
