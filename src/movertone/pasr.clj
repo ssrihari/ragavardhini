@@ -22,14 +22,6 @@
 (def first-phrase
   (-> sahana-pasr first :pasr first))
 
-(defn phrase->plucks [phrase]
-  (->> phrase
-       (map #(nth % 3))
-       (apply concat)
-       (map (fn [[p a s r]] (if (coll? p)
-                              [(first p) a s r]
-                              [p a s r])))))
-
 (defn duration [pluck]
   (or (some-> pluck first (s/split #":") second Integer/parseInt)
       1))
@@ -40,7 +32,7 @@
        (map #(if (coll? %) (first %) %))
        (map #(midi->hz (+ base %)))))
 
-(defn make-durations [pasr jathi]
+(defn make-asr-curve [pasr jathi]
   (let [durations-1 (->> pasr
                          (mapcat #(drop 1 %))
                          butlast
@@ -54,9 +46,8 @@
 
                                          :else
                                          nil))
-                                 durations-1)
-        durations (remove nil? durations-2)]
-    (map #(/ % jathi) durations)))
+                                 durations-1)]
+    (remove nil? durations-2)))
 
 (defn ampl-env [phrase-duration]
   (let [dp5 (* 0.05 phrase-duration)
@@ -66,14 +57,16 @@
 (defn make-env [shruthi jathi pluck]
   (let [pasr (nth pluck 3)
         pitches (make-pitches pasr shruthi)
-        durations (make-durations pasr jathi)
-        ;; phrase-duration (/ (duration pluck) 2)
-        phrase-duration (apply + durations)
-        pitch-env (envelope pitches durations)]
-    {:dur phrase-duration
+        asr-durations (make-asr-curve pasr jathi)
+        pluck-duration (/ (duration pluck) jathi)
+        phrase-duration (apply + asr-durations)
+        divisor (/ phrase-duration pluck-duration)
+        final-durations (map #(/ % divisor) asr-durations)
+        pitch-env (envelope pitches final-durations)]
+    {:dur pluck-duration
      :env pitch-env
      :play-thing (*mx (sin-osc (env-gen pitch-env))
-                      (env-gen (ampl-env phrase-duration)))}))
+                      (env-gen (ampl-env pluck-duration)))}))
 
 (defn envs-for-phrase [shruthi jathi phrase]
   (let [envs (map #(make-env shruthi jathi %)
@@ -94,12 +87,17 @@
   (tanpura/play 60 0.3)
   (Thread/sleep 2000)
   (doall (for [phrase (mapcat :pasr sahana-pasr)]
-           (play-phrase (envs-for-phrase 60 12 phrase))))
+           (play-phrase (envs-for-phrase 60 3 phrase))))
   (stop))
 
 
-
 (comment
+
+  ;; to play a certain set of phrases with start and end numbers specified
+  (for [phrase (subvec (vec (mapcat :pasr sahana-pasr)) 50 90)
+        :let [envs (envs-for-phrase 60 5.5 phrase)]]
+    (play-phrase envs))
+
   ;; potentially
   (demo 2 (pan2 (sin-osc (env-gen (envelope (map #(midi->hz (+ 60 %)) [4 4 2 2 7 7])
                                             (map #(/ % 8) [0 2 0 2 4]))))))
