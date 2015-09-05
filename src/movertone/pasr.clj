@@ -6,6 +6,10 @@
             [clojure.pprint :as pp]
             [cheshire.core :as json]))
 
+(definst ignore-this [x 1]
+  (def *mx *)
+  (sin-osc))
+
 (defn read-pasr-json [filename]
   (-> filename io/resource slurp (json/decode true)))
 
@@ -28,8 +32,6 @@
 (defn duration [pluck]
   (or (some-> pluck first (s/split #":") second Integer/parseInt)
       1))
-
-(defrecord PASRUnit [data])
 
 (defn make-pitches [pasr base]
   (->> pasr
@@ -55,14 +57,22 @@
         durations (remove nil? durations-2)]
     (map #(/ % jathi) durations)))
 
+(defn ampl-env [phrase-duration]
+  (let [dp5 (* 0.05 phrase-duration)
+        d9 (* 0.9 phrase-duration)]
+    (envelope [0 1 1 0] [dp5 d9 dp5])))
+
 (defn make-env [shruthi jathi pluck]
   (let [pasr (nth pluck 3)
         pitches (make-pitches pasr shruthi)
         durations (make-durations pasr jathi)
-        phrase-duration (duration pluck)]
+        ;; phrase-duration (/ (duration pluck) 2)
+        phrase-duration (apply + durations)
+        pitch-env (envelope pitches durations)]
     {:dur phrase-duration
-     :env (envelope pitches
-                    durations)}))
+     :env pitch-env
+     :play-thing (*mx (sin-osc (env-gen pitch-env))
+                      (env-gen (ampl-env phrase-duration)))}))
 
 (defn envs-for-phrase [shruthi jathi phrase]
   (let [envs (map #(make-env shruthi jathi %)
@@ -70,16 +80,31 @@
         ats (reductions + (map :dur envs))]
     (map #(assoc %1 :at %2) envs ats)))
 
-(def one-twenty-bpm (metronome 120))
+(defn player [env]
+  (demo 20 (pan2 (:play-thing env))))
 
-(defn make-pasr [phrase]
-  (let [plucks (phrase->plucks phrase)]
-    (map-indexed (fn [i [p a s r :as pasr]]
-                   (PASRUnit. {:pasr pasr
-                               :dur (+ a s r)
-                               :pre (first (when (pos? i) (nth plucks (dec i))))
-                               :nex (first (when (< i (dec (count plucks))) (nth plucks (inc i))))}))
-                 plucks)))
+(defn play-phrase [[env & rest-envs]]
+  (when env
+    (player env)
+    (Thread/sleep (* 1000 (:dur env)))
+    (play-phrase rest-envs)))
+
+(defn play-sahana-varnam []
+  (for [phrase (mapcat :pasr sahana-pasr)]
+		  (play-phrase (envs-for-phrase 60 12 phrase))))
+
+(comment
+
+  (defrecord PASRUnit [data])
+
+  (defn make-pasr [phrase]
+    (let [plucks (phrase->plucks phrase)]
+      (map-indexed (fn [i [p a s r :as pasr]]
+                     (PASRUnit. {:pasr pasr
+                                 :dur (+ a s r)
+                                 :pre (first (when (pos? i) (nth plucks (dec i))))
+                                 :nex (first (when (< i (dec (count plucks))) (nth plucks (inc i))))}))
+                   plucks))))
 
 
 (comment
