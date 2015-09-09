@@ -1,5 +1,6 @@
 (ns movertone.core-old
   (:require [clojure.java.io :as io]
+            [clojure.pprint :refer [pprint]]
             [clojure.string :as s]
             [overtone.live :as olive]
             [overtone.inst.piano :as piano]
@@ -7,12 +8,24 @@
             [leipzig.live :as llive]
             [leipzig.scale :as scale]
             [leipzig.melody :as melody]
+            [movertone.tanpura :as tanpura]
             [movertone.swarams :as sw]
+            [movertone.search :as search]
             [movertone.ragams :as r]))
+
 
 (def shruthi :c)
 (def tempo 80)
-(def jathi 4)
+
+(def jathis
+  {:chaturasra	4
+   :thisra	3
+   :khanda	5
+   :misra	7
+   :sankeerna	9})
+
+(def jathi (:chaturasra jathis))
+
 (def kalams {:lower  1
              :middle 2
              :higher 3})
@@ -70,13 +83,18 @@
 
 (comment
 
-  (:ragavardhini r/ragams)
+  (pprint (:ragavardhini r/ragams))
   > {:arohanam [:s :r3 :g3 :m1 :p :d1 :n2 :s.],
      :avarohanam (:s. :n2 :d1 :p :m1 :g3 :r3 :s)}
 
-  (play-arohanam-and-avarohanam (:hanumatodi r/ragams))
+  (pprint (:ragam (search/search-ragam "goula")))
 
-  (play-arohanam-and-avarohanam (:vasanta r/ragams))
+  (pprint (:ragam (search/search-ragam "bilahari")))
+
+  (play-arohanam-and-avarohanam
+   (:ragam (search/search-ragam "bilahari")))
+
+  (play-arohanam-and-avarohanam (:hanumatodi r/ragams))
 
   (play-phrase (phrase [:s :r2 :g3 :p :m1 :g3 :r2 :s]
                        [ 1   1  1  1   1   1   2   4]
@@ -91,5 +109,8 @@
   (play-string (:bilahari r/ragams)
                "s,,r g,p, d,s., n,d, p,dp mgrs rs .n .d s,,,")
 
-  (play-file (:mohana r/ragams)
+  (play-string (:mayamalavagowla r/ragams)
+               "s,,r g,p, d,s., n,d, p,dp mgrs rs .n .d s,,,")
+
+  (play-file (:pantuvarali r/ragams)
              "input-files/mohana-varnam.txt"))

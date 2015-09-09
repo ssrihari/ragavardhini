@@ -14,7 +14,7 @@
             [movertone.ragams :as r]
             [movertone.gamakams :as g]))
 
-(def shruthi :e)
+(def shruthi :c)
 (def tempo 40)
 (def jathi 4)
 (def kalams {:lower  1
@@ -112,9 +112,16 @@
                    "-m -d ^n, -g -m ^d, -r -g -m, -g -m -d -n -s.,,,"
                    3))
 
-  (play-string (:bilahari r/ragams)
-               "s,,r g,p, d,s., n,d, p,dp mgrs rs .n .d s,,,
-                s,,r g,p, m,,g p,d, r.,,s. n,d, p,,m g,r,")
+  (play-phrase
+   (string->phrase (:mohana r/ragams)
+                   "^g, ~r, ^s ^r ^g ^r"
+                   1))
+
+  (play-phrase
+   (string->phrase (:ragam (movertone.search/search-ragam "gaula"))
+                   "^g, ^r, ^s ^r ^g ^r -s,"
+                   1))
+
 
   (play-file (:mohana r/ragams)
              "input-files/mohana-varnam.txt"))
