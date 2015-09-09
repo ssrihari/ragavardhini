@@ -1,6 +1,7 @@
 (ns movertone.core
   (:use [overtone.core])
   (:require [clojure.java.io :as io]
+            [clojure.pprint :refer [pprint]]
             [clojure.string :as s]
             [overtone.live :as olive]
             [overtone.inst.piano :as piano]
