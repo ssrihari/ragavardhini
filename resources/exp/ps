@@ -1,0 +1,9 @@
+form filename
+	sentence inputfile
+	sentence outputfile
+endform
+file = Read from file: inputfile$
+selectObject: file
+To Pitch: 0, 75, 600
+Save as text file: outputfile$ 
+removeObject: file

@@ -1,0 +1,27 @@
+** code
+- python
+  - keras (wrapper)
+  - tensorflow
+
+** theory
+*** machine learning
+  - learning from data (caltech)
+  - 18h (a week, perhaps)
+  - ML thought process
+  - overfitting
+  - regularization
+  - linear model
+  - cross validation
+  - not: support vector machines, radial basis funcitons
+*** deep learning
+  - https://classroom.udacity.com/courses/ud730/
+  - bargava's tutorials
+    - https://github.com/rouseguy/scipyUS2016_dl-image
+    - https://github.com/rouseguy/europython2016_dl-nlp
+  - RNNs
+  - auto encoders - for unsupervised
+  - variational auto encoders
+  - recurrent variational auto encoders
+
+** learn from wav files
+- https://github.com/unnati-xyz/music-generation

@@ -1,5 +1,6 @@
 (ns ^{:doc "Constants related to swara-sthanams"}
-    movertone.swarams)
+    movertone.swarams
+  (:require [clojure.set :as set]))
 
 (def swarams->names
   {:s  "Shadjamam"
@@ -68,10 +69,19 @@
 (def swarams->notes
   (apply merge (map #(->sthayi %) (vals sthayis))))
 
+(defn midi->swaram [midi tonic-midi]
+  (get (set/map-invert swarams->notes)
+       (- midi tonic-midi)))
+
 (defn swaram->midi [shruthi swaram]
   (let [shadjam (shruthi shruthis)
         swara-sthanam (swarams->notes swaram)]
     (+ shadjam swara-sthanam)))
+
+(defn swaram->normalized-midi [shruthi swaram]
+  (let [shadjam (shruthi shruthis)
+        swara-sthanam (swarams->notes swaram)]
+    (+ shadjam (mod swara-sthanam 12))))
 
 (defn rel-num->midi [shruthi rel-num]
   (let [shadjam (shruthi shruthis)]

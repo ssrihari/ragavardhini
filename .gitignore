@@ -10,3 +10,6 @@ pom.xml.asc
 /data
 pg.log
 resources/electronic-tanpura
+resources/exp/*wav*
+resources/exp/*mpeg*
+resources/exp/*mp3*
