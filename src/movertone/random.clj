@@ -107,21 +107,11 @@
         d9 (* 0.9 phrase-duration)]
     (envelope [0 1 1 0] [dp5 d9 dp5])))
 
-(defn foo
+(defn play-with-two-swaram-weights
   ([ts-hist fswaram gathi num]
    (let [ts-allocations (ts-swaram-allocations ts-hist)
-         pitches (vec (take num (prob-swaram-generator fswaram ts-allocations)))
-         freqs (->> pitches
-                    (mapv (partial sw/swaram->midi :c.))
-                    (mapv midi->hz))
-         _ (def *p pitches)
-         durations (vec (take num (repeat gathi)))
-         pitch-env (envelope freqs durations)]
-     (prn *p)
-     #_(tanpura/play 60 0.2)
-     (demo 20 (pan2
-               (*mx (sin-osc (env-gen pitch-env))
-                    (env-gen (ampl-env (* num gathi))))))))
+         pitches (vec (take num (prob-swaram-generator fswaram ts-allocations)))]
+     (foo pitches gathi num)))
   ([pitches gathi num]
    (let [freqs (->> pitches
                     (mapv (partial sw/swaram->midi :c.))
@@ -129,7 +119,7 @@
          _ (prn pitches)
          durations (vec (take num (repeat gathi)))
          pitch-env (envelope freqs durations)]
-     #_(tanpura/play 60 0.2)
+     (tanpura/play 60 0.2)
      (demo 20 (pan2
                (*mx (sin-osc (env-gen pitch-env))
                     (env-gen (ampl-env (* num gathi)))))))))
@@ -163,6 +153,9 @@
   (let [phrase (random-phrase ragam-name jathi num)]
     (prn (map :pitch phrase))
     (c/play-phrase phrase)))
+
+(defn play-single-swaram-prob-phrase [single-swaram-prob jathi num]
+  (c/play-phrase (single-swaram-prob-phrase single-swaram-prob jathi num)))
 
 (def play-completely-random-phrase play-random-phrase)
 (def single-swaram-prob-phrase weighted-random-phrase)

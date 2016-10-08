@@ -6,28 +6,24 @@
   (def sh (->perc-histogram (swaram-histogram [{:f "Jagadanandakaraka.mp3.wav.pitch.frequencies"}]))))
 
 (def bauli-files
-  [{:f "bauLi-BV-Raman,BV-Lakshmanan-karuNAnidhiyE_tAyE-pApanAsam_sivan.mpeg.wav.pitch.frequencies"
-    :prominent-note :p}
-   {:f "bauLi-Chinmaya-Sisters---Uma,Radhika-karuNAnidhiyE_tAyE-pApanAsam_sivan.mpeg.wav.pitch.frequencies"
-    :prominent-note :p}
-   {:f "bauLi-Gayathri-Venkataraghavan-karuNAnidhiyE_tAyE-pApanAsam_sivan.mpeg.wav.pitch.frequencies"
-    :prominent-note :s}
-   {:f "bauLi-KL-Sriram-karuNAnidhiyE_tAyE-pApanAsam_sivan.mpeg.wav.pitch.frequencies"
-    :prominent-note :p}
-   {:f "bauLi-Multiple-Artists-karuNAnidhiyE_tAyE-pApanAsam_sivan.mpeg.wav.pitch.frequencies"
-    :prominent-note :p}
-   {:f "bauLi-Nanditha-Ravi-karuNAnidhiyE_tAyE-pApanAsam_sivan.mpeg.wav.pitch.frequencies"}
-   {:f "bauLi-Palghat-KV-Narayanaswamy-karuNAnidhiyE_tAyE-pApanAsam_sivan.mpeg.wav.pitch.frequencies"}
-   {:f "bauLi-R-Ganesh-karuNAnidhiyE_tAyE-pApanAsam_sivan.mpeg.wav.pitch.frequencies"}
-   {:f "bauLi-Saranya-Krishnan-karuNAnidhiyE_tAyE-pApanAsam_sivan.mpeg.wav.pitch.frequencies"}
-   {:f "bauLi-Seetha-Rajan-karuNAnidhiyE_tAyE-pApanAsam_sivan.mpeg.wav.pitch.frequencies"}
-   {:f "bauLi-Sethalapathi-Balasubramaniam-karuNAnidhiyE_tAyE-pApanAsam_sivan.mpeg.wav.pitch.frequencies"}
-   {:f "bauLi-Subashree-Mani-karuNAnidhiyE_tAyE-pApanAsam_sivan.mpeg.wav.pitch.frequencies"}
-   {:f "bauLi-Subha-Ganesan-karuNAnidhiyE_tAyE-pApanAsam_sivan.mpeg.wav.pitch.frequencies"}
-   {:f "bauLi-Suguna-Purushothaman-karuNAnidhiyE_tAyE-pApanAsam_sivan.mpeg.wav.pitch.frequencies"}
-   {:f "bauLi-Trichur-V-Ramachandran-karuNAnidhiyE_tAyE-pApanAsam_sivan.mpeg.wav.pitch.frequencies"}
-   {:f "bauLi-Visalakshi-Nithyanand-karuNAnidhiyE_tAyE-pApanAsam_sivan.mpeg.wav.pitch.frequencies"}
-   {:f "bauLi-Vyasarpadi-G-Kothandaraman-karuNAnidhiyE_tAyE-pApanAsam_sivan.mpeg.wav.pitch.frequencies"}])
+  ["bauLi-BV-Raman,BV-Lakshmanan-karuNAnidhiyE_tAyE-pApanAsam_sivan.mpeg.wav.pitch.frequencies"
+   "bauLi-Chinmaya-Sisters---Uma,Radhika-karuNAnidhiyE_tAyE-pApanAsam_sivan.mpeg.wav.pitch.frequencies"
+   "bauLi-Gayathri-Venkataraghavan-karuNAnidhiyE_tAyE-pApanAsam_sivan.mpeg.wav.pitch.frequencies"
+   "bauLi-KL-Sriram-karuNAnidhiyE_tAyE-pApanAsam_sivan.mpeg.wav.pitch.frequencies"
+   "bauLi-KS-Rukmani-Venkatachalam-karuNAnidhiyE_tAyE-pApanAsam_sivan.mpeg.wav.pitch.frequencies"
+   "bauLi-Multiple-Artists-karuNAnidhiyE_tAyE-pApanAsam_sivan.mpeg.wav.pitch.frequencies"
+   "bauLi-Nanditha-Ravi-karuNAnidhiyE_tAyE-pApanAsam_sivan.mpeg.wav.pitch.frequencies"
+   "bauLi-Palghat-KV-Narayanaswamy-karuNAnidhiyE_tAyE-pApanAsam_sivan.mpeg.wav.pitch.frequencies"
+   "bauLi-R-Ganesh-karuNAnidhiyE_tAyE-pApanAsam_sivan.mpeg.wav.pitch.frequencies"
+   "bauLi-Saranya-Krishnan-karuNAnidhiyE_tAyE-pApanAsam_sivan.mpeg.wav.pitch.frequencies"
+   "bauLi-Seetha-Rajan-karuNAnidhiyE_tAyE-pApanAsam_sivan.mpeg.wav.pitch.frequencies"
+   "bauLi-Sethalapathi-Balasubramaniam-karuNAnidhiyE_tAyE-pApanAsam_sivan.mpeg.wav.pitch.frequencies"
+   "bauLi-Subashree-Mani-karuNAnidhiyE_tAyE-pApanAsam_sivan.mpeg.wav.pitch.frequencies"
+   "bauLi-Subha-Ganesan-karuNAnidhiyE_tAyE-pApanAsam_sivan.mpeg.wav.pitch.frequencies"
+   "bauLi-Suguna-Purushothaman-karuNAnidhiyE_tAyE-pApanAsam_sivan.mpeg.wav.pitch.frequencies"
+   "bauLi-Trichur-V-Ramachandran-karuNAnidhiyE_tAyE-pApanAsam_sivan.mpeg.wav.pitch.frequencies"
+   "bauLi-Visalakshi-Nithyanand-karuNAnidhiyE_tAyE-pApanAsam_sivan.mpeg.wav.pitch.frequencies"
+   "bauLi-Vyasarpadi-G-Kothandaraman-karuNAnidhiyE_tAyE-pApanAsam_sivan.mpeg.wav.pitch.frequencies"])
 
 (def mohanam-files
   ["15mOhanam-Neyveli-Santhanagopalan-dayarAni_dayarAni_dAsharathi-tyAgarAja.mpeg.wav.pitch.frequencies"
@@ -51,16 +47,13 @@
    "87mOhanam-Tadepalli-Lokanatha-Sharma-dayarAni_dayarAni_dAsharathi-tyAgarAja.mpeg.wav.pitch.frequencies"
    "96mOhanam-RS-Jayalakshmi-dayarAni_dayarAni_dAsharathi-tyAgarAja.mpeg.wav.pitch.frequencies"])
 
-(comment
+(def tracks ["valaji-varnam-bombay-jayashree.mp3.wav.pitch.frequencies"
+             "04-sogasu_jUDa_taramA-kannaDagauLa.mp3.wav.pitch.frequencies"
+             {:f "Jagadanandakaraka.mp3.wav.pitch.frequencies"}])
 
-  (def tracks ["valaji-varnam-bombay-jayashree.mp3.wav.pitch.frequencies"
-               "04-sogasu_jUDa_taramA-kannaDagauLa.mp3.wav.pitch.frequencies"
-               {:f "Jagadanandakaraka.mp3.wav.pitch.frequencies"}
-               "Jagadanandakaraka.mp3.wav.pitch.frequencies"
-               "Dudukugala.mp3.wav.pitch.frequencies"
-               "Sadhinchane.mp3.wav.pitch.frequencies"
-               "KanaKanaRuchira.mp3.wav.pitch.frequencies"
-               "Endaro.mp3.wav.pitch.frequencies"])
-
-  (pprint-histogram (swaram-histogram bauli-files))
-  )
+(def pancharatna-kritis
+  ["Jagadanandakaraka.mp3.wav.pitch.frequencies"
+   "Dudukugala.mp3.wav.pitch.frequencies"
+   "Sadhinchane.mp3.wav.pitch.frequencies"
+   "KanaKanaRuchira.mp3.wav.pitch.frequencies"
+   "Endaro.mp3.wav.pitch.frequencies"])

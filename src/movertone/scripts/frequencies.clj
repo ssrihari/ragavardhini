@@ -13,6 +13,7 @@
 (defn freqs-from-file [file]
   (->> (s/split (slurp (with-dir-name file)) #"\n")
        (remove #{"0"})
+       (remove s/blank?)
        (pmap #(Double/parseDouble %))))
 
 (defn pprint-histogram [hist]
@@ -30,9 +31,9 @@
   (let [tonic-midi (adj/find-tonic-midi freqs prominent-note)]
     (pmap #(hz->swaram tonic-midi %) freqs)))
 
-(defn one-swaram-probabilities-for-file [{:keys [f prominent-note] :as file}]
-  (let [freqs (freqs-from-file f)]
-    (->> (freqs->swarams freqs prominent-note)
+(defn one-swaram-probabilities-for-file [file]
+  (let [freqs (freqs-from-file file)]
+    (->> (freqs->swarams freqs)
          frequencies
          (adj/reduce-tonic-prominence 0.5))))
 
@@ -61,10 +62,10 @@
 (defn two-swaram-histogram-for-file [file]
   (->> (freqs-from-file file)
        one-swaram->two-swaram-mapping
-       (m/map-vals #(adj/reduce-tonic-prominence 0.6 %))))
+       (m/map-vals #(adj/reduce-tonic-prominence 0.2 %))))
 
 (defn two-swaram-probabilities [files]
-  (let [osw (one-swaram-probabilities (map (fn [f] {:f f}) files))]
+  (let [osw (one-swaram-probabilities files)]
     (def *osw osw)
     (->> files
          (pmap two-swaram-histogram-for-file)
@@ -72,10 +73,3 @@
          (#(select-keys % (keys osw)))
          (m/map-vals #(select-keys % (keys osw)))
          (m/map-vals ->perc-histogram))))
-
-(comment
-  (time (doall
-         (->> samples/mohanam-files
-              (map (fn [f] {:f f}))
-              one-swaram-probabilities
-              pprint-histogram))))

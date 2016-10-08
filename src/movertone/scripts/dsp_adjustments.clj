@@ -22,8 +22,7 @@
         prominent-midi-diff (->>  midi-occurrances
                                   normalize-octaves
                                   (sort-by second >)
-                                  first
-                                  first)]
+                                  ffirst)]
     (cond
       (= :s prominent-note) (+ 60 prominent-midi-diff)
       (= :p prominent-note) (+ 65 prominent-midi-diff)
