@@ -111,7 +111,7 @@
   ([ts-hist fswaram gathi num]
    (let [ts-allocations (ts-swaram-allocations ts-hist)
          pitches (vec (take num (prob-swaram-generator fswaram ts-allocations)))]
-     (foo pitches gathi num)))
+     (play-with-two-swaram-weights pitches gathi num)))
   ([pitches gathi num]
    (let [freqs (->> pitches
                     (mapv (partial sw/swaram->midi :c.))
@@ -154,11 +154,11 @@
     (prn (map :pitch phrase))
     (c/play-phrase phrase)))
 
-(defn play-single-swaram-prob-phrase [single-swaram-prob jathi num]
-  (c/play-phrase (single-swaram-prob-phrase single-swaram-prob jathi num)))
-
 (def play-completely-random-phrase play-random-phrase)
 (def single-swaram-prob-phrase weighted-random-phrase)
+
+(defn play-single-swaram-prob-phrase [single-swaram-prob jathi num]
+  (c/play-phrase (single-swaram-prob-phrase single-swaram-prob jathi num)))
 
 (comment
   (definst kick [freq 120 dur 0.3 width 0.5]

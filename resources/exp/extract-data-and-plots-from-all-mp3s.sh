@@ -25,7 +25,7 @@ tail -n +12 $"$i.wav.pitch" | grep -A6 "frame" | grep -ve "--" | grep "frequency
 # Plot freq vs time
 echo "Plotting t vs f.."
 awk -v dx="$dx" '{x = NR * dx; print x, $0}' "$i.wav.pitch.frequencies" | grep -vE " 0$" > "$i.wav.pitch.frequencies.time-freq-data"
-gnuplot -e "filename='$(echo "$i.wav.pitch.frequencies.time-freq-data")'" plot.plt
+gnuplot -e "filename='$(echo "$i.wav.pitch.frequencies.time-freq-data")'" freq-vs-time-plot.plt
 
 
 # Plot freq vs count

@@ -1,7 +1,8 @@
 (ns movertone.scripts.dsp-adjustments
   (:require [overtone.core :as o]))
 
-(def default-tonic-perc 0.8)
+(def default-tonic-prominence 0.8)
+(def default-non-prominence-reduction 0.8)
 
 (defn nil-plus [n1 n2]
   (if (nil? n1)

@@ -31,16 +31,16 @@
   (let [tonic-midi (adj/find-tonic-midi freqs prominent-note)]
     (pmap #(hz->swaram tonic-midi %) freqs)))
 
-(defn one-swaram-probabilities-for-file [file]
+(defn one-swaram-probabilities-for-file [file {:keys [tonic-prominence] :as opts}]
   (let [freqs (freqs-from-file file)]
     (->> (freqs->swarams freqs)
          frequencies
-         (adj/reduce-tonic-prominence 0.5))))
+         (adj/reduce-tonic-prominence tonic-prominence))))
 
-(defn one-swaram-probabilities [files]
-  (->> (pmap one-swaram-probabilities-for-file files)
+(defn one-swaram-probabilities [files & {:keys [npr-factor] :as opts}]
+  (->> (pmap #(one-swaram-probabilities-for-file % opts) files)
        (apply merge-with +)
-       (adj/remove-non-prominent-notes 0.25)
+       (adj/remove-non-prominent-notes npr-factor)
        ->perc-histogram))
 
 (defn two-swaram-freqs [freqs]
@@ -64,8 +64,8 @@
        one-swaram->two-swaram-mapping
        (m/map-vals #(adj/reduce-tonic-prominence 0.2 %))))
 
-(defn two-swaram-probabilities [files]
-  (let [osw (one-swaram-probabilities files)]
+(defn two-swaram-probabilities [files & opts]
+  (let [osw (apply one-swaram-probabilities files opts)]
     (def *osw osw)
     (->> files
          (pmap two-swaram-histogram-for-file)

@@ -1,9 +1,4 @@
-(ns movertone.scripts.samples
-  (:use movertone.scripts.frequencies))
-
-
-(comment
-  (def sh (->perc-histogram (swaram-histogram [{:f "Jagadanandakaraka.mp3.wav.pitch.frequencies"}]))))
+(ns movertone.scripts.samples)
 
 (def bauli-files
   ["bauLi-BV-Raman,BV-Lakshmanan-karuNAnidhiyE_tAyE-pApanAsam_sivan.mpeg.wav.pitch.frequencies"
@@ -48,8 +43,7 @@
    "96mOhanam-RS-Jayalakshmi-dayarAni_dayarAni_dAsharathi-tyAgarAja.mpeg.wav.pitch.frequencies"])
 
 (def tracks ["valaji-varnam-bombay-jayashree.mp3.wav.pitch.frequencies"
-             "04-sogasu_jUDa_taramA-kannaDagauLa.mp3.wav.pitch.frequencies"
-             {:f "Jagadanandakaraka.mp3.wav.pitch.frequencies"}])
+             "04-sogasu_jUDa_taramA-kannaDagauLa.mp3.wav.pitch.frequencies"])
 
 (def pancharatna-kritis
   ["Jagadanandakaraka.mp3.wav.pitch.frequencies"
