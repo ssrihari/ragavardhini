@@ -5,7 +5,8 @@
             [overtone.core :as o]
             [movertone.swarams :as sw]
             [movertone.scripts.dsp-adjustments :as adj]
-            [movertone.scripts.samples :as samples]))
+            [movertone.scripts.samples :as samples])
+  (:import [java.util HashMap]))
 
 (defn with-dir-name [filename]
   (str "resources/kosha/" filename))
@@ -52,8 +53,22 @@
          (recur (conj acc [f s]) (rest all))
          acc)))))
 
+(defn three-swaram-freqs [freqs]
+  (let [swarams (freqs->swarams freqs)]
+    (frequencies
+     (loop [acc []
+            [f s t :as all] swarams]
+       (if t
+         (recur (conj acc [f s t]) (rest all))
+         acc)))))
+
+(defn n-swaram-freqs [freqs n]
+  (case n
+    2 (two-swaram-freqs freqs)
+    3 (three-swaram-freqs freqs)))
+
 (defn one-swaram->two-swaram-mapping [freqs]
-  (->> (two-swaram-freqs freqs)
+  (->> (n-swaram-freqs freqs 2)
        (group-by (fn [[[fs ss] fr]] fs))
        (pmap (fn [[sw t-sh]]
                [sw (m/map-keys second (into {} t-sh))]))
@@ -66,10 +81,36 @@
 
 (defn two-swaram-probabilities [files & opts]
   (let [osw (apply one-swaram-probabilities files opts)]
-    (def *osw osw)
-    (->> files
-         (pmap two-swaram-histogram-for-file)
-         (apply merge-with #(merge-with + %1 %2))
-         (#(select-keys % (keys osw)))
-         (m/map-vals #(select-keys % (keys osw)))
-         (m/map-vals ->perc-histogram))))
+    {:one osw
+     :two (->> files
+               (pmap two-swaram-histogram-for-file)
+               (apply merge-with #(merge-with + %1 %2))
+               (#(select-keys % (keys osw)))
+               (m/map-vals #(select-keys % (keys osw)))
+               (m/map-vals ->perc-histogram))}))
+
+(defn two-swaram->three-swaram-mapping [freqs]
+  (->> (n-swaram-freqs freqs 3)
+       (group-by (fn [[[fs ss ts] fr]] [fs ss]))
+       (pmap (fn [[sw t-sh]]
+               [sw (m/map-keys #(nth % 2) (into {} t-sh))]))
+       (into {})))
+
+(defn three-swaram-histogram-for-file [file]
+  (->> (freqs-from-file file)
+       two-swaram->three-swaram-mapping
+       (m/map-vals #(adj/reduce-tonic-prominence 0.2 %))))
+
+(defn three-swaram-probabilities [files & opts]
+  (let [{:keys [one two] :as one-and-two} (apply two-swaram-probabilities files opts)
+        prom-sws (set (keys one))]
+    (merge one-and-two
+           {:three
+            (->> files
+                 (pmap three-swaram-histogram-for-file)
+                 (apply merge-with #(merge-with + %1 %2))
+                 (filter (fn [[[f s]]] (and (prom-sws f)
+                                            (prom-sws s))))
+                 (into {})
+                 (m/map-vals #(select-keys % (keys one)))
+                 (m/map-vals ->perc-histogram))})))

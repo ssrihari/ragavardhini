@@ -71,6 +71,14 @@
    (let [next-swaram (get-next-swaram-from-two-swaram-prob fswaram ts-sw-allocations)]
      (cons fswaram (prob-swaram-generator next-swaram ts-sw-allocations)))))
 
+(defn get-next-swaram-from-three-swaram-prob [ft-swarams ts-sw-allocations]
+  (get-next-swaram (get ts-sw-allocations ft-swarams)))
+
+(defn prob-swaram-generator-for-three [[f s] ts-sw-allocations]
+  (lazy-seq
+   (let [next-swaram (get-next-swaram-from-three-swaram-prob [f s] ts-sw-allocations)]
+     (cons next-swaram (prob-swaram-generator-for-three [s next-swaram] ts-sw-allocations)))))
+
 (defn weighted-random-phrase
   ([ragam-hist jathi num]
    (weighted-random-phrase ragam-hist jathi num (:lower c/kalams)))
@@ -114,7 +122,7 @@
      (play-with-two-swaram-weights pitches gathi num)))
   ([pitches gathi num]
    (let [freqs (->> pitches
-                    (mapv (partial sw/swaram->midi :c.))
+                    (mapv (partial sw/swaram->midi :c))
                     (mapv midi->hz))
          _ (prn pitches)
          durations (vec (take num (repeat gathi)))
@@ -124,27 +132,19 @@
                (*mx (sin-osc (env-gen pitch-env))
                     (env-gen (ampl-env (* num gathi)))))))))
 
-(defn boo
-  ([ts-hist fswaram gathi num]
+(defn play-with-three-swaram-weights
+  ([ts-hist ft-swarams gathi num]
    (let [ts-allocations (ts-swaram-allocations ts-hist)
-         pitches (vec (take num (take-nth 40 (prob-swaram-generator fswaram ts-allocations))))
-         freqs (->> pitches
-                    (mapv (partial sw/swaram->normalized-midi :c))
-                    (mapv midi->hz))
-         _ (def *p pitches)
-         durations (vec (take num (repeat gathi)))
-         pitch-env (envelope freqs durations)]
-     (prn *p)
-     (demo 20 (pan2
-               (*mx (sin-osc (env-gen pitch-env))
-                    (env-gen (ampl-env (* num gathi))))))))
+        pitches (vec (take num (prob-swaram-generator-for-three ft-swarams ts-allocations)))]
+     (play-with-three-swaram-weights pitches gathi num)))
   ([pitches gathi num]
    (let [freqs (->> pitches
-                    (mapv (partial sw/swaram->normalized-midi :c))
+                    (mapv (partial sw/swaram->midi :c))
                     (mapv midi->hz))
          _ (prn pitches)
          durations (vec (take num (repeat gathi)))
          pitch-env (envelope freqs durations)]
+     (tanpura/play 60 0.2)
      (demo 20 (pan2
                (*mx (sin-osc (env-gen pitch-env))
                     (env-gen (ampl-env (* num gathi)))))))))

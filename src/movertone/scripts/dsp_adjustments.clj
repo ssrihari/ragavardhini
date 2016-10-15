@@ -30,8 +30,11 @@
       :else                 (+ 60 prominent-midi-diff))))
 
 (defn reduce-tonic-prominence [perc hist]
-  (let [tonic (ffirst (sort-by second > hist))]
-    (update-in hist [tonic] #(* perc %))))
+  (let [dampen #(* perc (or % 1))]
+    (-> hist
+        (update-in [:..s] dampen)
+        (update-in [:.s] dampen)
+        (update-in [:s] dampen))))
 
 (defn remove-non-prominent-notes [perc hist]
   (->> hist

@@ -7,10 +7,8 @@
 (defn mohanam []
   (time
    (def mohanam-probs
-     {:two (f/two-swaram-probabilities samples/mohanam-files
-                                       :tonic-prominence 0.4 :npr-factor 0.25)
-      :one (f/one-swaram-probabilities samples/mohanam-files
-                                       :tonic-prominence 0.4 :npr-factor 0.25)})))
+     (f/two-swaram-probabilities samples/mohanam-files
+                                 :tonic-prominence 0.4 :npr-factor 0.25))))
 
 (comment
   (mohanam)
@@ -21,35 +19,25 @@
 (defn pancharatna-kritis []
   (time
    (def jagadanandakaraka-probs
-     {:two (f/two-swaram-probabilities [(nth samples/pancharatna-kritis 0)]
-                                       :tonic-prominence 0.4 :npr-factor 0.25)
-      :one (f/one-swaram-probabilities [(nth samples/pancharatna-kritis 0)]
-                                       :tonic-prominence 0.4 :npr-factor 0.25)}))
+     (f/two-swaram-probabilities [(nth samples/pancharatna-kritis 0)]
+                                 :tonic-prominence 0.4 :npr-factor 0.25)))
 
   (time
    (def dudukugala-probs
-     {:two (f/two-swaram-probabilities [(nth samples/pancharatna-kritis 1)]
-                                       :tonic-prominence 0.4 :npr-factor 0.25)
-      :one (f/one-swaram-probabilities [(nth samples/pancharatna-kritis 1)]
-                                       :tonic-prominence 0.4 :npr-factor 0.25)}))
+     (f/two-swaram-probabilities [(nth samples/pancharatna-kritis 1)]
+                                 :tonic-prominence 0.4 :npr-factor 0.25)))
 
   (time
    (def sadhinchane-probs
-     {:two (f/two-swaram-probabilities [(nth samples/pancharatna-kritis 2)]
-                                       :tonic-prominence 0.4 :npr-factor 0.25)
-      :one (f/one-swaram-probabilities [(nth samples/pancharatna-kritis 2)]
-                                       :tonic-prominence 0.4 :npr-factor 0.25)}))
+     (f/two-swaram-probabilities [(nth samples/pancharatna-kritis 2)]
+                                 :tonic-prominence 0.4 :npr-factor 0.25)))
 
   (time
    (def kanakanaruchira-probs
-     {:two (f/two-swaram-probabilities [(nth samples/pancharatna-kritis 3)]
-                                       :tonic-prominence 0.4 :npr-factor 0.25)
-      :one (f/one-swaram-probabilities [(nth samples/pancharatna-kritis 3)]
-                                       :tonic-prominence 0.4 :npr-factor 0.25)}))
+     (f/two-swaram-probabilities [(nth samples/pancharatna-kritis 3)]
+                                 :tonic-prominence 0.4 :npr-factor 0.25)))
 
   (time
    (def endaro-probs
-     {:two (f/two-swaram-probabilities [(nth samples/pancharatna-kritis 4)]
-                                       :tonic-prominence 0.4 :npr-factor 0.25)
-      :one (f/one-swaram-probabilities [(nth samples/pancharatna-kritis 4)]
-                                       :tonic-prominence 0.4 :npr-factor 0.25)})))
+     (f/two-swaram-probabilities [(nth samples/pancharatna-kritis 4)]
+                                 :tonic-prominence 0.4 :npr-factor 0.25))))
