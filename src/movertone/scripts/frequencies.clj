@@ -15,7 +15,7 @@
   (->> (s/split (slurp (with-dir-name file)) #"\n")
        (remove #{"0"})
        (remove s/blank?)
-       (pmap #(Double/parseDouble %))))
+       (map #(Double/parseDouble %))))
 
 (defn pprint-histogram [hist]
   (pprint (sort-by second > hist)))
@@ -30,7 +30,7 @@
 
 (defn freqs->swarams [freqs & [prominent-note]]
   (let [tonic-midi (adj/find-tonic-midi freqs prominent-note)]
-    (pmap #(hz->swaram tonic-midi %) freqs)))
+    (map #(hz->swaram tonic-midi %) freqs)))
 
 (defn one-swaram-probabilities-for-file [file {:keys [tonic-prominence] :as opts}]
   (let [freqs (freqs-from-file file)]
@@ -41,6 +41,7 @@
 (defn one-swaram-probabilities [files & {:keys [npr-factor] :as opts}]
   (->> (pmap #(one-swaram-probabilities-for-file % opts) files)
        (apply merge-with +)
+       (#(dissoc % nil))
        (adj/remove-non-prominent-notes npr-factor)
        ->perc-histogram))
 
@@ -70,8 +71,8 @@
 (defn one-swaram->two-swaram-mapping [freqs]
   (->> (n-swaram-freqs freqs 2)
        (group-by (fn [[[fs ss] fr]] fs))
-       (pmap (fn [[sw t-sh]]
-               [sw (m/map-keys second (into {} t-sh))]))
+       (map (fn [[sw t-sh]]
+              [sw (m/map-keys second (into {} t-sh))]))
        (into {})))
 
 (defn two-swaram-histogram-for-file [file]
@@ -80,20 +81,24 @@
        (m/map-vals #(adj/reduce-tonic-prominence 0.2 %))))
 
 (defn two-swaram-probabilities [files & opts]
-  (let [osw (apply one-swaram-probabilities files opts)]
-    {:one osw
-     :two (->> files
-               (pmap two-swaram-histogram-for-file)
-               (apply merge-with #(merge-with + %1 %2))
-               (#(select-keys % (keys osw)))
-               (m/map-vals #(select-keys % (keys osw)))
-               (m/map-vals ->perc-histogram))}))
+  (let [osw (apply one-swaram-probabilities files opts)
+        absolute-two (->> files
+                          (pmap two-swaram-histogram-for-file)
+                          (apply merge-with #(merge-with + %1 %2))
+                          (#(select-keys % (keys osw)))
+                          (m/map-vals #(select-keys % (keys osw))))]
+    {:one      osw
+     :flat-two (->> absolute-two
+                    (map (fn [[sw swh]] (m/map-keys (fn [ns] [sw ns]) swh)))
+                    (into {}))
+     :two      (->> absolute-two
+                    (m/map-vals ->perc-histogram))}))
 
 (defn two-swaram->three-swaram-mapping [freqs]
   (->> (n-swaram-freqs freqs 3)
        (group-by (fn [[[fs ss ts] fr]] [fs ss]))
-       (pmap (fn [[sw t-sh]]
-               [sw (m/map-keys #(nth % 2) (into {} t-sh))]))
+       (map (fn [[sw t-sh]]
+              [sw (m/map-keys #(nth % 2) (into {} t-sh))]))
        (into {})))
 
 (defn three-swaram-histogram-for-file [file]

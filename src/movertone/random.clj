@@ -115,37 +115,60 @@
         d9 (* 0.9 phrase-duration)]
     (envelope [0 1 1 0] [dp5 d9 dp5])))
 
+(defmacro play-in-carnatic-style [pitch-env ampl-env dur]
+  `((overtone.sc.synth/synth
+     "audition-synth"
+     (out 0 (hold
+             (*mx (sin-osc (env-gen ~pitch-env))
+                  (env-gen ~ampl-env))
+             ~dur
+             :done FREE)))))
+
+(defn generic-play [swarams gathi num]
+  (let [freqs (->> swarams
+                   (mapv (partial sw/swaram->midi :c.))
+                   (mapv midi->hz))
+        durations (vec (take num (repeat gathi)))
+        total-duration (* num gathi)
+        pitch-env (envelope freqs durations)]
+    (play-in-carnatic-style pitch-env
+                            (ampl-env total-duration)
+                            total-duration)))
+
 (defn play-with-two-swaram-weights
   ([ts-hist fswaram gathi num]
    (let [ts-allocations (ts-swaram-allocations ts-hist)
          pitches (vec (take num (prob-swaram-generator fswaram ts-allocations)))]
      (play-with-two-swaram-weights pitches gathi num)))
   ([pitches gathi num]
+   (recording-start (str "resources/kosha/" (gensym "two-") ".wav"))
    (let [freqs (->> pitches
-                    (mapv (partial sw/swaram->midi :c))
+                    (mapv (partial sw/swaram->midi :c.))
                     (mapv midi->hz))
          _ (prn pitches)
          durations (vec (take num (repeat gathi)))
+         total-duration (* num gathi)
          pitch-env (envelope freqs durations)]
      (tanpura/play 60 0.2)
-     (demo 20 (pan2
-               (*mx (sin-osc (env-gen pitch-env))
-                    (env-gen (ampl-env (* num gathi)))))))))
+     (play-in-carnatic-style pitch-env
+                             (ampl-env total-duration)
+                             total-duration))))
 
 (defn play-with-three-swaram-weights
   ([ts-hist ft-swarams gathi num]
    (let [ts-allocations (ts-swaram-allocations ts-hist)
-        pitches (vec (take num (prob-swaram-generator-for-three ft-swarams ts-allocations)))]
+         pitches (vec (take num (prob-swaram-generator-for-three ft-swarams ts-allocations)))]
      (play-with-three-swaram-weights pitches gathi num)))
   ([pitches gathi num]
+   (recording-start (str "resources/kosha/" (gensym "three-") ".wav"))
    (let [freqs (->> pitches
-                    (mapv (partial sw/swaram->midi :c))
+                    (mapv (partial sw/swaram->midi :c.))
                     (mapv midi->hz))
          _ (prn pitches)
          durations (vec (take num (repeat gathi)))
          pitch-env (envelope freqs durations)]
      (tanpura/play 60 0.2)
-     (demo 20 (pan2
+     (demo 60 (pan2
                (*mx (sin-osc (env-gen pitch-env))
                     (env-gen (ampl-env (* num gathi)))))))))
 
@@ -158,6 +181,7 @@
 (def single-swaram-prob-phrase weighted-random-phrase)
 
 (defn play-single-swaram-prob-phrase [single-swaram-prob jathi num]
+  (recording-start (str "resources/kosha/" (gensym "one-") ".wav"))
   (c/play-phrase (single-swaram-prob-phrase single-swaram-prob jathi num)))
 
 (comment
