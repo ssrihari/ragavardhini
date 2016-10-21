@@ -4,6 +4,6 @@ form filename
 endform
 file = Read from file: inputfile$
 selectObject: file
-To Pitch: 0, 75, 600
-Save as text file: outputfile$ 
+To Pitch: 0, 150, 600
+Save as text file: outputfile$
 removeObject: file

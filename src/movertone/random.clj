@@ -1,7 +1,6 @@
 (ns movertone.random
   (:use overtone.core)
-  (:require [movertone.tanpura :as tanpura]
-            [movertone.core-old :as c]
+  (:require [movertone.core-old :as c]
             [overtone.live :as olive]
             [medley.core :as m]
             [movertone.swarams :as sw]
@@ -90,22 +89,6 @@
                (vec (random-durations jathi num))
                gathi))))
 
-(defn ts-weighted-random-phrase [ts-hist fswaram gathi num]
-  (let [ts-allocations (ts-swaram-allocations ts-hist)
-        r-swarams (vec (take num (prob-swaram-generator fswaram ts-allocations)))]
-    (prn r-swarams)
-    (c/phrase r-swarams
-              (vec (take num (repeat 1)))
-              gathi)))
-
-(defn ts-weighted-random-phrase-nth [ts-hist fswaram gathi num]
-  (let [ts-allocations (ts-swaram-allocations ts-hist)
-        r-swarams (vec (take num (take-nth 40 (prob-swaram-generator fswaram ts-allocations))))]
-    (prn r-swarams)
-    (c/phrase r-swarams
-              (vec (take num (repeat 1)))
-              gathi)))
-
 (definst ignore-this [x 1]
   (def *mx *)
   (sin-osc))
@@ -117,7 +100,7 @@
 
 (defmacro play-in-carnatic-style [pitch-env ampl-env dur]
   `((overtone.sc.synth/synth
-     "audition-synth"
+     "carnatic-synth"
      (out 0 (hold
              (*mx (sin-osc (env-gen ~pitch-env))
                   (env-gen ~ampl-env))
@@ -137,40 +120,29 @@
 
 (defn play-with-two-swaram-weights
   ([ts-hist fswaram gathi num]
+   (play-with-two-swaram-weights ts-hist fswaram gathi num 1))
+  ([ts-hist fswaram gathi num nth]
    (let [ts-allocations (ts-swaram-allocations ts-hist)
-         pitches (vec (take num (prob-swaram-generator fswaram ts-allocations)))]
+         pitches (vec (take num (take-nth nth (prob-swaram-generator fswaram ts-allocations))))]
      (play-with-two-swaram-weights pitches gathi num)))
   ([pitches gathi num]
    (recording-start (str "resources/kosha/" (gensym "two-") ".wav"))
-   (let [freqs (->> pitches
-                    (mapv (partial sw/swaram->midi :c.))
-                    (mapv midi->hz))
-         _ (prn pitches)
-         durations (vec (take num (repeat gathi)))
-         total-duration (* num gathi)
-         pitch-env (envelope freqs durations)]
-     (tanpura/play 60 0.2)
-     (play-in-carnatic-style pitch-env
-                             (ampl-env total-duration)
-                             total-duration))))
+   (generic-play pitches gathi num)))
 
 (defn play-with-three-swaram-weights
-  ([ts-hist ft-swarams gathi num]
+  ([ts-hist fswaram gathi num]
+   (play-with-three-swaram-weights ts-hist fswaram gathi num 1))
+  ([ts-hist ft-swarams gathi num nth]
    (let [ts-allocations (ts-swaram-allocations ts-hist)
-         pitches (vec (take num (prob-swaram-generator-for-three ft-swarams ts-allocations)))]
+         pitches (->> ts-allocations
+                      (prob-swaram-generator-for-three ft-swarams)
+                      (take (* num nth))
+                      (take-nth nth)
+                      vec)]
      (play-with-three-swaram-weights pitches gathi num)))
   ([pitches gathi num]
    (recording-start (str "resources/kosha/" (gensym "three-") ".wav"))
-   (let [freqs (->> pitches
-                    (mapv (partial sw/swaram->midi :c.))
-                    (mapv midi->hz))
-         _ (prn pitches)
-         durations (vec (take num (repeat gathi)))
-         pitch-env (envelope freqs durations)]
-     (tanpura/play 60 0.2)
-     (demo 60 (pan2
-               (*mx (sin-osc (env-gen pitch-env))
-                    (env-gen (ampl-env (* num gathi)))))))))
+   (generic-play pitches gathi num)))
 
 (defn play-random-phrase [ragam-name jathi num]
   (let [phrase (random-phrase ragam-name jathi num)]
@@ -215,7 +187,6 @@
 (comment
   (play-completely-random-phrase :nata 4 20)
   (c/play-phrase (single-swaram-prob-phrase f/sh 4 20))
-  (c/play-phrase (ts-weighted-random-phrase f/tsh :.s 15 1000))
 
   (play-random-phrase :nata 3 100)
   (leipzig.live/stop)

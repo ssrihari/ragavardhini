@@ -15,6 +15,7 @@
 
 
 (def shruthi :c)
+
 (def tempo 80)
 
 (def jathis
@@ -24,11 +25,11 @@
    :misra	7
    :sankeerna	9})
 
-(def jathi (:chaturasra jathis))
-
 (def kalams {:lower  1
              :middle 2
              :higher 3})
+
+(def jathi (:chaturasra jathis))
 
 (olive/definst beep [freq 440 dur 1.0]
   (-> freq
@@ -84,8 +85,6 @@
 (comment
 
   (pprint (:ragavardhini r/ragams))
-  > {:arohanam [:s :r3 :g3 :m1 :p :d1 :n2 :s.],
-     :avarohanam (:s. :n2 :d1 :p :m1 :g3 :r3 :s)}
 
   (pprint (:ragam (search/search-ragam "goula")))
 

@@ -4,7 +4,8 @@
             [movertone.scripts.charts :as charts]
             [movertone.scripts.frequencies :as f]
             [movertone.random :as r]
-            [movertone.scripts.samples :as samples]))
+            [movertone.scripts.samples :as samples]
+            [movertone.tanpura :as tanpura]))
 
 (defn stop []
   (l/stop)
@@ -31,6 +32,7 @@
 
 (comment
   (revati)
+  (tanpura/play 60 0.2)
   (r/play-completely-random-phrase :revati 4 100)
   (r/play-single-swaram-prob-phrase (:one revati-probs) 4 100)
   (r/play-with-two-swaram-weights (:two revati-probs) :.s 1/20 300)
