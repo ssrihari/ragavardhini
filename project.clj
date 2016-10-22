@@ -19,9 +19,10 @@
                  [org.clojure/tools.nrepl "0.2.6"]
                  [ring/ring-core "1.3.2"]
                  [ring/ring-jetty-adapter "1.3.2"]
-                 [ring-middleware-format "0.3.2" :exclusions [ring]]]
+                 [ring-middleware-format "0.3.2" :exclusions [ring]]
+                 [rm-hull/markov-chains "0.0.1"]]
   :plugins [[cider/cider-nrepl "0.8.2"]]
-  :jvm-opts ["-Xms2g" "-Xmx2g"
+  :jvm-opts ["-Xms4g" "-Xmx4g"
              "-Dcom.sun.management.jmxremote=true"
              "-Dcom.sun.management.jmxremote.port=12345"
              "-Dcom.sun.management.jmxremote.authenticate=false"])
