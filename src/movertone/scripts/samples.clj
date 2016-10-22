@@ -122,3 +122,20 @@
    "kalyANi-Tanjore-S-Kalyanaraman-nidhi_cAla_sukhamA-tyAgarAja81.mpeg.wav.pitch.frequencies"
    "kalyANi-TR-Subramaniam-nidhi_cAla_sukhamA-tyAgarAja44.mpeg.wav.pitch.frequencies"
    "kalyANi-VK-Raman-nidhi_cAla_sukhamA-tyAgarAja68.mpeg.wav.pitch.frequencies"])
+
+(def my-records
+  ["me-mohbeg-mach.wav.wav.pitch.frequencies"
+   "me-mohbeg-me.wav.wav.pitch.frequencies"
+   "me-mohmid-mach.wav.wav.pitch.frequencies"
+   "me-mohmid-me.wav.wav.pitch.frequencies"])
+
+(def gamakam-records
+  ["gamakam-janti.wav-0.0000-4.4103.m4a.wav.pitch.frequencies"
+   "gamakam-kampitam.wav-0.0000-5.3101.m4a.wav.pitch.frequencies"
+   "gamakam-mpn-jaru-me.wav-0.0000-7.5566.m4a.wav.pitch.frequencies"
+   "gamakam-orikai.wav-0.0000-6.9776.m4a.wav.pitch.frequencies"])
+
+(def sah-records
+  ["sah-var-mach.wav-0.0000-6.2592.m4a.wav.pitch.frequencies"
+   "sah-var-machine-another-phrase.wav-0.0000-20.6251.m4a.wav.pitch.frequencies"
+   "sah-var-me.wav-0.0000-6.6104.m4a.wav.pitch.frequencies"])
