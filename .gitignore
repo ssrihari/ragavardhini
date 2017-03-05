@@ -11,3 +11,5 @@ pom.xml.asc
 pg.log
 resources/electronic-tanpura
 resources/kosha
+resources/charts
+resources/generated
